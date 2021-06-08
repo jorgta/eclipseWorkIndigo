@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.bituos.truckAdmin.Beans.BeanTruckTireConfigurationDetail" table="truck_tire_configuration_detail" >
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+        <property name="axis_number" column="axis_number" type="integer"  not-null="true"/>
+       <property name="axis_side" column="axis_side" type="string"  not-null="true"/>
+         <property name="tire_position" column="tire_position" type="integer"  not-null="true"/>
+         <many-to-one name="id_truck_tire_configuration" column="id_truck_tire_configuration" not-null="true"/>
+        <property name="is_front_axis" column="is_front_axis" type="string"  not-null="true"/>
+
+       
+   </class>
+</hibernate-mapping>
+
+

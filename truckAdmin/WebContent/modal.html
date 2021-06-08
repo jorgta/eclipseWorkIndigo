@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Moviendo Neumatico</title>
+    <script type="text/javascript">
+        function Init () {
+            var sharedObject = window.dialogArguments;
+
+            var deep = document.getElementById ("deep");
+            var km_truck = document.getElementById ("km_truck");
+            var km_int = document.getElementById ("km_int");
+            deep.value = sharedObject.deep;
+            km_truck.value = sharedObject.km_truck;
+            km_int.value = sharedObject.km_int;
+        }
+
+        function OnOK () {
+            var deep = document.getElementById ("deep");
+            var km_truck = document.getElementById ("km_truck");
+            var km_int = document.getElementById ("km_int");
+ 
+            if (window.showModalDialog) {
+                var sharedObject = {};
+                sharedObject.deep = deep.value;
+                sharedObject.km_truck = km_truck.value;
+                sharedObject.km_int = km_int.value;
+
+                window.returnValue = sharedObject;
+            }
+            else {
+                    // if not modal, we cannot use the returnValue property, we need to update the opener window
+                window.opener.UpdateFields (deep.value, km_truck.value, km_int.value);
+            }
+            window.close ();
+        }
+
+        function OnCancel () {
+            window.close ();
+        }
+    </script>
+<body onload="Init();">
+
+    
+    <td colspan="4" align="center" >					 
+			 				 
+			</td>
+    
+    
+            <table>
+  <!--            <TR>
+		     <TD colspan="4" >
+				<div class="x-blue_dg_caption"> Neumático    </div>	
+				
+			 </TD> 
+
+			</TR> -->
+			
+             <TR>
+		<!-- 	<TD colspan="4" >Diseño
+				<input type="text" name="design"  id="design" size="60" value="FG">
+				 <FONT COLOR="RED"> 
+			 </TD> -->
+
+			</TR>
+            <TR>
+			     <TD colspan="4"> 
+				    Profundidad
+				    <input type="text" name="deep" id="deep" size="10" value="10.0">
+				    <input type="text" name="id_type_unit_of_measure_description" size="16" value="Milimetros" disabled="disabled">				    
+				    <FONT COLOR="RED"> </FONT> 
+			     </TD>
+			</TR>
+			
+			
+			<!-- <TR>
+				<TD colspan="4">Medida
+			   		<select name="id_type_measure"><OPTION value= '1'  
+						     
+						    		SELECTED
+						    >
+					    	Standard 
+					    </OPTION>
+			    	
+					    <OPTION value= '2'  
+						    >
+					    	Internacional
+					    </OPTION></select>						
+				    <FONT COLOR="RED"> </FONT> 
+                </TD>
+	        	  
+			 </TR> -->
+			
+			
+			
+			<!-- <TR>
+				<TD colspan="4">En donde se ecuentra
+			   		<select name="id_type_place" onchange="javascript:sp__doPostBack('selectPlace',this.value,'');"><OPTION value= '1'  
+						    >
+					    	Almacén
+					    </OPTION>
+			    	
+					    <OPTION value= '2'  
+						    >
+					    	Taller
+					    </OPTION>
+			    	
+					    <OPTION value= '3'  
+						     
+						    		SELECTED
+						    >
+					    	 Vehículo
+					    </OPTION>
+			    	
+					    <OPTION value= '4'  
+						    >
+					    	 Vehículo  extra
+					    </OPTION>
+			    	
+					    <OPTION value= '5'  
+						    >
+					    	Renovado 
+					    </OPTION>
+			    	
+					    <OPTION value= '6'  
+						    >
+					    	Basura
+					    </OPTION></select>						
+				    <FONT COLOR="RED"> </FONT> 
+                </TD>
+	        	  
+			 </TR> -->
+			 
+			 
+			 <!-- <TR>
+					<TD colspan="4">Status
+				   		<select name="id_type_tire_status" disabled="disabled"><OPTION value= '1'  
+							    >
+						    	Usada
+						    </OPTION>
+				    	
+						    <OPTION value= '2'  
+							     
+							    		SELECTED
+							    >
+						    	Nueva
+						    </OPTION></select>						
+					    
+                       <FONT COLOR="RED"> </FONT>
+		        	</TD>  
+			</TR> -->
+			
+			<!-- <TR>
+				<TD colspan="4">Numero de Serie
+				<input type="text" name="serial_number" size="40" value="5645" disabled="disabled">
+				<FONT COLOR="RED"> </FONT> 
+				</TD>
+			</TR> -->
+			
+			<TR>
+				<TD colspan="4">Kilometraje del Neumático
+				<input type="text" name="km_int" id="km_int" size="15" value="0">
+				<FONT COLOR="RED"> </FONT> 
+				</TD>
+			</TR>
+			<TR>
+				<TD colspan="4">Kilometraje del Vehículo 
+				<input type="text" name="km_truck"  id="km_truck" size="15" value="0">
+				<FONT COLOR="RED"> </FONT> 
+				</TD>
+			</TR>
+			
+			<!-- <TR>
+				<TD colspan="4">Precio
+				<input type="text" name="price" size="15" value="10000.0">
+				<FONT COLOR="RED"> </FONT> 
+				</TD>
+			</TR>
+			<TR>
+				<TD colspan="4">Maximo Tamaño
+				<input type="text" name="measurement" size="15" value="10.0">
+				<FONT COLOR="RED"> </FONT> 
+				</TD>
+			</TR>
+			
+			<TR>
+				<TD colspan="4">Referecia de Compra </br>
+				<textarea name="buy_of_reference" cols="50" rows="10">sdfsdfsdfsdf</textarea>
+				<FONT COLOR="RED"> </FONT> 
+				</TD>
+			</TR> -->
+
+		</table>
+
+
+    <br/><br/>
+    <button onclick="OnOK ()">OK</button> <button onclick="OnCancel ()">Cancel</button>
+</body>
+</html>

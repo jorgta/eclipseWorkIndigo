@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.bituos.gjv.Beans.BeanContactPPS" table="providers" >
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="assigned"/>
+       </id>       
+       <property name="first_name" column="first_name" type="string"  not-null="true"/>
+       <property name="last_name" column="last_name" type="string"  not-null="true"/>
+        <property name="enterprise_name" column="enterprise_name" type="string"  not-null="true"/>
+       <property name="address" column="address" type="string"  not-null="true"/>
+  	   <property name="city" column="city" type="string"  not-null="true"/>
+  	   <property name="country" column="country" type="string"  not-null="true"/>
+  	   <property name="office_phone" column="office_phone" type="string"  not-null="true"/>
+  	   <property name="home_phone" column="home_phone" type="string"  not-null="true"/>
+  	   <property name="cel_phone" column="cel_phone" type="string"  not-null="true"/>
+  	    <property name="active" column="active" type="char"  not-null="true"/>
+  	   </class>
+
+</hibernate-mapping>
+
+

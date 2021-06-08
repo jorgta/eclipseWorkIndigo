@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.6.0"
+	client="site"
+	method="upgrade">
+	<name>YJ Live Search</name>
+	<creationDate>7-14-2014</creationDate>
+	<author>youjoomla</author>
+	<authorEmail>youjoomla@gmail.com</authorEmail>
+	<authorUrl>http://www.youjoomla.com</authorUrl>
+	<copyright>Youjoomla</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>2.0.4</version>
+	<compatibility>
+		<version>2.5</version>
+		<version>3</version>
+	</compatibility>
+	<description>
+		<![CDATA[<style type="text/css" media="all">#holdthem{font-family: Arial Narrow,sans-serif;text-align:left;}#wrap1 {padding:0px 0px 4px 0px;}h1 {clear:both;font-family: Arial Narrow,sans-serif;font-size:18px;margin:0px 0px 12px 0px;padding:0px 0px 1px 10px;color:#C64934;}.wrap2 {background:#F7F7F7;overflow:hidden;padding:10px;}</style><div id="holdthem"><h1>YJ Live Search Module for Joomla 1.7 and UP </h1><div class="wrap2"><a title="Visit the official website!" href="http://www.youjoomla.com" target="_blank" ><img style="float:right;border:1px solid #CFCFCF;margin:0px 15px 4px 22px;" src="../modules/mod_yj_live_search/images/live_logo.jpg" border="0" alt="Logo" /></a><h3>Mootools and CSS powered Live Search Module for Joomla 1.7 and UP Fully CSS customizable , cross browser compatible, fast loading , CSS and XHTML Valid, search parameters are fully adjustable to fit your Joomla installation. Simply publish the module in any Joomla module position, set the input box width and  hit save. Happy searching!</h3><ul><li>Easy to install and use</li><li>Extremely ffast and lightweight</li><li>Fully customizable via  CSS</li></ul></h4><br /><br /><a title="Visit the official website for more info" href="http://www.youjoomla.com">This is a Commercial Joomla Extension provided to you by Youjoomla.com</a></div></div>]]>
+	</description>
+	<languages>
+		<language tag="en-GB">en-GB.mod_yj_live_search.ini</language>
+		<language tag="en-GB">en-GB.mod_yj_live_search.sys.ini</language>
+	</languages>
+	<files>
+		<filename module="mod_yj_live_search">mod_yj_live_search.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>script</folder>
+		<folder>feeds</folder>
+		<folder>elements</folder>
+		<folder>customfeeds</folder>
+	</files>
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_yj_live_search/elements/">
+			<fieldset name="basic">
+				<field name="yjhandler" type="yjhandler"/>
+				<field name="live_status" type="radio" class="btn-group" default="1" label="Live Search Status" description="If live search is disabled the module will work like standard joomla search module">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+				<field name="is_copy" type="list" default="defaultfeed" label="Select prefix if duplicate" description="If this is module copy that runs on same page as original one , please select one of the options">
+					<option value="defaultfeed">No copy</option>
+					<option value="copy1">Copy1</option>
+					<option value="copy2">Copy2</option>
+					<option value="copy3">Copy3</option>
+					<option value="copy4">Copy4</option>
+					<option value="copy5">Copy5</option>
+				</field>
+				<field default="&lt;strong&gt;Feed Settings&lt;/strong&gt;" type="yjspacer"/>
+				<field name="feedtype" type="radio" class="btn-group" default="feeds" label="Search Feed Type" description="You can choose from Joomla Default search feed and Custom Search feed. Custom search feed will let you refine your search to specific items parts.">
+					<option value="feeds">Joomla Deafult Search</option>
+					<option value="customfeeds">Specific Search</option>
+				</field>
+				<field name="index_items" type="radio" class="btn-group" default="1" label="What to index?" description="Specific search can index trough titles , description or both. Please make your selection">
+					<option value="1">Only Title</option>
+					<option value="2">Only Description</option>
+					<option value="3">Title and Description</option>
+				</field>
+				<field name="mysql_operator"  type="radio" class="btn-group"  default="1" label="Select MySql search operator" description="You Can select from:&lt;br /&gt; REGEXP(find items containing search text)&lt;br /&gt;LIKE(exact match like 'News Item 1')">
+					<option value="REGEXP">REGEXP</option>
+					<option value="LIKE">LIKE</option>
+				</field>
+				<field default="&lt;strong&gt;Layout Settings&lt;/strong&gt;" type="yjspacer"/>
+				<field name="input_width" type="text" size="5" default="210" label="Input Box Width" description="Width of the input  box, in px"/>
+				<field name="search_limit" type="text" size="5" default="5" label="Number of items per page" description="Number of Search items per results page to return"/>
+				<field name="intro_limit" type="text" size="5" default="70" label="Character Limit" description="Intro text result character limit"/>
+				<field name="topDistance" type="text" size="5" default="35" label="Top Distance" description="Top Distance"/>
+				<field name="duration" type="text" size="5" default="500" label="Fade Duration" description="Fade Duration in millisecond"/>
+				<field name="minLenght" type="text" size="20" default="3" label="Minimum search lenght" description="To ease on database requests set the minimum characters count that visitor needs to type, in order to start search"/>
+				<field name="maxLenght" type="text" size="20" default="10" label="Maximum search lenght" description="To ease on database requests set the maximum characters count that visitor is allowed to type in. Any request after this count will not be executed"/>
+				<field name="minCharTxt1" type="text" size="50" default="Minimum" label="Minchars text1" description="First part of minimum required characters message"/>
+				<field name="minCharTxt2" type="text" size="50" default="characters required" label="Minchars text2" description="Second part of minimum required characters message. Characters count is in between Minchars text1 and Minchars text2 like this:Minimum 3 characters required"/>
+				<field name="default_input" type="text" size="20" default="Search" label="Default Search Value" description="Default Search Value"/>
+				<field name="no_results" type="text" size="20" default="Sorry, no results for" label="No Results Message" description="No Results Message"/>
+				<field name="search_button" type="radio" class="btn-group" default="1" label="Search Button" description="Show or Hide search button">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+				<field name="imagesettings" default="&lt;strong&gt;Image Settings&lt;/strong&gt;" type="yjspacer"/>
+				<field name="show_image" type="radio" class="btn-group" default="1" label="Show item image in results" description="Show item image in results">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="k2image_size" type="list" default="XS" label="K2 Image to use" description="Choose what K2 image size to show">
+					<option value="XS">Extra Small</option>
+					<option value="S">Small</option>
+					<option value="M">Medium</option>
+					<option value="L">Large</option>
+					<option value="XL">Extra Large</option>
+				</field>
+				<field name="image_width" type="text" size="5" default="75" label="Image Width" description="Set image width"/>
+				<field default="&lt;strong&gt;Search Restrictions&lt;/strong&gt;" type="yjspacer"/>
+				<field name="Search_Content" type="radio" class="btn-group" default="1" label="Search Content" description="Search Content">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="Search_Weblinks" type="radio" class="btn-group" default="1" label="Search Weblinks" description="Search Weblinks">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="Search_Contacts" type="radio" class="btn-group" default="1" label="Search Contacts" description="Search Contacts">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="Search_Categories" type="radio" class="btn-group" default="1" label="Search Categories" description="Search Categories">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="Search_Newsfeeds" type="radio" class="btn-group" default="1" label="Search Newsfeeds" description="Search Newsfeeds">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="Search_K2" type="radio" class="btn-group" default="1" label="Search K2 Items" description="Search K2">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="Search_K2_cat" type="radio" class="btn-group" default="1" label="Search K2 Category" description="Search K2">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="Search_K2_tags" type="radio" class="btn-group" default="1" label="Search K2 Items Tags" description="Search K2 Items Tags">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field default="&lt;strong&gt;Basic Options&lt;/strong&gt;" type="yjspacer"/>
+				<field name="set_itemid" type="text" label="MOD_YJ_LIVE_SEARCH_FIELD_SETITEMID_LABEL" description="MOD_YJ_LIVE_SEARCH_FIELD_SETITEMID_DESC" />
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

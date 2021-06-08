@@ -1,0 +1,276 @@
+what,kind,bundleId,bundleVersion,description,time
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882036504
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882048858
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882050291
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.findReplace",1424882050319
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1424882050610
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882053184
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882054185
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882059445
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882078176
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882079523
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882080040
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882083425
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882091985
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882093124
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882093560
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882096162
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882111496
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882114969
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.file.save",1424882124651
+error,log,,,"error during type inferencing",1424882129771
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.core.resources"".",1424882133770
+error,log,,,"Errors occurred during the build.",1424882133791
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882133809
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882135111
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.file.save",1424882146347
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.I20101116-0800,"org.eclipse.ui.navigator.ProjectExplorer",1424882147678
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1424882148557
+started,bundle,org.eclipse.ltk.core.refactoring,3.5.200.v20101130-0800,"org.eclipse.ltk.core.refactoring",1424882149587
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882150800
+error,log,,,"error during type inferencing",1424882152106
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.core.resources"".",1424882154853
+error,log,,,"Errors occurred during the build.",1424882154869
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882155391
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882155843
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882158962
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1424882159149
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1424882163413
+error,log,,,"error during type inferencing",1424882164358
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.core.resources"".",1424882166917
+error,log,,,"Errors occurred during the build.",1424882166936
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882166950
+no handler,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1424882167217
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882168770
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1424882170311
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882170556
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882211242
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1424882211329
+opened,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882213391
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882213466
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882216378
+error,log,,,"error during type inferencing",1424882217435
+started,bundle,org.eclipse.mylyn.java.tasks,3.6.0.v20110608-1400,"org.eclipse.mylyn.java.tasks",1424882223091
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1424882223663
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882224279
+error,log,,,"error during type inferencing",1424882238136
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882239504
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.findReplace",1424882239542
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1424882239543
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882239557
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.core.resources"".",1424882239895
+error,log,,,"Errors occurred during the build.",1424882239956
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882239971
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882244679
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882245609
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882248032
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882254075
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882256831
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.delete",1424882267039
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.undo",1424882274431
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882286734
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.findReplace",1424882286760
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882291376
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.delete",1424882303726
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.file.save",1424882305737
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882308586
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.findReplace",1424882308609
+error,log,,,"error during type inferencing",1424882311081
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.core.resources"".",1424882313335
+error,log,,,"Errors occurred during the build.",1424882313354
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882313688
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882314520
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882314616
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.delete",1424882319759
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.cut",1424882326221
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.file.save",1424882327320
+error,log,,,"error during type inferencing",1424882332806
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.core.resources"".",1424882335865
+error,log,,,"Errors occurred during the build.",1424882335880
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882335894
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882337357
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882338369
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.delete",1424882361382
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1424882362784
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.undo",1424882372710
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.file.save",1424882375507
+activated,view,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.ui.ServersView",1424882376918
+error,log,,,"error during type inferencing",1424882380929
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.I20101116-0800,"org.eclipse.ui.navigator.ProjectExplorer",1424882381876
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.file.refresh",1424882382915
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882383195
+error,log,,,"error during type inferencing",1424882389152
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.core.resources"".",1424882389768
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882401785
+activated,view,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.ui.ServersView",1424882402989
+executed,command,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.debug",1424882404364
+started,bundle,org.eclipse.jst.server.tomcat.ui,1.1.200.v20100418,"org.eclipse.jst.server.tomcat.ui",1424882405066
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882405921
+started,bundle,org.eclipse.jdt.debug.ui,3.6.0.v20110126,"org.eclipse.jdt.debug.ui",1424882407552
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882407742
+activated,view,org.eclipse.ui.console,3.5.100.v20110126,"org.eclipse.ui.console.ConsoleView",1424882409625
+activated,view,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.ui.ServersView",1424882415037
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882417823
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882527674
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882530846
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882533310
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.file.save",1424882537996
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882539172
+error,log,,,"error during type inferencing",1424882543824
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.core.resources"".",1424882548874
+error,log,,,"Errors occurred during the build.",1424882548900
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882572405
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882574201
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882579218
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882580807
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882610187
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882612133
+opened,view,org.eclipse.wst.jsdt.ui,1.1.102.v201201131900,"org.eclipse.wst.jsdt.ui.PackageExplorer",1424882615971
+activated,perspective,org.eclipse.wst.jsdt.ui,1.1.102.v201201131900,"org.eclipse.wst.jsdt.ui.JavaPerspective",1424882616028
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882619600
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.delete",1424882628002
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.file.save",1424882629113
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882629958
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882630618
+opened,view,org.eclipse.ui.ide,3.7.0.I20110126-0800,"org.eclipse.ui.views.ProgressView",1424882634363
+activated,view,org.eclipse.ui.ide,3.7.0.I20110126-0800,"org.eclipse.ui.views.ProgressView",1424882634430
+error,log,,,"error during type inferencing",1424882635194
+error,log,,,"error during type inferencing",1424882644222
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.core.resources"".",1424882644886
+error,log,,,"Errors occurred during the build.",1424882644913
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882644939
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882648418
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882649720
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882666428
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882667210
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882675773
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.cut",1424882680650
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.file.save",1424882681527
+error,log,,,"error during type inferencing",1424882686590
+error,log,,,"error during type inferencing",1424882697666
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.core.resources"".",1424882698394
+error,log,,,"Errors occurred during the build.",1424882698426
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882698456
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882700672
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882701696
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882717052
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.undo",1424882718462
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.file.save",1424882720582
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882722385
+error,log,,,"error during type inferencing",1424882725557
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882729787
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.core.resources"".",1424882730328
+error,log,,,"Errors occurred during the build.",1424882730356
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882730372
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882731427
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882732232
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882733013
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882733921
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882793346
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882793354
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882793586
+activated,view,org.eclipse.wst.jsdt.ui,1.1.102.v201201131900,"org.eclipse.wst.jsdt.ui.PackageExplorer",1424882801918
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1424882808329
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882808693
+started,bundle,org.eclipse.ltk.ui.refactoring,3.5.100.v20110111-0800,"org.eclipse.ltk.ui.refactoring",1424882808758
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882822930
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1424882823004
+opened,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882826821
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882826895
+error,log,,,"error during type inferencing",1424882828629
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882830987
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882832160
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.core.resources"".",1424882832833
+error,log,,,"Errors occurred during the build.",1424882832849
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882832864
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882833661
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882833823
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882833935
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1424882836614
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1424882838007
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.file.save",1424882844758
+error,log,,,"error during type inferencing",1424882849993
+activated,view,org.eclipse.ui.ide,3.7.0.I20110126-0800,"org.eclipse.ui.views.ProgressView",1424882849994
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882851737
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.delete",1424882863189
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.delete",1424882863686
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.delete",1424882863967
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.file.save",1424882865239
+error,log,,,"error during type inferencing",1424882870524
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.core.resources"".",1424882875039
+error,log,,,"Errors occurred during the build.",1424882875055
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882875071
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882876340
+activated,view,org.eclipse.wst.jsdt.ui,1.1.102.v201201131900,"org.eclipse.wst.jsdt.ui.PackageExplorer",1424882879725
+opened,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882880065
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882880123
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882884810
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882885716
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882886594
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.cut",1424882889353
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882889991
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1424882893906
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.file.save",1424882894880
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882897130
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882899083
+error,log,,,"error during type inferencing",1424882900071
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.core.resources"".",1424882902959
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882902982
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.file.save",1424882903019
+error,log,,,"error during type inferencing",1424882908189
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.core.resources"".",1424882910683
+error,log,,,"Errors occurred during the build.",1424882910699
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882910714
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882912367
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882913361
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882949658
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882952395
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.delete",1424882960302
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.delete",1424882961409
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.file.save",1424882963146
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882964665
+error,log,,,"error during type inferencing",1424882967914
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882970043
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882973885
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882976391
+error,log,,,"error during type inferencing",1424882980007
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.core.resources"".",1424882980612
+error,log,,,"Errors occurred during the build.",1424882980640
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882980655
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882980917
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882982393
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882982533
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424882983841
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424882990217
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424883218298
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424883221652
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424883241259
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424883370152
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424883371602
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424883378130
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424883382393
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424883392090
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424883394484
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.findReplace",1424883394515
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424883401167
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424883455052
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.findReplace",1424883455078
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424883462340
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424883463201
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424883473086
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1424883481967
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424883482292
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.findReplace",1424883482319
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1424883483714
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424883485508
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.delete",1424883491000
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.file.save",1424883492286
+activated,view,org.eclipse.ui.ide,3.7.0.I20110126-0800,"org.eclipse.ui.views.ProgressView",1424883497773
+error,log,,,"error during type inferencing",1424883497880
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424883498869
+activated,view,org.eclipse.wst.jsdt.ui,1.1.102.v201201131900,"org.eclipse.wst.jsdt.ui.PackageExplorer",1424883521382
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1424883522471
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424883522793
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1424883530991
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1424883531117
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1424883534561

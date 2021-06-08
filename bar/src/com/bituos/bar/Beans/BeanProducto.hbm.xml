@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.bituos.bar.Beans.BeanProducto" table="producto" >
+       <id name="id" type="integer" column="id" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+     
+     
+      <property name="descripcion" column="descripcion" type="string"  not-null="false"/>   
+      <property name="cantidad_minima" column="cantidad_minima" type="integer"  not-null="false"/>   
+	  <property name="codigo_barras" column="codigo_barras" type="string"  not-null="false"/>   
+	  <property name="material" column="material" type="string"  not-null="false"/>   
+	  <property name="color" column="color" type="string"  not-null="false"/>   
+      <property name="precio_costo" column="precio_costo" type="double"  not-null="false"/>  
+      <property name="foto_frente" column="foto_frente" type="binary"  not-null="false"/>
+      <property name="foto_atras" column="foto_atras" type="binary"  not-null="false"/>
+      <property name="foto_lado" column="foto_lado" type="binary"  not-null="false"/>
+      <property name="foto_lado1" column="foto_lado1" type="binary"  not-null="false"/>
+      <property name="foto_abajo" column="foto_abajo" type="binary"  not-null="false"/>
+      <property name="foto_arriba" column="foto_arriba" type="binary"  not-null="false"/>
+      <property name="precio_venta" column="precio_venta" type="double"  not-null="false"/> 
+      <property name="aplica_descuento" column="aplica_descuento" type="char"  not-null="false"/> 
+      <property name="venta_publico" column="venta_publico" type="char"  not-null="false"/>
+       <many-to-one name="id_moneda" column="id_moneda" not-null="true"/>          
+      <property name="controlar_existencia" column="controlar_existencia" type="char"  not-null="false"/> 
+	  <property name="id_tipo" column="id_tipo" type="integer"  not-null="false"/>  
+	  <property name="ganancia" column="ganancia" type="double"  not-null="false"/>  
+ 	  <property name="cantidad_maxima" column="cantidad_maxima" type="integer"  not-null="false"/>  
+ 	  
+ 	  <property name="eliminado" column="eliminado" type="char"  not-null="false"/> 
+ 	  <property name="invisible" column="invisible" type="char"  not-null="false"/> 
+ 	  <property name="venta_web" column="venta_web" type="char"  not-null="false"/> 
+      <many-to-one name="id_marca" column="id_marca" not-null="true"/>    
+      <property name="impuesto" column="impuesto" type="double"  not-null="false"/>  
+      <property name="cantidad" column="cantidad" type="double"  not-null="false"/>  
+	 <property name="id_almacen" column="id_almacen" type="integer"  not-null="false"/>
+	 
+	  <many-to-one name="id_categoria" column="id_categoria" not-null="true"/>    
+
+
+
+
+
+
+      
+   </class>
+</hibernate-mapping>
+
+

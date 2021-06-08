@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.emptyProject.Beans.BeanCompany" table="company">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       
+       <property name="name" column="NAME" type="string"  not-null="true"/>
+       <property name="rfc" column="RFC" type="string"  not-null="false"/>
+       <property name="address" column="ADDRESS" type="string"  not-null="true"/>
+       <property name="active" column="ACTIVE" type="string"  not-null="true"/>
+       <property name="full_name" column="FULL_NAME" type="string"  not-null="true"/>
+       <property name="logo_file_name" column="logo_file_name" type="string"  not-null="true"/>
+       
+       <property name="smtp_server" column="smtp_server" type="string"  not-null="true"/>
+       <property name="smtp_user_name" column="smtp_user_name" type="string"  not-null="true"/>
+       <property name="smtp_password" column="smtp_password" type="string"  not-null="true"/>
+       <property name="smtp_email" column="smtp_email" type="string"  not-null="true"/>
+       <property name="smtp_is_secure" column="smtp_is_secure" type="string"  not-null="true"/>
+       <property name="smtp_port" column="smtp_port" type="string"  not-null="true"/>
+   
+       
+       <property name="web_site" column="web_site" type="string"  not-null="false"/>
+      
+      
+	  
+      
+   </class>
+</hibernate-mapping>
+
+

@@ -1,0 +1,1146 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimplegrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla.com. All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla.com                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # greenistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+/*BODY ID'S USED FOR CSS FONT STYLES AND BASE SITE BODY STYLING */
+body {
+	background: #eeeeee url(../images/mainbg.png) no-repeat center top;
+	color: #929292;
+}
+#yjsg2, #yjsg3, #yjsg4, #yjsg5, #pathway {
+	-webkit-box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff;
+	-khtml-box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff;
+	-moz-box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff;
+	box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff;
+}
+#yjsg6 {
+	background: #171717;
+}
+#yjsg7 {
+	background: #090909;
+}
+.yjsg6_bottom {
+	background: #3d3d3d;
+}
+#logo {
+	background: url(../images/green/logo.png) no-repeat 0px 0px;
+}
+#yjsgheadergrid {
+	color: #fff;
+}
+#pathway .yjsg_breadcrumbs a.pathway {
+	background: url(../images/arrow.png) no-repeat right center;
+}
+#footer {
+	color: #121212;
+}
+/* SITE LINKS */
+a {
+	color: #121212;
+}
+/* SITE HOVERS */
+a:focus, a:hover {
+	color: #91965a;
+}
+#footmod a, #footmod a:visited, #cp a, #cp a:visited, #joomlacgreenit a, #joomlacgreenit a:visited, #pathway a, #pathway a:visited {
+	color: #121212;
+}
+#footmod a:hover, #footmod a:focus, #cp a:focus, #cp a:hover, #joomlacgreenit a:focus, #joomlacgreenit a:hover, #pathway a:focus, #pathway a:hover {
+	color: #91965a;
+}
+/* SITE HEADINGS */
+h1, h2, h3, h4, h5, h6 {
+	color: #91965a;
+}
+.small, .createdate, .modifydate, .createby {
+	text-transform: uppercase;
+	color: #474747;
+	font-size: 10px;
+}
+/* SITE TITLE, NEWS ITEM TITLE, MORE ARTICLES */
+.pagetitle, .article_title {
+	color: #121212;
+}
+.yjsg-morearticles h3 {
+	border: none;
+}
+/* ARTICLE TABLE OF CONTENTS */
+fieldset, #article-index ul {
+	border: 1px solid #dcdcdc;
+}
+#article-index ul li {
+	border-bottom: 1px solid #dcdcdc;
+}
+#article-index ul li:last-child {
+	border: none;
+}
+/* FIELDSET IN MODULES */
+.yjsquare_in fieldset {
+	border: none;
+}
+/* INPUTBOXES */
+.inputbox {
+	background: #FFFFFF;
+	border: 1px solid #dbdbdb;
+}
+.inputbox:hover, .inputbox:focus {
+	background: #FFFFFF;
+	border: 1px solid #cdcdcd;
+}
+/*BUTTONS
+--------------------- */
+.button, .button:hover, .button:focus, .validate {
+	background: #91965a;
+	border: none;
+	color: #fff;
+	-webkit-box-shadow: none!important;
+	-khtml-box-shadow: none!important;
+	-moz-box-shadow: none!important;
+	box-shadow: none!important;
+	text-shadow: none;
+}
+/*readon*/
+a.readon, a.readon:hover, a.readon:focus {
+	background: #91965a;
+	border: none;
+	color: #fff;
+	-webkit-box-shadow: none!important;
+	-khtml-box-shadow: none!important;
+	-moz-box-shadow: none!important;
+	box-shadow: none!important;
+	text-shadow: none;
+}
+a.readon:hover {
+	background: #121212;
+	color: #fff;
+}
+/*SQUARE MODULES STYLE
+--------------------- */
+.yjsquare h2.module_title {
+	color: #121212;
+}
+/* SPAN COLOR SHOWS FIRST */
+.yjsquare h2.module_title span {
+	color: #121212;
+}
+/*  SPECIFIC TEXT AND TITLE COLOR FOR GRIDS WITH DARK BACGROUND */
+#yjsgheadergrid .yjsquare h2.module_title, #yjsg6 .yjsquare h2.module_title, #yjsg7 .yjsquare h2.module_title {
+	color: #fff;
+}
+/* TITLE SPANS FOR SECOND PART OF THE TITLE COLOR*/
+#yjsgheadergrid .yjsquare h2.module_title span, #yjsg6 .yjsquare h2.module_title span, #yjsg7 .yjsquare h2.module_title span {
+	color: #fff;
+}
+/*TOP MENU STYLE FOR SPLIT MENU, CSS DROPDOWN AND SMOOTH DROPDOWN
+--------------------- */
+.horiznav {
+	background: url(../images/green/topmenu/horiz_bg.png) repeat-x 0 bottom;
+}
+/* MENU OVERRIDES */
+.YJSG_listContainer {
+	background: none;
+}
+/* NORMAL SUBTITLE */
+.horiznav ul li a span.yjm_desc {
+	color: #515151;
+}
+/*ACTIVE AND HOVER SUBTITLE*/
+.horiznav ul li.active a span.yjm_desc, .horiznav ul li a:hover span.yjm_desc, .horiznav ul li.sfHover a span.yjm_desc {
+	color: #fff;
+}
+/* NORMAL TOP LINKS */
+.horiznav ul li {
+	background: url(../images/green/topmenu/normal_l.png) no-repeat left center;
+}
+.horiznav ul li a, .horiznav ul li a:visited {
+	color: #fff;
+	background: url(../images/green/topmenu/normal_r.png) no-repeat right center;
+}
+/* NORMAL TOP LINKS WITH CHILD ELEMENT */
+.horiznav ul li.haschild {
+	background: url(../images/green/topmenu/normal_l_haschild.png) no-repeat left center;
+}
+/* TOP LINKS HOVER */
+.horiznav ul li:hover, .horiznav ul li.sfHover {
+	background: url(../images/green/topmenu/hover_l.png) no-repeat left center;
+}
+.horiznav ul li a:hover, .horiznav ul li:hover a, .horiznav ul li.sfHover a, .horiznav ul li.sfHoverHas a {
+	color: #fff;
+	background: url(../images/green/topmenu/hover_r.png) no-repeat right center;
+}
+/* TOP LINKS HOVER WITH CHILD ELEMENT */
+.horiznav ul li.haschild:hover {
+	background: url(../images/green/topmenu/hover_l_haschild.png) no-repeat left top;
+}
+.horiznav ul li.haschild a:hover {
+	color: #fff;
+}
+/* ACTIVE TOP LINKS  */
+.horiznav li#current, .horiznav li.active {
+	background: url(../images/green/topmenu/active_l.png) no-repeat left center;
+}
+.horiznav li#current a, .horiznav li.active a, .horiznav li.active a:visited, .horiznav li.active.sfHover a:visited, .horiznav li.active.sfHoverHas a:visited {
+	color: #fff;
+	background: url(../images/green/topmenu/active_r.png) no-repeat right center;
+}
+/* ACTIVE TOP LINKS WITH CHILD ELEMENT */
+.horiznav li#current.haschild, .horiznav li.haschild, .horiznav ul li.haschild.active, .horiznav ul li.sfHoverHas {
+	background: url(../images/green/topmenu/active_l_haschild.png) no-repeat left top;
+}
+/* ACTIVE TOP LINKS HOVER */
+.horiznav li#current:hover, .horiznav li#current.sfHover, .horiznav li.active:hover, .horiznav li.active.sfHover {
+	background: url(../images/green/topmenu/active_l.png) no-repeat left center;
+}
+.horiznav li#current a:hover, .horiznav li#current.sfHover a:hover, .horiznav li.active a:hover {
+	color: #fff;
+	background: url(../images/green/topmenu/active_r.png) no-repeat right center;
+}
+/* ACTIVE TOP LINKS HOVER WITH CHILD ELEMENT */
+.horiznav li#current.haschild:hover, .horiznav li#current.haschild.sfHoverHas, .horiznav li#current.active.sfHover {
+	background: url(../images/green/topmenu/active_l_haschild.png) no-repeat left center;
+}
+/* MAIN SUB UL AND MODULE BG */
+ul.subul_main.group_holder, .subul_main li.has_modpoz div.yj_menu_module_holder, .subul_main li.has_module div.yj_menu_module_holder, .subul_main li.haschild div.yj_menu_module_holder, .horiznav ul ul.subul_main.dropline {
+	background: #090909;
+}
+/* end dropline extra */
+.horiznav ul ul.subul_main.dropline ul a, .horiznav ul ul.subul_main.dropline ul a:hover, ul.subul_main.dropline div.yj_menu_module_holder {
+	border-bottom: 1px solid #353535!important;
+}
+/* MAIN SUB ITEM*/
+.top_menu ul.subul_main li a {
+	background: #090909;
+	border-bottom: 1px solid #353535;
+	color: #fff;
+}
+.top_menu ul.subul_main li a:visited {
+	color: #fff;
+	background: #090909;
+}
+/*MAIN SUB ITEM HOVER*/
+.top_menu ul.subul_main li a:hover {
+	background: #91965a;
+	color: #fff;
+}
+.top_menu ul.subul_main li, .top_menu ul.subul_main li.active, .top_menu ul.subul_main li.active:visited, .top_menu ul.subul_main li.active:hover, .top_menu ul.subul_main li:hover, .top_menu ul.subul_main li:visited, .top_menu ul.subul_main li#current, .top_menu ul.subul_main li#current:hover {
+	border: none;
+	background: none;
+}
+/*MAIN SUB ACTIVE UL A ITEMS*/
+.top_menu li#current ul.subul_main li a, .top_menu li.active ul.subul_main li a {
+	background: #090909;
+	color: #fff;
+}
+/*MAIN SUB ACTIVE UL ITEMS A HOVER*/
+.top_menu li#current ul.subul_main li a:hover, .top_menu li.active ul.subul_main li a:hover, .top_menu li#current.sfHover ul.subul_main li a:hover, .top_menu li.active.sfHover ul.subul_main li a:hover {
+	background: #91965a;
+	color: #fff;
+}
+/*MAIN SUB UL ACTIVE LI A ITEM*/
+.top_menu ul.subul_main li#current a, .top_menu ul.subul_main li.haschild.active span.subparent a {
+	background: #91965a;
+	color: #fff;
+}
+/*MAIN SUB UL ACTIVE LI A ITEM HOVER*/
+.top_menu ul.subul_main li#current a:hover, .top_menu ul.subul_main li#current.sfHover, .top_menu ul.subul_main li.haschild.active span.subparent a:hover {
+	background: #91965a;
+	color: #fff;
+}
+/*SUB LEVEL PARENT ITEM ARROWS*/
+ul.subul_main li.haschild span.child a, ul.subul_main ul.subul_main li.haschild span.child a, ul.subul_main ul.subul_main ul.subul_main li.haschild span.child a, ul.subul_main ul.subul_main ul.subul_main ul.subul_main li.haschild span.child a {
+	background-image: url(../images/green/topmenu/arrow_right.png)!important;
+	background-repeat: no-repeat!important;
+	background-position: 95% 50%!important;
+}
+ul.subul_main li.haschild span.child a:hover, ul.subul_main ul.subul_main li.haschild span.child a:hover, ul.subul_main ul.subul_main ul.subul_main li.haschild span.child a:hover, ul.subul_main ul.subul_main ul.subul_main ul.subul_main li.haschild span.child a:hover {
+	background-image: url(../images/green/topmenu/arrow_down.png)!important;
+	background-repeat: no-repeat!important;
+	background-position: 95% 50%!important;
+}
+/* IE6 SPECIFIC */
+.horiznav li li.sfHover ul, .horiznav li li.sfHoverHas ul, .top_menu ul.subul_main.isie {
+	background: #292929;
+}
+/********************** CORNERS FOR MENU UL'S ***************************/
+/*TOP LEFT*/
+.horiznav li.tl, .horiznav li.tl:hover {
+	background: transparent url(../images/green/topmenu/corners/tl.png)!important;
+}
+/* TOP RIGHT*/
+.horiznav li.tr, .horiznav li.tr:hover {
+	background: transparent url(../images/green/topmenu/corners/tr.png) no-repeat right top!important;
+}
+/* BOTTOM RIGHT*/
+.horiznav li.br, .horiznav li.br:hover {
+	background: transparent url(../images/green/topmenu/corners/br.png) no-repeat right bottom!important;
+}
+/* BOTTOM LEFT*/
+.horiznav li.bl, .horiznav li.bl:hover {
+	background: transparent url(../images/green/topmenu/corners/bl.png) no-repeat left bottom!important;
+}
+/* RIGHT MIDDLE */
+.horiznav li.right, .horiznav li.right:hover {
+	background: transparent url(../images/green/topmenu/corners/right.png) no-repeat right bottom!important;
+}
+/********************** YJSG MEGA MENU STYLE ***************************/
+/* Group holder title*/
+.top_menu .horiznav .group_holder li.haschild a, .top_menu .horiznav .group_holder li.haschild .group_holder li.haschild a {
+	color: #fff;
+	border: none;
+	background: none;
+}
+.top_menu .horiznav .group_holder li.haschild a:hover, .top_menu .horiznav .group_holder li.haschild .group_holder li.haschild a:hover {
+	color: #91965a;
+	background: 090909;
+}
+/* Group holder items title*/
+.top_menu .horiznav .group_holder li.haschild li a, .top_menu .horiznav .group_holder li.haschild .group_holder li.haschild li a {
+	color: #fff;
+	border-bottom: 1px solid #353535;
+	background: #090909;
+}
+.top_menu .horiznav .group_holder li.haschild li a:hover, .top_menu .horiznav .group_holder li.haschild .group_holder li.haschild li a:hover {
+	color: #fff;
+	background: #91965a;
+}
+span.separator {
+	background: #090909;
+	border-bottom: 1px solid #353535;
+	color: #fff;
+}
+/*Menu module links*/
+div.yj_menu_module_holder .yjsquare_in a:link, div.yj_menu_module_holder .yjsquare_in a:visited {
+	color: #3c3c3c!important;
+}
+div.yj_menu_module_holder .yjsquare_in a:focus, div.yj_menu_module_holder .yjsquare_in a:hover {
+	color: #fff!important;
+}
+/*SIDE MENU MODULE
+--------------------- */
+/* MENU NORMAL LINKS COLOR */
+#mainlevel li a, .menu li a, a.mainlevel {
+	background: url(../images/green/mainlevel.png) no-repeat left top;/* LINKS BG IMAGE */
+	color: #91965a;
+}
+/* HOVER AND ACTIVE LINKS BG IMAGE */
+#mainlevel li a:hover, #mainlevel a#active_menu:link, #mainlevel a#active_menu:visited, a.mainlevel:hover, a.mainlevel#active_menu, #mainlevel li a:hover, #mainlevel a#active_menu:link, #mainlevel a#active_menu:visited, .menu li a:hover, .menu li.active a {
+	background: url(../images/green/mainlevel.png) no-repeat left bottom;
+}
+/* SUB LEVELS LI IMAGE */
+a.sublevel {
+	background: url(../images/green/bodyli.png) no-repeat 5px 9px;
+}
+a.sublevel:hover {
+	text-decoration: underline;
+}
+/*HOVER AND ACTIVE LINK COLOR */
+#footmod a.mainlevel:hover, #footmod a.mainlevel:active, #footmod a.mainlevel:focus, #mainlevel li a:hover, #mainlevel a#active_menu:link, #mainlevel a#active_menu:visited, a.mainlevel#active_menu, a.sublevel, a.sublevel:hover, a.sublevel:active, a.sublevel:focus, #active_menu, a.mainlevel:hover, a.mainlevel:active, a.mainlevel:focus, li.active a, li.parent a, .menu li a:hover {
+	color: #121212;
+}
+/* MENU LI A AND MENU SUB LEVELS LINK COLOR */
+li.active ul li a, a.sublevel#active_menu {
+	color: #121212;
+}
+/* MENU LI A HOVER AND ACTIVE LINK COLOR AND BG */
+li.active ul li a:hover, li.active ul li.active a {
+	color: #91965a;
+	background: url(../images/green/mainlevel.png) no-repeat left top;
+}
+/* SITES LI IMAGE */
+ul li {
+	background: url(../images/green/bodyli.png) no-repeat 0px 6px;
+}
+/*USER PAGES STYLES */
+div.userpages {
+	background: none;
+	border: none;
+	text-shadow: none;
+}
+div.userpageswrap.offline div.userpages {
+	border: none;
+	background: #fff;
+}
+/***SMALL MENU***/
+#smallmenu ul li a {
+	color: #121212;
+}
+#smallmenu ul li a:hover {
+	color: #91965a;
+}
+/***HEADER***/
+#header {
+	background: #91965a;
+}
+#header:before {
+	border-color: #eeeeee transparent transparent #eeeeee;
+}
+#header:after {
+	border-color: #eeeeee #eeeeee transparent transparent;
+}
+/***CENTERBOTTOM***/
+#centerbottom {
+	background: #f9f9f9;
+	-webkit-box-shadow: 0px -10px 5px 0px #d0d0d0;
+	box-shadow: 0px -10px 5px 0px #d0d0d0
+}
+/***POP LOGIN***/
+.hdclm .poping_links {
+	background: url(../images/green/userlogin.png) no-repeat right top;
+}
+.hdclm #login_pop {
+	background: #121212;
+	color: #fff;
+}
+/***Login form***/
+.hdclm #login_pop .inputbox {
+	color: #726f6f;
+	background: #242424;
+	-webkit-box-shadow: inset 1px 1px 0px 0px #0e0e0e, 1px 1px 0px 0px #393939;
+	box-shadow: inset 1px 1px 0px 0px #0e0e0e, 1px 1px 0px 0px #393939;
+}
+.hdclm #login_pop .yjpop_user, .hdclm #login_pop .yjpop_pass {
+	color: #fff;
+}
+.hdclm #login_pop .yjpop_user:hover, .hdclm #login_pop .yjpop_pass:hover {
+	color: #91965a;
+}
+/***Register form***/
+.hdclm #josForm {
+	border-left: 1px solid #313131;
+}
+.hdclm .popyjreg .inputbox {
+	color: #726f6f;
+	background: #242424;
+	-webkit-box-shadow: inset 1px 1px 0px 0px #0e0e0e, 1px 1px 0px 0px #393939;
+	box-shadow: inset 1px 1px 0px 0px #0e0e0e, 1px 1px 0px 0px #393939;
+}
+.hdclm #closeLogin {
+	background: #fff;
+	color: #121212;
+}
+/***Logut button***/
+.hdclm #login-form {
+	background: url(../images/green/userlogout.png) no-repeat right top;
+}
+/***LIVE SEARCH***/
+.hdcls .yj_inputbox {
+	color: #fff;
+	background: #787c4b;
+	-webkit-box-shadow: inset 1px 1px 0px 0px #60633c, 1px 1px 0px 0px #a6ac68;
+	box-shadow: inset 1px 1px 0px 0px #60633c, 1px 1px 0px 0px #a6ac68;
+}
+.hdcls .button {
+	background: url(../images/lupe.png) no-repeat center top;
+}
+.hdcls .button:hover {
+	background: url(../images/lupe.png) no-repeat center bottom;
+}
+/*results*/
+.LiveSearchResults {
+	background: #91965a;
+	color: #fff;
+}
+.LiveSearchResults .LiveSearchResult, .LiveSearchResults .LiveSearchResultHover {
+	background: #91965a;
+	border-bottom: 1px solid #a6ac68;
+	color: #fff;
+}
+.LiveSearchResults a {
+	color: #fff!important;
+}
+.LiveSearchResults .LiveSearchResultHover a {
+	color: #121212!important;
+}
+.LiveSearchResults .LiveSearchExpandDetails, .LiveSearchResults .LiveSearchExpandDetails a:hover, .LiveSearchResults .LiveSearchExpandDetails a.hovegreen {
+	background: url(../images/info.png) no-repeat left center;
+}
+.LiveSearchResults .LiveSearchResultHover .LiveSearchExpandDetails {
+	background: url(../images/info.png) no-repeat -15px center;
+}
+.LiveSearchContainer .noResults {
+	color: #fff;
+}
+/*back and next button*/
+.LiveSearchResults a.next, .LiveSearchResults a.back {
+	background: #787c4b;
+	color: #fff!important;
+	-webkit-box-shadow: inset 1px 1px 0px 0px #60633c, 1px 1px 0px 0px #a6ac68;
+	box-shadow: inset 1px 1px 0px 0px #60633c, 1px 1px 0px 0px #a6ac68;
+}
+.LiveSearchResults a.next:hover, .LiveSearchResults a.back:hover {
+	background: #787c4b;
+	color: #121212!important;
+}
+/***MENU***/
+/*Active and hover subtitle*/
+.horiznav ul li.active ul li a span.yjm_desc {
+	color: #515151;
+}
+.horiznav ul li.active ul li#current a span.yjm_desc, .horiznav ul li.active ul li a:hover span.yjm_desc {
+	color: #fff;
+}
+.horiznav ul li.active ul li:hover span a:hover, .horiznav ul li.active ul li:hover a:hover, .horiznav ul li.active ul li.active ul li.active ul li span a:hover {
+	color: #fff!important;
+}
+/*--Module in menu---*/
+.yj_menu_module_holder {
+	color: #515151;
+}
+.yj_menu_module_holder h2.module_title, .yj_menu_module_holder h2.module_title span {
+	color: #fff!important;
+}
+/*Dropline*/
+ul.subul_main.dropline.level1 li a {
+	-webkit-box-shadow: inset -1px 0px 0px 0px #353535;
+	box-shadow: inset -1px 0px 0px 0px #353535;
+}
+.top_menu ul.subul_main.level1 li.active a span.yjm_desc {
+	color: #fff;
+}
+.top_menu ul.subul_main.level1 li.active a {
+	background-image: url(../images/green/topmenu/arrow_down.png)no-repeat!important;
+}
+/***IMAGE SLIDER***/
+.hdcis .YJSlide_intro {
+	color: #efefef;
+}
+.hdcis h4 {
+	color: #fff!important;
+	background: #91965a;
+}
+.hdcis .is_introholder {
+	background: url(../images/is_decbg.png) repeat;
+}
+.is_rm {
+	background: url(../images/green/is_rm.png) no-repeat left top;
+}
+.is_rm:hover {
+	background: url(../images/green/is_rm.png) no-repeat left bottom;
+}
+/*bottom nav*/
+.hdcis .navContainer_inside {
+	background: #f9f9f9;
+}
+.hdcis .navContainer_inside:before {
+	border-color: transparent #f9f9f9 #f9f9f9 transparent;
+}
+.hdcis .navContainer_inside:after {
+	border-color: transparent transparent #f9f9f9 #f9f9f9;
+}
+.hdcis .bnav:link, .hdcis .bnav:visited {
+	background: url(../images/green/point_navigation.png) no-repeat left -11px;
+}
+.hdcis .bnav:hover {
+	background: url(../images/green/point_navigation.png) no-repeat left top;
+}
+.hdcis .bnav.active {
+	background: url(../images/green/point_navigation.png) no-repeat left top;
+}
+.isnav_shadow {
+	background: url(../images/is_shadow.png) no-repeat center top;
+}
+/***CUSTOM MODULE***/
+/*Template readmore*/
+.template_readmore {
+	background: #91965a;
+	color: #fff;
+}
+.template_readmore:hover {
+	color: #fff;
+	background: #121212;
+}
+.template_readmore2 {
+	background: #91965a;
+	color: #fff;
+}
+.template_readmore2:hover {
+	color: #121212;
+	background: #91965a;
+}
+/***YJ MULTITABS***/
+.hdcmt ul#tabs li {
+	color: #121212;
+}
+.hdcmt ul#tabs li:after {
+	border-color: transparent #000000 transparent transparent;
+}
+.hdcmt ul#tabs li:hover, .hdcmt ul#tabs li.selected {
+	background: #91965a;
+	color: #fff;
+}
+/***York inside multitabs***/
+.hdcmt .yy_container_out, .hdcmt #yy_container_intheaters, .hdcmt #yy_container_comingsoon, .hdcmt #yy_container_bestof2012 {
+	background: #f9f9f9!important;
+}
+/*navigation*/
+.hdcmt .yy_container .linkForward, .hdcmt .yy_container .linkBackward, .hdcym .yy_container .linkForward, .hdcym .yy_container .linkBackward, .hdcym2 .yy_container .linkForward, .hdcym2 .yy_container .linkBackward, .hdcym3 .yy_container .linkForward, .hdcym3 .yy_container .linkBackward {
+	background: url(../images/green/york_arrow_right.png) no-repeat left bottom;
+}
+.hdcmt .yy_container .linkBackward {
+	background: url(../images/green/york_arrow_left.png) no-repeat left bottom;
+}
+.hdcym .yy_container .linkBackward, .hdcym2 .yy_container .linkBackward, .hdcym3 .yy_container .linkBackward {
+	background: url(../images/green/york_arrow_left.png) no-repeat left bottom;
+}
+.hdcym2 .yy_container .linkBackward {
+	background: url(../images/green/york_arrow_left2.png) no-repeat left bottom;
+}
+.hdcym2 .yy_container .linkForward {
+	background: url(../images/green/york_arrow_right2.png) no-repeat left bottom;
+}
+/*bottom navigation*/
+.hdcmt ul.yy_bottom_navigation li a, .hdcym ul.yy_bottom_navigation li a, .hdcym2 ul.yy_bottom_navigation li a, .hdcym3 ul.yy_bottom_navigation li a {
+	background: url(../images/green/point_navigation.png) no-repeat left bottom;
+}
+.hdcym2 ul.yy_bottom_navigation li a {
+	background: url(../images/green/point_navigation2.png) no-repeat left bottom;
+}
+/***Engine inside youyork***/
+.hdcmt .yjme_item a.item_title {
+	color: #91965a;
+}
+.hdcmt .yjme_item a.item_title:hover {
+	color: #121212;
+}
+.hdcmt .yjme_item div.item_details {
+	color: #474747;
+}
+/***YORK MODULE RIGHT***/
+.hdcym .yjsquare_in {
+	box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff, inset 1px 0px 0px 0px #fff;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff, inset 1px 0px 0px 0px #fff;
+	background: rgb(238,238,238)!important;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZWVlZWVlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjUlIiBzdG9wLWNvbG9yPSIjZjlmOWY5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+	background: -moz-linear-gradient(-45deg, rgba(238,238,238,1) 0%, rgba(249,249,249,1) 25%)!important;
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(238,238,238,1)), color-stop(25%, rgba(249,249,249,1)))!important;
+	background: -webkit-linear-gradient(-45deg, rgba(238,238,238,1) 0%, rgba(249,249,249,1) 25%)!important;
+	background: -o-linear-gradient(-45deg, rgba(238,238,238,1) 0%, rgba(249,249,249,1) 25%)!important;
+	background: -ms-linear-gradient(-45deg, rgba(238,238,238,1) 0%, rgba(249,249,249,1) 25%)!important;
+	background: linear-gradient(135deg, rgba(238,238,238,1) 0%, rgba(249,249,249,1) 25%)!important;
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#f9f9f9', GradientType=1 )!important;
+}
+/***Engine inside youyork right***/
+.hdcym .yjme_item_in {
+	border-bottom: 1px solid #dbdbdb;
+}
+.hdcym .yjme_item a.item_title {
+	color: #91965a;
+}
+.hdcym .yjme_item a.item_title:hover {
+	color: #121212;
+}
+.hdcym .yjme_item div.item_details {
+	color: #474747;
+}
+/***YORK MODULE RIGHT 2***/
+/***Engine inside youyork right2***/
+.hdcym2 .yjme_item a.item_title {
+	color: #fff;
+}
+.hdcym2 .yjme_item a.item_title:hover {
+	color: #91965a;
+}
+.hdcym2 .yjme_item p.item_intro {
+	color: #808080;
+}
+.hdcym2 .yjme_item div.item_details {
+	color: #606060;
+	border-bottom: 1px solid #313131;
+	border-top: 1px solid #313131;
+}
+.hdcym2 .yjme_item div.item_details a {
+	color: #606060;
+}
+.hdcym2 .yjme_item div.item_details a:hover {
+	color: #91965a;
+}
+.hdcym2 .item_details .item_category:after, .hdcym2 .item_details .item_cdate:after, .hdcym2 .item_details .item_author:after {
+	border-color: transparent #313131 transparent transparent;
+}
+.hdcym2 .yjme_item a.item_readmore {
+	color: #fff;
+	background: #91965a;
+}
+.hdcym2 .yjme_item a.item_readmore:hover {
+	color: #121212;
+}
+/***CUSTOM 2***/
+.custom2 {
+	box-shadow: 0px 1px 0px 0px #dbdbdb, 0px 2px 0px 0px #fff;
+	-webkit-box-shadow: 0px 1px 0px 0px #dbdbdb, 0px 2px 0px 0px #fff;
+}
+/***Engine inside youyork bottom***/
+.hdcym3 .yjme_item a.item_title {
+	color: #91965a;
+}
+.hdcym3 .yjme_item a.item_title:hover {
+	color: #121212;
+}
+.hdcym3 .yjme_item div.item_details {
+	color: #474747;
+}
+/***FOOTER MODULES***/
+/***SUBSCRIBE***/
+.hdcsm p {
+	color: #efefef;
+}
+.hdcsm .inputbox_email {
+	color: #726f6f;
+	background: #242424;
+	-webkit-box-shadow: inset 1px 1px 0px 0px #0e0e0e, 1px 1px 0px 0px #393939;
+	box-shadow: inset 1px 1px 0px 0px #0e0e0e, 1px 1px 0px 0px #393939;
+}
+.hdcsm .subscribe_button {
+	background: #91965a;
+	color: #fff;
+}
+/***SOCIALS***/
+.socials a {
+	border-left: 1px solid #3d3d3d;
+}
+.yj_facebook {
+	background: url(../images/yjfacebook.png) no-repeat left top;
+}
+.yj_youtube {
+	background: url(../images/yjyoutube.png) no-repeat left top;
+}
+.yj_youtube {
+	background: url(../images/yjyoutube.png) no-repeat left top;
+}
+.yj_twitter {
+	background: url(../images/yjtwitter.png) no-repeat left top;
+}
+.yj_skype {
+	background: url(../images/yjskype.png) no-repeat left top;
+}
+.yj_linkedin {
+	background: url(../images/yjlinkedin.png) no-repeat left top;
+}
+.yj_flickr {
+	background: url(../images/yjflickr.png) no-repeat left top;
+}
+.yj_googleplus {
+	background: url(../images/yjgoogleplus.png) no-repeat left top;
+	border-right: 1px solid #3d3d3d;
+}
+/***PARTNERS***/
+/*Template list*/
+.template_list li a {
+	color: #868686;
+	background: url(../images/green/template_list_normal.png) no-repeat left center;
+}
+.template_list li a:hover {
+	color: #91965a;
+	background: url(../images/green/template_list_hover.png) no-repeat left center;
+}
+/***TWEETS***/
+.hdctm .yj_twitter_cont {
+	border-bottom: 1px solid #2d2d2d;
+	background: url(../images/green/template_list_normal.png) no-repeat left center;
+}
+.hdctm a {
+	color: #868686!important;
+}
+.hdctm a:hover {
+	color: #91965a!important;
+}
+/***CONTACT US***/
+.hdccm .template_readmore:hover {
+	background: #91965a;
+	color: #121212;
+}
+/***MODULE STYLES***/
+/*YJ1,YJ2*/
+.yj1, .yj2 {
+	background: #090909;
+}
+.yj2 {
+	color: #fff;
+	background: #91965a;
+}
+.yj1 h2.module_title, .yj2 h2.module_title {
+	color: #fff!important;
+	border-bottom: 1px solid #313131;
+}
+.yj2 h2.module_title {
+	border-bottom: 1px solid #a6ac68;
+}
+.yj1 h2.module_title span, .yj2 h2.module_title span {
+	color: #fff!important;
+}
+.yj1:after, .yj2:after {
+	border-color: #f9f9f9 #f9f9f9 transparent transparent;
+}
+/***ADITIONAL***/
+.hdcmt ul#tabs, .hdcmt #yy_container_intheaters, .hdcmt #yy_container_comingsoon, .hdcmt #yy_container_bestof2012 {
+	box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff;
+	background: rgb(249,249,249)!important;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICA8c3RvcCBvZmZzZXQ9Ijc0JSIgc3RvcC1jb2xvcj0iI2Y5ZjlmOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZWVlZWUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(45deg, rgba(249,249,249,1) 74%, rgba(238,238,238,1) 100%)!important;
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(74%, rgba(249,249,249,1)), color-stop(100%, rgba(238,238,238,1)));
+	background: -webkit-linear-gradient(45deg, rgba(249,249,249,1) 74%, rgba(238,238,238,1) 100%)!important;
+	background: -o-linear-gradient(45deg, rgba(249,249,249,1) 74%, rgba(238,238,238,1) 100%)!important;
+	background: -ms-linear-gradient(45deg, rgba(249,249,249,1) 74%, rgba(238,238,238,1) 100%)!important;
+	background: linear-gradient(45deg, rgba(249,249,249,1) 74%, rgba(238,238,238,1) 100%)!important;
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#eeeeee', GradientType=1 );
+}
+#holder #insetblock, #holder #rightblock, #holder2 #insetblock, #holder2 #rightblock, #holder2 #leftblock, #holder2 #insetsholder_2t, #holder2 #insetsholder_2b {
+	box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff, inset 1px 0px 0px 0px #dbdbdb, inset 2px 0px 0px 0px #fff;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff, inset 1px 0px 0px 0px #dbdbdb, inset 2px 0px 0px 0px #fff;
+	background: rgb(238,238,238)!important;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZWVlZWVlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjUlIiBzdG9wLWNvbG9yPSIjZjlmOWY5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+	background: -moz-linear-gradient(-45deg, rgba(238,238,238,1) 0%, rgba(249,249,249,1) 25%)!important;
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(238,238,238,1)), color-stop(25%, rgba(249,249,249,1)))!important;
+	background: -webkit-linear-gradient(-45deg, rgba(238,238,238,1) 0%, rgba(249,249,249,1) 25%)!important;
+	background: -o-linear-gradient(-45deg, rgba(238,238,238,1) 0%, rgba(249,249,249,1) 25%)!important;
+	background: -ms-linear-gradient(-45deg, rgba(238,238,238,1) 0%, rgba(249,249,249,1) 25%)!important;
+	background: linear-gradient(135deg, rgba(238,238,238,1) 0%, rgba(249,249,249,1) 25%)!important;
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#f9f9f9', GradientType=1 )!important;
+}
+#holder #leftblock, #holder3 #insetblock, #holder3 #rightblock, #holder3 #leftblock, #holder3 #insetsholder_3t, #holder3 #insetsholder_3b, #holder3 .hdcym .yjsquare_in {
+	box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff, inset -1px 0px 0px 0px #dbdbdb, inset -2px 0px 0px 0px #fff;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff, inset -1px 0px 0px 0px #dbdbdb, inset -2px 0px 0px 0px #fff;
+	background: rgb(238,238,238)!important;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZWVlZWVlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjUlIiBzdG9wLWNvbG9yPSIjZjlmOWY5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+	background: -moz-linear-gradient(45deg, rgba(238,238,238,1) 0%, rgba(249,249,249,1) 25%)!important;
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(238,238,238,1)), color-stop(25%, rgba(249,249,249,1)))!important;
+	background: -webkit-linear-gradient(45deg, rgba(238,238,238,1) 0%, rgba(249,249,249,1) 25%)!important;
+	background: -o-linear-gradient(45deg, rgba(238,238,238,1) 0%, rgba(249,249,249,1) 25%)!important;
+	background: -ms-linear-gradient(45deg, rgba(238,238,238,1) 0%, rgba(249,249,249,1) 25%)!important;
+	background: linear-gradient(-135deg, rgba(238,238,238,1) 0%, rgba(249,249,249,1) 25%)!important;
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#f9f9f9', GradientType=1 )!important;
+}
+#holder3 .hdcym .yjsquare_in {
+	padding: 0 15px 0 0;
+	box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff;
+}
+#holder3 .hdcmt ul#tabs li {
+	margin: 15px 0 15px 25px;
+}
+#holder3 .hdcym2.yj1 {
+	margin: 15px 15px 15px 0!important;
+}
+span.dropcap, span.bignumber {
+	color: #91965a;
+}
+/***K2***/
+/***Category item view***/
+div.itemListCategory h2 {
+	color: #121212;
+}
+div.catItemView {
+	box-shadow: 0px 1px 0px 0px #dbdbdb, 0px 2px 0px 0px #fff;
+	-webkit-box-shadow: 0px 1px 0px 0px #dbdbdb, 0px 2px 0px 0px #fff;
+}
+div.catItemHeader h3.catItemTitle a {
+	color: #91965a;
+}
+div.catItemHeader h3.catItemTitle a:hover {
+	color: #121212;
+}
+div.catItemHeader span.catItemDateCreated {
+	color: #474747;
+}
+span.catItemDateModified {
+	color: #929292;
+}
+div.catItemHitsBlock, div.catItemCategory, div.catItemTagsBlock {
+	box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff;
+}
+div.catItemCategory span, div.catItemTagsBlock span {
+	color: #929292;
+}
+div.catItemTagsBlock ul.catItemTags li {
+	background: #91965a;
+}
+div.catItemTagsBlock ul.catItemTags li a, div.catItemTagsBlock ul.catItemTags li a:hover {
+	color: #fff;
+}
+div.catItemTagsBlock ul.catItemTags li:after {
+	border-color: #F9F9F9 #F9F9F9 transparent transparent;
+}
+div.catItemTagsBlock ul.catItemTags li:hover {
+	background: #121212;
+}
+/***Item view***/
+div.itemHeader {
+	box-shadow: 0px 1px 0px 0px #dbdbdb, 0px 2px 0px 0px #fff;
+	-webkit-box-shadow: 0px 1px 0px 0px #dbdbdb, 0px 2px 0px 0px #fff;
+}
+div.itemHeader h2.itemTitle {
+	color: #91965a;
+}
+div.itemHeader span.itemDateCreated {
+	color: #474747;
+}
+div.itemContentFooter, div.itemRatingBlock, div.pre25SocialLinks, div.itemCategory, div.itemTagsBlock {
+	box-shadow: 0px 1px 0px 0px #dbdbdb, 0px 2px 0px 0px #fff;
+	-webkit-box-shadow: 0px 1px 0px 0px #dbdbdb, 0px 2px 0px 0px #fff;
+}
+span.preSocialsTitle, div.itemCategory span, div.itemTagsBlock span {
+	color: #929292;
+}
+div.itemTagsBlock ul.itemTags li {
+	background: #91965a;
+}
+div.itemTagsBlock ul.itemTags li:after {
+	border-color: #F9F9F9 #F9F9F9 transparent transparent;
+}
+div.itemTagsBlock ul.itemTags li:hover {
+	background: #121212;
+}
+div.itemTagsBlock ul.itemTags li a {
+	color: #fff;
+}
+div.itemTagsBlock ul.itemTags li a:hover {
+	color: #fff;
+}
+/*Author*/
+div.itemAuthorLatest h3, div.itemRelated h3 {
+	color: #91965a;
+}
+div.itemAuthorLatest ul li, div.itemRelated ul li {
+	box-shadow: 0px 1px 0px 0px #dbdbdb, 0px 2px 0px 0px #fff;
+	-webkit-box-shadow: 0px 1px 0px 0px #dbdbdb, 0px 2px 0px 0px #fff;
+}
+div.itemComments ul.itemCommentsList li {
+	box-shadow: 0px 1px 0px 0px #dbdbdb, 0px 2px 0px 0px #fff;
+	-webkit-box-shadow: 0px 1px 0px 0px #dbdbdb, 0px 2px 0px 0px #fff;
+}
+h3.itemCommentsCounter {
+	color: #91965a;
+}
+div.itemComments ul.itemCommentsList li span.commentAuthorName {
+	color: #121212;
+}
+div.itemComments ul.itemCommentsList li span.commentDate {
+	color: #868686;
+}
+div.itemCommentsForm h3 {
+	color: #91965a;
+}
+div.itemCommentsForm p.itemCommentsFormNotes {
+	box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff;
+}
+form#comment-form .inputbox {
+	color: #b7b7b7;
+	box-shadow: 1px 1px 0px 0px #dbdbdb, 2px 2px 0px 0px #fff, inset 1px 1px 0px 0px #dbdbdb, inset 2px 2px 0px 0px #fff;
+	-webkit-box-shadow: 1px 1px 0px 0px #dbdbdb, 2px 2px 0px 0px #fff, inset 1px 1px 0px 0px #dbdbdb, inset 2px 2px 0px 0px #fff;
+}
+div.itemCommentsForm form input#submitCommentButton {
+	background: #91965a!important;
+	color: #fff;
+}
+/***Tag view***/
+.tagView div.itemView {
+	box-shadow: 0px 1px 0px 0px #dbdbdb, 0px 2px 0px 0px #fff;
+	-webkit-box-shadow: 0px 1px 0px 0px #dbdbdb, 0px 2px 0px 0px #fff;
+}
+.tagView div.itemHeader h2.itemTitle a {
+	color: #91965a;
+}
+.tagView div.itemHeader h2.itemTitle a:hover {
+	color: #121212;
+}
+.tagView div.itemIntroText {
+	color: #929292;
+}
+/***User View***/
+div.userBlock, .userView div.itemView, .userView .itemCommentsLink {
+	box-shadow: 0px 1px 0px 0px #dbdbdb, 0px 2px 0px 0px #fff;
+	-webkit-box-shadow: 0px 1px 0px 0px #dbdbdb, 0px 2px 0px 0px #fff;
+}
+div.userBlock h2, .userView h3.itemTitle a:hover {
+	color: #121212;
+}
+.userView h3.itemTitle a {
+	color: #91965a;
+}
+.userView div.itemIntroText {
+	color: #929292;
+}
+/***Latest item view and Generic item view***/
+.latestView div.latestItemView, .genericView div.itemView {
+	box-shadow: 0px 1px 0px 0px #dbdbdb, 0px 2px 0px 0px #fff;
+	-webkit-box-shadow: 0px 1px 0px 0px #dbdbdb, 0px 2px 0px 0px #fff;
+}
+.latestView div.catItemHeader h2.catItemTitle a, .genericView div.itemHeader h2.itemTitle a {
+	color: #91965a;
+}
+.latestView div.catItemHeader h2.catItemTitle a:hover, .genericView div.itemHeader h2.itemTitle a:hover {
+	color: #121212;
+}
+.genericView div.itemIntroText {
+	color: #929292;
+}
+/***K2 MENU***/
+.k2CategoriesListBlock ul li a {
+	color: #121212;
+	background: url(../images/green/mainlevel.png) no-repeat left bottom;
+}
+/* main caregory link*/
+div.k2CategoriesListBlock ul li.activeCategory a, .k2CategoriesListBlock ul li a:hover {
+	color: #91965a!important;
+	background-position: left top;
+}
+div.k2CategoriesListBlock ul li.activeCategory a:hover {
+	color: #91965a!important;
+	background-position: left top;
+}
+/***K2 CONTENT***/
+.hdck2cm ul li {
+	box-shadow: 0px 1px 0px 0px #dbdbdb, 0px 2px 0px 0px #fff;
+	-webkit-box-shadow: 0px 1px 0px 0px #dbdbdb, 0px 2px 0px 0px #fff;
+}
+.hdck2cm a.moduleItemTitle {
+	color: #91965a;
+}
+.hdck2cm a.moduleItemTitle:hover {
+	color: #121212;
+}
+.hdck2cm span.moduleItemDateCreated {
+	color: #474747;
+}
+/***K2 COMMENTS***/
+.hdck2com ul li {
+	box-shadow: 0px 1px 0px 0px #dbdbdb, 0px 2px 0px 0px #fff;
+	-webkit-box-shadow: 0px 1px 0px 0px #dbdbdb, 0px 2px 0px 0px #fff;
+}
+div.k2LatestCommentsBlock ul li span.lcUsername {
+	color: #121212;
+}
+div.k2LatestCommentsBlock ul li a span.lcComment {
+	color: #929292;
+}
+div.k2LatestCommentsBlock ul li a span.lcComment:hover {
+	color: #91965a;
+}
+/***K2 TAGS***/
+.hdck2tc div.k2TagCloudBlock a {
+	background: #91965a;
+	color: #fff;
+}
+.hdck2tc div.k2TagCloudBlock a:hover {
+	background: #121212;
+	color: #fff;
+}
+.hdck2tc div.k2TagCloudBlock a:after {
+	border-color: #F9F9F9 #F9F9F9 transparent transparent;
+}
+/***HOVER EFFECT***/
+.yj_preview, .yj_more {
+	background: #91965a url(../images/yj_preview.png) no-repeat center center!important;
+}
+.yj_more {
+	background: #91965a url(../images/yj_more.png) no-repeat center center!important;
+}
+.yj_preview:hover, .yj_more:hover {
+	background-color: #121212;
+}
+/*SECTION TABLE */
+table.category {
+	border: 1px solid #DDD;
+	border-collapse: separate;
+	border-bottom: none;
+}
+table.category td {
+	border-bottom: 1px solid #DDD;
+}
+th.sectiontableheader {
+	border-bottom: 1px solid #DDD;
+	background: #fff;
+}
+tr.sectiontableentry1 td {
+	background-color: #fafafa;
+}
+tr.sectiontableentry2 td {
+	background-color: #fff;
+}
+tr.sectiontableentry1:hover td, tr.sectiontableentry2:hover td {
+	background-color: #f7f7f7;
+}
+#mmenu_holder {
+	background: #090909;
+	border-bottom: 5px solid #353535;
+}
+span#yjmm_selectid {
+	color: #fff;
+}
+/*rtl*/
+.yjsgrtl #header:before {
+	border-color: #eeeeee #eeeeee transparent transparent;
+}
+.yjsgrtl #header:after {
+	border-color: #eeeeee transparent transparent #eeeeee;
+}
+.yjsgrtl .hdcis .navContainer_inside:before {
+	border-color: transparent transparent #f9f9f9 #f9f9f9;
+}
+.yjsgrtl .hdcis .navContainer_inside:after {
+	border-color: transparent #f9f9f9 #f9f9f9 transparent;
+}
+.yjsgrtl .hdcmt ul#tabs, .yjsgrtl .hdcmt #yy_container_intheaters, .yjsgrtl .hdcmt #yy_container_comingsoon, .yjsgrtl .hdcmt #yy_container_bestof2012, .yjsgrtl #holder #leftblock, .yjsgrtl #holder3 #insetblock, .yjsgrtl #holder3 #rightblock, .yjsgrtl #holder3 #leftblock, .yjsgrtl #holder3 #insetsholder_3t, .yjsgrtl #holder3 #insetsholder_3b, .yjsgrtl #holder3 .hdcym .yjsquare_in {
+	background: rgb(238,238,238)!important;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZWVlZWVlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjUlIiBzdG9wLWNvbG9yPSIjZjlmOWY5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+	background: -moz-linear-gradient(-45deg, rgba(238,238,238,1) 0%, rgba(249,249,249,1) 25%)!important;
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(238,238,238,1)), color-stop(25%, rgba(249,249,249,1)))!important;
+	background: -webkit-linear-gradient(-45deg, rgba(238,238,238,1) 0%, rgba(249,249,249,1) 25%)!important;
+	background: -o-linear-gradient(-45deg, rgba(238,238,238,1) 0%, rgba(249,249,249,1) 25%)!important;
+	background: -ms-linear-gradient(-45deg, rgba(238,238,238,1) 0%, rgba(249,249,249,1) 25%)!important;
+	background: linear-gradient(135deg, rgba(238,238,238,1) 0%, rgba(249,249,249,1) 25%)!important;
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#f9f9f9', GradientType=1 )!important;
+	box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff;
+}
+.yjsgrtl #holder2 #insetblock, .yjsgrtl #holder2 #rightblock, .yjsgrtl #holder2 #leftblock, .yjsgrtl #holder2 #insetsholder_2t, .yjsgrtl #holder2 #insetsholder_2b, .yjsgrtl .hdcym .yjsquare_in, .yjsgrtl #holder #insetblock, .yjsgrtl #holder #rightblock, .yjsgrtl #holder3 #midblock, .yjsgrtl #holder3 .hdcmt ul#tabs, .yjsgrtl #holder3 .hdcmt #yy_container_intheaters, .yjsgrtl #holder3 .hdcmt #yy_container_comingsoon, .yjsgrtl #holder3 .hdcmt #yy_container_bestof2012 {
+	box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff, inset -1px 0px 0px 0px #dbdbdb, inset -2px 0px 0px 0px #fff!important;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff, inset -1px 0px 0px 0px #dbdbdb, inset -2px 0px 0px 0px #fff!important;
+	background: rgb(249,249,249)!important;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICA8c3RvcCBvZmZzZXQ9Ijc0JSIgc3RvcC1jb2xvcj0iI2Y5ZjlmOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZWVlZWUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(45deg, rgba(249,249,249,1) 74%, rgba(238,238,238,1) 100%)!important;
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(74%, rgba(249,249,249,1)), color-stop(100%, rgba(238,238,238,1)));
+	background: -webkit-linear-gradient(45deg, rgba(249,249,249,1) 74%, rgba(238,238,238,1) 100%)!important;
+	background: -o-linear-gradient(45deg, rgba(249,249,249,1) 74%, rgba(238,238,238,1) 100%)!important;
+	background: -ms-linear-gradient(45deg, rgba(249,249,249,1) 74%, rgba(238,238,238,1) 100%)!important;
+	background: linear-gradient(45deg, rgba(249,249,249,1) 74%, rgba(238,238,238,1) 100%)!important;
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#eeeeee', GradientType=1 );
+}
+.yjsgrtl #holder #leftblock, .yjsgrtl #holder3 #insetblock, .yjsgrtl #holder3 #rightblock, .yjsgrtl #holder3 #leftblock, .yjsgrtl #holder3 #insetsholder_3t, .yjsgrtl #holder3 #insetsholder_3b {
+	box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff, inset 1px 0px 0px 0px #dbdbdb, inset 2px 0px 0px 0px #fff;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff, inset 1px 0px 0px 0px #dbdbdb, inset 2px 0px 0px 0px #fff;
+}
+.yjsgrtl #holder3 #midblock, .yjsgrtl #holder3 .hdcmt ul#tabs, .yjsgrtl #holder3 .hdcmt #yy_container_intheaters, .yjsgrtl #holder3 .hdcmt #yy_container_comingsoon, .yjsgrtl #holder3 .hdcmt #yy_container_bestof2012 {
+	box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff!important;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff!important;
+}
+.yjsgrtl .hdcym .yjsquare_in {
+	padding: 0px 15px 0 0;
+	box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff!important;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff!important;
+}
+.yjsgrtl .yj1:after, .yjsgrtl .yj2:after {
+	border-color: #f9f9f9 transparent transparent #f9f9f9;
+}
+/*k2 rtl*/
+.yjsgrtl .hdck2tc div.k2TagCloudBlock a:after, .yjsgrtl div.itemTagsBlock ul.itemTags li:after {
+	border-color: #F9F9F9 transparent transparent #F9F9F9;
+}
+.yjsgrtl div.itemTagsBlock ul.itemTags li:after {
+	border-color: #F9F9F9 transparent transparent #F9F9F9;
+}
+[class*='yjsg-hr-'].fa:before {
+	background: #f9f9f9;
+}

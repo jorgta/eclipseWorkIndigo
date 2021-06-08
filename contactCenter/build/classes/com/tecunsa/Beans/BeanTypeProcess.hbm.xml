@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.tecunsa.Beans.BeanTypeProcess" table="type_process">
+       <id name="id" type="integer" column="ID">
+       		<generator class="assigned"/>
+       </id>
+       <property name="description" column="DESCRIPTION" type="string"  not-null="true"/>
+      
+   </class>
+</hibernate-mapping>

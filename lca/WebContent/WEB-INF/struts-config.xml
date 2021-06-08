@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN"
+                               "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+
+	<!-- Data Sources -->
+	<data-sources>
+	</data-sources>
+
+	<!-- Form Beans -->
+	<form-beans>
+		<form-bean name="loginForm" type="com.bituos.lca.forms.LoginForm">
+		</form-bean>
+		<form-bean name="preForm" type="com.bituos.lca.forms.PreForm">
+		</form-bean>
+		<form-bean name="preWVForm" type="com.bituos.lca.forms.PreWVForm">
+		</form-bean>
+		<form-bean name="userNewForm" type="com.bituos.lca.forms.UserNewForm">
+		</form-bean>
+		<form-bean name="userDeleteForm" type="com.bituos.lca.forms.UserDeleteForm">
+		</form-bean>
+		<form-bean name="userActivateForm" type="com.bituos.lca.forms.UserActivateForm">
+		</form-bean>
+		<form-bean name="userSelectForm" type="com.bituos.lca.forms.UserSelectForm">
+		</form-bean>
+		<form-bean name="userCreateRoot" type="com.bituos.lca.forms.UserCreateRoot">
+		</form-bean>
+
+
+		<form-bean name="doctorNewForm" type="com.bituos.lca.forms.DoctorNewForm">
+		</form-bean>
+		<form-bean name="doctorDeleteForm" type="com.bituos.lca.forms.DoctorDeleteForm">
+		</form-bean>
+		<form-bean name="doctorActivateForm" type="com.bituos.lca.forms.DoctorActivateForm">
+		</form-bean>
+		<form-bean name="doctorSelectForm" type="com.bituos.lca.forms.DoctorSelectForm">
+		</form-bean>
+		
+		<form-bean name="doctorChangeForm" type="com.bituos.lca.forms.DoctorChangeForm">
+		</form-bean>
+		
+		
+		<form-bean name="representativeNewForm" type="com.bituos.lca.forms.RepresentativeNewForm">
+		</form-bean>
+		<form-bean name="representativeDeleteForm" type="com.bituos.lca.forms.RepresentativeDeleteForm">
+		</form-bean>
+		<form-bean name="representativeActivateForm" type="com.bituos.lca.forms.RepresentativeActivateForm">
+		</form-bean>
+		<form-bean name="representativeSelectForm" type="com.bituos.lca.forms.RepresentativeSelectForm">
+		</form-bean>
+		
+		
+		<form-bean name="patientNewForm" type="com.bituos.lca.forms.PatientNewForm">
+		</form-bean>
+		<form-bean name="patientDeleteForm" type="com.bituos.lca.forms.PatientDeleteForm">
+		</form-bean>
+		<form-bean name="patientActivateForm" type="com.bituos.lca.forms.PatientActivateForm">
+		</form-bean>
+		<form-bean name="patientSelectForm" type="com.bituos.lca.forms.PatientSelectForm">
+		</form-bean>
+
+		<form-bean name="testNewForm" type="com.bituos.lca.forms.TestNewForm">
+		</form-bean>
+		
+		<form-bean name="testChangeForm" type="com.bituos.lca.forms.TestChangeForm">
+		</form-bean>
+		
+		<form-bean name="testSelectForm" type="com.bituos.lca.forms.TestSelectForm">
+		</form-bean>
+		
+		<form-bean name="pkgNewForm" type="com.bituos.lca.forms.PkgNewForm">
+		</form-bean>
+
+		<form-bean name="orderNewForm" type="com.bituos.lca.forms.OrderNewForm">
+		</form-bean>
+
+		<form-bean name="orderResultForm" type="com.bituos.lca.forms.OrderResultForm">
+		</form-bean>
+
+		<form-bean name="orderResultChangeForm" type="com.bituos.lca.forms.OrderResultChangeForm">
+		</form-bean>
+
+		<form-bean name="userChangeForm" type="com.bituos.lca.forms.UserChangeForm">
+		</form-bean>
+		<form-bean name="processAdminForm" type="com.bituos.lca.forms.ProcessAdminForm">
+		</form-bean>
+		<form-bean name="clientNewForm" type="com.bituos.lca.forms.ClientNewForm">
+		</form-bean>
+		<form-bean name="clientDeleteForm" type="com.bituos.lca.forms.ClientDeleteForm">
+		</form-bean>
+		<form-bean name="clientActivateForm" type="com.bituos.lca.forms.ClientActivateForm">
+		</form-bean>
+		<form-bean name="clientSelectForm" type="com.bituos.lca.forms.ClientSelectForm">
+		</form-bean>
+		<form-bean name="clientChangeForm" type="com.bituos.lca.forms.ClientChangeForm">
+		</form-bean>
+		<form-bean name="quoteNewForm" type="com.bituos.lca.forms.QuoteNewForm">
+		</form-bean>
+		<form-bean name="quoteDeleteForm" type="com.bituos.lca.forms.QuoteDeleteForm">
+		</form-bean>
+		<form-bean name="quoteForm" type="com.bituos.lca.forms.QuoteForm">
+		</form-bean>
+		<form-bean name="saleForm" type="com.bituos.lca.forms.SaleForm">
+		</form-bean>
+		
+		<form-bean name="saleChangeForm" type="com.bituos.lca.forms.SaleChangeForm">
+		</form-bean>
+		
+		
+
+		<form-bean name="listEditForm" type="com.bituos.lca.forms.ListEditForm">
+		</form-bean>
+		<form-bean name="listFlowerMusicEditForm" type="com.bituos.lca.forms.ListFlowerMusicEditForm">
+		</form-bean>
+		<form-bean name="listSaloonEditForm" type="com.bituos.lca.forms.ListSaloonEditForm">
+		</form-bean>
+		<form-bean name="listProductEditForm" type="com.bituos.lca.forms.ListProductEditForm">
+		</form-bean>
+
+		<form-bean name="availabilitySaloonEventTypeForm" type="com.bituos.lca.forms.AvailabilitySaloonEventTypeForm">
+		</form-bean>
+
+
+		<form-bean name="searchForm" type="com.bituos.lca.forms.SearchForm">
+		</form-bean>
+
+
+		<form-bean name="cardDeleteForm" type="com.bituos.lca.forms.CardDeleteForm">
+		</form-bean>
+		<form-bean name="cardActivateForm" type="com.bituos.lca.forms.CardActivateForm">
+		</form-bean>
+		<form-bean name="cardBuyForm" type="com.bituos.lca.forms.CardBuyForm">
+		</form-bean>
+		<form-bean name="cardRechargeForm" type="com.bituos.lca.forms.CardRechargeForm">
+		</form-bean>
+		<form-bean name="cardPersonalizeForm" type="com.bituos.lca.forms.CardPersonalizeForm">
+		</form-bean>
+		<form-bean name="companyNewForm" type="com.bituos.lca.forms.CompanyNewForm">
+		</form-bean>
+		<form-bean name="companyDeleteForm" type="com.bituos.lca.forms.CompanyDeleteForm">
+		</form-bean>
+		<form-bean name="companyActivateForm" type="com.bituos.lca.forms.CompanyActivateForm">
+		</form-bean>
+		<form-bean name="companySelectForm" type="com.bituos.lca.forms.CompanySelectForm">
+		</form-bean>
+		<form-bean name="companyChangeForm" type="com.bituos.lca.forms.CompanyChangeForm">
+		</form-bean>
+		
+		<form-bean name="paymentNewForm" type="com.bituos.lca.forms.PaymentNewForm">
+		</form-bean>
+		
+	    <form-bean name="paymentCanceledForm" type="com.bituos.lca.forms.PaymentCanceledForm">
+		</form-bean>
+		
+		
+		
+	
+		<form-bean name="companyChangeByUserForm" type="com.bituos.lca.forms.CompanyChangeByUserForm">
+		</form-bean>
+		<form-bean name="companyAffiliateForm" type="com.bituos.lca.forms.CompanyAffiliateForm">
+		</form-bean>
+		<form-bean name="rptForm" type="com.bituos.lca.forms.RptForm">
+		</form-bean>
+		
+		
+		<form-bean name="truckNewForm" type="com.bituos.lca.forms.TruckNewForm">
+		</form-bean>
+		
+		<form-bean name="truckChangeForm" type="com.bituos.lca.forms.TruckChangeForm">
+		</form-bean>
+		<form-bean name="truckSelectForm" type="com.bituos.lca.forms.TruckSelectForm">
+		</form-bean>
+		
+		<form-bean name="tireNewForm" type="com.bituos.lca.forms.TireNewForm">
+		</form-bean>
+		
+	   <form-bean name="tireDeleteForm" type="com.bituos.lca.forms.TireDeleteForm">
+		</form-bean>
+		
+		<form-bean name="tireMovementsForm" type="com.bituos.lca.forms.TireMovementsForm">
+		</form-bean>
+		
+	   <form-bean name="eventNewForm" type="com.bituos.lca.forms.EventNewForm">
+		</form-bean>
+		
+		<form-bean name="truckTireConfigurationDeleteOrEditForm" type="com.bituos.lca.forms.TruckTireConfigurationDeleteOrEditForm">
+		</form-bean>
+		
+		<form-bean name="truckTireConfigurationNewForm" type="com.bituos.lca.forms.TruckTireConfigurationNewForm">
+		</form-bean>
+		
+		<form-bean name="editConfigurationForm" type="com.bituos.lca.forms.EditConfigurationForm">
+		</form-bean>
+		
+		
+		<form-bean name="materialNewForm" type="com.bituos.lca.forms.MaterialNewForm">
+		</form-bean>
+		
+		
+	</form-beans>
+
+	<!-- Global Exceptions -->
+	<global-exceptions>
+	</global-exceptions>
+
+	<!-- Global Forwards -->
+	<global-forwards> 
+		<forward name="ok" path="/ok.jsp">
+		</forward>
+		<forward name="okRptOrderResult" path="/okRptOrderResult.jsp">
+		</forward>
+		<forward name="okChasis" path="/okChasis.jsp">
+		</forward>
+		<forward name="printGlobal" path="/rpt/CallCrystal.jsp">
+		</forward>
+		<forward name="error" path="/notOK.jsp">
+		</forward>
+		<forward name="showCalendar" path="/calendar.jsp">
+		</forward>
+	</global-forwards>
+
+	<!-- Action Mappings -->
+	<action-mappings>
+		<action name="loginForm" path="/login" scope="request" type="com.bituos.lca.actions.LoginAction" input="/login.jsp">
+			<forward name="links" path="/links.jsp">
+			</forward>
+		</action>
+		<action path="/pre" type="com.bituos.lca.actions.PreAction" input="/pre.jsp" name="preForm" scope="request">
+			<forward name="login" path="/login.jsp">
+			</forward>
+			<forward name="userNew" path="/user/userNew.jsp">
+			</forward>
+			<forward name="userDelete" path="/user/userDelete.jsp">
+			</forward>
+			<forward name="userActivate" path="/user/userActivate.jsp">
+			</forward>
+			<forward name="userSelect" path="/user/userSelect.jsp">
+			</forward>
+
+			<forward name="doctorNew" path="/doctor/doctorNew.jsp">
+			</forward>
+			<forward name="doctorDelete" path="/doctor/doctorDelete.jsp">
+			</forward>
+			<forward name="doctorActivate" path="/doctor/doctorActivate.jsp">
+			</forward>
+			<forward name="doctorSelect" path="/doctor/doctorSelect.jsp">
+			  
+			</forward>
+			
+			
+			
+			
+			<forward name="representativeNew" path="/representative/representativeNew.jsp">
+			</forward>
+			<forward name="representativeDelete" path="/representative/representativeDelete.jsp">
+			</forward>
+			<forward name="representativeActivate" path="/representative/representativeActivate.jsp">
+			</forward>
+			<forward name="representativeSelect" path="/representative/representativeSelect.jsp">
+			</forward>
+			
+			<forward name="patientNew" path="/patient/patientNew.jsp">
+			</forward>
+			<forward name="patientDelete" path="/patient/patientDelete.jsp">
+			</forward>
+			<forward name="patientActivate" path="/patient/patientActivate.jsp">
+			</forward>
+			<forward name="patientSelect" path="/patient/patientSelect.jsp">
+			</forward>
+
+			<forward name="testNew" path="/test/testNew.jsp">
+			</forward>
+			
+			<forward name="testSelect" path="/test/testSelect.jsp">
+			</forward>
+			
+			<forward name="pkgNew" path="/test/pkgNew.jsp">
+			</forward>
+			
+			
+
+			<forward name="orderNew" path="/order/orderNew.jsp">
+			</forward>
+			<forward name="orderResult" path="/order/orderResult.jsp">
+			</forward>
+			
+			<forward name="orderResultChange" path="/order/orderResultChange.jsp">
+			</forward>
+			
+
+
+			<forward name="clientNew" path="/client/clientNew.jsp">
+			</forward>
+			<forward name="clientDelete" path="/client/clientDelete.jsp">
+			</forward>
+			<forward name="clientActivate" path="/client/clientActivate.jsp">
+			</forward>
+			<forward name="clientSelect" path="/client/clientSelect.jsp">
+			</forward>
+
+			<forward name="quoteNew" path="/quote/quoteNew.jsp">
+			</forward>
+			<forward name="quoteDelete" path="/quote/quoteDeletejsp">
+			</forward>
+			<forward name="quoteToSale" path="/quote/quoteToSale.jsp">
+			</forward>
+			
+			
+			<forward name="saleChange" path="/sale/saleChange.jsp">
+			</forward>
+			
+			<forward name="paymentNew" path="/sale/paymentNew.jsp">
+			</forward>
+			
+			<forward name="paymentCanceled" path="/sale/paymentCanceled.jsp">
+			</forward>
+			
+
+			<forward name="listEdit" path="/list/listEdit.jsp">
+			</forward>
+			<forward name="listFlowerMusicEdit" path="/list/listFlowerMusicEdit.jsp">
+			</forward>
+			<forward name="listSaloonEdit" path="/list/listSaloonEdit.jsp">
+			</forward>
+			<forward name="listProductEdit" path="/list/listProductEdit.jsp">
+			</forward>
+			
+			<forward name="availabilitySaloonEventType" path="/list/availabilitySaloonEventType.jsp">
+			</forward>
+			
+			<forward name="rptOrder" path="/rpt/rptOrder.jsp">
+			</forward>
+			
+			<forward name="rptTicket" path="/rpt/rptTicket.jsp">
+			</forward>
+			
+			<forward name="rptResult" path="/rpt/rptResult.jsp">
+			</forward>
+			
+			
+			
+						
+			<forward name="rptOrders" path="/rpt/rptOrders.jsp">
+			</forward>
+			
+			<forward name="rptQuote" path="/rpt/rptQuote.jsp">
+			</forward>
+			
+			<forward name="rptQuotes" path="/rpt/rptQuotes.jsp">
+			</forward>
+			
+			<forward name="rptSales" path="/rpt/rptSales.jsp">
+			</forward>
+
+			<forward name="signContract" path="/sale/signContract.jsp">
+			</forward>
+
+			<forward name="rptContracts" path="/rpt/rptContracts.jsp">
+			</forward>
+			
+			<forward name="rptContracts" path="/rpt/rptContracts.jsp">
+			</forward>
+
+			<forward name="cardDelete" path="/card/cardDelete.jsp">
+			</forward>
+			<forward name="cardActivate" path="/card/cardActivate.jsp">
+			</forward>
+			<forward name="cardRecharge" path="/card/cardRecharge.jsp">
+			</forward>
+			<forward name="cardBuy" path="/card/cardBuy.jsp">
+			</forward>
+			<forward name="companyNew" path="/company/companyNew.jsp">
+			</forward>
+			<forward name="companyDelete" path="/company/companyDelete.jsp">
+			</forward>
+			<forward name="companyActivate" path="/company/companyActivate.jsp">
+			</forward>
+			<forward name="companySelect" path="/company/companySelect.jsp">
+			</forward>
+			<forward name="companyChangeByUser" path="/company/companyChangeByUser.jsp">
+			</forward>
+			<forward name="companyAffiliate" path="/company/companyAffiliate.jsp">
+			</forward>
+			<forward name="processAdmin" path="/admin/processAdmin.jsp">
+			</forward>
+			<forward name="userCreateRoot" path="/user/userCreateRoot.jsp">
+			</forward>
+			
+			<forward name="truckNew" path="/truck/truckNew.jsp">
+			</forward>
+			
+			<forward name="truckChange" path="/truck/truckEdit.jsp">
+			</forward>
+			
+			<forward name="selectVehicle" path="/truck/selectVehicle.jsp">
+			</forward>
+			
+			<forward name="tireNew" path="/tire/tireNew.jsp">
+			</forward>
+			
+			<forward name="tireDelete" path="/tire/tireDelete.jsp">
+			</forward>
+			<forward name="tireMovements" path="/tire/tireMovements.jsp">
+			</forward>
+			
+			<forward name="eventNew" path="/event/eventNew.jsp">
+			</forward>
+			
+			<forward name="controlPanel" path="/admin/controlPanel.jsp">
+			</forward>
+			
+			<forward name="truckTireConfigurationNew" path="/admin/newConfiguration.jsp">
+			</forward>
+			
+			<forward name="materialNew" path="/material/materialNew.jsp">
+			</forward>
+			
+		</action>
+		<action name="userNewForm" path="/userNew" scope="request" type="com.bituos.lca.actions.UserNewAction" input="/user/userNew.jsp">
+		</action>
+		<action name="userDeleteForm" path="/userDelete" scope="request" type="com.bituos.lca.actions.UserDeleteAction" input="/user/userDelete.jsp">
+		</action>
+		<action name="userActivateForm" path="/userActivate" scope="request" type="com.bituos.lca.actions.UserActivateAction" input="/user/userActivate.jsp">
+		</action>
+		<action name="userSelectForm" path="/userSelect" scope="request" type="com.bituos.lca.actions.UserSelectAction" input="/user/userSelect.jsp">
+			<forward name="userChange" path="/user/userChange.jsp">
+			</forward>
+		</action>
+		<action name="userChangeForm" path="/userChange" scope="session" type="com.bituos.lca.actions.UserChangeAction" input="/user/userChange.jsp">
+			<forward name="userChange" path="/user/userSelect.jsp">
+			</forward>
+		</action>
+
+		<action name="doctorNewForm" path="/doctorNew" scope="request" type="com.bituos.lca.actions.DoctorNewAction" input="/doctor/doctorNew.jsp">
+		</action>
+		<action name="doctorDeleteForm" path="/doctorDelete" scope="request" type="com.bituos.lca.actions.DoctorDeleteAction" input="/doctor/doctorDelete.jsp">
+		</action>
+		<action name="doctorActivateForm" path="/doctorActivate" scope="request" type="com.bituos.lca.actions.DoctorActivateAction" input="/doctor/doctorActivate.jsp">
+		</action>
+		<action name="doctorSelectForm" path="/doctorSelect" scope="request" type="com.bituos.lca.actions.DoctorSelectAction" input="/doctor/doctorSelect.jsp">
+			<forward name="doctorChange" path="/doctor/doctorChange.jsp">
+			</forward>
+		</action>
+		<action name="doctorChangeForm" path="/doctorChange" scope="session" type="com.bituos.lca.actions.DoctorChangeAction" input="/doctor/doctorChange.jsp">
+			<forward name="doctorChange" path="/doctor/doctorSelect.jsp">
+			</forward>
+		</action>
+		
+		<action name="representativeNewForm" path="/representativeNew" scope="request" type="com.bituos.lca.actions.RepresentativeNewAction" input="/representative/representativeNew.jsp">
+		  <forward name="loop" path="/representative/representativeNew.jsp">
+			</forward>
+		</action>
+		<action name="representativeDeleteForm" path="/representativeDelete" scope="request" type="com.bituos.lca.actions.RepresentativeDeleteAction" input="/representative/representativeDelete.jsp">
+		   <forward name="loop" path="/representative/representativeDelete.jsp">
+			</forward>
+		</action>
+		<action name="representativeActivateForm" path="/representativeActivate" scope="request" type="com.bituos.lca.actions.RepresentativeActivateAction" input="/representative/representativeActivate.jsp">
+		  	<forward name="loop" path="/representative/representativeActivate.jsp">
+			</forward>
+		</action>
+		<action name="representativeSelectForm" path="/representativeSelect" scope="request" type="com.bituos.lca.actions.RepresentativeSelectAction" input="/representative/representativeSelect.jsp">
+			<forward name="representativeChange" path="/representative/doctorChange.jsp">
+			</forward>
+		</action>
+		<action name="representativeChangeForm" path="/representativeChange" scope="session" type="com.bituos.lca.actions.RepresentativeChangeAction" input="/representative/representativeChange.jsp">
+			<forward name="representativeChange" path="/representative/representativeSelect.jsp">
+			</forward>
+		</action>
+		
+		 
+		<action name="patientNewForm" path="/patientNew" scope="request" type="com.bituos.lca.actions.PatientNewAction" input="/patient/patientNew.jsp">
+		  <forward name="loop" path="/patient/patientNew.jsp">
+			</forward>
+		</action>
+		<action name="patientDeleteForm" path="/patientDelete" scope="request" type="com.bituos.lca.actions.PatientDeleteAction" input="/patient/patientDelete.jsp">
+		   <forward name="loop" path="/patient/patientDelete.jsp">
+			</forward>
+		</action>
+		<action name="patientActivateForm" path="/patientActivate" scope="request" type="com.bituos.lca.actions.PatientActivateAction" input="/patient/patientActivate.jsp">
+		  	<forward name="loop" path="/patient/patientActivate.jsp">
+			</forward>
+		</action>
+		<action name="patientSelectForm" path="/patientSelect" scope="request" type="com.bituos.lca.actions.PatientSelectAction" input="/patient/patientSelect.jsp">
+			<forward name="patientChange" path="/patient/doctorChange.jsp">
+			</forward>
+		</action>
+		<action name="patientChangeForm" path="/patientChange" scope="session" type="com.bituos.lca.actions.PatientChangeAction" input="/patient/patientChange.jsp">
+			<forward name="patientChange" path="/patient/patientSelect.jsp">
+			</forward>
+		</action>
+
+		<action name="testNewForm" path="/testNew" scope="request" type="com.bituos.lca.actions.TestNewAction" input="/test/testNew.jsp">
+		  <forward name="loop" path="/test/testNew.jsp">
+			</forward>
+		</action>
+		
+		
+		<action name="testChangeForm" path="/testChange" scope="request" type="com.bituos.lca.actions.TestChangeAction" input="/test/testChange.jsp">
+		  <forward name="loop" path="/test/testChange.jsp">
+			</forward>
+		</action>
+		
+		
+		<action name="testSelectForm" path="/testSelect" scope="request" type="com.bituos.lca.actions.TestSelectAction" input="/test/testSelect.jsp">
+		  <forward name="testChange" path="/test/testChange.jsp">
+			</forward>
+		</action>
+		
+		
+		<action name="pkgNewForm" path="/pkgNew" scope="request" type="com.bituos.lca.actions.PkgNewAction" input="/test/pkgNew.jsp">
+		  <forward name="loop" path="/test/pkgNew.jsp">
+			</forward>
+		</action>
+
+		<action name="orderNewForm" path="/orderNew" scope="request" type="com.bituos.lca.actions.OrderNewAction" input="/order/orderNew.jsp">
+		  <forward name="loop" path="/order/orderNew.jsp">
+			</forward>
+		</action>
+
+		<action name="orderResultForm" path="/orderResult" scope="request" type="com.bituos.lca.actions.OrderResultAction" input="/order/orderResult.jsp">
+		  <forward name="loop" path="/order/orderResult.jsp">
+			</forward>
+		</action>
+		
+		<action name="orderResultChangeForm" path="/orderResultChange" scope="request" type="com.bituos.lca.actions.OrderResultChangeAction" input="/order/orderResultChange.jsp">
+		  <forward name="loop" path="/order/orderResultChange.jsp">
+			</forward>
+		</action>
+
+
+		<action name="userCreateRoot" path="/userCreateRoot" scope="request" type="com.bituos.lca.actions.UserCreateRootAction" input="/user/userCreateRoot.jsp">
+		</action>
+		<action name="processAdminForm" path="/processAdmin" scope="request" type="com.bituos.lca.actions.ProcessAdminAction">
+			<forward name="loop" path="/admin/processAdmin.jsp">
+			</forward>
+		</action>
+		<action name="clientNewForm" path="/clientNew" scope="request" type="com.bituos.lca.actions.ClientNewAction" input="/client/clientNew.jsp">
+		</action>
+		<action name="clientDeleteForm" path="/clientDelete" scope="request" type="com.bituos.lca.actions.ClientDeleteAction" input="/client/clientDelete.jsp">
+		</action>
+		<action name="clientActivateForm" path="/clientActivate" scope="request" type="com.bituos.lca.actions.ClientActivateAction" input="/client/clientActivate.jsp">
+		</action>
+		<action name="clientSelectForm" path="/clientSelect" scope="request" type="com.bituos.lca.actions.ClientSelectAction" input="/client/clientSelect.jsp">
+			<forward name="clientChange" path="/client/clientChange.jsp">
+			</forward>
+		</action>
+		<action name="clientChangeForm" path="/clientChange" scope="session" type="com.bituos.lca.actions.ClientChangeAction" input="/client/clientChange.jsp">
+ 			<forward name="clientChange" path="/client/clientSelect.jsp">
+			</forward>
+		</action>
+		<action path="/quoteNew" name="quoteNewForm" scope="request" type="com.bituos.lca.actions.QuoteNewAction" input='/quote/quoteNew.jsp'>
+			<forward name="loop" path="/quote/quoteNew.jsp">
+			</forward>
+		</action>
+		<action path="/quoteDelete" name="quoteDeleteForm" scope="request" type="com.bituos.lca.actions.QuoteDeleteAction" input='/quote/quoteDelete.jsp'>
+			<forward name="loop" path="/quote/quoteDelete.jsp">
+			</forward>
+		</action>
+		<action path="/quoteDelete" name="quoteDeleteForm" scope="request" type="com.bituos.lca.actions.QuoteDeleteAction" input='/quote/quoteDelete.jsp'>
+			<forward name="loop" path="/quote/quoteDelete.jsp">
+			</forward>
+		</action>
+		<action path="/quote" name="quoteForm" scope="request" type="com.bituos.lca.actions.QuoteAction">
+			<forward name="loop" path="/quote/quoteNew.jsp">
+			</forward>
+		</action>
+		
+		<action path="/sale" name="saleForm" scope="request" type="com.bituos.lca.actions.SaleAction">
+		</action>
+		
+		<action path="/saleChange" name="saleChangeForm" scope="session" type="com.bituos.lca.actions.SaleChangeAction" input='/sale/saleChange.jsp'>
+		   <forward name="loop" path="/sale/saleChange.jsp">
+			</forward>
+		</action>
+		
+		<action path="/paymentNew" name="paymentNewForm" scope="request" type="com.bituos.lca.actions.PaymentNewAction" input='/sale/paymentNew.jsp'>
+		   <forward name="loop" path="/sale/paymentNew.jsp">
+			</forward>
+		</action>
+		
+	    <action path="/paymentCanceled" name="paymentCanceledForm" scope="request" type="com.bituos.lca.actions.PaymentCanceledAction" input='/sale/paymentCanceled.jsp'>
+		   <forward name="loop" path="/sale/paymentCanceled.jsp">
+			</forward>
+		</action>
+		
+		
+
+		<action path="/listEdit" name="listEditForm" scope="request" type="com.bituos.lca.actions.ListEditAction" input='/list/listEdit.jsp'>
+			<forward name="loop" path="/list/listEdit.jsp">
+			</forward>
+		</action>
+		<action path="/listFlowerMusicEdit" name="listFlowerMusicEditForm" scope="request" type="com.bituos.lca.actions.ListFlowerMusicEditAction" input='/list/listFlowerMusicEdit.jsp'>
+			<forward name="loop" path="/list/listFlowerMusicEdit.jsp">
+			</forward>
+		</action>
+		
+		<action path="/listSaloonEdit" name="listSaloonEditForm" scope="request" type="com.bituos.lca.actions.ListSaloonEditAction" input='/list/listSaloonEdit.jsp'>
+			<forward name="loop" path="/list/listSaloonEdit.jsp">
+			</forward>
+		</action>
+
+		<action path="/listProductEdit" name="listProductEditForm" scope="request" type="com.bituos.lca.actions.ListProductEditAction" input='/list/listProductEdit.jsp'>
+			<forward name="loop" path="/list/listProductEdit.jsp">
+			</forward>
+		</action>
+
+		<action path="/availabilitySaloonEventType" name="availabilitySaloonEventTypeForm" scope="request" type="com.bituos.lca.actions.AvailabilitySaloonEventTypeAction" input='/list/availabilitySaloonEventType.jsp'>
+			<forward name="loop" path="/list/availabilitySaloonEventType.jsp">
+			</forward>
+		</action>
+
+
+
+
+		<action path="/search" name="searchForm" scope="request" input="/quote/quoteNew.jsp" type="com.bituos.lca.actions.SearchAction">
+			<forward name="userDelete" path="/user/userDelete.jsp">
+			</forward>
+			<forward name="userActivate" path="/user/userActivate.jsp">
+			</forward>
+			<forward name="userSelect" path="/user/userSelect.jsp">
+			</forward>			
+			<forward name="quoteNew" path="/quote/quoteNew.jsp">
+			</forward>
+			<forward name="clientSelect" path="/client/clientSelect.jsp">
+			</forward>			
+			<forward name="clientDelete" path="/client/clientDelete.jsp">
+			</forward>			
+			<forward name="clientActivate" path="/client/clientActivate.jsp">
+			</forward>			
+			<forward name="userAsignSupervisor" path="/admin/asignSupervisor.jsp">
+			</forward>
+			<forward name="clientAsignSalesAgent" path="/admin/asignSalesAgent.jsp">
+			</forward>
+			<forward name="caseResolve" path="/cases/caseResolve.jsp">
+			</forward>
+		</action>
+
+		
+		<action name="cardDeleteForm" path="/cardDelete" scope="request" type="com.bituos.lca.actions.CardDeleteAction" input="/card/cardDelete.jsp">
+		</action>
+		<action name="cardActivateForm" path="/cardActivate" scope="request" type="com.bituos.lca.actions.CardActivateAction" input="/card/cardActivate.jsp">
+		</action>
+		<action name="cardRechargeForm" path="/cardRecharge" scope="request" type="com.bituos.lca.actions.CardRechargeAction" input="/card/cardRecharge.jsp">
+		</action>
+		<action name="cardBuyForm" path="/cardBuy" scope="request" type="com.bituos.lca.actions.CardBuyAction" input="/card/cardBuy.jsp">
+		</action>
+		<action name="cardPersonalizeForm" path="/cardPersonalize" scope="request" type="com.bituos.lca.actions.CardPersonalizeAction" input="/card/cardPersonalize.jsp">
+		</action>
+		<action name="companyNewForm" path="/companyNew" scope="request" type="com.bituos.lca.actions.CompanyNewAction" input="/company/companyNew.jsp">
+		</action>
+		<action name="companyDeleteForm" path="/companyDelete" scope="request" type="com.bituos.lca.actions.CompanyDeleteAction" input="/company/companyDelete.jsp">
+		</action>
+		<action name="companyActivateForm" path="/companyActivate" scope="request" type="com.bituos.lca.actions.CompanyActivateAction" input="/company/companyActivate.jsp">
+		</action>
+		<action name="companySelectForm" path="/companySelect" scope="request" type="com.bituos.lca.actions.CompanySelectAction" input="/company/companySelect.jsp">
+			<forward name="companyChange" path="/company/companyChange.jsp">
+			</forward>
+		</action>
+		<action name="companyChangeForm" path="/companyChange" scope="session" type="com.bituos.lca.actions.CompanyChangeAction" input="/company/companyChange.jsp">
+			<forward name="companyChange" path="/company/companyChange.jsp">
+			</forward>
+		</action>
+
+		<action name="companyChangeByUserForm" path="/companyChangeByUser" scope="session" type="com.bituos.lca.actions.CompanyChangeByUserAction" input="/company/companyChangeByUser.jsp">
+			<forward name="companyChangeByUser" path="/company/companyChangeByUser.jsp">
+		</forward>
+		</action>
+		<action name="companyAffiliateForm" path="/companyAffiliate" scope="session" type="com.bituos.lca.actions.CompanyAffiliateAction" input="/company/companyAffiliate.jsp">
+		</action>
+		<action name="preWVForm" path="/preWV" scope="request" type="com.bituos.lca.actions.PreWVAction">
+			<forward name="rpt.cardCredit" path="/rpt/cardCredit.jsp">
+			</forward>
+			<forward name="userCreateRoot" path="/user/userCreateRoot.jsp">
+			</forward>
+		</action>
+		<action name="rptClientsForm" path="/rptClients" scope="request" type="com.bituos.lca.actions.RptClientsAction">
+		</action>
+		<action name="rptForm" path="/rpt" scope="request" type="com.bituos.lca.actions.RptAction">
+			<forward name="callCrystalTag" path="/rpt/CallCrystalTag.jsp">
+			</forward>
+		</action>
+		
+		
+		<action name="truckNewForm" path="/truckNew" scope="request" type="com.bituos.lca.actions.TruckNewAction" input="/truck/truckNew.jsp">
+		    <forward name="loop" path="/truck/truckNew.jsp">
+			</forward>
+		</action>
+		
+		<action name="truckChangeForm" path="/truckChange" scope="session" type="com.bituos.lca.actions.TruckChangeAction" input="/truck/truckEdit.jsp">
+		  <forward name="loop" path="/truck/truckEdit.jsp">
+			</forward>
+		</action>
+		
+		<action name="truckSelectForm" path="/truckSelect" scope="session" type="com.bituos.lca.actions.TruckSelectAction" input="/truck/selectVheicle.jsp">
+		  <forward name="edit" path="/truck/truckEdit.jsp">
+			</forward>			
+		</action>
+		
+		
+		<action name="tireNewForm" path="/tireNew" scope="request" type="com.bituos.lca.actions.TireNewAction" input="/tire/tireNew.jsp">
+		   <forward name="loop" path="/tire/tireNew.jsp">
+			</forward>
+		</action>
+		
+		<action name="tireDeleteForm" path="/tireDelete" scope="request" type="com.bituos.lca.actions.TireDeleteAction" input="/tire/tireDelete.jsp">
+		   <forward name="tireDelete" path="/tire/tireDelete.jsp">
+			</forward>
+		</action>
+		
+		<action name="tireMovementsForm" path="/tireMovements" scope="request" type="com.bituos.lca.actions.TireMovementsAction" input="/tire/tireMovements.jsp">
+		   <forward name="loop" path="/tire/tireMovements.jsp">
+			</forward>
+		</action>
+		
+		<action name="eventNewForm" path="/eventNew" scope="request" type="com.bituos.lca.actions.EventNewAction" input="/event/eventNew.jsp">
+           <forward name="loop" path="/event/eventNew.jsp">
+			</forward>
+		</action>
+		
+		<action name="truckTireConfigurationNewForm" path="/truckTireConfigurationNew" scope="request" type="com.bituos.lca.actions.TruckTireConfigurationNewAction" input="/admin/newConfiguration.jsp">
+           <forward name="loop" path="/admin/newConfiguration.jsp">
+			</forward>
+		
+		</action>
+		
+		
+		<action name="truckTireConfigurationDeleteOrEditForm" path="/truckTireConfigurationDeleteOrEdit" scope="request" type="com.bituos.lca.actions.TruckTireConfigurationDeleteOrEditAction" input="/admin/controlPanel.jsp">
+           <forward name="loop" path="/admin/controlPanel.jsp">
+			</forward>
+			<forward name="edit" path="/admin/editConfiguration.jsp">
+			</forward>
+		</action>
+		
+		
+		
+		<action name="editConfigurationForm" path="/editConfiguration" scope="request" type="com.bituos.lca.actions.EditConfigurationAction" input="/admin/editConfiguration.jsp">
+           <forward name="loop" path="/admin/editConfiguration.jsp">
+			</forward>
+		   
+		</action>
+		
+		
+		<action name="materialNewForm" path="/materialNew" scope="request" type="com.bituos.lca.actions.MaterialNewAction" input="/material/materialNew.jsp">
+		   <forward name="loop" path="/material/materialNew.jsp">
+			</forward>
+		</action>
+		
+		
+
+		
+		
+	</action-mappings>
+
+	<!-- Message Resources -->
+	<message-resources parameter="eclipse.resources.ApplicationResources"/>
+	
+
+</struts-config>

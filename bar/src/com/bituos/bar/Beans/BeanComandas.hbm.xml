@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.bituos.bar.Beans.BeanComandas" table="comandas" >
+       <id name="id_comanda" type="integer" column="id_comanda" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+      <many-to-one name="id_agente" column="id_agente" not-null="true"/>
+      <many-to-one name="id_mesa" column="id_mesa" not-null="true"/>
+      <property name="fecha" column="fecha" type="date"  not-null="false"/>   
+     
+      <property name="cerrada" column="cerrada" type="char"  not-null="false"/>
+      <property name="total" column="total" type="double"  not-null="false"/>
+    <property name="notas" column="notas" type="string"  not-null="false"/>
+    
+    
+    
+    <property name="minuto_apertura" column="minuto_apertura" type="integer"  not-null="false"/> 
+    <property name="hora_apertura" column="hora_apertura" type="integer"  not-null="false"/>
+    <property name="fecha_cierre" column="fecha_cierre" type="date"  not-null="false"/>
+    <property name="minuto_cierre" column="minuto_cierre" type="integer"  not-null="false"/>
+    <property name="hora_cierre" column="hora_cierre" type="integer"  not-null="false"/>
+    <property name="agente_nombre" column="agente_nombre" type="string"  not-null="false"/>
+
+
+
+
+
+      
+   </class>
+</hibernate-mapping>
+
+

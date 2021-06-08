@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://bituos.org" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://bituos.org" xmlns:intf="http://bituos.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://bituos.org" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="saveFile">
+    <complexType>
+     <sequence>
+      <element name="ruta" type="xsd:string"/>
+      <element name="filename" type="xsd:string"/>
+      <element name="infoBytes" type="xsd:base64Binary"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="saveFileResponse">
+    <complexType>
+     <sequence>
+      <element name="saveFileReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="saveFileResponse">
+
+      <wsdl:part element="impl:saveFileResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="saveFileRequest">
+
+      <wsdl:part element="impl:saveFile" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="HelloWorld">
+
+      <wsdl:operation name="saveFile">
+
+         <wsdl:input message="impl:saveFileRequest" name="saveFileRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:saveFileResponse" name="saveFileResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="HelloWorldSoapBinding" type="impl:HelloWorld">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="saveFile">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="saveFileRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="saveFileResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="HelloWorldService">
+
+      <wsdl:port binding="impl:HelloWorldSoapBinding" name="HelloWorld">
+
+         <wsdlsoap:address location="http://localhost:8080/wsTest/services/HelloWorld"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

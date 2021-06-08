@@ -1,0 +1,1221 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimpleGrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla.com. All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla.com                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+/***HEADER***/
+body {
+	margin: 30px 0!important;
+}
+#header {
+	overflow: hidden;
+	position: relative;
+}
+#header:before {
+	border-style: solid;
+	border-width: 10px;
+	content: " ";
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#header:after {
+	border-style: solid;
+	border-width: 30px;
+	content: " ";
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 0;
+}
+.yjsg_grid {
+	padding: 15px 0;
+}
+#yjsgheadergrid, #yjsgbodytop, #yjsgbodybottom {
+	padding: 0;
+}
+.yjsg6_out, .yjsg7_out {
+	margin: 0 auto;
+}
+#yjsg6 {
+	padding: 0 10px;
+	width: auto!important;
+}
+#yjsg7 {
+	padding: 15px 10px;
+	width: auto!important;
+}
+.yjsg6_bottom {
+	height: 5px;
+}
+.module_title, .article_title {
+	font-size: 150%;
+}
+ul.subul_main.dropline.level1.dlevel1 {
+	height: 51px!important;
+}
+#pathway .breadcrumb {
+	padding-left: 0;
+	background: none;
+}
+a.readon, a.readon span {
+	height: 28px;
+	line-height: 28px;
+}
+#centerfooter {
+	margin: 0 auto;
+	display: block;
+	overflow: hidden;
+}
+/***SMALL MENU***/
+#smallmenu_holder {
+	display: block;
+	overflow: hidden;
+	margin: 0 auto;
+	height: 25px;
+}
+#smallmenu {
+	display: block;
+	overflow: hidden;
+	float: right;
+	height: 25px;
+}
+#smallmenu ul.menu {
+	margin: 0;
+	display: block;
+	overflow: hidden;
+}
+#smallmenu ul li {
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+#smallmenu ul li a {
+	background: none;
+	padding: 0;
+	margin: 0 auto;
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	font-size: 90%;
+	text-transform: uppercase;
+}
+/***CENTERBOTTOM***/
+.centerbottom_in {
+	padding: 0 15px;
+}
+/***POP LOGIN***/
+.hdclm {
+	float: right;
+	margin: 0!important;
+}
+.hdclm .yjsquare_in {
+	padding: 0;
+}
+.hdclm .poping_links {
+	display: table;
+	float: right;
+	height: 56px;
+	width: 56px;
+	padding: 0;
+	margin: 2px -3px 0 0px;
+	z-index: 15;
+}
+.hdclm #openLogin {
+	background: none;
+	display: block;
+	border: none;
+	margin: 0;
+	width: 30px;
+	padding: 0;
+	float: right;
+	text-indent: -99999px;
+}
+.hdclm #login_pop {
+	width: 790px;
+	height: 270px;
+	padding: 20px;
+	border: none;
+}
+/***Login form***/
+.hdclm #form-login {
+	float: left;
+	clear: none;
+	width: 35%;
+	padding: 0 20px 0 0;
+}
+.hdclm #login_pop .inputbox {
+	margin: 10px 0;
+	padding: 0 5px;
+	height: 25px;
+	border: none;
+	font-size: 80%;
+}
+.hdclm #login_pop label[for=yjpop_remember] {
+	margin: 0;
+	float: left;
+}
+.hdclm #login_pop #yjpop_remember {
+	margin: -2px 0 0 5px;
+	position: absolute;
+	clear: both;
+}
+.hdclm .yjpop_linkholder {
+	display: block;
+	clear: both;
+}
+.hdclm #login_pop .yjpop_user, .hdclm #login_pop .yjpop_pass {
+	display: inline-table;
+	clear: both;
+	margin: 10px 5px 10px 0;
+	font-size: 100%;
+}
+/***Register form***/
+.hdclm #josForm {
+	float: left;
+	clear: none;
+	width: 59.8%;
+	padding: 0 0 0 20px;
+}
+.hdclm .popyjreg label {
+	float: left;
+	clear: both;
+	margin: 0!important;
+}
+.hdclm .popyjreg .inputbox {
+	float: left;
+	clear: both;
+	margin: 5px 0!important;
+	padding: 0 5px;
+	width: 90%!important;
+	border: none;
+	font-size: 80%;
+}
+.hdclm .popyjreg .leftpart, .hdclm .popyjreg .rightpart {
+	float: left;
+	clear: none;
+	width: 50%;
+}
+.hdclm #closeLogin {
+	margin: 10px;
+}
+/***Logut button***/
+.hdclm #login-form {
+	margin: 0;
+	position: relative;
+	z-index: 100000;
+	display: table;
+	float: right;
+	height: 56px;
+	width: 56px;
+	padding: 0;
+	margin: 2px 2px 0 0;
+	z-index: 15;
+}
+.hdclm #logins .button {
+	background: none;
+	display: block;
+	border: none;
+	margin: 0;
+	width: 28px;
+	hegiht: 28px;
+	padding: 0;
+	float: right;
+	text-indent: -99999px;
+	cursor: pointer;
+}
+/***LIVE SEARCH***/
+.hdcls {
+	float: right;
+}
+.hdcls form {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+.hdcls .yj_inputbox {
+	border: none;
+	height: 25px;
+	line-height: 25px;
+	font-size: 90%;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+.hdcls .button {
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	display: block;
+	height: 13px;
+	width: 13px;
+	border: none;
+	text-indent: -99999px;
+	cursor: pointer;
+}
+/*results*/
+.LiveSearchHeader {
+	background: none;
+}
+.LiveSearchResults {
+	border: none;
+	padding: 8px;
+}
+.LiveSearchResults a {
+	font-size: 90%;
+}
+.LiveSearchResults .LiveSearchExpandDetails, .LiveSearchResults .LiveSearchExpandDetails a:hover, .LiveSearchResults .LiveSearchExpandDetails a.hovered {
+	width: 15px;
+	height: 15px;
+	padding: 0;
+	right: 5px;
+	top: 12px;
+}
+/*back and next button*/
+.LiveSearchResults a.next, .LiveSearchResults a.back {
+	margin: 5px 0 0 0;
+	text-transform: capitalize;
+}
+/***MENU***/
+ul.subul_main.level1 li span a, ul.subul_main.level1 li a, ul.subul_main.level2 li span a, ul.subul_main.level3 li span a, ul.subul_main.level4 li span a, ul.subul_main.level5 li span a {
+	padding: 7px 0!important;
+}
+/*--Module in menu---*/
+.yj_menu_module_holder h2.module_title {
+	border-bottom: none;
+}
+/***IMAGE SLIDER***/
+.hdcis {
+	margin: 0;
+	padding: 0;
+}
+.hdcis .yjsquare_in {
+	padding: 0;
+}
+.hdcis .YJSlide_intro {
+	background: none;
+	top: 50%;
+	display: table;
+	font-weight: normal;
+	left: 0;
+	width: 43%;
+	height: 30%;
+	z-index: 5000;
+	overflow: hidden;
+}
+.hdcis .YJSlide_intro_in {
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+}
+.hdcis h4 {
+	margin: 0;
+	padding: 5px 10px;
+	font-size: 160%;
+	display: table;
+}
+.hdcis .is_introholder {
+	display: block;
+	overflow: hidden;
+	padding: 10px;
+	position: relative;
+}
+.hdcis .is_introholder p {
+	line-height: 20px;
+	padding: 0;
+	margin: 0;
+	clear: none;
+	display: inline-table;
+	overflow: hidden;
+	width: 88%;
+}
+/*Template readmore*/
+.is_rm {
+	display: inline-table;
+	overflow: hidden;
+	height: 25px;
+	width: 25px;
+	text-indent: -99999px;
+	clear: none;
+	position: absolute;
+	right: 20px;
+	top: 18px;
+}
+/*bottom nav*/
+.hdcis .navContainer {
+	margin: 0;
+	position: absolute;
+	bottom: 0px;
+	z-index: 1000;
+}
+.hdcis .navContainer_inside {
+	display: table;
+	margin: 0 auto;
+}
+.hdcis .navContainer_inside:before {
+	border-style: solid;
+	border-width: 35px;
+	content: " ";
+	position: absolute;
+	margin: 0 0 0 -70px;
+}
+.hdcis .navContainer_inside:after {
+	border-style: solid;
+	border-width: 35px;
+	content: " ";
+	position: absolute;
+	margin: 0;
+}
+.hdcis .navContainer .bnav {
+	width: 11px;
+	height: 11px;
+	padding: 0;
+	margin: 11px 3px;
+	border: none;
+	text-indent: -9999px;
+}
+.isnav_shadow {
+	height: 11px;
+	width: 104px;
+}
+/***CUSTOM MODULE***/
+.custom1 .yjsquare_in {
+	padding: 0 15px 0 0;
+}
+.custom1 h2.module_title {
+	margin: 15px 0 0 0;
+	font-size: 160%;
+	text-transform: uppercase;
+}
+.custom1 h2.module_title span {
+	text-transform: uppercase;
+}
+.custom1 p {
+	padding: 10px 0
+}
+/*Template readmore*/
+.template_readmore {
+	display: table;
+	overflow: hidden;
+	height: 28px;
+	line-height: 28px;
+	padding: 0 10px;
+	font-size: 115%;
+	margin: 10px 0;
+}
+.template_readmore2 {
+	display: table;
+	overflow: hidden;
+	height: 28px;
+	line-height: 28px;
+	padding: 0 10px;
+	font-size: 115%;
+	margin: 10px 0;
+}
+/***YJ MULTITABS***/
+.hdcmt {
+	margin: 0!important;
+}
+.hdcmt .yjsquare_in {
+	padding: 0;
+}
+.hdcmt #tabs_holder {
+	border: none;
+	background: none;
+}
+.hdcmt #tabs_container {
+	background: none;
+}
+.hdcmt .tab_content, .hdcmt .tab_content_in {
+	overflow: visible!important;
+}
+.hdcmt #tabs_container .tab_content_in {
+	padding: 0;
+}
+.hdcmt ul#tabs {
+	height: 60px!important;
+}
+.hdcmt ul#tabs li {
+	height: 30px;
+	line-height: 30px;
+	padding: 0;
+	font-size: 130%!important;
+	margin: 15px 25px 15px 0;
+	background: none;
+	position: relative;
+}
+.hdcmt ul#tabs li:after {
+	border-style: solid;
+	border-width: 1px;
+	content: "";
+	height: 10px;
+	position: absolute;
+	top: 10px;
+	right: -15px;
+}
+.hdcmt ul#tabs li.last:after {
+	display: none;
+}
+/***York inside multitabs***/
+div.yjsquare.hdcmt, div.yjsquare.hdcym, div.yjsquare.hdcym3 {
+	margin: 0;
+	padding: 0;
+}
+.hdcmt .yy_slider .yy_slideitems {
+	padding-bottom: 0;
+}
+.hdcmt .yy_slider .yy_slideitems_in {
+	padding: 0;
+	background: none;
+	margin: 0;
+}
+/*navigation*/
+.hdcmt .yy_container .linkForward, .hdcmt .yy_container .linkBackward, .hdcym .yy_container .linkForward, .hdcym .yy_container .linkBackward, .hdcym2 .yy_container .linkForward, .hdcym2 .yy_container .linkBackward, .hdcym3 .yy_container .linkForward, .hdcym3 .yy_container .linkBackward {
+	position: absolute;
+	right: 2%;
+	left: auto;
+	top: -37px;
+	width: 13px;
+	height: 13px;
+}
+.hdcym2 .yy_container .linkForward, .hdcym2 .yy_container .linkBackward, .hdcym3 .yy_container .linkForward, .hdcym3 .yy_container .linkBackward {
+	display: none;
+}
+.hdcmt .yy_container .linkBackward {
+	right: 5%;
+}
+.hdcym3 .yy_container .linkForward, .hdcym3 .yy_container .linkBackward {
+	bottom: -25px;
+	top: auto;
+	z-index: 10000;
+}
+.hdcym .yy_container .linkBackward, .hdcym2 .yy_container .linkBackward, .hdcym3 .yy_container .linkBackward {
+	right: 8%;
+}
+.hdcym3 .yy_container .linkBackward {
+	right: 4%;
+}
+.hdcmt .yy_container .linkForward:hover, .hdcmt .yy_container .linkBackward:hover, .hdcym .yy_container .linkForward:hover, .hdcym .yy_container .linkBackward:hover, .hdcym2 .yy_container .linkForward:hover, .hdcym2 .yy_container .linkBackward:hover, .hdcym3 .yy_container .linkForward:hover, .hdcym3 .yy_container .linkBackward:hover {
+	background-position: left top;
+}
+/*bottom navigation*/
+.hdcmt .yy_bottom_nav_holder, .hdcym .yy_bottom_nav_holder, .hdcym2 .yy_bottom_nav_holder {
+	position: absolute;
+	top: -38px;
+	right: 7%;
+	margin: 0 10px;
+}
+.hdcym .yy_bottom_nav_holder {
+	right: 13%;
+}
+.hdcym2 .yy_bottom_nav_holder {
+	right: 0;
+}
+.hdcym2 .yy_bottom_nav_holder, .hdcym3 .yy_bottom_nav_holder {
+	top: auto;
+	bottom: 0;
+	position: relative;
+}
+.hdcmt div.yy_ul_left, .hdcym div.yy_ul_left, .hdcym2 div.yy_ul_left, .hdcym3 div.yy_ul_left {
+	background: none;
+}
+.hdcmt ul.yy_bottom_navigation, .hdcym ul.yy_bottom_navigation, .hdcym2 ul.yy_bottom_navigation, .hdcym3 ul.yy_bottom_navigation {
+	padding: 0!important;
+	background: none;
+}
+.hdcmt ul.yy_bottom_navigation li, .hdcym ul.yy_bottom_navigation li, .hdcym2 ul.yy_bottom_navigation li, .hdcym3 ul.yy_bottom_navigation li {
+	width: 11px;
+	height: 11px;
+	margin: 0 5px!important;
+}
+.hdcmt ul.yy_bottom_navigation li a, .hdcym ul.yy_bottom_navigation li a, .hdcym2 ul.yy_bottom_navigation li a, .hdcym3 ul.yy_bottom_navigation li a {
+	height: 11px;
+	width: 11px;
+}
+.hdcmt ul.yy_bottom_navigation li a:hover, .hdcmt ul.yy_bottom_navigation li a.active, .hdcym ul.yy_bottom_navigation li a:hover, .hdcym ul.yy_bottom_navigation li a.active, .hdcym2 ul.yy_bottom_navigation li a:hover, .hdcym2 ul.yy_bottom_navigation li a.active, .hdcym3 ul.yy_bottom_navigation li a:hover, .hdcym3 ul.yy_bottom_navigation li a.active {
+	background-position: left top;
+}
+/***Engine inside youyork***/
+.hdcmt .yjme_item {
+	width: 33%;
+	float: left;
+	clear: none;
+	padding: 0 20px;
+	margin: 0 0 10px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.hdcmt .yjme_item_in {
+	border: none;
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.hdcmt .yjme_item div.imageholder {
+	border: none;
+	background: none;
+	padding: 0;
+	margin: 0 auto;
+}
+.hdcmt .yjme_item div.imageholder img {
+	width: 100%;
+	height: auto;
+}
+.hdcmt .yjme_item a.item_title {
+	margin: 10px 0 0 0;
+	font-size: 140%;
+}
+.hdcmt .yjme_item p.item_intro {
+	line-height: 22px;
+	clear: both;
+}
+.hdcmt .yjme_item div.item_details {
+	margin: 0;
+}
+.hdcmt .item_details .item_category, .hdcmt .item_details .item_cdate, .hdcmt .item_details .item_author {
+	font-size: 100%;
+}
+.hdcmt .yjme_item a.item_readmore {
+	padding: 0;
+	border: none;
+	width: auto;
+	display: table;
+	font-size: 100%;
+	float: left;
+}
+.hdcmt .yjme_item a.item_readmore span {
+	padding: 0;
+}
+/***YORK MODULE RIGHT***/
+#rightblock .inside, #leftblock .inside, #insetblock .inside {
+	padding: 0 1px;
+}
+.hdcym {
+	margin: 0!important;
+}
+.hdcym .yjsquare_in {
+	overflow: visible;
+	padding: 0px 0 0 15px;
+}
+.hdcym h2.module_title {
+	margin: 20px 0 20px 15px;
+}
+.hdcym #yy_container, .hdcym .yy_container_out {
+	background: none;
+	overflow: visible!important;
+}
+.hdcym .yy_slider .yy_slideitems, .hdcym .yy_slider .yy_slideitems_in {
+	background: none;
+	padding: 0;
+	margin: 0;
+}
+/***Engine inside youyork right***/
+.hdcym .yjme_item_in {
+	padding: 20px 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.hdcym .yjme_item div.imageholder {
+	margin: 10px 20px 0 0;
+	padding: 0;
+	border: none;
+}
+.hdcym .yjme_item a.item_title {
+	margin: 0;
+	clear: none;
+	font-size: 130%;
+}
+.hdcym .yjme_item div.item_details {
+	float: none;
+	margin: 0;
+}
+.hdcym .yjme_item p.item_intro {
+	padding: 0 0 0 115px;
+	line-height: 22px;
+}
+/***YORK MODULE RIGHT 2***/
+.hdcym2.yj1 {
+	margin: 15px 0 15px 15px!important;
+}
+.hdcym2 .yjsquare_in {
+	overflow: visible;
+}
+.hdcym2 .yy_container_out, .hdcym2 #yy_container_right {
+	background: none!important;
+}
+.hdcym2 .yy_slider .yy_slideitems, .hdcym2 .yy_slider .yy_slideitems_in {
+	padding: 0;
+	background: none;
+	margin: 0;
+}
+/***Engine inside youyork right2***/
+.hdcym2 .yjme_item_in {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.hdcym2 .yjme_item div.imageholder {
+	border: none;
+	padding: 0;
+	margin: 10px 20px 10px 0;
+}
+.hdcym2 .yjme_item a.item_title {
+	clear: none;
+	font-size: 130%;
+	margin: 0 0 5px 0;
+}
+.hdcym2 .yjme_item p.item_intro {
+	line-height: 22px;
+	padding: 5px 0;
+}
+.hdcym2 .yjme_item div.item_details {
+	float: none;
+	padding: 10px 0;
+	font-size: 100%;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+.hdcym2 .yjme_item div.item_details a {
+	font-size: 110%;
+}
+.hdcym2 .item_details .item_category, .hdcym2 .item_details .item_cdate, .hdcym2 .item_details .item_author {
+	position: relative;
+	width: 33%;
+}
+.hdcym2 .item_details .item_category:after, .hdcym2 .item_details .item_cdate:after, .hdcym2 .item_details .item_author:after {
+	border-style: solid;
+	border-width: 1px;
+	content: "";
+	height: 10px;
+	position: absolute;
+	top: 3px;
+	right: 15px;
+}
+.hdcym2 .item_details .item_author:after {
+	display: none;
+}
+.hdcym2 .yjme_item a.item_readmore {
+	padding: 0 10px;
+	margin: 15px 0;
+	border: none;
+	width: auto;
+	height: 28px;
+	line-height: 28px;
+	display: table;
+	font-size: 115%;
+	float: left;
+}
+.hdcym2 .yjme_item a.item_readmore span {
+	padding: 0;
+	height: 28px;
+	line-height: 28px;
+}
+/***CUSTOM 2***/
+.custom2 h2.module_title {
+	text-align: center;
+	font-size: 160%;
+	text-transform: uppercase;
+	padding: 10px 0;
+}
+.custom2 h2.module_title span {
+	text-transform: uppercase;
+}
+.custom2 .yjsquare_in {
+	padding: 0;
+	margin: 15px 0;
+}
+.custom2 p {
+	padding: 10px 0;
+	text-align: center;
+	line-height: 22px;
+}
+/***YOUYORK MODULE AT THE BOTTOM***/
+.hdcym3 .yjsquare_in {
+	padding: 20px 0 0 0;
+}
+.hdcym3 .yy_container_out, .hdcym3 #yy_container_bottom {
+	background: none!important;
+}
+.hdcym3 .yy_slider .yy_slideitems, .hdcym3 .yy_slider .yy_slideitems_in {
+	padding: 0;
+	background: none;
+	margin: 0;
+}
+/***Engine inside youyork bottom***/
+.hdcym3 .yjme_item {
+	width: 20%;
+	float: left;
+	clear: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.hdcym3 .yjme_item_in {
+	border: none;
+	padding: 0;
+	margin: 0 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.hdcym3 .yjme_item div.imageholder {
+	border: none;
+	background: none;
+	padding: 0;
+}
+.hdcym3 .yjme_item div.imageholder img {
+	width: 100%;
+	height: auto;
+}
+.hdcym3 .yjme_item a.item_title {
+	margin: 10px 0 5px 0;
+	font-size: 130%;
+}
+.hdcym3 .yjme_item p.item_intro {
+	line-height: 22px;
+	clear: both;
+}
+.hdcym3 .yjme_item div.item_details {
+	margin: 0;
+	height: auto;
+}
+.hdcym3 .item_details .item_category, .hdcym3 .item_details .item_cdate, .hdcym3 .item_details .item_author {
+	font-size: 100%;
+}
+.hdcym3 .yjme_item a.item_readmore {
+	padding: 0;
+	border: none;
+	width: auto;
+	display: table;
+	font-size: 100%;
+	float: left;
+}
+.hdcym3 .yjme_item a.item_readmore span {
+	padding: 0;
+}
+/***SUBSCRIBE***/
+.hdcsm {
+	margin: 0!important;
+}
+.hdcsm .yjsquare_in {
+	padding: 10px 0;
+}
+.hdcsm p {
+	padding: 0;
+	margin: 0 10px 0 0;
+	float: left;
+	line-height: 31px;
+	text-transform: uppercase;
+	font-size: 110%;
+	height: 31px
+}
+.hdcsm form {
+	display: table;
+	margin: 0;
+	height: 32px;
+	float: left;
+	clear: none;
+}
+.hdcsm .inputbox_email {
+	padding: 0;
+	height: 20px;
+	width: 300px;
+	margin: 2px 0;
+	line-height: 20px;
+	padding: 3px 5px;
+	border: none;
+	font-size: 80%;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+.hdcsm .subscribe_button {
+	border: none;
+	text-transform: capitalize;
+	font-size: 115%;
+	height: 26px;
+	padding: 0 10px 2px 10px;
+	margin: 3px 0 2px 10px;
+}
+/***SOCIALS***/
+.hdcsim {
+	margin: 0!important;
+}
+.hdcsim .yjsquare_in {
+	padding: 0;
+	overflow: visible;
+}
+.socials {
+	display: block;
+	overflow: hidden;
+	float: right;
+}
+.socials a {
+	display: block;
+	overflow: hidden;
+	height: 52px;
+	width: 60px;
+	float: left;
+	text-indent: -9999px;
+}
+/***PARTNERS***/
+.hdcpm h2.module_title, .hdcpm h2.module_title span {
+	margin: 0;
+	text-transform: uppercase;
+}
+.hdcpm .yjsquare_in {
+	padding: 10px 0;
+}
+/*Template list*/
+.template_list li {
+	background: none;
+	padding: 5px 0;
+	font-size: 100%;
+}
+.template_list li a {
+	display: block;
+	overflow: hidden;
+	height: 20px;
+	line-height: 20px;
+	padding: 0 0 0 20px;
+}
+/***TWITTS***/
+.hdctm h2.module_title, .hdctm h2.module_title span {
+	margin: 0;
+	text-transform: uppercase;
+}
+.hdctm .yj_twitter_cont {
+	padding: 15px 0 15px 20px;
+	margin-right: 20px;
+}
+/***CONTACT US***/
+.hdccm h2.module_title, .hdccm h2.module_title span {
+	margin: 0;
+	text-transform: uppercase;
+}
+.hdccm .yjsquare_in {
+	padding: 10px 0;
+	margin: 0 30px 0 0;
+}
+.hdccm .template_readmore {
+	margin: 20px 0;
+}
+/***ABOUT US***/
+.hdcam h2.module_title, .hdcam h2.module_title span {
+	margin: 0;
+	text-transform: uppercase;
+}
+.hdcam .yjsquare_in {
+	padding: 10px 0;
+}
+/***MODULE STYLES***/
+/*YJ1*/
+.yj1, .yj2 {
+	position: relative;
+	margin: 10px!important;
+}
+.yj1 h2.module_title, .yj2 h2.module_title {
+	padding: 10px;
+	margin: 0;
+}
+.yj1:after, .yj2:after {
+	border-style: solid;
+	border-width: 10px;
+	content: " ";
+	position: absolute;
+	margin: 0;
+	top: 0;
+	right: 0;
+}
+/***ADITIONAL***/
+#holder, #holder2, #holder3 {
+	padding-bottom: 0;
+}
+.insidem {
+	padding: 0;
+}
+#yjsg2, #yjsg3, #yjsg4, #yjsg5, #pathway {
+	box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff;
+}
+#pathway {
+	padding: 10px 0;
+}
+.userpages ul {
+	margin: 10px 0!important;
+}
+.userpages ul li {
+	margin: 5px 0;
+}
+.yjsg-pagination {
+	margin: 10px auto!important;
+}
+div.userpageswrap.login, div.userpageswrap.remind, div.userpageswrap.reset, div.userpageswrap.confirm, div.userpageswrap.offline, div.userpageswrap.register, div.userpageswrap.logout, div.userpageswrap.user {
+	background: none;
+}
+div.login-fields {
+	margin: 10px 0;
+}
+#users-profile-core, #users-profile-custom {
+	padding: 0px 20px;
+}
+#users-profile-core dl, #users-profile-custom dl {
+	overflow: hidden;
+}
+#users-profile-core dl dt, #users-profile-custom dl dt {
+	font-size: 120%;
+	margin: 0;
+	font-weight: normal;
+	padding: 8px 5px;
+}
+#users-profile-core dl dd, #users-profile-custom dl dd {
+	margin: 0;
+	font-size: 100%;
+	padding: 8px 5px;
+}
+#limit.inputbox, #ordering.inputbox, #month.inputbox, #year.inputbox, #limit.inputbox {
+	padding: 5px 5px 5px 0;
+}
+.remind .input, .register .input, .reset .input {
+	padding: 5px 0!important;
+}
+#youjoomla {
+	padding: 5px 0px;
+}
+.yjsglogo {
+	right: 0;
+}
+.button, .validate {
+	font-size: 110%!important;
+	padding: 3px 8px!important;
+}
+/***HOVER EFFECT***/
+span.yj_effect {
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+span.yj_effect img {
+	max-width: inherit;
+}
+.yj_preview, .yj_more {
+	position: absolute!important;
+	display: block;
+	overflow: hidden;
+	width: 30px!important;
+	height: 30px;
+	z-index: 10000;
+	top: -30px;
+	left: -30px;
+}
+.yj_more {
+	right: -30px;
+	left: auto;
+	bottom: -30px;
+	top: auto;
+}
+/*If you change the content image size change the size here to*/
+.hdck2cm span.yj_effect {
+	width: 95px;
+	height: 119px;
+	float: left;
+	margin: 0 20px 0 0;
+}
+/* no radius */
+.readon, .inputbox, .button, .validate, input, #pathway .breadcrumb, .popbox img, .popboxv img, .add-on, .btn-group > .btn:last-child, .btn-group > .dropdown-toggle, #midblock .newsitem_tools ul {
+	-webkit-border-radius: 0px!important;
+	-khtml-border-radius: 0px!important;
+	-moz-border-radius: 0px!important;
+	border-radius: 0px!important;
+	text-shadow: none!important;
+}
+/*rtl*/
+.yjsgrtl #smallmenu, .yjsgrtl .hdclm {
+	float: left;
+}
+.yjsgrtl #header:before, .yjsgrtl .hdcis .YJSlide_intro {
+	right: 0;
+	left: auto;
+}
+.yjsgrtl #header:after {
+	left: 0;
+	right: auto;
+}
+.yjsgrtl .hdclm .poping_links {
+	-moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+	-webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+	-o-transform: matrix(-1, 0, 0, 1, 0, 0);
+	position: relative;
+	float: left;
+	margin: 2px 0 0 -2px;
+}
+.yjsgrtl .hdclm #login_pop #yjpop_remember {
+	margin: -2px -20px 0 0;
+}
+.yjsgrtl .hdcls {
+	float: left!important;
+	margin: 0 0 0 5px;
+}
+.yjsgrtl .hdcls form, .yjsgrtl .hdcis .navContainer_inside:after {
+	margin: 0;
+}
+.yjsgrtl .is_rm {
+	left: 5%;
+	right: auto;
+	-moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+	-webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+	-o-transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.yjsgrtl .hdcis .navContainer_inside:before {
+	margin: 0 -70px 0 0;
+}
+.yjsgrtl .custom1 .yjsquare_in, .yjsgrtl #holder3 .hdcym .yjsquare_in {
+	padding: 0 0 0 15px;
+}
+.yjsgrtl #holder3 .custom1 .yjsquare_in, .yjsgrtl #holder3 .custom1 h2.module_title, .yjsgrtl .hdcym .yjsquare_in {
+	padding: 0 15px 0 0;
+}
+.yjsgrtl #holder3 .hdcmt ul#tabs li {
+	margin: 15px 25px 15px 0;
+}
+.yjsgrtl #holder3 .hdcym2.yj1 {
+	margin: 15px 0 15px 15px!important;
+}
+.yjsgrtl .hdcym h2 {
+	margin: 20px 15px 20px 0;
+}
+.yjsgrtl .hdcym .yjme_item div.imageholder {
+	float: right!important;
+	margin: 10px 0 0 20px;
+}
+.yjsgrtl .hdcym .yjme_item p.item_intro {
+	padding: 0 115px 0 0;
+}
+.yjsgrtl .item_details .item_category, .yjsgrtl .item_details .item_cdate, .yjsgrtl .item_details .item_author, .yjsgrtl .hdcmt .yjme_item div.item_details, .yjsgrtl .hdcym2 .yjme_item a.item_readmore {
+	float: right;
+}
+.yjsgrtl .hdcmt .yy_container .linkForward, .yjsgrtl .hdcmt .yy_container .linkBackward, .yjsgrtl .hdcym .yy_container .linkForward, .yjsgrtl .hdcym .yy_container .linkBackward, .yjsgrtl .hdcym2 .yy_container .linkForward, .yjsgrtl .hdcym2 .yy_container .linkBackward, .yjsgrtl .hdcym3 .yy_container .linkForward, .yjsgrtl .hdcym3 .yy_container .linkBackward {
+	right: auto;
+	left: 5%;
+}
+.yjsgrtl .hdcmt .yy_container .linkBackward {
+	left: 2%;
+	right: auto;
+}
+.yjsgrtl .hdcym .yy_container .linkBackward, .yjsgrtl .hdcym2 .yy_container .linkBackward, .yjsgrtl .hdcym3 .yy_container .linkBackward {
+	left: 0;
+	right: auto;
+}
+.yjsgrtl .hdcym3 .yy_container .linkBackward {
+	left: 8%;
+	right: auto;
+}
+.yjsgrtl .hdcmt ul#tabs li {
+	float: right;
+	margin: 15px 0 15px 25px;
+}
+.yjsgrtl .hdcym2.yj1 {
+	margin: 15px 15px 15px 0!important;
+}
+.yjsgrtl .yj1:after, .yjsgrtl .yj2:after {
+	left: 0;
+	right: auto;
+}
+.yjsgrtl .hdcym2 .yjme_item div.imageholder {
+	margin: 10px 0 10px 20px;
+	float: right!important;
+}
+.yjsgrtl .hdcym2 .item_details .item_category:after, .yjsgrtl .hdcym2 .item_details .item_cdate:after, .yjsgrtl .hdcym2 .item_details .item_author:after {
+	left: 15px;
+	right: auto;
+}
+.yjsgrtl .template_list li a {
+	background-position: right center;
+	padding: 0 20px 0 0;
+}
+.yjsgrtl .template_list li a:hover {
+	background-position: right center;
+}
+.yjsgrtl .hdctm .yj_twitter_cont {
+	padding: 15px 20px 15px 0;
+	background-position: right center;
+}
+.yjsgrtl .hdccm .yjsquare_in {
+	margin: 0 0 0 30px;
+}
+/*k2 rtl*/
+.yjsgrtl div.catItemView, .yjsgrtl div.itemView, .yjsgrtl div.userBlock, .yjsgrtl .latestView div.latestItemView {
+	margin: 0 0 0 20px;
+}
+.yjsgrtl div.catItemImageBlock, .yjsgrtl .hdck2com ul li a.lcAvatar img, .yjsgrtl .hdck2cm span.yj_effect, .yjsgrtl .tagView div.itemImageBlock, .yjsgrtl div.userBlock img, .yjsgrtl .userView div.itemImageBlock {
+	float: right;
+	margin: 0 0 0 20px!important;
+}
+.yjsgrtl div.catItemHeader span.catItemDateCreated, .yjsgrtl ul.preSocialLinks li, .yjsgrtl ul.preSocialLinks {
+	float: right;
+}
+.yjsgrtl .hdck2m, .yjsgrtl .hdck2cm, .yjsgrtl .hdck2com, .yjsgrtl .hdck2tc {
+	margin: 20px 20px 0 0!important;
+}
+.yjsgrtl .k2CategoriesListBlock.hdck2m, .yjsgrtl .k2ItemsBlock.hdck2cm, .yjsgrtl .k2LatestCommentsBlock.hdck2com {
+	margin: 0!important;
+}
+.yjsgrtl .hdck2cm .moduleItemIntrotext {
+	padding: 5px 115px 5px 0!important;
+}
+.yjsgrtl div.k2LatestCommentsBlock ul li span.lcComment {
+	clear: none;
+	padding: 5px 80px 5px 0!important;
+}
+.yjsgrtl .hdck2tc div.k2TagCloudBlock a, .yjsgrtl .hdck2tc div.k2TagCloudBlock a:hover {
+	float: right;
+	margin: 0 0 10px 10px;
+}
+.yjsgrtl .hdck2tc div.k2TagCloudBlock a:after, .yjsgrtl div.itemTagsBlock ul.itemTags li:after {
+	margin: -25px -28px 0 0!important;
+}
+.yjsgrtl div.itemTagsBlock ul.itemTags li:after {
+	margin: -4px -2px 0 0;
+}
+.yjsgrtl div.itemHeader span.itemDateCreated, .yjsgrtl div.itemHeader span.itemAuthor {
+	float: right;
+	margin: 0 0 0 10px;
+}
+.yjsgrtl div.itemToolbar {
+	float: left;
+}
+.yjsgrtl div.itemImageBlock {
+	float: right;
+	margin: 0 0 10px 0;
+}
+.yjsgrtl div.itemCommentsForm form {
+	margin: 0 5px 0 0;
+}
+.yjsgrtl .k2CategoriesListBlock ul li, .yjsgrtl .k2CategoriesListBlock ul li:hover {
+	text-align: right;
+}
+.yjsgrtl div.k2CategoriesListBlock ul li a, .yjsgrtl div.k2CategoriesListBlock ul li.activeCategory a {
+	background-position: right top;
+}
+.yjsgrtl div.k2Pagination {
+	direction: ltr;
+}
+.yjsgrtl div.itemTagsBlock span, .yjsgrtl div.itemTagsBlock ul.itemTags li {
+	float: right;
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><CrystalReportEngine-configuration>
+    <reportlocation>../../rpt/Crystal/</reportlocation>
+    <timeout>10</timeout>
+    
+    <ExternalFunctionLibraryClassNames> 
+		<classname> </classname>
+		<classname> </classname>
+    </ExternalFunctionLibraryClassNames>
+    
+<keycode>B6W60-01CS200-000G970-0YA1</keycode>
+<Javaserver-configuration>
+
+<JDBC>
+	<CacheRowSetSize>100</CacheRowSetSize>
+	<JDBCURL></JDBCURL>
+	<JDBCClassName></JDBCClassName>
+	<JDBCUserName></JDBCUserName>
+	<JNDIURL></JNDIURL>
+	<JNDIConnectionFactory></JNDIConnectionFactory>
+	<JNDIInitContext>/</JNDIInitContext>
+	<JNDIUserName>weblogic</JNDIUserName>
+	<GenericJDBCDriver>
+		<Default>
+			<ServerType>UNKNOWN</ServerType>
+			<QuoteIdentifierOnOff>ON</QuoteIdentifierOnOff>
+			<StoredProcType>Standard</StoredProcType>
+			<LogonStyle>Standard</LogonStyle>
+		</Default>
+		<Sybase>
+			<ServerType>SYBASE</ServerType>
+			<QuoteIdentifierOnOff>OFF</QuoteIdentifierOnOff>
+			<DriverClassName>com.sybase.jdbc2.jdbc.SybDriver</DriverClassName>
+			<StoredProcType>Standard</StoredProcType>
+			<LogonStyle>MySQL</LogonStyle>
+		</Sybase>
+	</GenericJDBCDriver>
+</JDBC>
+<XML>
+	<CacheRowSetSize>100</CacheRowSetSize>
+	<PreReadNBytes>4096</PreReadNBytes>
+	<XMLLocalURL></XMLLocalURL>
+	<SchemaLocalURL></SchemaLocalURL>
+	<XMLHttpURL></XMLHttpURL>
+	<SchemaHttpURL></SchemaHttpURL>
+</XML>
+<JavaBeans>
+    <CacheRowSetSize>100</CacheRowSetSize>
+	<JavaBeansClassPath></JavaBeansClassPath>
+</JavaBeans>
+</Javaserver-configuration>
+</CrystalReportEngine-configuration>

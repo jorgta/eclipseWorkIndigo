@@ -1,0 +1,93 @@
+<ns1:deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java" xmlns:ns1="http://xml.apache.org/axis/wsdd/">
+ <ns1:globalConfiguration>
+  <ns1:parameter name="sendMultiRefs" value="true"/>
+  <ns1:parameter name="disablePrettyXML" value="true"/>
+  <ns1:parameter name="adminPassword" value="admin"/>
+  <ns1:parameter name="attachments.Directory" value="C:\eclipseWorkIndigo\.metadata\.plugins\org.eclipse.wst.server.core\tmp2\wtpwebapps\bituosMonitor\WEB-INF\attachments"/>
+  <ns1:parameter name="dotNetSoapEncFix" value="true"/>
+  <ns1:parameter name="enableNamespacePrefixOptimization" value="false"/>
+  <ns1:parameter name="sendXMLDeclaration" value="true"/>
+  <ns1:parameter name="attachments.implementation" value="org.apache.axis.attachments.AttachmentsImpl"/>
+  <ns1:parameter name="sendXsiTypes" value="true"/>
+  <ns1:requestFlow>
+   <ns1:handler type="java:org.apache.axis.handlers.JWSHandler">
+    <ns1:parameter name="scope" value="session"/>
+   </ns1:handler>
+   <ns1:handler type="java:org.apache.axis.handlers.JWSHandler">
+    <ns1:parameter name="scope" value="request"/>
+    <ns1:parameter name="extension" value=".jwr"/>
+   </ns1:handler>
+  </ns1:requestFlow>
+ </ns1:globalConfiguration>
+ <ns1:handler name="URLMapper" type="java:org.apache.axis.handlers.http.URLMapper"/>
+ <ns1:handler name="LocalResponder" type="java:org.apache.axis.transport.local.LocalResponder"/>
+ <ns1:handler name="Authenticate" type="java:org.apache.axis.handlers.SimpleAuthenticationHandler"/>
+ <ns1:service name="AdminService" provider="java:MSG">
+  <ns1:parameter name="allowedMethods" value="AdminService"/>
+  <ns1:parameter name="enableRemoteAdmin" value="false"/>
+  <ns1:parameter name="className" value="org.apache.axis.utils.Admin"/>
+  <ns1:namespace>http://xml.apache.org/axis/wsdd/</ns1:namespace>
+ </ns1:service>
+ <ns1:service name="Version" provider="java:RPC">
+  <ns1:parameter name="allowedMethods" value="getVersion"/>
+  <ns1:parameter name="className" value="org.apache.axis.Version"/>
+ </ns1:service>
+ <ns1:service name="CounterServer" provider="java:RPC" style="wrapped" use="literal">
+  <ns2:operation name="getName" qname="ns1:getName" returnQName="ns1:getNameReturn" returnType="xsd:string" soapAction="" xmlns:ns1="http://bituosMonitor.bituos.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://xml.apache.org/axis/wsdd/"/>
+  <ns1:operation name="getConfiguration" qname="ns2:getConfiguration" returnQName="ns2:getConfigurationReturn" returnType="ns2:ServiceConfiguration" soapAction="" xmlns:ns2="http://bituosMonitor.bituos.com">
+   <ns1:parameter qname="ns2:companyEncrypted" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+   <ns1:parameter qname="ns2:locationEncrypted" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+   <ns1:parameter qname="ns2:passwordEncrypted" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+   <ns1:parameter qname="ns2:device" type="ns3:Device" xmlns:ns3="http://Beans.bituosMonitor.bituos.com"/>
+  </ns1:operation>
+  <ns1:operation name="registerCounter" qname="ns4:registerCounter" returnQName="ns4:registerCounterReturn" returnType="xsd:int" soapAction="" xmlns:ns4="http://bituosMonitor.bituos.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns4:device" type="ns5:Device" xmlns:ns5="http://Beans.bituosMonitor.bituos.com"/>
+   <ns1:parameter qname="ns4:companyEncrypted" type="xsd:string"/>
+   <ns1:parameter qname="ns4:locationEncrypted" type="xsd:string"/>
+   <ns1:parameter qname="ns4:passwordEncrypted" type="xsd:string"/>
+   <ns1:parameter qname="ns4:countersData" type="ns6:CountersData" xmlns:ns6="http://Beans.bituosMonitor.bituos.com"/>
+   <ns1:parameter qname="ns4:is_str" type="xsd:int"/>
+  </ns1:operation>
+  <ns1:operation name="pingToEmail" qname="ns7:pingToEmail" soapAction="" xmlns:ns7="http://bituosMonitor.bituos.com">
+   <ns1:parameter qname="ns7:email" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  </ns1:operation>
+  <ns1:operation name="getCountersTest" qname="ns8:getCountersTest" returnQName="ns8:getCountersTestReturn" returnType="ns9:Counter" soapAction="" xmlns:ns8="http://bituosMonitor.bituos.com" xmlns:ns9="http://Beans.bituosMonitor.bituos.com"/>
+  <ns1:parameter name="allowedMethods" value="getName getConfiguration getCountersTest registerCounter pingToEmail"/>
+  <ns1:parameter name="typeMappingVersion" value="1.2"/>
+  <ns1:parameter name="wsdlPortType" value="CounterServer"/>
+  <ns1:parameter name="className" value="com.bituos.bituosMonitor.CounterServer"/>
+  <ns1:parameter name="wsdlServicePort" value="CounterServer"/>
+  <ns1:parameter name="schemaQualified" value="http://Beans.bituosMonitor.bituos.com,http://Beans.struts2.com,http://bituosMonitor.bituos.com"/>
+  <ns1:parameter name="wsdlTargetNamespace" value="http://bituosMonitor.bituos.com"/>
+  <ns1:parameter name="wsdlServiceElement" value="CounterServerService"/>
+  <ns1:typeMapping deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle="" qname="ns10:Device" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" type="java:com.bituos.bituosMonitor.Beans.Device" xmlns:ns10="http://Beans.bituosMonitor.bituos.com"/>
+  <ns1:typeMapping deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle="" qname="ns11:ServiceConfiguration" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" type="java:com.bituos.bituosMonitor.ServiceConfiguration" xmlns:ns11="http://bituosMonitor.bituos.com"/>
+  <ns1:typeMapping deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle="" qname="ns12:BeanTypeCommand" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" type="java:com.struts2.Beans.BeanTypeCommand" xmlns:ns12="http://Beans.struts2.com"/>
+  <ns1:typeMapping deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle="" qname="ns13:BeanCompany" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" type="java:com.struts2.Beans.BeanCompany" xmlns:ns13="http://Beans.struts2.com"/>
+  <ns1:typeMapping deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle="" qname="ns14:Counter" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" type="java:com.bituos.bituosMonitor.Beans.Counter" xmlns:ns14="http://Beans.bituosMonitor.bituos.com"/>
+  <ns1:typeMapping deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle="" qname="ns15:CountersData" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" type="java:com.bituos.bituosMonitor.Beans.CountersData" xmlns:ns15="http://Beans.bituosMonitor.bituos.com"/>
+  <ns1:typeMapping deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle="" qname="ns16:BeanCommand" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" type="java:com.struts2.Beans.BeanCommand" xmlns:ns16="http://Beans.struts2.com"/>
+  <ns1:typeMapping deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle="" qname="ns17:DeviceNetwork" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" type="java:com.bituos.bituosMonitor.Beans.DeviceNetwork" xmlns:ns17="http://Beans.bituosMonitor.bituos.com"/>
+  <ns1:arrayMapping innerType="ns19:Counter" languageSpecificType="java:com.bituos.bituosMonitor.Beans.Counter[]" qname="ns18:ArrayOf_tns1_Counter" xmlns:ns18="http://bituosMonitor.bituos.com" xmlns:ns19="http://Beans.bituosMonitor.bituos.com"/>
+  <ns1:arrayMapping innerType="ns21:BeanCommand" languageSpecificType="java:com.struts2.Beans.BeanCommand[]" qname="ns20:ArrayOf_tns2_BeanCommand" xmlns:ns20="http://bituosMonitor.bituos.com" xmlns:ns21="http://Beans.struts2.com"/>
+  <ns1:arrayMapping innerType="ns23:DeviceNetwork" languageSpecificType="java:com.bituos.bituosMonitor.Beans.DeviceNetwork[]" qname="ns22:ArrayOf_tns1_DeviceNetwork" xmlns:ns22="http://bituosMonitor.bituos.com" xmlns:ns23="http://Beans.bituosMonitor.bituos.com"/>
+  <ns1:arrayMapping innerType="xsd:string" languageSpecificType="java:java.lang.String[]" qname="ns24:ArrayOf_xsd_string" xmlns:ns24="http://bituosMonitor.bituos.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+ </ns1:service>
+ <ns1:transport name="http">
+  <ns1:requestFlow>
+   <ns1:handler type="URLMapper"/>
+   <ns1:handler type="java:org.apache.axis.handlers.http.HTTPAuthHandler"/>
+  </ns1:requestFlow>
+  <ns1:parameter name="qs:list" value="org.apache.axis.transport.http.QSListHandler"/>
+  <ns1:parameter name="qs:wsdl" value="org.apache.axis.transport.http.QSWSDLHandler"/>
+  <ns1:parameter name="qs.list" value="org.apache.axis.transport.http.QSListHandler"/>
+  <ns1:parameter name="qs.method" value="org.apache.axis.transport.http.QSMethodHandler"/>
+  <ns1:parameter name="qs:method" value="org.apache.axis.transport.http.QSMethodHandler"/>
+  <ns1:parameter name="qs.wsdl" value="org.apache.axis.transport.http.QSWSDLHandler"/>
+ </ns1:transport>
+ <ns1:transport name="local">
+  <ns1:responseFlow>
+   <ns1:handler type="LocalResponder"/>
+  </ns1:responseFlow>
+ </ns1:transport>
+</ns1:deployment>

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.eventAdmin.Beans.BeanSaloon" table="saloon">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       <property name="description" column="description" type="string"  not-null="true"/>
+       <property name="min_occupancy" column="min_occupancy" type="integer"  not-null="true"/>
+       <property name="max_occupancy" column="max_occupancy" type="integer"  not-null="true"/>
+	   <many-to-one name="id_company" column="id_company" not-null="true"/> 
+       <property name="active" column="active" type="string"  not-null="true"/>
+       <property name="h0" column="h0" type="string"  not-null="true"/>
+       <property name="h1"   column="h1" type="string"  not-null="true"/> 
+	   <property name="h2"   column="h2" type="string"  not-null="true"/>
+       <property name="h3"   column="h3" type="string"  not-null="true"/>
+	   <property name="h4"   column="h4" type="string"  not-null="true"/>
+	   <property name="h5"   column="h5" type="string"  not-null="true"/>
+	   <property name="h6"   column="h6" type="string"  not-null="true"/>
+	   <property name="h7"   column="h7" type="string"  not-null="true"/>
+	   <property name="h8"   column="h8" type="string"  not-null="true"/>
+	   <property name="h9"   column="h9" type="string"  not-null="true"/>
+	   <property name="h10"  column="h10" type="string"  not-null="true"/>
+	   <property name="h11"  column="h11" type="string"  not-null="true"/>
+	   <property name="h12"  column="h12" type="string"  not-null="true"/>
+	   <property name="h13"  column="h13" type="string"  not-null="true"/>
+	   <property name="h14"  column="h14" type="string"  not-null="true"/>
+	   <property name="h15"  column="h15" type="string"  not-null="true"/>
+	   <property name="h16"  column="h16" type="string"  not-null="true"/>
+	   <property name="h17"  column="h17" type="string"  not-null="true"/>
+	   <property name="h18"  column="h18" type="string"  not-null="true"/>
+	   <property name="h19"  column="h19" type="string"  not-null="true"/>
+	   <property name="h20"  column="h20" type="string"  not-null="true"/>
+	   <property name="h21"  column="h21" type="string"  not-null="true"/>
+	   <property name="h22"  column="h22" type="string"  not-null="true"/>
+	   <property name="h23"  column="h23" type="string"  not-null="true"/>
+
+   </class>
+</hibernate-mapping>
+
+
+
+

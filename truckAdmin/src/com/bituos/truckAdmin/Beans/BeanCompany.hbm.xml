@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.bituos.truckAdmin.Beans.BeanCompany" table="company">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       
+       <property name="name" column="NAME" type="string"  not-null="true"/>
+       <property name="rfc" column="RFC" type="string"  not-null="false"/>
+       <property name="address" column="ADDRESS" type="string"  not-null="true"/>
+       <property name="active" column="ACTIVE" type="string"  not-null="true"/>
+       <property name="full_name" column="FULL_NAME" type="string"  not-null="true"/>
+       <property name="logo_file_name" column="logo_file_name" type="string"  not-null="true"/>
+       
+       <property name="smtp_server" column="smtp_server" type="string"  not-null="true"/>
+       <property name="smtp_user_name" column="smtp_user_name" type="string"  not-null="true"/>
+       <property name="smtp_password" column="smtp_password" type="string"  not-null="true"/>
+       <property name="smtp_email" column="smtp_email" type="string"  not-null="true"/>
+       <property name="smtp_is_secure" column="smtp_is_secure" type="string"  not-null="true"/>
+       <property name="smtp_port" column="smtp_port" type="string"  not-null="true"/>
+   
+       
+       <property name="web_site" column="web_site" type="string"  not-null="false"/>
+      
+       
+        <property name="additional1" column="additional1" type="string"  not-null="false"/>
+       <property name="additional2" column="additional2" type="string"  not-null="false"/>
+       <property name="additional3" column="additional3" type="string"  not-null="false"/>
+       <property name="additional4" column="additional4" type="string"  not-null="false"/>
+       <property name="additional5" column="additional5" type="string"  not-null="false"/>
+       <property name="additional6" column="additional6" type="string"  not-null="false"/>
+       <property name="additional7" column="additional7" type="string"  not-null="false"/>
+       <property name="additional8" column="additional8" type="string"  not-null="false"/>
+       <property name="additional9" column="additional9" type="string"  not-null="false"/>
+       <property name="additional10" column="additional10" type="string"  not-null="false"/>
+       
+       
+       <property name="contractSigner" column="contractSigner" type="string"  not-null="false"/>
+       <property name="phones" column="phones" type="string"  not-null="false"/>
+       <property name="streetContract" column="streetContract" type="string"  not-null="false"/>
+       <property name="colonyContract" column="colonyContract" type="string"  not-null="false"/>
+       <property name="cityContract" column="cityContract" type="string"  not-null="false"/>
+       <property name="stateContract" column="stateContract" type="string"  not-null="false"/>
+       
+       <property name="nameRptQuote" column="nameRptQuote" type="string"  not-null="false"/>
+       <property name="nameRptSale" column="nameRptSale" type="string"  not-null="false"/>
+       <property name="nameRptContract" column="nameRptContract" type="string"  not-null="false"/>
+      
+	  
+      
+   </class>
+</hibernate-mapping>
+
+

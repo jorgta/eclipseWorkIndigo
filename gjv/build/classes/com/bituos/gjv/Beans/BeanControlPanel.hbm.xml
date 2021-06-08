@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.bituos.gjv.Beans.BeanControlPanel" table="control_panel">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       <property name="email" column="email" type="string"  not-null="true"/>
+       <property name="email_mine" column="email_mine" type="string"  not-null="true"/>
+       <property name="email_ct" column="email_ct" type="string"  not-null="true"/>
+
+       <property name="server" column="SERVER" type="string"  not-null="true"/>
+       <property name="user_name" column="user_name" type="string"  not-null="true"/>
+       <property name="password" column="password" type="string"  not-null="true"/>
+       <property name="is_secure" column="is_secure" type="string"  not-null="true"/>
+
+       <property name="tc" column="tc" type="double"  not-null="true"/>
+       <property name="tax" column="tax" type="double"  not-null="true"/>
+       <property name="banco" column="Banco" type="string"  not-null="true"/>
+       <property name="cuenta" column="cuenta" type="string"  not-null="true"/>
+       
+       <property name="tmx_order_email" column="tmx_order_email" type="string"  not-null="true"/>
+        
+       <property name="path_server" column="path_server" type="string"  not-null="true"/>
+       <property name="path_www" column="path_www" type="string"  not-null="true"/>
+
+       <property name="days_order_lapsing" column="days_order_lapsing" type="integer"  not-null="true"/>
+       
+       <property name="gain" column="gain" type="double"  not-null="true"/>
+        
+       
+   </class>
+</hibernate-mapping>
+
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;orderResult.jsp&apos; to &apos;orderResult.jsp&apos;&#x0D;&#x0A;- Original project: &apos;lca&apos;&#x0D;&#x0A;- Destination element: &apos;orderResult.jsp&apos;&#x0D;&#x0A;- Original element: &apos;orderResult.jsp&apos;" description="Copy file" element1="WebContent/order/orderResult.jsp" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1429316311531" target="/lca/WebContent/order/orderResult.jsp" units="0" version="1.0"/>
+</session>

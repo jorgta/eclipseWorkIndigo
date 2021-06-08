@@ -1,0 +1,642 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimpleGrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla.com All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla.com                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+html body {
+	line-height:28px;
+	font-family: Arial, Helvetica, sans-serif!important;
+	padding-top:30px;
+	padding-bottom:30px;
+}
+.centertop_in {
+	padding:0 20px;
+}
+/***BOTTOM MODULES***/
+.centerbottom_in {
+	display:block;
+	overflow:hidden;
+	padding:20px 20px 0 20px;
+	margin:0 auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#header {
+	overflow:hiden;
+	padding:0;
+	margin:0 20px;
+}
+#footer {
+	margin-left:-20px;
+	margin-right:-20px;
+	font-size:90%;
+	padding:20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align:center;
+}
+#yjsgheadergrid {
+	overflow:visible;
+}
+.yjsg_grid {
+	padding:20px 0;
+}
+#yjsg2.yjsg_grid {
+	padding:20px 0 0 0;
+}
+#yjsgbodytop.yjsg_grid,
+#yjsgbodybottom.yjsg_grid {
+	padding:0;
+}
+#footer.yjsgsitew {
+	width:auto;
+}
+.module_title,
+.article_title {
+	font-size:150%;
+}
+.button,
+.validate {
+	padding:2px 8px!important;
+	border-radius:none!important;
+}
+/*TOP MENU RESET */
+/* flyouts */
+div.top_menu ul.subul_main,
+div.top_menu ul.subul_main.dropline,
+div.top_menu ul.subul_main {
+	margin-top:5px;
+	padding-top:0!important;
+	padding-bottom:0!important;
+}
+/* mega holder */
+div.YJSG-inner.horiznav {
+	padding-top:7px!important;
+	padding-bottom:7px!important;
+}
+/* mega haschild flyouts */
+.top_menu ul.subul_main.level2,
+.top_menu ul.subul_main.level3,
+.top_menu ul.subul_main.level4 {
+	margin-top:20px;
+}
+#yjsgheadergrid #topmenu_holder{
+	float:right;
+	margin-top:30px;
+}
+.yjsgrtl #yjsgheadergrid #topmenu_holder{
+	float:left;
+}
+/* centered*/
+#topmenu_holder {
+	margin-top:10px;
+}
+.horiznav ul.menunav {
+	text-align:center;
+}
+.horiznav ul.menunav li.level0 {
+	float:none;
+	display:inline-block;
+	text-align:left;
+}
+/* padding increase */
+ul.subul_main.level1 li span a,
+ul.subul_main.level1 li a,
+ul.subul_main.level2 li span a,
+ul.subul_main.level3 li span a,
+ul.subul_main.level4 li span a,
+ul.subul_main.level5 li span a {
+	padding:7px 0!important;
+}
+.yj_menu_module_holder h4 {
+	border-bottom:none!important;
+}
+/***IMAGE SLIDER***/
+.qsis,
+.qsis .yjsquare_in {
+	padding:0;
+	margin:0;
+	position:relative;
+}
+/*description*/
+.qsis .YJSlide_intro {
+	font-weight:normal;
+	width:90%;
+	height:170px;
+	top:240px;
+	right:auto;
+	left:30px;
+}
+.qsis .YJSlide_intro h2 {
+	font-size:58px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-transform: none;
+	line-height: 80px;
+	display: inline;
+	padding:5px 10px 0 10px;
+	margin:0 0 2% 0;
+}
+/*navigation*/
+.qsis .navContainer {
+	height:10px;
+	position:absolute;
+	margin:0;
+	width:auto!important;
+	right:35px;
+	bottom:35px;
+	z-index:1000;
+}
+.qsis .navContainer .bnav {
+	width:10px;
+	height:10px;
+	padding:0;
+	margin:0px;
+	text-indent:-9999px;
+	border:none;
+}
+/* bigheadline */
+.bigheadline {
+	text-align:center;
+}
+.bigheadline h2 {
+	font-size:250%;
+}
+.bigheadline small {
+	font-size:130%;
+	font-weight:normal;
+}
+/***YORK SLIDER***/
+.qsym,
+.qsym .yjsquare_in {
+	padding:0;
+	margin:0;
+}
+.qsym .module_title {
+	text-align:center;
+	font-size:300%;
+}
+.qsym .yy_slider .yy_slideitems {
+	padding:0;
+}
+.qsym .yy_slider .yy_slideitems_in {
+	background:none;
+	padding:10px 0;
+}
+/*navigation*/
+.qsym .yy_container .linkForward,
+.qsym .yy_container .linkBackward {
+	right:10px;
+	top:auto;
+	bottom:-10px;
+	width:16px;
+	height:16px;
+}
+.qsym .yy_container .linkBackward {
+	left:auto;
+	right:30px;
+}
+.qsym .yy_container .linkForward:hover,
+.qsym .yy_container .linkBackward:hover {
+	background-position:left bottom;
+}
+/*bottom navigation*/
+.qsym .yy_bottom_nav_holder {
+	position:relative;
+	margin:0 0 0 10px;
+	padding:0;
+	float:left;
+	top:-3px;
+}
+.qsym ul.yy_bottom_navigation li {
+	width:10px;
+	height:10px;
+	margin:0 2px!important;
+}
+div.yy_ul_left,
+ul.yy_bottom_navigation {
+	background:none;
+	padding:0!important;
+}
+.qsym ul.yy_bottom_navigation li a {
+	display:table;
+	width:10px;
+	height:10px;
+}
+/***MODULE ENGINE IN YORK SLIDER***/
+.qsym .yjsquare_in {
+	padding:0;
+}
+.qsym .yjme_item {
+	float:left;
+	clear:none;
+	width:270px;
+	margin:0 12px;
+	padding:10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: -webkit-box-shadow 0.5s ease-out;
+	-moz-transition: -moz-box-shadow 0.5s ease-out;
+	transition: box-shadow 0.5s ease-out;
+}
+.qsym .yjme_item.isFirst {
+	margin:0 8px 0 4px;
+}
+.qsym .yjme_item.last {
+	margin:0 4px 0 0;
+	float:right;
+}
+.qsym .yjme_item_in {
+	padding:0;
+	margin:0;
+	border:none;
+}
+.qsym .yjme_item div.imageholder {
+	padding:0;
+	margin:0 0 10px 0;
+	border:none;
+}
+.qsym .yjme_item .item_image {
+	font-size:0;
+	line-height:0;
+}
+.qsym .yjme_item a.item_title {
+	margin:10px 0;
+	font-size:150%;
+	font-weight:normal;
+}
+.qsym .yjme_item div.item_details {
+	margin:0 0 10px 0;
+	width:100%;
+	text-transform:uppercase;
+}
+.qsym .yjme_item a.item_readmore {
+	float:left;
+	margin:15px 0;
+	width:auto;
+	height:25px;
+	line-height:25px;
+	border:none;
+}
+.qsym .yjme_item a.item_readmore span {
+	line-height:25px;
+}
+/* qspopular YJME*/
+.qspopular .yjme_item {
+	float:left;
+	width:50%;
+	clear:right;
+	margin:0;
+}
+.qspopular .yjme_item_in {
+	border:none;
+	padding:15px 0 0 0;
+	height:225px;
+}
+.qspopular .yjme_item div.imageholder {
+	padding:0;
+	margin:0 0 10px 0;
+	border:none;
+}
+.qspopular .yjme_item a.item_title {
+	font-size:150%;
+	line-height:130%;
+	margin:0 0 20px 0;
+}
+/* qslatest YJME*/
+.qslatest .yjme_item {
+	margin:0 0 30px 0;
+}
+.qslatest .yjme_item_in {
+	border:none;
+	padding:15px 0 0 0;
+}
+.qslatest .yjme_item div.imageholder {
+	padding:0;
+	margin:0 0 10px 0;
+	border:none;
+}
+.qslatest .yjme_item a.item_title {
+	font-size:150%;
+	line-height:130%;
+	margin:0 0 20px 0;
+}
+.qslatest .yjme_item p.item_intro {
+	line-height:180%;
+}
+/***MULTITABS***/
+.qsmt {
+	margin:0!important;
+}
+.qsmt .module_title {
+	text-align:center;
+	font-size:200%;
+	margin-bottom:20px;
+}
+.qsmt .yjsquare_in {
+	padding:0;
+}
+.qsmt #tabs_holder {
+	border:none;
+}
+.qsmt ul#tabs {
+	height:40px!important;
+	margin-bottom:20px;
+	margin-top:50px;
+	text-align:center;
+}
+.qsmt ul#tabs li {
+	height:32px;
+	line-height:34px;
+	padding:0;
+	font-size:16px!important;
+	font-weight:bold;
+	margin:0 20px 0 0;
+	position:relative;
+	float:none!important;
+	display:inline-block!important;
+}
+.qsmt #tabs_container .tab_content_in {
+	padding:30px 0;
+	text-align:center;
+}
+/***MULTIMEDIA BOX***/
+.qsmt .popbox,
+.qsmt .popboxv {
+	height:70px;
+	padding:0;
+	margin:0 10px 10px 0;
+}
+.qsmt .popbox img,
+.qsmt .popboxv img {
+	padding:0;
+	border:none;
+	box-shadow:none!important;
+}
+.qsmt .bot_caption,
+.qsmt .bot_captionv {
+	display:none;
+}
+/*hover*/
+.qsmt .popbox:hover img,
+.qsmt .popboxv:hover img:hover {
+	opacity:0.5;
+}
+/***YJ TAG CLOUD***/
+.yj_tagcloud {
+	display:block;
+	overflow:hidden;
+	padding-right:50px!important;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.yj_tagcloud a {
+	font-size:13px!important;
+	padding:5px 7px!important;
+	margin-bottom:8px!important;
+	display:inline-block;
+}
+/***SOCIALS***/
+.socials .yjsquare_in {
+	padding:0;
+}
+a.issocial {
+	width:32px;
+	height:32px;
+	margin:20px 10px 20px 0;
+	display:inline-block;
+	text-indent:-9999px;
+}
+/***ADDITIONAL***/
+/*error page*/
+body.yjsgerror-page #errorpage {
+	box-shadow:none;
+	border-radius:0px;
+	border:none;
+}
+body.yjsgerror-page #errorol {
+	background:none;
+	border:none;
+}
+/*user pages*/
+div.userpages h1 {
+	text-align:center;
+	padding:0 10px;
+	font-size:24px;
+	line-height:36px;
+}
+.userpages ul li {
+	padding:3px 15px!important;
+	background-position:left center;
+}
+.login .input,
+.register .input,
+.remind .input,
+.reset .input {
+	padding:5px 0;
+}
+div.userpages div.user-actions {
+	padding:0;
+}
+#users-profile-core,
+#users-profile-custom {
+	padding:0px 20px;
+}
+#users-profile-core dl,
+#users-profile-custom dl {
+	overflow:hidden;
+}
+#users-profile-core dl dt,
+#users-profile-custom dl dt {
+	border:none;
+	padding:5px 10px;
+	font-size:120%;
+	margin:5px 0 0 0;
+	font-weight:normal;
+	padding-left:0;
+}
+#users-profile-core dl dd,
+#users-profile-custom dl dd {
+	margin:0;
+	font-size:100%;
+	padding:8px 5px;
+}
+#pathway {
+	padding:10px 0;
+}
+.yjsglogo {
+	position:relative;
+	margin:15px auto;
+}
+/*tempalte readmore-s*/
+.template_readmore,
+.template_readmore2 {
+	float:left;
+	margin:15px 0;
+	width:auto;
+	height:25px;
+	line-height:27px;
+	border:none;
+	padding:0 10px;
+}
+/***MODULE STYLES***/
+/*yj1,yj2*/
+.yj1 h2.module_title,
+.yj2 h2.module_title {
+	display:table;
+	font-size:130%;
+	padding:3px 10px 2px 10px;
+	position:relative;
+	overflow:visible;
+	line-height:normal;
+}
+/*yj3,yj4*/
+.yj3 h2.module_title,
+.yj4 h2.module_title {
+	text-transform:uppercase;
+	font-size:130%;
+	font-weight:normal;
+}
+.yj3 h2.module_title span,
+.yj4 h2.module_title span {
+	text-transform:uppercase;
+}
+/*yj5,yj6*/
+.yj5 .yjsquare_in,
+.yj6 .yjsquare_in {
+	padding:10px;
+}
+.yj5 h2.module_title,
+.yj6 h2.module_title {
+	margin:0 10px 0 10px;
+	padding:10px 0;
+	text-transform:uppercase;
+	font-size:130%;
+	font-weight:normal;
+}
+.yj5 h2.module_title span,
+.yj6 h2.module_title span {
+	text-transform:uppercase;
+}
+/*yj7,yj8*/
+.yj7 .yjsquare_in,
+.yj8 .yjsquare_in {
+	padding:0 10px 10px 10px;
+}
+.yj7 h2.module_title,
+.yj8 h2.module_title {
+	text-transform:uppercase;
+	font-size:130%;
+	font-weight:normal;
+	padding:3px 10px;
+	position:relative;
+	overflow:visible;
+	margin:15px 10px;
+}
+/* radius */
+.yj_tagcloud a,
+.template_readmore2,
+img.bot_thumb,
+ul#tabs li,
+a.popbox,
+.comment_holder,
+.subCategoryMore,
+.yj1 .module_title,
+.yj2 .module_title,
+.yj7 .module_title,
+.yj8 .module_title,
+div.itemCommentsForm form input#submitCommentButton,
+.button,
+.readon,
+.catItemReadMore a,
+div.k2TagCloudBlock a,
+ul.catItemTags li a,
+div.userBlock,
+ul.itemTags li a,
+.itemReadMore a {
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+}
+/* grayscale */
+.img_wrapper {
+	overflow:hidden;
+	display:block;
+	position:relative;
+}
+/* grayscale spinner*/
+a.item_image img,
+.itemImage img {
+	max-width:inherit!important;
+	width:100%;
+}
+/***RESPONSIVE MENU***/
+#mmenu_holder {
+	text-align:left!important;
+	padding:0;
+	text-align:center;
+	background:none;
+	margin-bottom:20px!important;
+}
+span#yjmm_selectid {
+	padding:0 5px!important;
+	width:95%!important;
+	border:none!important;
+	font-size:110%!important;
+}
+select#mmenu {
+	padding:0;
+}
+/*RTL*/
+.yjsgrtl #logo {
+	float:none;
+}
+.yjsgrtl .qsis .YJSlide_intro {
+	right:30px;
+	left:auto;
+}
+.yjsgrtl .yjCounterPretext h1,
+.yjsgrtl .yjCounterPosttext p,
+.yjsgrtl .bigheadline h2,
+.yjsgrtl .bigheadline p,
+.yjsgrtl #footmod ul.menu-nav,
+.yjsgrtl .validators,
+.yjsgrtl .yjsgcp {
+	text-align:center;
+}
+.yjsgrtl .validators {
+	float:none;
+}
+.yjsgrtl .yj_tagcloud {
+	padding-right:0px!important;
+	padding-left:50px;
+}
+.yjsgrtl a.template_readmore2,
+.yjsgrtl ul.preSocialLinks {
+	float:right;
+}
+.yjsgrtl ul.disc {
+	padding-right:15px;
+	padding-left:0;
+}
+.yjsgrtl div.catItemBody {
+	margin-right:0;
+	margin-left:25px
+}
+.yjsgrtl span.catItemAuthor,
+.yjsgrtl span.catItemDateCreated {
+	float:none;
+}

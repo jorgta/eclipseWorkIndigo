@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.bituos.bar.Beans.BeanMoneda" table="moneda" >
+       <id name="id" type="integer" column="id" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       <property name="descripcion_corta" column="descripcion_corta" type="string"  not-null="false"/>
+       <property name="descripcion" column="descripcion" type="string"  not-null="false"/>
+
+   
+   </class>
+</hibernate-mapping>
+
+

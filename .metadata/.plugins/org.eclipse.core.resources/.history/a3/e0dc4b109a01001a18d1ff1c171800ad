@@ -1,0 +1,208 @@
+<%@ taglib uri="/WEB-INF/struts-html.tld" prefix="html" %>
+<%@ taglib uri="/WEB-INF/struts-bean.tld" prefix="bean" %>
+<%@ taglib uri="/WEB-INF/struts-logic.tld" prefix="logic"%>
+
+<%@ page session="true" import="java.util.*,com.eventAdmin.Beans.*, java.io.*, javax.servlet.http.HttpSession.*"%>
+
+<%
+    HttpSession ses = request.getSession();
+	String dir = request.getParameter("dir");
+	String orderField = request.getParameter("orderOperatorField");
+	String bean = request.getParameter("bean");
+	String list = request.getParameter("list");
+	String fields = request.getParameter("fields");
+	String searchValue  = request.getParameter("searchValue");
+	String searchParam = request.getParameter("searchParam");
+	String active = request.getParameter("active");
+
+	String process =  request.getParameter("process");
+	String processTag =  request.getParameter("processTag");
+	
+	PrintWriter pw=response.getWriter();
+	 /*
+	 
+	Enumeration<String> myJsonData = request.getParameterNames();
+	
+	while(myJsonData.hasMoreElements())
+	{
+		Object objOri=myJsonData.nextElement();
+
+		String param=(String)objOri;
+
+		String value=request.getParameter(param);
+
+		pw.println("Parameter Name is '"+param+"' and Parameter Value is '"+value+"'");
+
+	}		*/
+	
+	
+	/*String value=request.getParameter("data[0][processTag]");
+	pw.println(value);*/
+	
+	
+	net.sf.hibernate.Session sessionHibernate= null;
+	com.bituos.Config configuration = new com.bituos.Config( request );
+	net.sf.hibernate.SessionFactory sessionFactory = configuration.getConfiguration( request ).buildSessionFactory();
+	sessionHibernate = sessionFactory.openSession();
+	BeanUser beanUser = (BeanUser) ses.getAttribute( "beanUser" );
+	
+	
+	
+	
+	String query =  "";
+	
+	String queryFilter = "" ;
+	String orderOperatorField = " ORDER BY u.";
+
+		
+	ses.removeAttribute(list );
+	List listObjects = null;
+	
+	if(searchParam != null)
+	{
+	  queryFilter = " AND u." + searchParam + " LIKE '" + searchValue + "%'" ;
+	  if (orderField == null)
+	  {
+	  	orderOperatorField = orderOperatorField + searchParam;
+	  }
+	  else
+	  {
+		  orderOperatorField = orderOperatorField + orderField;
+	  }
+	  
+	  dir = "asc";
+	}
+	
+	String nestedField1 ="id";
+	String nestedField2 ="id_client";
+	String nestedFieldOrder ="date_reg";
+	String nestedBean = "BeanQuote";
+	//String nestedQuery="SELECT f." + nestedField2 + " FROM " + nestedBean + " f ORDER BY f." + nestedFieldSort ;	
+	//String nestedOperator =" IN (" + nestedQuery + ")";	
+	String queryFilter2=""; 
+	
+	
+	
+	if(nestedBean != null && nestedField1 != null && nestedField2 != null)
+	{
+	  queryFilter2= createQueryIN(nestedBean, nestedField1, nestedField2,  nestedFieldOrder);
+	}
+ 
+
+	
+	
+	
+	query =  " FROM " + bean + " u" +
+			 " WHERE u.id_company.id = " + beanUser.getId_company().getId() +
+			   queryFilter +
+			 " AND u.active = '"+ active +"'" +
+			   queryFilter2 +
+			 " AND u.id <> " + beanUser.getId()+
+			  orderOperatorField + " " + dir ;
+			 
+ 
+			 
+	listObjects = sessionHibernate.createQuery( query ).list();
+	ses.setAttribute(list, listObjects );
+	
+	sessionHibernate.close();
+	sessionFactory.close();
+	
+	
+	String cuString =""; 
+	Integer  counter = 0;
+	String clase;
+	 
+	%> 
+	
+	
+	<% if(listObjects.isEmpty()) 
+     {
+    %>
+    
+    <tr class='RowStyle'>
+    <td colspan="5">
+      No hay resultados para su busqueda...
+    </td>
+    </tr>
+      
+    <%} %>
+	
+	<% if(!listObjects.isEmpty()) 
+      {
+    %>
+
+	   <logic:iterate id="id" indexId="indexId"  name="<%=list %>" scope="session" >
+	 	
+    	<logic:notEqual name="id" property="id" value="">
+    			   	 
+    		 <%if ((counter % 2)==1)						
+        	  clase="AltRowStyle";						
+		  	 else
+			  clase="RowStyle";	%>			
+
+ 
+    			   <tr class="<%=clase%>">
+    		 
+    			 
+				    <td>	 
+					
+					  <a href='#button'  class='btn btn-outline-secondary btn-sm' role='button'   onclick='javascript:__doPost("<%=process%>","<bean:write name="id" property="id" />")' ><%=processTag%></a>
+					</td>
+					<logic:iterate id="idfields" indexId="indexId" name="fields"  scope="session" >
+						<bean:define id="fld" name="idfields" > </bean:define>
+						<% if(((String) fld) != "id")
+						{ 
+				   
+				        %>
+							<td>    
+				     	       <bean:write name="id" property="<%=((String) fld)%>" /> 
+				     	       
+				     	    </td>
+				     	<%
+						}
+				     	%>
+					</logic:iterate>
+				 </tr>
+				
+		</logic:notEqual> 
+
+    		<%counter++;%>	
+   		</logic:iterate>	
+
+<%} 
+	
+
+	
+	
+	sessionHibernate.close();
+	sessionFactory.close();
+
+%>
+
+
+<%!
+	public String createQueryIN(String nestedBean, String nestedField1, String nestedField2, String nestedFieldOrder)
+	{
+		
+		//String nestedField1 ="id";
+		//String nestedField2 ="id_client";
+		//String nestedFieldSort ="date_reg";
+		//String nestedBean = "BeanQuote";
+		String order =" ";
+		if(nestedFieldOrder != null)
+		{
+		 order =" ORDER BY f.";
+		}
+		
+		String nestedQuery="SELECT f." + nestedField2 + " FROM " + nestedBean + " f ORDER BY f." + nestedFieldOrder ;	
+		String nestedOperator =" IN (" + nestedQuery + ")";	
+		String queryFilter2=  " AND u." + nestedField1 + nestedOperator;
+	  	
+		return queryFilter2;
+	}
+%>
+
+
+
+

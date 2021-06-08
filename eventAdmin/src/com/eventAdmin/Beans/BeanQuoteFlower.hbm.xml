@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.eventAdmin.Beans.BeanQuoteFlower" table="quote_flower">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       
+       <many-to-one name="id_quote" column="id_quote" not-null="true"/>
+       
+       <many-to-one name="id_flower" column="id_flower" not-null="true"/>         
+       <property name="flower_description" column="flower_description" type="string"  not-null="true"/>            
+       <property name="flower_price" column="flower_price" type="double"  not-null="true"/> 
+       <property name="flower_perPerson" column="flower_perPerson" type="string"  not-null="true"/>            
+       <property name="personsQty" column="personsQty" type="integer"  not-null="true"/>            
+	
+
+       
+   </class>
+</hibernate-mapping>
+
+

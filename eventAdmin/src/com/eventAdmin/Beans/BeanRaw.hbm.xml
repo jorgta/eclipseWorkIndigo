@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.eventAdmin.Beans.BeanRaw" table="raw">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+     
+       <property name="memo" column="memo" type="string"  not-null="false"/>
+       <property name="hasToOrCc" column="hasToOrCc" type="boolean" length="1" not-null="true"/>
+       <property name="hasRecurrenceRule" column="hasRecurrenceRule" type="boolean" length="1" not-null="true"/>
+       <property name="location" column="location" type="string"  not-null="false"/>
+       <property name="className" column="className" type="string"  not-null="true"/>
+       <many-to-one name="creator" column="creator" not-null="false"/>
+  
+       <property name="active" column="active" type="boolean" length="1" not-null="true"/>
+        
+ 
+
+   </class>
+</hibernate-mapping>
+
+

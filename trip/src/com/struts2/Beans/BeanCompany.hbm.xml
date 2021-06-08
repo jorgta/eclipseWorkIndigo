@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+   <class name="com.struts2.Beans.BeanCompany" table="company" lazy="false">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       
+       <property name="name" column="NAME" type="string"  not-null="true"/>
+       <property name="rfc" column="RFC" type="string"  not-null="false"/>
+       <property name="address" column="ADDRESS" type="string"  not-null="true"/>
+       <property name="active" column="ACTIVE" type="string"  not-null="true"/>
+       <property name="full_name" column="FULL_NAME" type="string"  not-null="true"/>
+       <property name="logo_file_name" column="logo_file_name" type="string"  not-null="true"/>
+       <property name="username" column="username" type="string"  not-null="true"/>
+        <property name="roomFirstPayment" column="roomFirstPayment" type="integer"  not-null="true"/>
+        <property name="roomMustPayAllBeforeReserv" column="roomMustPayAllBeforeReserv" type="integer"  not-null="true"/>
+        <property name="roomCannotBeCanceledBeforeReserv" column="roomCannotBeCanceledBeforeReserv" type="integer"  not-null="true"/>
+      
+   </class>
+</hibernate-mapping>
+
+

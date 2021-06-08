@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN"
+                               "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+
+	<!-- Data Sources -->
+	<data-sources>
+	</data-sources>
+
+	<!-- Form Beans -->
+	<form-beans>
+		<form-bean name="loginForm" type="com.bituos.truckAdmin.forms.LoginForm">
+		</form-bean>
+		<form-bean name="preForm" type="com.bituos.truckAdmin.forms.PreForm">
+		</form-bean>
+		<form-bean name="preWVForm" type="com.bituos.truckAdmin.forms.PreWVForm">
+		</form-bean>
+		<form-bean name="userNewForm" type="com.bituos.truckAdmin.forms.UserNewForm">
+		</form-bean>
+		<form-bean name="userDeleteForm" type="com.bituos.truckAdmin.forms.UserDeleteForm">
+		</form-bean>
+		<form-bean name="userActivateForm" type="com.bituos.truckAdmin.forms.UserActivateForm">
+		</form-bean>
+		<form-bean name="userSelectForm" type="com.bituos.truckAdmin.forms.UserSelectForm">
+		</form-bean>
+		<form-bean name="userCreateRoot" type="com.bituos.truckAdmin.forms.UserCreateRoot">
+		</form-bean>
+		<form-bean name="userChangeForm" type="com.bituos.truckAdmin.forms.UserChangeForm">
+		</form-bean>
+		<form-bean name="processAdminForm" type="com.bituos.truckAdmin.forms.ProcessAdminForm">
+		</form-bean>
+		<form-bean name="clientNewForm" type="com.bituos.truckAdmin.forms.ClientNewForm">
+		</form-bean>
+		<form-bean name="clientDeleteForm" type="com.bituos.truckAdmin.forms.ClientDeleteForm">
+		</form-bean>
+		<form-bean name="clientActivateForm" type="com.bituos.truckAdmin.forms.ClientActivateForm">
+		</form-bean>
+		<form-bean name="clientSelectForm" type="com.bituos.truckAdmin.forms.ClientSelectForm">
+		</form-bean>
+		<form-bean name="clientChangeForm" type="com.bituos.truckAdmin.forms.ClientChangeForm">
+		</form-bean>
+		<form-bean name="quoteNewForm" type="com.bituos.truckAdmin.forms.QuoteNewForm">
+		</form-bean>
+		<form-bean name="quoteDeleteForm" type="com.bituos.truckAdmin.forms.QuoteDeleteForm">
+		</form-bean>
+		<form-bean name="quoteForm" type="com.bituos.truckAdmin.forms.QuoteForm">
+		</form-bean>
+		<form-bean name="saleForm" type="com.bituos.truckAdmin.forms.SaleForm">
+		</form-bean>
+		
+		<form-bean name="saleChangeForm" type="com.bituos.truckAdmin.forms.SaleChangeForm">
+		</form-bean>
+		
+		
+
+		<form-bean name="listEditForm" type="com.bituos.truckAdmin.forms.ListEditForm">
+		</form-bean>
+		<form-bean name="listFlowerMusicEditForm" type="com.bituos.truckAdmin.forms.ListFlowerMusicEditForm">
+		</form-bean>
+		<form-bean name="listSaloonEditForm" type="com.bituos.truckAdmin.forms.ListSaloonEditForm">
+		</form-bean>
+		<form-bean name="listProductEditForm" type="com.bituos.truckAdmin.forms.ListProductEditForm">
+		</form-bean>
+
+		<form-bean name="availabilitySaloonEventTypeForm" type="com.bituos.truckAdmin.forms.AvailabilitySaloonEventTypeForm">
+		</form-bean>
+
+
+		<form-bean name="searchForm" type="com.bituos.truckAdmin.forms.SearchForm">
+		</form-bean>
+
+
+		<form-bean name="cardDeleteForm" type="com.bituos.truckAdmin.forms.CardDeleteForm">
+		</form-bean>
+		<form-bean name="cardActivateForm" type="com.bituos.truckAdmin.forms.CardActivateForm">
+		</form-bean>
+		<form-bean name="cardBuyForm" type="com.bituos.truckAdmin.forms.CardBuyForm">
+		</form-bean>
+		<form-bean name="cardRechargeForm" type="com.bituos.truckAdmin.forms.CardRechargeForm">
+		</form-bean>
+		<form-bean name="cardPersonalizeForm" type="com.bituos.truckAdmin.forms.CardPersonalizeForm">
+		</form-bean>
+		<form-bean name="companyNewForm" type="com.bituos.truckAdmin.forms.CompanyNewForm">
+		</form-bean>
+		<form-bean name="companyDeleteForm" type="com.bituos.truckAdmin.forms.CompanyDeleteForm">
+		</form-bean>
+		<form-bean name="companyActivateForm" type="com.bituos.truckAdmin.forms.CompanyActivateForm">
+		</form-bean>
+		<form-bean name="companySelectForm" type="com.bituos.truckAdmin.forms.CompanySelectForm">
+		</form-bean>
+		<form-bean name="companyChangeForm" type="com.bituos.truckAdmin.forms.CompanyChangeForm">
+		</form-bean>
+		
+		<form-bean name="paymentNewForm" type="com.bituos.truckAdmin.forms.PaymentNewForm">
+		</form-bean>
+		
+	    <form-bean name="paymentCanceledForm" type="com.bituos.truckAdmin.forms.PaymentCanceledForm">
+		</form-bean>
+		
+		
+		
+	
+		<form-bean name="companyChangeByUserForm" type="com.bituos.truckAdmin.forms.CompanyChangeByUserForm">
+		</form-bean>
+		<form-bean name="companyAffiliateForm" type="com.bituos.truckAdmin.forms.CompanyAffiliateForm">
+		</form-bean>
+		<form-bean name="rptForm" type="com.bituos.truckAdmin.forms.RptForm">
+		</form-bean>
+		
+		
+		<form-bean name="truckNewForm" type="com.bituos.truckAdmin.forms.TruckNewForm">
+		</form-bean>
+		
+		<form-bean name="truckChangeForm" type="com.bituos.truckAdmin.forms.TruckChangeForm">
+		</form-bean>
+		<form-bean name="truckSelectForm" type="com.bituos.truckAdmin.forms.TruckSelectForm">
+		</form-bean>
+		
+		<form-bean name="tireNewForm" type="com.bituos.truckAdmin.forms.TireNewForm">
+		</form-bean>
+		
+	   <form-bean name="tireDeleteForm" type="com.bituos.truckAdmin.forms.TireDeleteForm">
+		</form-bean>
+		
+		<form-bean name="tireMovementsForm" type="com.bituos.truckAdmin.forms.TireMovementsForm">
+		</form-bean>
+		
+	   <form-bean name="eventNewForm" type="com.bituos.truckAdmin.forms.EventNewForm">
+		</form-bean>
+		
+		<form-bean name="truckTireConfigurationDeleteOrEditForm" type="com.bituos.truckAdmin.forms.TruckTireConfigurationDeleteOrEditForm">
+		</form-bean>
+		
+		<form-bean name="truckTireConfigurationNewForm" type="com.bituos.truckAdmin.forms.TruckTireConfigurationNewForm">
+		</form-bean>
+		
+		<form-bean name="editConfigurationForm" type="com.bituos.truckAdmin.forms.EditConfigurationForm">
+		</form-bean>
+		
+		
+		
+	</form-beans>
+
+	<!-- Global Exceptions -->
+	<global-exceptions>
+	</global-exceptions>
+
+	<!-- Global Forwards -->
+	<global-forwards> 
+		<forward name="ok" path="/ok.jsp">
+		</forward>
+		<forward name="okChasis" path="/okChasis.jsp">
+		</forward>
+		<forward name="printGlobal" path="/rpt/CallCrystal.jsp">
+		</forward>
+		<forward name="error" path="/notOK.jsp">
+		</forward>
+		<forward name="showCalendar" path="/calendar.jsp">
+		</forward>
+	</global-forwards>
+
+	<!-- Action Mappings -->
+	<action-mappings>
+		<action name="loginForm" path="/login" scope="request" type="com.bituos.truckAdmin.actions.LoginAction" input="/login.jsp">
+			<forward name="links" path="/links.jsp">
+			</forward>
+		</action>
+		<action path="/pre" type="com.bituos.truckAdmin.actions.PreAction" input="/pre.jsp" name="preForm" scope="request">
+			<forward name="login" path="/login.jsp">
+			</forward>
+			<forward name="userNew" path="/user/userNew.jsp">
+			</forward>
+			<forward name="userDelete" path="/user/userDelete.jsp">
+			</forward>
+			<forward name="userActivate" path="/user/userActivate.jsp">
+			</forward>
+			<forward name="userSelect" path="/user/userSelect.jsp">
+			</forward>
+			<forward name="clientNew" path="/client/clientNew.jsp">
+			</forward>
+			<forward name="clientDelete" path="/client/clientDelete.jsp">
+			</forward>
+			<forward name="clientActivate" path="/client/clientActivate.jsp">
+			</forward>
+			<forward name="clientSelect" path="/client/clientSelect.jsp">
+			</forward>
+
+			<forward name="quoteNew" path="/quote/quoteNew.jsp">
+			</forward>
+			<forward name="quoteDelete" path="/quote/quoteDeletejsp">
+			</forward>
+			<forward name="quoteToSale" path="/quote/quoteToSale.jsp">
+			</forward>
+			
+			
+			<forward name="saleChange" path="/sale/saleChange.jsp">
+			</forward>
+			
+			<forward name="paymentNew" path="/sale/paymentNew.jsp">
+			</forward>
+			
+			<forward name="paymentCanceled" path="/sale/paymentCanceled.jsp">
+			</forward>
+			
+
+			<forward name="listEdit" path="/list/listEdit.jsp">
+			</forward>
+			<forward name="listFlowerMusicEdit" path="/list/listFlowerMusicEdit.jsp">
+			</forward>
+			<forward name="listSaloonEdit" path="/list/listSaloonEdit.jsp">
+			</forward>
+			<forward name="listProductEdit" path="/list/listProductEdit.jsp">
+			</forward>
+			
+			<forward name="availabilitySaloonEventType" path="/list/availabilitySaloonEventType.jsp">
+			</forward>
+			
+			<forward name="rptQuote" path="/rpt/rptQuote.jsp">
+			</forward>
+			
+			<forward name="rptQuotes" path="/rpt/rptQuotes.jsp">
+			</forward>
+			
+			<forward name="rptSales" path="/rpt/rptSales.jsp">
+			</forward>
+
+			<forward name="signContract" path="/sale/signContract.jsp">
+			</forward>
+
+			<forward name="rptContracts" path="/rpt/rptContracts.jsp">
+			</forward>
+			
+			<forward name="rptContracts" path="/rpt/rptContracts.jsp">
+			</forward>
+
+			<forward name="cardDelete" path="/card/cardDelete.jsp">
+			</forward>
+			<forward name="cardActivate" path="/card/cardActivate.jsp">
+			</forward>
+			<forward name="cardRecharge" path="/card/cardRecharge.jsp">
+			</forward>
+			<forward name="cardBuy" path="/card/cardBuy.jsp">
+			</forward>
+			<forward name="companyNew" path="/company/companyNew.jsp">
+			</forward>
+			<forward name="companyDelete" path="/company/companyDelete.jsp">
+			</forward>
+			<forward name="companyActivate" path="/company/companyActivate.jsp">
+			</forward>
+			<forward name="companySelect" path="/company/companySelect.jsp">
+			</forward>
+			<forward name="companyChangeByUser" path="/company/companyChangeByUser.jsp">
+			</forward>
+			<forward name="companyAffiliate" path="/company/companyAffiliate.jsp">
+			</forward>
+			<forward name="processAdmin" path="/admin/processAdmin.jsp">
+			</forward>
+			<forward name="userCreateRoot" path="/user/userCreateRoot.jsp">
+			</forward>
+			
+			<forward name="truckNew" path="/truck/truckNew.jsp">
+			</forward>
+			
+			<forward name="truckChange" path="/truck/truckEdit.jsp">
+			</forward>
+			
+			<forward name="selectVehicle" path="/truck/selectVehicle.jsp">
+			</forward>
+			
+			<forward name="tireNew" path="/tire/tireNew.jsp">
+			</forward>
+			
+			<forward name="tireDelete" path="/tire/tireDelete.jsp">
+			</forward>
+			<forward name="tireMovements" path="/tire/tireMovements.jsp">
+			</forward>
+			
+			<forward name="eventNew" path="/event/eventNew.jsp">
+			</forward>
+			
+			<forward name="controlPanel" path="/admin/controlPanel.jsp">
+			</forward>
+			
+			<forward name="truckTireConfigurationNew" path="/admin/newConfiguration.jsp">
+			</forward>
+			
+			
+		</action>
+		<action name="userNewForm" path="/userNew" scope="request" type="com.bituos.truckAdmin.actions.UserNewAction" input="/user/userNew.jsp">
+		</action>
+		<action name="userDeleteForm" path="/userDelete" scope="request" type="com.bituos.truckAdmin.actions.UserDeleteAction" input="/user/userDelete.jsp">
+		</action>
+		<action name="userActivateForm" path="/userActivate" scope="request" type="com.bituos.truckAdmin.actions.UserActivateAction" input="/user/userActivate.jsp">
+		</action>
+		<action name="userSelectForm" path="/userSelect" scope="request" type="com.bituos.truckAdmin.actions.UserSelectAction" input="/user/userSelect.jsp">
+			<forward name="userChange" path="/user/userChange.jsp">
+			</forward>
+		</action>
+		<action name="userChangeForm" path="/userChange" scope="session" type="com.bituos.truckAdmin.actions.UserChangeAction" input="/user/userChange.jsp">
+			<forward name="userChange" path="/user/userSelect.jsp">
+			</forward>
+		</action>
+		<action name="userCreateRoot" path="/userCreateRoot" scope="request" type="com.bituos.truckAdmin.actions.UserCreateRootAction" input="/user/userCreateRoot.jsp">
+		</action>
+		<action name="processAdminForm" path="/processAdmin" scope="request" type="com.bituos.truckAdmin.actions.ProcessAdminAction">
+			<forward name="loop" path="/admin/processAdmin.jsp">
+			</forward>
+		</action>
+		<action name="clientNewForm" path="/clientNew" scope="request" type="com.bituos.truckAdmin.actions.ClientNewAction" input="/client/clientNew.jsp">
+		</action>
+		<action name="clientDeleteForm" path="/clientDelete" scope="request" type="com.bituos.truckAdmin.actions.ClientDeleteAction" input="/client/clientDelete.jsp">
+		</action>
+		<action name="clientActivateForm" path="/clientActivate" scope="request" type="com.bituos.truckAdmin.actions.ClientActivateAction" input="/client/clientActivate.jsp">
+		</action>
+		<action name="clientSelectForm" path="/clientSelect" scope="request" type="com.bituos.truckAdmin.actions.ClientSelectAction" input="/client/clientSelect.jsp">
+			<forward name="clientChange" path="/client/clientChange.jsp">
+			</forward>
+		</action>
+		<action name="clientChangeForm" path="/clientChange" scope="session" type="com.bituos.truckAdmin.actions.ClientChangeAction" input="/client/clientChange.jsp">
+ 			<forward name="clientChange" path="/client/clientSelect.jsp">
+			</forward>
+		</action>
+		<action path="/quoteNew" name="quoteNewForm" scope="request" type="com.bituos.truckAdmin.actions.QuoteNewAction" input='/quote/quoteNew.jsp'>
+			<forward name="loop" path="/quote/quoteNew.jsp">
+			</forward>
+		</action>
+		<action path="/quoteDelete" name="quoteDeleteForm" scope="request" type="com.bituos.truckAdmin.actions.QuoteDeleteAction" input='/quote/quoteDelete.jsp'>
+			<forward name="loop" path="/quote/quoteDelete.jsp">
+			</forward>
+		</action>
+		<action path="/quoteDelete" name="quoteDeleteForm" scope="request" type="com.bituos.truckAdmin.actions.QuoteDeleteAction" input='/quote/quoteDelete.jsp'>
+			<forward name="loop" path="/quote/quoteDelete.jsp">
+			</forward>
+		</action>
+		<action path="/quote" name="quoteForm" scope="request" type="com.bituos.truckAdmin.actions.QuoteAction">
+			<forward name="loop" path="/quote/quoteNew.jsp">
+			</forward>
+		</action>
+		
+		<action path="/sale" name="saleForm" scope="request" type="com.bituos.truckAdmin.actions.SaleAction">
+		</action>
+		
+		<action path="/saleChange" name="saleChangeForm" scope="session" type="com.bituos.truckAdmin.actions.SaleChangeAction" input='/sale/saleChange.jsp'>
+		   <forward name="loop" path="/sale/saleChange.jsp">
+			</forward>
+		</action>
+		
+		<action path="/paymentNew" name="paymentNewForm" scope="request" type="com.bituos.truckAdmin.actions.PaymentNewAction" input='/sale/paymentNew.jsp'>
+		   <forward name="loop" path="/sale/paymentNew.jsp">
+			</forward>
+		</action>
+		
+	    <action path="/paymentCanceled" name="paymentCanceledForm" scope="request" type="com.bituos.truckAdmin.actions.PaymentCanceledAction" input='/sale/paymentCanceled.jsp'>
+		   <forward name="loop" path="/sale/paymentCanceled.jsp">
+			</forward>
+		</action>
+		
+		
+
+		<action path="/listEdit" name="listEditForm" scope="request" type="com.bituos.truckAdmin.actions.ListEditAction" input='/list/listEdit.jsp'>
+			<forward name="loop" path="/list/listEdit.jsp">
+			</forward>
+		</action>
+		<action path="/listFlowerMusicEdit" name="listFlowerMusicEditForm" scope="request" type="com.bituos.truckAdmin.actions.ListFlowerMusicEditAction" input='/list/listFlowerMusicEdit.jsp'>
+			<forward name="loop" path="/list/listFlowerMusicEdit.jsp">
+			</forward>
+		</action>
+		
+		<action path="/listSaloonEdit" name="listSaloonEditForm" scope="request" type="com.bituos.truckAdmin.actions.ListSaloonEditAction" input='/list/listSaloonEdit.jsp'>
+			<forward name="loop" path="/list/listSaloonEdit.jsp">
+			</forward>
+		</action>
+
+		<action path="/listProductEdit" name="listProductEditForm" scope="request" type="com.bituos.truckAdmin.actions.ListProductEditAction" input='/list/listProductEdit.jsp'>
+			<forward name="loop" path="/list/listProductEdit.jsp">
+			</forward>
+		</action>
+
+		<action path="/availabilitySaloonEventType" name="availabilitySaloonEventTypeForm" scope="request" type="com.bituos.truckAdmin.actions.AvailabilitySaloonEventTypeAction" input='/list/availabilitySaloonEventType.jsp'>
+			<forward name="loop" path="/list/availabilitySaloonEventType.jsp">
+			</forward>
+		</action>
+
+
+
+
+		<action path="/search" name="searchForm" scope="request" input="/quote/quoteNew.jsp" type="com.bituos.truckAdmin.actions.SearchAction">
+			<forward name="userDelete" path="/user/userDelete.jsp">
+			</forward>
+			<forward name="userActivate" path="/user/userActivate.jsp">
+			</forward>
+			<forward name="userSelect" path="/user/userSelect.jsp">
+			</forward>			
+			<forward name="quoteNew" path="/quote/quoteNew.jsp">
+			</forward>
+			<forward name="clientSelect" path="/client/clientSelect.jsp">
+			</forward>			
+			<forward name="clientDelete" path="/client/clientDelete.jsp">
+			</forward>			
+			<forward name="clientActivate" path="/client/clientActivate.jsp">
+			</forward>			
+			<forward name="userAsignSupervisor" path="/admin/asignSupervisor.jsp">
+			</forward>
+			<forward name="clientAsignSalesAgent" path="/admin/asignSalesAgent.jsp">
+			</forward>
+			<forward name="caseResolve" path="/cases/caseResolve.jsp">
+			</forward>
+		</action>
+
+		
+		<action name="cardDeleteForm" path="/cardDelete" scope="request" type="com.bituos.truckAdmin.actions.CardDeleteAction" input="/card/cardDelete.jsp">
+		</action>
+		<action name="cardActivateForm" path="/cardActivate" scope="request" type="com.bituos.truckAdmin.actions.CardActivateAction" input="/card/cardActivate.jsp">
+		</action>
+		<action name="cardRechargeForm" path="/cardRecharge" scope="request" type="com.bituos.truckAdmin.actions.CardRechargeAction" input="/card/cardRecharge.jsp">
+		</action>
+		<action name="cardBuyForm" path="/cardBuy" scope="request" type="com.bituos.truckAdmin.actions.CardBuyAction" input="/card/cardBuy.jsp">
+		</action>
+		<action name="cardPersonalizeForm" path="/cardPersonalize" scope="request" type="com.bituos.truckAdmin.actions.CardPersonalizeAction" input="/card/cardPersonalize.jsp">
+		</action>
+		<action name="companyNewForm" path="/companyNew" scope="request" type="com.bituos.truckAdmin.actions.CompanyNewAction" input="/company/companyNew.jsp">
+		</action>
+		<action name="companyDeleteForm" path="/companyDelete" scope="request" type="com.bituos.truckAdmin.actions.CompanyDeleteAction" input="/company/companyDelete.jsp">
+		</action>
+		<action name="companyActivateForm" path="/companyActivate" scope="request" type="com.bituos.truckAdmin.actions.CompanyActivateAction" input="/company/companyActivate.jsp">
+		</action>
+		<action name="companySelectForm" path="/companySelect" scope="request" type="com.bituos.truckAdmin.actions.CompanySelectAction" input="/company/companySelect.jsp">
+			<forward name="companyChange" path="/company/companyChange.jsp">
+			</forward>
+		</action>
+		<action name="companyChangeForm" path="/companyChange" scope="session" type="com.bituos.truckAdmin.actions.CompanyChangeAction" input="/company/companyChange.jsp">
+			<forward name="companyChange" path="/company/companyChange.jsp">
+			</forward>
+		</action>
+
+		<action name="companyChangeByUserForm" path="/companyChangeByUser" scope="session" type="com.bituos.truckAdmin.actions.CompanyChangeByUserAction" input="/company/companyChangeByUser.jsp">
+			<forward name="companyChangeByUser" path="/company/companyChangeByUser.jsp">
+		</forward>
+		</action>
+		<action name="companyAffiliateForm" path="/companyAffiliate" scope="session" type="com.bituos.truckAdmin.actions.CompanyAffiliateAction" input="/company/companyAffiliate.jsp">
+		</action>
+		<action name="preWVForm" path="/preWV" scope="request" type="com.bituos.truckAdmin.actions.PreWVAction">
+			<forward name="rpt.cardCredit" path="/rpt/cardCredit.jsp">
+			</forward>
+			<forward name="userCreateRoot" path="/user/userCreateRoot.jsp">
+			</forward>
+		</action>
+		<action name="rptClientsForm" path="/rptClients" scope="request" type="com.bituos.truckAdmin.actions.RptClientsAction">
+		</action>
+		<action name="rptForm" path="/rpt" scope="request" type="com.bituos.truckAdmin.actions.RptAction">
+			<forward name="callCrystalTag" path="/rpt/CallCrystalTag.jsp">
+			</forward>
+		</action>
+		
+		
+		<action name="truckNewForm" path="/truckNew" scope="request" type="com.bituos.truckAdmin.actions.TruckNewAction" input="/truck/truckNew.jsp">
+		    <forward name="loop" path="/truck/truckNew.jsp">
+			</forward>
+		</action>
+		
+		<action name="truckChangeForm" path="/truckChange" scope="session" type="com.bituos.truckAdmin.actions.TruckChangeAction" input="/truck/truckEdit.jsp">
+		  <forward name="loop" path="/truck/truckEdit.jsp">
+			</forward>
+		</action>
+		
+		<action name="truckSelectForm" path="/truckSelect" scope="session" type="com.bituos.truckAdmin.actions.TruckSelectAction" input="/truck/selectVheicle.jsp">
+		  <forward name="edit" path="/truck/truckEdit.jsp">
+			</forward>			
+		</action>
+		
+		
+		<action name="tireNewForm" path="/tireNew" scope="request" type="com.bituos.truckAdmin.actions.TireNewAction" input="/tire/tireNew.jsp">
+		   <forward name="loop" path="/tire/tireNew.jsp">
+			</forward>
+		</action>
+		
+		<action name="tireDeleteForm" path="/tireDelete" scope="request" type="com.bituos.truckAdmin.actions.TireDeleteAction" input="/tire/tireDelete.jsp">
+		   <forward name="tireDelete" path="/tire/tireDelete.jsp">
+			</forward>
+		</action>
+		
+		<action name="tireMovementsForm" path="/tireMovements" scope="request" type="com.bituos.truckAdmin.actions.TireMovementsAction" input="/tire/tireMovements.jsp">
+		   <forward name="loop" path="/tire/tireMovements.jsp">
+			</forward>
+		</action>
+		
+		<action name="eventNewForm" path="/eventNew" scope="request" type="com.bituos.truckAdmin.actions.EventNewAction" input="/event/eventNew.jsp">
+           <forward name="loop" path="/event/eventNew.jsp">
+			</forward>
+		</action>
+		
+		<action name="truckTireConfigurationNewForm" path="/truckTireConfigurationNew" scope="request" type="com.bituos.truckAdmin.actions.TruckTireConfigurationNewAction" input="/admin/newConfiguration.jsp">
+           <forward name="loop" path="/admin/newConfiguration.jsp">
+			</forward>
+		
+		</action>
+		
+		
+		<action name="truckTireConfigurationDeleteOrEditForm" path="/truckTireConfigurationDeleteOrEdit" scope="request" type="com.bituos.truckAdmin.actions.TruckTireConfigurationDeleteOrEditAction" input="/admin/controlPanel.jsp">
+           <forward name="loop" path="/admin/controlPanel.jsp">
+			</forward>
+			<forward name="edit" path="/admin/editConfiguration.jsp">
+			</forward>
+		</action>
+		
+		
+		
+		<action name="editConfigurationForm" path="/editConfiguration" scope="request" type="com.bituos.truckAdmin.actions.EditConfigurationAction" input="/admin/editConfiguration.jsp">
+           <forward name="loop" path="/admin/editConfiguration.jsp">
+			</forward>
+		   
+		</action>
+
+		
+		
+	</action-mappings>
+
+	<!-- Message Resources -->
+	<message-resources parameter="eclipse.resources.ApplicationResources"/>
+	
+
+</struts-config>

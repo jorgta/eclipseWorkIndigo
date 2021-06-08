@@ -1,0 +1,211 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimpleGrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla.com. All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla.com                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+@media screen and (max-width: 980px) {
+.top_menu_poz_navbar,
+#mmenu_holder {
+	width:280px!important;
+	margin-top:10px;
+}
+#default_video {
+	width:100%!important;
+}
+}
+@media screen and (max-width: 1199px) {
+.top_menu,
+.top_menu_poz_navbar,
+.top_menu_poz.navpills {
+	width:auto!important;
+}
+#yjsg1,
+#yjsg2,
+#yjsg3,
+#yjsg4,
+#yjsg5,
+#yjsg6,
+#yjsg7,
+#footer,
+#joomlacredit,
+.yjsgsitew,
+#centertop,
+#centerbottom {
+	width:auto!important;
+}
+}
+/*Image Slider*/
+@media screen and (max-width: 1200px) {
+.qsis .YJSlide_intro {
+	height:100%;
+	left:0;
+	bottom:auto;
+	top:0;
+	overflow:hidden;
+	padding:40px 20px 10px 20px;
+}
+.YJSlide_slide .YJSlide_intro_in {
+	padding:0;
+	margin:0;
+	height:100%;
+}
+.qsis .navContainer {
+	left:20px;
+	right:auto;
+	top:10px;
+}
+}
+@media screen and (max-width: 600px) {
+.qsis img {
+	height:auto!important;
+	width:100%!important;
+}
+.qsis h2 {
+	display:none!important;
+}
+}
+/*York module*/
+@media screen and (max-width: 1200px) {
+.yy_container,
+.yy_slider,
+.yy_slider .yy_slideitems,
+.yy_slider .yy_slideitems_in {
+	width:100%!important;
+	height:650px!important;
+}
+}
+@media screen and (max-width: 980px) {
+.qsym .yy_bottom_nav_holder {
+	margin:0 0 0 50px;
+	float:left;
+}
+.qsym .yy_container .linkForward,
+.qsym .yy_container .linkBackward {
+	left:25px;
+	right:auto;
+}
+.qsym .yy_container .linkBackward {
+	left:0px;
+	right:auto;
+}
+}
+@media screen and (max-width: 540px) {
+.yy_container,
+.yy_slider,
+.yy_slider .yy_slideitems,
+.yy_slider .yy_slideitems_in {
+	height:1200px!important;
+}
+}
+@media screen and (max-width: 320px) {
+.yy_container,
+.yy_slider,
+.yy_slider .yy_slideitems,
+.yy_slider .yy_slideitems_in {
+	height:1350px!important;
+}
+}
+/*Engine module*/
+@media screen and (max-width: 1200px) {
+.qsym .yjme_item {
+	width:45%!important;
+	margin:10px!important;
+}
+.qsym .yjme_item.last {
+	float:left;
+}
+.qsym .yjme_item div.imageholder,
+.qsym .yjme_item .item_image,
+.qsym .yjme_item .item_image {
+	width:100%!important;
+	float:none!important;
+	margin:0!important;
+}
+.qsym .yjme_item .item_image img {
+	max-width:100%!important;
+	width:100%!important;
+	height:auto!important;
+}
+.qsym .yjme_item a.item_title {
+	float:none!important;
+	text-align:center!important;
+	width:100%!important;
+}
+.qsym .yjme_item p.item_intro {
+	text-align:center!important;
+	float:none!important;
+}
+}
+@media screen and (max-width: 540px) {
+.qsym .yjme_item {
+	width:95%!important;
+}
+}
+@media screen and (max-width: 500px) {
+.qspopular .yjme_item {
+	width:100%!important;
+}
+.qspopular .yjme_item div.imageholder,
+.qspopular .yjme_item .item_image {
+	width:100%!important;
+	float:none!important;
+	margin:0!important;
+}
+.qspopular .yjme_item .item_image img {
+	max-width:100%;
+	height:auto;
+}
+.qspopular .yjme_item a.item_title {
+	float:none!important;
+	text-align:center!important;
+	margin:10px 0;
+}
+}
+@media screen and (max-width: 290px) {
+.qsym .yjme_item {
+	width:90%!important;
+}
+}
+/*mbox*/
+@media screen and (max-width: 980px) {
+.qsmt #tabs_container .tab_content_in {
+	padding:30px 0 50px 0!important;
+}
+.qsmt ul#tabs li {
+	margin:10px 5px 0 0;
+}
+}
+@media screen and (max-width: 600px) {
+.qsmt #tabs_container .tab_content_in {
+	padding:30px 0 140px 0!important;
+}
+}
+@media screen and (max-width: 459px) {
+.qsmt ul#tabs {
+	height:80px!important;
+}
+}
+@media screen and (max-width: 615px) {
+#user6,
+#user7 {
+	width:100%!important;
+}
+}
+@media screen and (max-width: 380px) {
+.qsmt #tabs_container .tab_content_in {
+	padding:30px 0 340px 0!important;
+}
+}
+@media screen and (max-width: 979px) {
+div.yjsquare.qsmt ul#tabs {
+height:120px!important;
+}
+}

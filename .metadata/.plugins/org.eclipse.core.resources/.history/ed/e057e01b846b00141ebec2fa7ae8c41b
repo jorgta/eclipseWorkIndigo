@@ -1,0 +1,770 @@
+package com.bituos.truckAdmin.actions;
+
+
+
+import com.bituos.truckAdmin.Beans.*;
+
+
+
+
+import java.util.*;
+
+
+public class BuildTruckHtml {
+	private List<BeanTruckTireConfigurationDetail> beanTruckTireConfigurationDetailList; 
+	private int axisCount;
+	private int maxCols;
+	int[] tireByAxis;
+	String[] typeAxis;
+	
+	BuildTruckHtml(int axisCount,
+			       int maxCols) throws Exception {
+	{
+		
+		this.axisCount =axisCount;
+		this.maxCols =maxCols;
+		
+		
+	} }
+	
+	public String getHTMLV1()
+	{
+		
+
+		
+		
+		/*String javaScript = "<script> " +
+							"function selectTire(value)" +
+							"{"+
+							"alert(theForm.action)" +
+							"}" +
+							"</script>";*/
+		
+		String html = "";		
+		String axisFront="<td onclick='test(this);' style='margin:0px' ><img src='./truckimg/ejedelantero.jpg' width='75' height='60'/></td>";		
+		String axisBottom = "<td><img src='./truckimg/ejetrasero.jpg' width='75' height='63'/></td>";
+		String tLeft ="<td width='22' style='background-image:url(./truckimg/tfl.jpg);background-repeat:no-repeat;background-size:22px 60px;'></td>";
+		String tRigth ="<td width='22' style='background-image:url(./truckimg/tfr.jpg);background-repeat:no-repeat;background-size:22px 60px;'></td>";
+
+		String hmtlChasisBody="";
+		
+						 
+			
+			
+			
+	    String trOpen="<tr>";				
+		String tdOpen="<td width='22'>";
+		String tdClose="</td>";					
+		String trClose="</tr>";
+		
+		  
+	    String htmlTableWidth =String.valueOf((maxCols * 22) + 75) ;
+	    String htmlTableStart="<table width='"+ htmlTableWidth +"' border='0' cellspacing='0'  cellpadding='0'>";
+	    String htmlTableEnd="</table>";
+	  
+	    hmtlChasisBody= "<td><img src='./truckimg/chasis.png' width='75' height='186' /></td>";
+	  
+	    String htmlChasisBottom  = "<td><img src='./truckimg/chasisback.jpg' width='75' height='41'  alt=''/></td>";
+	  
+	    String tdTemp="";
+	    String trTemp="";
+	    String tdMidleChasisFront =  "<td width='75'><img  src='./truckimg/chasisfront.jpg' width='75' height='37'  alt=''/></td>";
+	
+	
+	    
+	    String htmlConfiguration=""; 
+
+	    
+		String axisHTMLFront="";
+		String axisHTMLBottom="";
+		String axisTdLeft="";
+        String axisTdRigth="";
+	    
+	   
+		
+		String truckFront="";
+		String truckBottom="";
+		String truckBody="";
+		
+		String[] axis = new String[axisCount];
+		
+		
+		BeanTruckTireConfigurationDetail beanTruckTireConfigurationDetail= null;
+		Iterator<BeanTruckTireConfigurationDetail> iter = beanTruckTireConfigurationDetailList.iterator();	
+	
+		int tdEmptyLeftAndRigth=0;
+		
+		tdTemp = "";
+		int tireCount = 0;
+		int tireIndexLeft= 0;
+		int  tireIndexRigthTemp= 1;
+		int tireIndexRigth= 0;
+		
+		
+		truckFront =  trOpen; 
+		    
+		for(int j=1; j <= (maxCols + 1); j++)
+		  {
+			 if( ((maxCols / 2) + 1)== j)
+			 {
+			   tdTemp = tdTemp + tdMidleChasisFront; 
+			  
+			   
+			 }
+			 else
+			   tdTemp = tdTemp + tdOpen + tdClose;
+		  }
+		truckFront = truckFront + tdTemp + trClose;   
+				
+		
+
+		for(int j=0; j < axisCount; j++ )
+		{
+			tireCount = 0;
+			
+			tireIndexLeft = (tireByAxis[j])/ 2;
+			//tireIndexRigth = (tireByAxis[j])/ 2;
+			tireIndexRigth= 0;
+			
+			while(iter.hasNext())
+	    	{		
+				beanTruckTireConfigurationDetail= (BeanTruckTireConfigurationDetail)iter.next();
+				int id =beanTruckTireConfigurationDetail.getId();
+				tdEmptyLeftAndRigth =  ((maxCols + 1) - (tireByAxis[j] + 1))/ 2;
+				
+				
+				for(int i=1; i <= (maxCols + 1); i++ )
+				{
+					
+								
+					
+					if(i  == 1)
+					   trTemp =  trOpen; 
+					   
+					
+					 if( ((maxCols / 2) + 1)== i )
+					 {
+						 if(typeAxis[j].equals("Y"))
+						  tdTemp = tdTemp +  axisFront  ; 
+						 else
+						  tdTemp = tdTemp +  axisBottom  ; 
+					 
+					  					   
+					 }
+					
+					
+	
+					if(beanTruckTireConfigurationDetail.getIs_front_axis().equals("Y"))
+					{
+							
+						if(beanTruckTireConfigurationDetail.getAxis_side().equals("L")) 
+					    {
+							if( i <  ((maxCols / 2) + 1) )
+							{
+							  if((i) <= tdEmptyLeftAndRigth)
+								axisTdLeft= axisTdLeft + tdOpen + tdClose;
+							
+							
+							  if((i) > tdEmptyLeftAndRigth)
+							  {
+						        //axisTdLeft= axisTdLeft + tLeft;
+								  
+								String value =String.valueOf(j + 1) + String.valueOf(tireIndexLeft);
+								String onclick="onclick='selectTire("+value+")';";
+							    		  
+						        axisTdLeft= axisTdLeft + "<td  width='22' "+ onclick +" style='background-image:url(./truckimg/tfl.jpg);background-repeat:no-repeat;background-size:22px 60px;'>"+
+						                                 "<center><font size='3' color='white'>" +
+						                                 value + 					                                   
+						                                 "</font></center>"+
+						        						 "</td>"; 
+						        tireCount++;
+						        tireIndexLeft--;
+							  }
+							}
+						  
+					    }
+				
+						
+					   if(beanTruckTireConfigurationDetail.getAxis_side().equals("R")) 
+					    {
+						   if( i >  ((maxCols / 2) + 1) )
+						   {
+							  
+							   
+							   if(i <=  ( ((maxCols) + 1) - tdEmptyLeftAndRigth ))	
+							   {
+								// axisTdRigth= axisTdRigth + tRigth;
+								   
+								 tireIndexRigth++;  
+								 String value =String.valueOf(j + 1) + String.valueOf(tireIndexRigth);
+								 String onclick="onclick='selectTire("+value+")';";
+							    		  
+								 axisTdRigth= axisTdRigth + "<td width='22' "+ onclick +" style='background-image:url(./truckimg/tfr.jpg);background-repeat:no-repeat;background-size:22px 60px;'>"+
+						                                    "<center><font size='3' color='white'>" +
+						                                    value + 					                                   
+						                                   "</font></center>"+
+						        						   "</td>"; 
+								 tireCount++;
+								
+							   }
+	
+							   if(i >  ( ((maxCols ) + 1) - tdEmptyLeftAndRigth ))
+								  axisTdRigth= axisTdRigth + tdOpen + tdClose;
+						   }
+							
+					    }	
+						
+						 
+	
+						 
+					}else if(beanTruckTireConfigurationDetail.getIs_front_axis().equals("N"))
+					{
+						if(beanTruckTireConfigurationDetail.getAxis_side().equals("L")) 
+					    {
+							if( i <  ((maxCols / 2) + 1) )
+							{
+								if((i) <= tdEmptyLeftAndRigth)
+									axisTdLeft= axisTdLeft + tdOpen + tdClose;
+								
+								
+								if((i) > tdEmptyLeftAndRigth)
+								{
+							        //axisTdLeft= axisTdLeft + tLeft;
+							        String value =String.valueOf(j + 1) + String.valueOf(tireIndexLeft);
+									String onclick="onclick='selectTire("+value+")';";
+								    		  
+							        axisTdLeft= axisTdLeft + "<td width='22' "+ onclick +" style='background-image:url(./truckimg/tfl.jpg);background-repeat:no-repeat;background-size:22px 60px;'>"+
+							                                 "<center><font size='3' color='white'>" +
+							                                 value + 					                                   
+							                                 "</font></center>"+
+							        						 "</td>"; 
+							        tireCount++;
+							        tireIndexLeft--;
+								}
+							}
+						  
+					    }
+				
+						
+					   if(beanTruckTireConfigurationDetail.getAxis_side().equals("R")) 
+					    {
+						   
+						   if( i >  ((maxCols / 2) + 1) )
+						   {
+							   
+							   
+							   if(i <=  ( ((maxCols) + 1) - tdEmptyLeftAndRigth ))	
+							   {
+								 //axisTdRigth= axisTdRigth + tRigth;
+								   
+								   tireIndexRigth++;   
+								 String value =String.valueOf(j + 1) + String.valueOf(tireIndexRigth);
+								 String onclick="onclick='selectTire("+value+")';";
+							    		  
+								 axisTdRigth= axisTdRigth + "<td width='22' "+ onclick +" style='background-image:url(./truckimg/tfr.jpg);background-repeat:no-repeat;background-size:22px 60px;'>"+
+						                                    "<center><font size='3' color='white'>" +
+						                                    value + 					                                   
+						                                   "</font></center>"+
+						        						   "</td>"; 
+								 tireCount++;
+								 
+							
+								 
+							   }
+	
+							   if(i >  ( ((maxCols ) + 1) - tdEmptyLeftAndRigth ))
+								  axisTdRigth= axisTdRigth + tdOpen + tdClose;
+						   }
+						   	
+							
+					    }	
+						
+						
+						
+					}
+						
+						
+								
+	 	
+					
+				}
+				
+				if(htmlConfiguration.equals("") )
+		          {
+					 
+		          	 htmlConfiguration = trTemp +  axisTdLeft + tdTemp ;
+		          	 trTemp = "";
+		          	 axisTdLeft = "";
+		          	 tdTemp ="";
+		          
+		          }
+		          else
+		          {
+		        	 axis[j] = htmlConfiguration + axisTdRigth + trClose;
+		          	
+		          	 htmlConfiguration = "";
+		          	 trTemp= "";
+		          	 tdTemp ="";
+		          	 axisTdRigth = "";
+		          } 
+				
+				if (tireCount == tireByAxis[j])				 
+					break;
+				
+				 
+				  
+				
+	    	}
+		}
+			
+		
+
+	    
+	    tdTemp  = "";	    
+	    truckBody =trOpen;
+	    for(int j=1; j <= (maxCols + 1); j++)
+		  {
+			 if( ((maxCols / 2) + 1)== j)
+			 {
+			   tdTemp = tdTemp + hmtlChasisBody; 
+			   
+			 }
+			 else
+			   tdTemp = tdTemp + tdOpen + tdClose;
+		  }
+	    truckBody = truckBody + tdTemp + trClose;
+      
+	    
+	    tdTemp  = "";
+	    truckBottom =trOpen;
+        for(int j=1; j <= (maxCols + 1); j++)
+		  {
+			 if( ((maxCols / 2) + 1)== j)
+			 {
+			   tdTemp = tdTemp + htmlChasisBottom; 
+			   
+			 }
+			 else
+			   tdTemp = tdTemp + tdOpen + tdClose;
+		  }
+        truckBottom = truckBottom + tdTemp + trClose;
+
+        
+        
+        	 
+        for(int x= 0; x< axisCount; x++)
+        {
+        	if(typeAxis[x].equals("Y"))
+                axisHTMLFront = axisHTMLFront + axis[x];
+        	
+        	if(typeAxis[x].equals("N"))
+        		axisHTMLBottom = axisHTMLBottom + axis[x];
+         
+        }
+        
+        
+        if(typeAxis[0].equals("Y"))
+            html = html + truckFront + axisHTMLFront + truckBody + axisHTMLBottom + truckBottom;
+          
+        if(typeAxis[0].equals("N"))
+        	html = html +  truckBody + axisHTMLBottom + truckBottom;
+        
+	   String divOpen  = "<div id='truckdiv'  class='box1'>";//closeDiv(obj)
+	   String divButton  = "<input type='button' value='Cerrar' onclick='closeDiv()'>";
+	    
+	   String divClose = "</div>";
+
+	    
+		return  divOpen + divButton + htmlTableStart + html +  htmlTableEnd + divClose;
+	}
+	
+	
+	public String getHTMLV2( ) {
+		
+
+		
+		/*String javaScript = "<script> " +
+							"function selectTire(value)" +
+							"{"+
+							"alert(theForm.action)" +
+							"}" +
+							"</script>";*/
+		
+		String html = "";		
+		String axisFront="<td onclick='test(this);' style='margin:0px' ><img src='./truckimg/ejedelantero.png' width='75' height='60'/></td>";		
+		String axisBottom = "<td><img src='./truckimg/ejetrasero.png' width='75' height='63'/></td>";
+		String tLeft ="<td width='22' style='background-image:url(./truckimg/tfl.png);background-repeat:no-repeat;background-size:22px 60px;'></td>";
+		String tRigth ="<td width='22' style='background-image:url(./truckimg/tfr.png);background-repeat:no-repeat;background-size:22px 60px;'></td>";
+
+		String hmtlChasisBody="";
+		
+						 
+			
+			
+			
+	    String trOpen="<tr>";				
+		String tdOpen="<td width='22'>";
+		String tdClose="</td>";					
+		String trClose="</tr>";
+		
+		  
+	    String htmlTableWidth =String.valueOf((maxCols * 22) + 75) ;
+	    String htmlTableStart="<table width='"+ htmlTableWidth +"' border='0' cellspacing='0'  cellpadding='0'>";
+	    String htmlTableEnd="</table>";
+	  
+	    hmtlChasisBody= "<td><img src='./truckimg/chasis.png' width='75' height='186' /></td>";
+	  
+	    String htmlChasisBottom  = "<td><img src='./truckimg/chasisback.png' width='75' height='41'  alt=''/></td>";
+	  
+	    String tdTemp="";
+	    String trTemp="";
+	    String tdMidleChasisFront =  "<td width='75'><img  src='./truckimg/chasisfront.png' width='75' height='37'  alt=''/></td>";
+	
+	
+	    
+	    String htmlConfiguration=""; 
+
+	    
+		String axisHTMLFront="";
+		String axisHTMLBottom="";
+		String axisTdLeft="";
+        String axisTdRigth="";
+	    
+	   
+		
+		String truckFront="";
+		String truckBottom="";
+		String truckBody="";
+		
+		String[] axis = new String[axisCount];
+		
+		
+		BeanTruckTireConfigurationDetail beanTruckTireConfigurationDetail= null;
+		Iterator<BeanTruckTireConfigurationDetail> iter = beanTruckTireConfigurationDetailList.iterator();	
+	
+		int tdEmptyLeftAndRigth=0;
+		
+		tdTemp = "";
+		int tireCount = 0;
+		int tireIndexLeft= 0;
+		int tireIndexList= 0;
+		int tireIndexRigth= 0;
+		
+		
+		truckFront =  trOpen; 
+		    
+		for(int j=1; j <= (maxCols + 1); j++)
+		  {
+			 if( ((maxCols / 2) + 1)== j)
+			 {
+			   tdTemp = tdTemp + tdMidleChasisFront; 
+			  
+			   
+			 }
+			 else
+			   tdTemp = tdTemp + tdOpen + tdClose;
+		  }
+		truckFront = truckFront + tdTemp + trClose;   
+				
+		tdTemp = "" ;
+		tireCount = 0;
+		int id = 0;
+		for(int j=0; j < axisCount; j++ )
+		{
+			
+			
+			tireIndexLeft = (tireByAxis[j])/ 2;
+			//tireIndexRigth = (tireByAxis[j])/ 2;
+			tireIndexRigth= 0;
+			
+			/*while(iter.hasNext())
+	    	{*/		
+				//beanTruckTireConfigurationDetail= (BeanTruckTireConfigurationDetail)iter.next();
+				
+				tdEmptyLeftAndRigth =  ((maxCols + 1) - (tireByAxis[j] + 1))/ 2;
+				
+				tireCount = 0;
+				for(int i=1; i <= (maxCols + 1); i++ )
+				{
+					if (tireCount < tireByAxis[j])		
+					{
+					  beanTruckTireConfigurationDetail= beanTruckTireConfigurationDetailList.get(tireIndexList);
+					  id =beanTruckTireConfigurationDetail.getId();	
+					}
+					
+					if(i  == 1)
+					   trTemp =  trOpen; 
+					   
+					
+					 if( ((maxCols / 2) + 1)== i )
+					 {
+						 if(typeAxis[j].equals("Y"))
+						  tdTemp = tdTemp +  axisFront  ; 
+						 else
+						  tdTemp = tdTemp +  axisBottom  ; 
+					 
+					  					   
+					 }
+					
+					
+	
+					if(beanTruckTireConfigurationDetail.getIs_front_axis().equals("Y"))
+					{
+							
+						if(beanTruckTireConfigurationDetail.getAxis_side().equals("L")) 
+					    {
+							if( i <  ((maxCols / 2) + 1) )
+							{
+							  if((i) <= tdEmptyLeftAndRigth)
+								axisTdLeft= axisTdLeft + tdOpen + tdClose;
+							
+							
+							  if((i) > tdEmptyLeftAndRigth)
+							  {
+						        //axisTdLeft= axisTdLeft + tLeft;
+								 
+								String value =String.valueOf(id);
+								String tag = String.valueOf(j + 1) + String.valueOf(tireIndexLeft);
+								String param1 ="selectPosition";
+								String param2 ="";
+								String onclick="onclick=\"javascript:sp__doPostBack('" + param1 + "', '" + value + "','" + param2 + "')\";";
+							    		  
+						        axisTdLeft= axisTdLeft + "<td id='tire" + value +"' width='22' "+ onclick +" style='background-image:url(./truckimg/tfl.png);background-repeat:no-repeat;background-size:22px 60px;'>"+
+						                                 "<center><font size='3' color='white'>" +
+						                                 tag +  					                                   
+						                                 "</font></center>"+
+						        						 "</td>"; 
+						        tireCount++;
+						        tireIndexList++;
+						        tireIndexLeft--;
+							  }
+							}
+						  
+					    }
+				
+						
+					   if(beanTruckTireConfigurationDetail.getAxis_side().equals("R")) 
+					    {
+						   if( i >  ((maxCols / 2) + 1) )
+						   {
+							  
+							   
+							   if(i <=  ( ((maxCols) + 1) - tdEmptyLeftAndRigth ))	
+							   {
+								// axisTdRigth= axisTdRigth + tRigth;
+								   
+								 tireIndexRigth++;  
+								 String value =String.valueOf(id);
+								 String tag = String.valueOf(j + 1) + String.valueOf(tireIndexRigth);
+								 String param1 ="selectPosition";
+								 String param2 ="";
+								 String onclick="onclick=\"javascript:sp__doPostBack('" + param1 + "', '" + value + "','" + param2 + "')\";";
+							    		  
+								 axisTdRigth= axisTdRigth + "<td id='tire" + value +"' width='22' "+ onclick +" style='background-image:url(./truckimg/tfr.png);background-repeat:no-repeat;background-size:22px 60px;'>"+
+						                                    "<center><font size='3' color='white'>" +
+						                                    tag +  					                                   
+						                                   "</font></center>"+
+						        						   "</td>"; 
+								 tireCount++;
+								 tireIndexList++;
+								
+							   }
+	
+							   if(i >  ( ((maxCols ) + 1) - tdEmptyLeftAndRigth ))
+								  axisTdRigth= axisTdRigth + tdOpen + tdClose;
+						   }
+							
+					    }	
+						
+						 
+	
+						 
+					}else if(beanTruckTireConfigurationDetail.getIs_front_axis().equals("N"))
+					{
+						if(beanTruckTireConfigurationDetail.getAxis_side().equals("L")) 
+					    {
+							if( i <  ((maxCols / 2) + 1) )
+							{
+								if((i) <= tdEmptyLeftAndRigth)
+									axisTdLeft= axisTdLeft + tdOpen + tdClose;
+								
+								
+								if((i) > tdEmptyLeftAndRigth)
+								{
+							        //axisTdLeft= axisTdLeft + tLeft;
+									 String value =String.valueOf(id);
+									 String tag = String.valueOf(j + 1) + String.valueOf(tireIndexLeft);
+									 String param1 ="selectPosition";
+									 String param2 ="";
+									 String onclick="onclick=\"javascript:sp__doPostBack('" + param1 + "', '" + value + "','" + param2 + "')\";";
+								    		  
+							        axisTdLeft= axisTdLeft + "<td id='tire" + value +"' width='22' "+ onclick +" style='background-image:url(./truckimg/tfl.png);background-repeat:no-repeat;background-size:22px 60px;'>"+
+							                                 "<center><font size='3' color='white'>" +
+							                                 tag + 				                                   
+							                                 "</font></center>"+
+							        						 "</td>"; 
+							        tireCount++;
+							        tireIndexList++;
+							        tireIndexLeft--;
+								}
+							}
+						  
+					    }
+				
+						
+					   if(beanTruckTireConfigurationDetail.getAxis_side().equals("R")) 
+					    {
+						   
+						   if( i >  ((maxCols / 2) + 1) )
+						   {
+							   
+							   
+							   if(i <=  ( ((maxCols) + 1) - tdEmptyLeftAndRigth ))	
+							   {
+								 //axisTdRigth= axisTdRigth + tRigth;
+								   
+								 tireIndexRigth++;   
+								 String value =String.valueOf(id);
+								 String tag = String.valueOf(j + 1) + String.valueOf(tireIndexRigth);
+								 String param1 ="selectPosition";
+								 String param2 ="";
+								 String onclick="onclick=\"javascript:sp__doPostBack('" + param1 + "', '" + value + "','" + param2 + "')\";";
+								// onclick="onclick='selectTire("+value+")';";
+								 
+							    		  
+								 axisTdRigth= axisTdRigth + "<td id='tire" + value +"' width='22' "+ onclick +" style='background-image:url(./truckimg/tfr.png);background-repeat:no-repeat;background-size:22px 60px;'>"+
+						                                    "<center><font size='3' color='white'>" +
+						                                    tag + 					                                   
+						                                   "</font></center>"+
+						        						   "</td>"; 
+								 tireCount++;
+								 tireIndexList++;
+								 
+							
+								 
+							   }
+	
+							   if(i >  ( ((maxCols ) + 1) - tdEmptyLeftAndRigth ))
+								  axisTdRigth= axisTdRigth + tdOpen + tdClose;
+						   }
+						   	
+							
+					    }	
+						
+						
+						
+					}
+						
+						
+					/*if (tireCount == tireByAxis[j])				 
+						break;	*/		
+	 	
+					
+				}
+				
+		
+	          	 htmlConfiguration = trTemp +  axisTdLeft + tdTemp + axisTdRigth + trClose;
+	          	 axis[j] = htmlConfiguration;
+	          	 trTemp = "";
+	          	 axisTdLeft = "";
+	          	 tdTemp ="";
+	          	 axisTdRigth="";
+		          
+
+		}
+			
+		
+
+	    
+	    tdTemp  = "";	    
+	    truckBody =trOpen;
+	    for(int j=1; j <= (maxCols + 1); j++)
+		  {
+			 if( ((maxCols / 2) + 1)== j)
+			 {
+			   tdTemp = tdTemp + hmtlChasisBody; 
+			   
+			 }
+			 else
+			   tdTemp = tdTemp + tdOpen + tdClose;
+		  }
+	    truckBody = truckBody + tdTemp + trClose;
+      
+	    
+	    tdTemp  = "";
+	    truckBottom =trOpen;
+        for(int j=1; j <= (maxCols + 1); j++)
+		  {
+			 if( ((maxCols / 2) + 1)== j)
+			 {
+			   tdTemp = tdTemp + htmlChasisBottom; 
+			   
+			 }
+			 else
+			   tdTemp = tdTemp + tdOpen + tdClose;
+		  }
+        truckBottom = truckBottom + tdTemp + trClose;
+
+        
+        
+        	 
+        for(int x= 0; x< axisCount; x++)
+        {
+        	if(typeAxis[x].equals("Y"))
+                axisHTMLFront = axisHTMLFront + axis[x];
+        	
+        	if(typeAxis[x].equals("N"))
+        		axisHTMLBottom = axisHTMLBottom + axis[x];
+         
+        }
+        
+        
+        if(typeAxis[0].equals("Y"))
+            html = html + truckFront + axisHTMLFront + truckBody + axisHTMLBottom + truckBottom;
+          
+        if(typeAxis[0].equals("N"))
+        	html = html +  truckBody + axisHTMLBottom + truckBottom;
+        
+	   String divOpen  = "<div id='truckdiv'  class='box1' onload='onloadDiv();'>";	   
+	   String divButton  = "<input type='button' value='Cerrar' onclick='closeDiv()'>";	    
+	   String divClose = "</div>";
+	   
+	   String tableExtras ="<table border='0'><tr><td>Extras</td></tr><tr><td width='60' height='60' style='background-image:url(./truckimg/extra.png);background-repeat:no-repeat;background-size:60px 60px;'><font size='3' color='white'>uno</font></td></tr><tr><td width='60' height='60' style='background-image:url(./truckimg/extra.png);background-repeat:no-repeat;background-size:60px 60px;'><font size='3' color='white'>dos</font></td></tr></table>";
+	   
+	   String divOpen2  = "<div id='truckextradiv'  class='box2' onload='onloadDiv();'>";
+	   
+	   String divClose2 = "</div>";
+	    
+		return  divOpen + divButton + htmlTableStart + html +  htmlTableEnd + divOpen2 + tableExtras + divClose2 + divClose;
+	}
+
+	public List<BeanTruckTireConfigurationDetail> getBeanTruckTireConfigurationDetailList() {
+		return beanTruckTireConfigurationDetailList;
+	}
+
+	public void setBeanTruckTireConfigurationDetailList(
+			List<BeanTruckTireConfigurationDetail> beanTruckTireConfigurationDetailList) {
+		this.beanTruckTireConfigurationDetailList = beanTruckTireConfigurationDetailList;
+	}
+
+	public int[] getTireByAxis() {
+		return tireByAxis;
+	}
+
+	public void setTireByAxis(int[] tireByAxis) {
+		this.tireByAxis = tireByAxis;
+	}
+
+	public String[] getTypeAxis() {
+		return typeAxis;
+	}
+
+	public void setTypeAxis(String[] typeAxis) {
+		this.typeAxis = typeAxis;
+	}
+	
+	
+	
+	
+  
+}

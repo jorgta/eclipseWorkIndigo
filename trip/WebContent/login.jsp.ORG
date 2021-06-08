@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ taglib prefix="s" uri="/struts-tags"%>
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<script>
+
+
+  function sendForm()
+  {
+     
+	 document.forms[0].submit();
+	 
+	// varTD.className = "tagTd";
+  }
+</script>
+
+<title>Login</title>
+
+<link href="loginTheme/login-box.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+ 
+<%@ include file="noCache.jsp" %>
+
+<body>
+
+
+
+
+<ul id="formerrors" class="errorMessage"></ul>
+<s:form id="formValidateCustom" action="login" theme="simple"  cssClass="yform" cssStyle="width:50%;">
+
+<div align="center" style="padding-top:10%">
+
+
+<div id="login-box" >
+
+<H2>Login</H2>
+Trip
+<br />
+<br />
+<div id="login-box-name" style="margin-top:20px;">
+<label for="echo">Company: <s:fielderror fieldName="company" /></span></label>
+</div>
+<div id="login-box-field" style="margin-top:20px;">
+<s:textfield id="logincompany" name="company" cssClass="form-login" value="BITUOS"/>
+</div>
+<div id="login-box-name"><label for="echo">Usuario: <s:fielderror fieldName="username" /></span></label></div><div id="login-box-field">
+<s:textfield id="logincompany" name="username" cssClass="form-login" value="DAVID"/>
+</div>
+
+<div id="login-box-name"><label for="echo">Usuario: <s:fielderror fieldName="password" /></div><div id="login-box-field">
+<s:textfield id="logincompany" name="password" cssClass="form-login" value="da"/>
+</div>
+<br />
+<span class="login-box-options"><input type="checkbox" name="1" value="1"> Remember Me <a href="doc/Manual de usuario cardRegalo.pdf" style="margin-left:30px;">Manual de usuario
+				de trip</a></span>
+<br />
+<br />
+
+<s:submit label="login"/>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+</s:form>
+</body>
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+
+  document.getElementById("company").focus();
+  
+//-->
+</SCRIPT>
+
+</html>
+
+
+
+
+

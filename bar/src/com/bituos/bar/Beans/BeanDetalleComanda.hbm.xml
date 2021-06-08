@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.bituos.bar.Beans.BeanDetalleComanda" table="detallecomandas" >
+    
+       
+	<composite-id>
+                
+          <key-many-to-one name="id_comanda"   column="id_comanda"/>
+           <key-many-to-one name="id_producto"   column="id_producto"/>
+          
+    </composite-id>
+
+     
+      <property name="producto_descripcion" column="producto_descripcion" type="string"  not-null="false"/>   
+               
+      
+      <property name="note" column="note" type="string"  not-null="false"/>  
+      <property name="cantidad" column="cantidad" type="integer"  not-null="false"/>  
+      <property name="precio_unit" column="precio_unit" type="double"  not-null="false"/>  
+      <property name="printed" column="printed" type="char"  not-null="false"/>  
+      <property name="date_capture" column="date_capture" type="time" not-null="false"/>
+    
+      
+        
+
+      
+
+
+
+
+      
+   </class>
+</hibernate-mapping>
+
+

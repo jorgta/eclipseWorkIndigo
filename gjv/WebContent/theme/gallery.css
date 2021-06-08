@@ -1,0 +1,92 @@
+@CHARSET "ISO-8859-1";
+
+/* ----------------------------------------------Showcase-------------------------------------*/
+
+#showcase{
+	display:block; 
+	width:654px;
+	
+	}
+
+#showcase ul.templategallery{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	}
+
+#showcase ul.templategallery li{
+	position:relative;
+	float:left;
+	display:inline;
+	width:208px;
+	height:208px;
+	margin:0 5px 20px 5px;
+	padding:0;
+	background:url(/gjv/theme/galbg.gif) top left no-repeat;
+	}
+
+#showcase ul.templategallery li.last{
+	margin-right:0;
+	}
+	
+#showcase a:link, #showcase a:visited, #showcase a:hover{
+	color:#FD8C41;
+	background-color:#FFFFFF;
+	text-decoration:none;
+	font-style:normal;
+	}
+	
+#showcase ul.templategallery span.name{
+	position:absolute;
+	top:20px;
+	left:7px;
+	width:182px;
+	height:15px;
+	text-align:center;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size:11px;
+	overflow:hidden;
+	}
+	
+#showcase ul.templategallery span.screen a{
+	position:absolute;
+	top:41px;
+	left:7px;
+	width:180px;
+	height:134px;
+	background:top left no-repeat;
+	}
+	
+#showcase ul.templategallery span.screen img{
+	border:1px solid #01FFFF;
+	width:180px;
+	height:134px;
+	}
+	
+#showcase ul.templategallery span.demo{
+	position:absolute;
+	top:182px;
+	left:7px;
+	}
+	
+#showcase ul.templategallery span.dld{
+	position:absolute;
+	top:180px;
+	right:19px;
+	}
+
+#showcase ul.templategallery span.posted{
+	position:absolute;
+	top:180px;
+	left:7px;
+	font-size:11px;
+	color:#A7BAC5;
+	background-color:#FFFFFF;
+	}
+
+#content #showcase ul.templategallery span.posted strong{
+	color:#FFD085;
+	background-color:#FFFFFF;
+	/*font-weight:normal;*/
+	}

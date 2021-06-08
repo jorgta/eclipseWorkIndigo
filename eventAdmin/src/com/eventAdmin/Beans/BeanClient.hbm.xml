@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.eventAdmin.Beans.BeanClient" table="client">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       <property name="name" column="name" type="string"  not-null="true"/>
+       <property name="rfc" column="rfc" type="string"  not-null="false"/>
+       <property name="address" column="address" type="string"  not-null="true"/>
+       <property name="active" column="active" type="string"  not-null="true"/>
+       <many-to-one name="id_company" column="id_company" not-null="true"/>
+       <property name="phone" column="phone" type="string"  not-null="false"/>
+       <property name="email" column="email" type="string"  not-null="false"/>
+       <property name="company" column="company" type="string"  not-null="false"/>
+       <property name="id_intern" column="id_intern" type="integer"  not-null="true"/>  
+              
+   </class>
+</hibernate-mapping>
+
+

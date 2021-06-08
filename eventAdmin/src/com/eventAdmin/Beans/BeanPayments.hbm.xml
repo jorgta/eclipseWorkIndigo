@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.eventAdmin.Beans.BeanPayments" table="payments" >
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+   
+   
+
+       <many-to-one name="id_user" column="id_user" not-null="true"/>
+       <many-to-one name="id_sale" column="id_sale" not-null="true"/>
+       <many-to-one name="id_company" column="id_company" not-null="true"/>
+       <property name="id_intern" column="id_intern" type="int"  not-null="true"/>
+       <property name="date_reg" column="date_reg" type="date"  not-null="true"/>
+	   <property name="canceled" column="canceled" type="char"  not-null="true"/>
+	   <property name="quantity" column="quantity" type="double"  not-null="true"/>
+	   <property name="date_canceled" column="date_canceled" type="date"  not-null="false"/>
+	   <many-to-one name="id_tipo_pago" column="id_tipo_pago" not-null="true"/>
+	   <many-to-one name="id_tipo_forma_pago" column="id_tipo_forma_pago" not-null="true"/>
+       
+
+       
+   </class>
+</hibernate-mapping>
+
+

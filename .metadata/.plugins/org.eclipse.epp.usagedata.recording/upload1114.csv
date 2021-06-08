@@ -1,0 +1,301 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"Core exception while retrieving the content description",1457639111013
+error,log,,,"Core exception while retrieving the content description",1457639111015
+error,log,,,"Core exception while retrieving the content description",1457639111017
+error,log,,,"Core exception while retrieving the content description",1457639111018
+error,log,,,"Core exception while retrieving the content description",1457639111019
+error,log,,,"Core exception while retrieving the content description",1457639111035
+error,log,,,"Core exception while retrieving the content description",1457639111037
+error,log,,,"Core exception while retrieving the content description",1457639111039
+error,log,,,"Core exception while retrieving the content description",1457639111041
+error,log,,,"Core exception while retrieving the content description",1457639111043
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1457639112630
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1457639128953
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.file.save",1457639132465
+error,log,,,"Core exception while retrieving the content description",1457639133319
+error,log,,,"Core exception while retrieving the content description",1457639133325
+error,log,,,"Core exception while retrieving the content description",1457639133328
+error,log,,,"Core exception while retrieving the content description",1457639133331
+error,log,,,"Core exception while retrieving the content description",1457639133334
+error,log,,,"Core exception while retrieving the content description",1457639133368
+error,log,,,"Core exception while retrieving the content description",1457639133371
+error,log,,,"Core exception while retrieving the content description",1457639133373
+error,log,,,"Core exception while retrieving the content description",1457639133379
+error,log,,,"Core exception while retrieving the content description",1457639133383
+error,log,,,"Core exception while retrieving the content description",1457639133391
+error,log,,,"Core exception while retrieving the content description",1457639133392
+error,log,,,"Core exception while retrieving the content description",1457639133423
+error,log,,,"Core exception while retrieving the content description",1457639133426
+error,log,,,"Core exception while retrieving the content description",1457639133435
+error,log,,,"Core exception while retrieving the content description",1457639133502
+error,log,,,"Core exception while retrieving the content description",1457639133506
+error,log,,,"Core exception while retrieving the content description",1457639133510
+error,log,,,"Core exception while retrieving the content description",1457639133512
+error,log,,,"Core exception while retrieving the content description",1457639133514
+error,log,,,"Core exception while retrieving the content description",1457639133555
+error,log,,,"Core exception while retrieving the content description",1457639133561
+error,log,,,"Core exception while retrieving the content description",1457639133564
+error,log,,,"Core exception while retrieving the content description",1457639133567
+error,log,,,"Core exception while retrieving the content description",1457639133571
+error,log,,,"Core exception while retrieving the content description",1457639133977
+error,log,,,"Core exception while retrieving the content description",1457639133982
+error,log,,,"Core exception while retrieving the content description",1457639133988
+error,log,,,"Core exception while retrieving the content description",1457639133991
+error,log,,,"Core exception while retrieving the content description",1457639133993
+error,log,,,"Core exception while retrieving the content description",1457639134009
+error,log,,,"Core exception while retrieving the content description",1457639134012
+error,log,,,"Core exception while retrieving the content description",1457639134014
+error,log,,,"Core exception while retrieving the content description",1457639134016
+error,log,,,"Core exception while retrieving the content description",1457639134018
+error,log,,,"Core exception while retrieving the content description",1457639134022
+error,log,,,"Core exception while retrieving the content description",1457639134025
+error,log,,,"Core exception while retrieving the content description",1457639134027
+error,log,,,"Core exception while retrieving the content description",1457639134029
+error,log,,,"Core exception while retrieving the content description",1457639134031
+error,log,,,"Core exception while retrieving the content description",1457639134038
+error,log,,,"Core exception while retrieving the content description",1457639134041
+error,log,,,"Core exception while retrieving the content description",1457639134046
+error,log,,,"Core exception while retrieving the content description",1457639134055
+error,log,,,"Core exception while retrieving the content description",1457639134059
+error,log,,,"Core exception while retrieving the content description",1457639134082
+error,log,,,"Core exception while retrieving the content description",1457639134086
+error,log,,,"Core exception while retrieving the content description",1457639134092
+error,log,,,"Core exception while retrieving the content description",1457639134095
+error,log,,,"Core exception while retrieving the content description",1457639134097
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1457639138396
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1457639384740
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1457639385147
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1457639401877
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.I20101116-0800,"org.eclipse.ui.navigator.ProjectExplorer",1457639401906
+no handler,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.findReplace",1457639417021
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1457639417790
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1457639418753
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.findReplace",1457639418787
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1457639425294
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.I20101116-0800,"org.eclipse.ui.navigator.ProjectExplorer",1457639434233
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1457639438790
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1457639447711
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1457639450597
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1457639452484
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.file.save",1457639453634
+error,log,,,"Core exception while retrieving the content description",1457639454649
+error,log,,,"Core exception while retrieving the content description",1457639454652
+error,log,,,"Core exception while retrieving the content description",1457639454656
+error,log,,,"Core exception while retrieving the content description",1457639454662
+error,log,,,"Core exception while retrieving the content description",1457639454666
+error,log,,,"Core exception while retrieving the content description",1457639454689
+error,log,,,"Core exception while retrieving the content description",1457639454692
+error,log,,,"Core exception while retrieving the content description",1457639454694
+error,log,,,"Core exception while retrieving the content description",1457639454696
+error,log,,,"Core exception while retrieving the content description",1457639454697
+error,log,,,"Core exception while retrieving the content description",1457639454700
+error,log,,,"Core exception while retrieving the content description",1457639454702
+error,log,,,"Core exception while retrieving the content description",1457639454704
+error,log,,,"Core exception while retrieving the content description",1457639454707
+error,log,,,"Core exception while retrieving the content description",1457639454709
+error,log,,,"Core exception while retrieving the content description",1457639454714
+error,log,,,"Core exception while retrieving the content description",1457639454716
+error,log,,,"Core exception while retrieving the content description",1457639454718
+error,log,,,"Core exception while retrieving the content description",1457639454720
+error,log,,,"Core exception while retrieving the content description",1457639454722
+error,log,,,"Core exception while retrieving the content description",1457639454741
+error,log,,,"Core exception while retrieving the content description",1457639454746
+error,log,,,"Core exception while retrieving the content description",1457639454749
+error,log,,,"Core exception while retrieving the content description",1457639454753
+error,log,,,"Core exception while retrieving the content description",1457639454756
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1457639455072
+error,log,,,"Core exception while retrieving the content description",1457639455294
+error,log,,,"Core exception while retrieving the content description",1457639455298
+error,log,,,"Core exception while retrieving the content description",1457639455302
+error,log,,,"Core exception while retrieving the content description",1457639455307
+error,log,,,"Core exception while retrieving the content description",1457639455309
+error,log,,,"Core exception while retrieving the content description",1457639455345
+error,log,,,"Core exception while retrieving the content description",1457639455349
+error,log,,,"Core exception while retrieving the content description",1457639455351
+error,log,,,"Core exception while retrieving the content description",1457639455353
+error,log,,,"Core exception while retrieving the content description",1457639455356
+error,log,,,"Core exception while retrieving the content description",1457639455359
+error,log,,,"Core exception while retrieving the content description",1457639455362
+error,log,,,"Core exception while retrieving the content description",1457639455365
+error,log,,,"Core exception while retrieving the content description",1457639455368
+error,log,,,"Core exception while retrieving the content description",1457639455371
+error,log,,,"Core exception while retrieving the content description",1457639455377
+error,log,,,"Core exception while retrieving the content description",1457639455380
+error,log,,,"Core exception while retrieving the content description",1457639455383
+error,log,,,"Core exception while retrieving the content description",1457639455385
+error,log,,,"Core exception while retrieving the content description",1457639455388
+error,log,,,"Core exception while retrieving the content description",1457639455415
+error,log,,,"Core exception while retrieving the content description",1457639455422
+error,log,,,"Core exception while retrieving the content description",1457639455427
+error,log,,,"Core exception while retrieving the content description",1457639455442
+error,log,,,"Core exception while retrieving the content description",1457639455445
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1457639460922
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.file.save",1457639466082
+error,log,,,"Core exception while retrieving the content description",1457639466962
+error,log,,,"Core exception while retrieving the content description",1457639466966
+error,log,,,"Core exception while retrieving the content description",1457639466969
+error,log,,,"Core exception while retrieving the content description",1457639466972
+error,log,,,"Core exception while retrieving the content description",1457639466974
+error,log,,,"Core exception while retrieving the content description",1457639467015
+error,log,,,"Core exception while retrieving the content description",1457639467017
+error,log,,,"Core exception while retrieving the content description",1457639467028
+error,log,,,"Core exception while retrieving the content description",1457639467043
+error,log,,,"Core exception while retrieving the content description",1457639467047
+error,log,,,"Core exception while retrieving the content description",1457639467052
+error,log,,,"Core exception while retrieving the content description",1457639467055
+error,log,,,"Core exception while retrieving the content description",1457639467061
+error,log,,,"Core exception while retrieving the content description",1457639467067
+error,log,,,"Core exception while retrieving the content description",1457639467073
+error,log,,,"Core exception while retrieving the content description",1457639467083
+error,log,,,"Core exception while retrieving the content description",1457639467085
+error,log,,,"Core exception while retrieving the content description",1457639467087
+error,log,,,"Core exception while retrieving the content description",1457639467093
+error,log,,,"Core exception while retrieving the content description",1457639467095
+error,log,,,"Core exception while retrieving the content description",1457639467132
+error,log,,,"Core exception while retrieving the content description",1457639467136
+error,log,,,"Core exception while retrieving the content description",1457639467143
+error,log,,,"Core exception while retrieving the content description",1457639467146
+error,log,,,"Core exception while retrieving the content description",1457639467149
+error,log,,,"Core exception while retrieving the content description",1457639467660
+error,log,,,"Core exception while retrieving the content description",1457639467662
+error,log,,,"Core exception while retrieving the content description",1457639467664
+error,log,,,"Core exception while retrieving the content description",1457639467666
+error,log,,,"Core exception while retrieving the content description",1457639467667
+error,log,,,"Core exception while retrieving the content description",1457639467683
+error,log,,,"Core exception while retrieving the content description",1457639467686
+error,log,,,"Core exception while retrieving the content description",1457639467690
+error,log,,,"Core exception while retrieving the content description",1457639467693
+error,log,,,"Core exception while retrieving the content description",1457639467696
+error,log,,,"Core exception while retrieving the content description",1457639467700
+error,log,,,"Core exception while retrieving the content description",1457639467702
+error,log,,,"Core exception while retrieving the content description",1457639467705
+error,log,,,"Core exception while retrieving the content description",1457639467708
+error,log,,,"Core exception while retrieving the content description",1457639467710
+error,log,,,"Core exception while retrieving the content description",1457639467717
+error,log,,,"Core exception while retrieving the content description",1457639467718
+error,log,,,"Core exception while retrieving the content description",1457639467721
+error,log,,,"Core exception while retrieving the content description",1457639467723
+error,log,,,"Core exception while retrieving the content description",1457639467728
+error,log,,,"Core exception while retrieving the content description",1457639467748
+error,log,,,"Core exception while retrieving the content description",1457639467750
+error,log,,,"Core exception while retrieving the content description",1457639467752
+error,log,,,"Core exception while retrieving the content description",1457639467753
+error,log,,,"Core exception while retrieving the content description",1457639467756
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1457639467846
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1457639478840
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.I20101116-0800,"org.eclipse.ui.navigator.ProjectExplorer",1457639478873
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1457639479200
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1457639503575
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1457639507841
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1457639520723
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1457639535147
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1457639546916
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1457639548463
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1457639556071
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.delete",1457639558747
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1457639561051
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1457639566821
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1457639568856
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.file.save",1457639575735
+error,log,,,"Core exception while retrieving the content description",1457639576603
+error,log,,,"Core exception while retrieving the content description",1457639576605
+error,log,,,"Core exception while retrieving the content description",1457639576607
+error,log,,,"Core exception while retrieving the content description",1457639576610
+error,log,,,"Core exception while retrieving the content description",1457639576612
+error,log,,,"Core exception while retrieving the content description",1457639576626
+error,log,,,"Core exception while retrieving the content description",1457639576627
+error,log,,,"Core exception while retrieving the content description",1457639576630
+error,log,,,"Core exception while retrieving the content description",1457639576632
+error,log,,,"Core exception while retrieving the content description",1457639576634
+error,log,,,"Core exception while retrieving the content description",1457639576639
+error,log,,,"Core exception while retrieving the content description",1457639576641
+error,log,,,"Core exception while retrieving the content description",1457639576645
+error,log,,,"Core exception while retrieving the content description",1457639576648
+error,log,,,"Core exception while retrieving the content description",1457639576650
+error,log,,,"Core exception while retrieving the content description",1457639576657
+error,log,,,"Core exception while retrieving the content description",1457639576659
+error,log,,,"Core exception while retrieving the content description",1457639576662
+error,log,,,"Core exception while retrieving the content description",1457639576665
+error,log,,,"Core exception while retrieving the content description",1457639576669
+error,log,,,"Core exception while retrieving the content description",1457639576689
+error,log,,,"Core exception while retrieving the content description",1457639576691
+error,log,,,"Core exception while retrieving the content description",1457639576693
+error,log,,,"Core exception while retrieving the content description",1457639576695
+error,log,,,"Core exception while retrieving the content description",1457639576698
+error,log,,,"Core exception while retrieving the content description",1457639577923
+error,log,,,"Core exception while retrieving the content description",1457639577927
+error,log,,,"Core exception while retrieving the content description",1457639577930
+error,log,,,"Core exception while retrieving the content description",1457639577931
+error,log,,,"Core exception while retrieving the content description",1457639577934
+error,log,,,"Core exception while retrieving the content description",1457639577950
+error,log,,,"Core exception while retrieving the content description",1457639577952
+error,log,,,"Core exception while retrieving the content description",1457639577954
+error,log,,,"Core exception while retrieving the content description",1457639577956
+error,log,,,"Core exception while retrieving the content description",1457639577958
+error,log,,,"Core exception while retrieving the content description",1457639577961
+error,log,,,"Core exception while retrieving the content description",1457639577962
+error,log,,,"Core exception while retrieving the content description",1457639577964
+error,log,,,"Core exception while retrieving the content description",1457639577965
+error,log,,,"Core exception while retrieving the content description",1457639577968
+error,log,,,"Core exception while retrieving the content description",1457639577975
+error,log,,,"Core exception while retrieving the content description",1457639577978
+error,log,,,"Core exception while retrieving the content description",1457639577983
+error,log,,,"Core exception while retrieving the content description",1457639577986
+error,log,,,"Core exception while retrieving the content description",1457639577999
+error,log,,,"Core exception while retrieving the content description",1457639578016
+error,log,,,"Core exception while retrieving the content description",1457639578018
+error,log,,,"Core exception while retrieving the content description",1457639578019
+error,log,,,"Core exception while retrieving the content description",1457639578021
+error,log,,,"Core exception while retrieving the content description",1457639578024
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.file.save",1457639582033
+error,log,,,"Core exception while retrieving the content description",1457639582957
+error,log,,,"Core exception while retrieving the content description",1457639582972
+error,log,,,"Core exception while retrieving the content description",1457639582976
+error,log,,,"Core exception while retrieving the content description",1457639582978
+error,log,,,"Core exception while retrieving the content description",1457639582979
+error,log,,,"Core exception while retrieving the content description",1457639582997
+error,log,,,"Core exception while retrieving the content description",1457639583000
+error,log,,,"Core exception while retrieving the content description",1457639583002
+error,log,,,"Core exception while retrieving the content description",1457639583026
+error,log,,,"Core exception while retrieving the content description",1457639583030
+error,log,,,"Core exception while retrieving the content description",1457639583052
+error,log,,,"Core exception while retrieving the content description",1457639583057
+error,log,,,"Core exception while retrieving the content description",1457639583062
+error,log,,,"Core exception while retrieving the content description",1457639583067
+error,log,,,"Core exception while retrieving the content description",1457639583069
+error,log,,,"Core exception while retrieving the content description",1457639583076
+error,log,,,"Core exception while retrieving the content description",1457639583078
+error,log,,,"Core exception while retrieving the content description",1457639583081
+error,log,,,"Core exception while retrieving the content description",1457639583083
+error,log,,,"Core exception while retrieving the content description",1457639583087
+error,log,,,"Core exception while retrieving the content description",1457639583103
+error,log,,,"Core exception while retrieving the content description",1457639583106
+error,log,,,"Core exception while retrieving the content description",1457639583109
+error,log,,,"Core exception while retrieving the content description",1457639583111
+error,log,,,"Core exception while retrieving the content description",1457639583113
+error,log,,,"Core exception while retrieving the content description",1457639583673
+error,log,,,"Core exception while retrieving the content description",1457639583677
+error,log,,,"Core exception while retrieving the content description",1457639583679
+error,log,,,"Core exception while retrieving the content description",1457639583682
+error,log,,,"Core exception while retrieving the content description",1457639583686
+error,log,,,"Core exception while retrieving the content description",1457639583704
+error,log,,,"Core exception while retrieving the content description",1457639583707
+error,log,,,"Core exception while retrieving the content description",1457639583710
+error,log,,,"Core exception while retrieving the content description",1457639583713
+error,log,,,"Core exception while retrieving the content description",1457639583714
+error,log,,,"Core exception while retrieving the content description",1457639583717
+error,log,,,"Core exception while retrieving the content description",1457639583719
+error,log,,,"Core exception while retrieving the content description",1457639583722
+error,log,,,"Core exception while retrieving the content description",1457639583724
+error,log,,,"Core exception while retrieving the content description",1457639583728
+error,log,,,"Core exception while retrieving the content description",1457639583735
+error,log,,,"Core exception while retrieving the content description",1457639583738
+error,log,,,"Core exception while retrieving the content description",1457639583740
+error,log,,,"Core exception while retrieving the content description",1457639583742
+error,log,,,"Core exception while retrieving the content description",1457639583744
+error,log,,,"Core exception while retrieving the content description",1457639583760
+error,log,,,"Core exception while retrieving the content description",1457639583761
+error,log,,,"Core exception while retrieving the content description",1457639583763
+error,log,,,"Core exception while retrieving the content description",1457639583765
+error,log,,,"Core exception while retrieving the content description",1457639583766
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1457639590368

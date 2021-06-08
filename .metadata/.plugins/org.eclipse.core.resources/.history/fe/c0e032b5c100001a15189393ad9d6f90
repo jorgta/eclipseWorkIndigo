@@ -1,0 +1,138 @@
+function FAjax(url,metodo,data,valor,parameter)
+{
+
+    
+    var datasend =  $.extend(data, {isAjax: true}); ; 
+    
+    datasend.searchParam= valor;
+    datasend.searchValue= parameter;
+    		
+	var ajaxInformation= new AjaxInformation(url);
+    ajaxInformation.data = data
+    
+    
+    		
+
+    var result =openConnection(ajaxInformation);
+    var options = null;
+    for (var i = 0; i < result.length; i++) {
+        options = result[i];
+        //var schedule = $.extend(new ScheduleInfo(), item);
+        
+
+    }
+    
+   
+   var val= trim(valor);
+   
+   var empty = (val.length == 0); 
+    
+   /*if(!empty)
+   {*/   
+      
+	   var inputs = document.getElementsByTagName('input');
+	
+		for(var i=0; i<inputs.length; i++){
+			if(inputs[i].getAttribute('type')=='radio'){
+			   if(inputs[i].checked)	
+			   {
+			     parameters =parameters + '&searchParam=' + inputs[i].value;
+			    // alert(parameters);
+			   }
+			
+			}
+		} 
+		
+		  
+		  
+	   
+	  // alert(parameters);
+	   var ajax=creaAjax();
+	  
+	   if (metodo.toUpperCase()=='GET'){
+	    document.getElementById('capa').style.visibility= "visible";
+	    ajax.open ('GET', url, true);
+	    ajax.onreadystatechange = function() {
+	         if (ajax.readyState==1) {
+	                 document.getElementById('capa').innerHTML="Buscando.......";
+	         }
+	         else if (ajax.readyState==4){
+	            if(ajax.status==200){ 
+	                 document.getElementById('capa').innerHTML=ajax.responseText; 
+	            }
+	            else if(ajax.status==404)
+	                 {
+	
+	                     document.getElementById('capa').innerHTML = "La direccion existe";
+	                    
+	                 }
+	                 else
+	                 {
+	                     document.getElementById('capa').innerHTML = "Error: ".ajax.status;
+	                     
+	                 }
+	        }
+	     }
+	     
+	    ajax.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+	    ajax.send(null);
+	    return
+		  }
+		  
+		  
+		if(metodo.toUpperCase()=='POST'){
+	        ajax.open ('POST', url, true);
+	        ajax.onreadystatechange = function() {
+	            if (ajax.readyState==1) {
+	            
+			               // document.getElementById('capa').innerHTML="Buscando.......";
+	                        insertData("<tr class='SelectedRowStyle'><td colspan='5'>Buscando.......</td></tr> ");
+	                
+	             }else if (ajax.readyState==4){
+	                if(ajax.status==200){
+	            
+	                  //insertData(ajax.responseText);
+	                    //document.getElementById('capa').innerHTML=ajax.responseText;
+	                   insertData(ajax.responseText);
+	                    
+	                    
+	                }else if(ajax.status==404){
+	                    // document.getElementById('capa').innerHTML= "La direccion no existe";
+			             
+			              
+			              insertData("<tr class='RowStyle'><td colspan='5'>La direccion no existe</td></tr> ");
+			              
+	                }else{
+	                   // document.getElementById('capa').innerHTML= "Error: ".ajax.status;
+	                 
+			        
+			                 insertData("<tr class='RowStyle'><td colspan='5'>Error: " +ajax.status+"</td></tr> ");
+	                }
+	            }
+	        }
+	        ajax.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+	        ajax.send(parameters);
+	        return;
+	    }
+   
+	//}
+	
+	 
+}
+
+
+
+function hiddeCapa()
+{
+  document.getElementById('capa').style.visibility= "hidden";
+  
+}
+
+function insertData(data)
+{
+  $($('#GridView1').find('.AltRowStyle')).remove();	
+  $($('#GridView1').find('.RowStyle')).remove();
+  $($('#GridView1').find('.SelectedRowStyle')).remove();							    			   			   
+  $($('#GridView1').find('#HeaderStyle')).after(data);
+}
+

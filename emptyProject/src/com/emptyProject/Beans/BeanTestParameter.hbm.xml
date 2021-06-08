@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.bituos.lca.Beans.BeanTestParameter" table="test_parameter" >
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       <property name="name" column="NAME" type="string"  not-null="true"/>
+       <many-to-one name="id_test" column="id_test" not-null="true"/>
+       <property name="active" column="active" type="integer"  not-null="true"/>
+
+   </class>
+</hibernate-mapping>
+
+

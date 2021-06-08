@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.bituos.lca.Beans.BeanTestOrder" table="test_order" >
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       
+       
+       <many-to-one name="id_branch" column="id_branch" not-null="true"/>
+       <many-to-one name="id_patient" column="id_patient" not-null="true"/>
+       <property name="date_reg" column="date_reg" type="date"  not-null="false"/>
+       <property name="patient_name" column="patient_name" type="string"  not-null="true"/>
+       <property name="is_finished" column="is_finished" type="integer"  not-null="true"/>
+	   <property name="email" column="email" type="string"  not-null="true"/>
+	   <property name="date_finished" column="date_finished" type="date"  not-null="false"/>
+	   <property name="price" column="price" type="double"  not-null="true"/>
+	   <many-to-one name="id_user" column="id_user" not-null="true"/>
+
+       <many-to-one name="id_branch_delivery" column="id_branch_delivery" not-null="true"/>
+
+	   <property name="discount" column="discount" type="double"  not-null="true"/>
+	   <property name="date_delivery" column="date_delivery" type="date"  not-null="false"/>
+       <property name="password" column="password" type="string"  not-null="true"/>
+       <many-to-one name="id_company" column="id_company" not-null="true"/>
+       <property name="notes" column="notes" type="string"  not-null="false"/>
+
+
+
+   </class>
+</hibernate-mapping>
+
+

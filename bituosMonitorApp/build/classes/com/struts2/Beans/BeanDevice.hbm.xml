@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+   <class name="com.struts2.Beans.BeanDevice" table="device" >
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       <property name="hostname" column="hostname" type="string"  not-null="true"/>
+       <property name="cpuid" column="cpuid" type="string"  not-null="false"/>
+       <property name="mbid" column="mbid" type="string"  not-null="false"/>
+       <property name="active" column="active" type="integer"  not-null="false"/>
+       <property name="date_reg" column="date_reg" type="date"  not-null="false"/>
+       <many-to-one name="id_company" column="id_company" not-null="true" lazy="false"/>
+       
+       
+   </class>
+</hibernate-mapping>
+
+

@@ -1,0 +1,54 @@
+
+https://www.youtube.com/watch?v=2M5L_uz6GO0
+
+
+instalar node.js
+
+en 
+package.json
+en la parte de
+"scripts":
+agregar 
+ "build": "webpack --watch --colors",
+
+
+
+cd C:\eclipseWorkIndigo\eventAdmin\WebContent\tui.calendar-master
+
+instala webpack globalmente
+npm install --global webpack
+
+
+mejor este pues de todas formas se tendra que instalar
+instala webpack localmente
+npm install --save-dev webpack-cli
+
+
+
+
+npm run build
+
+
+
+
+scheduleCreationPopup.js
+linea 244
+aqui se agregan los nuevos campos para schedule
+
+
+scheduleCreationPopup.hbs
+aqui se agregan los nuevos campos
+
+ScheduleCreationPopup.prototype._onClickSaveSchedule
+
+
+
+    viewModel.title = scheduleNew.title;
+    viewModel.location = 'fdsfs';
+
+
+
+https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.js
+
+
+

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+   <class name="com.struts2.Beans.BeanTypeOS" table="type_os">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       <property name="os_name" column="os_name" type="string"  not-null="true"/>
+       <property name="active" column="active" type="integer"  not-null="true"/>
+       <property name="description" column="description" type="string"  not-null="true"/>
+
+   </class>
+</hibernate-mapping>
+
+

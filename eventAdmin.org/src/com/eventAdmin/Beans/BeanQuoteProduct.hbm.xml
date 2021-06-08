@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.eventAdmin.Beans.BeanQuoteProduct" table="quote_product">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       
+       <many-to-one name="id_quote" column="id_quote" not-null="true"/>
+       <many-to-one name="id_product" column="id_product" not-null="true"/>         
+       <property name="product_description" column="product_description" type="string"  not-null="true"/>            
+       <property name="qty" column="qty" type="integer"  not-null="true"/>            
+       <property name="perPerson" column="perPerson" type="string"  not-null="true"/>
+       <property name="personsQty" column="personsQty" type="integer"  not-null="true"/>            
+       <property name="product_price" column="product_price" type="double"  not-null="true"/> 
+       
+       
+   </class>
+</hibernate-mapping>
+
+

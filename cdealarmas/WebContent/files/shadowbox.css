@@ -1,0 +1,126 @@
+#sb-container {
+	text-align: left;
+}
+#sb-wrapper {
+	text-align: left;
+}
+#sb-container {
+	margin: 0px; padding: 0px; left: 0px; top: 0px; width: 100%; position: absolute;
+}
+#sb-overlay {
+	margin: 0px; padding: 0px; left: 0px; top: 0px; width: 100%; position: absolute;
+}
+#sb-container {
+	height: 100%; display: none; visibility: hidden; z-index: 999;
+}
+body > #sb-container {
+	position: fixed;
+}
+#sb-container > #sb-overlay {
+	height: 100%;
+}
+#sb-wrapper {
+	position: relative;
+}
+#sb-wrapper img {
+	border: currentColor;
+}
+#sb-body {
+	margin: 0px; padding: 0px 10px 10px; border: 0px currentColor; overflow: hidden; position: relative;
+}
+#sb-body-inner {
+	height: 100%; position: relative;
+}
+* + html #sb-body-inner {
+	z-index: 1000;
+}
+.html#sb-content {
+	height: 100%; overflow: auto;
+}
+#sb-loading {
+	top: 0px; width: 100%; height: 100%; text-align: center; padding-top: 10px; position: absolute;
+}
+#sb-body {
+	background-color: rgb(255, 255, 255);
+}
+#sb-loading {
+	background-color: rgb(255, 255, 255);
+}
+#sb-title {
+	margin: 0px; padding: 0px; overflow: hidden; position: relative;
+}
+#sb-info {
+	margin: 0px; padding: 0px; overflow: hidden; position: relative;
+}
+#sb-title-inner {
+	line-height: 16px; position: relative;
+}
+#sb-info-inner {
+	line-height: 16px; position: relative;
+}
+#sb-title {
+	height: 26px;
+}
+#sb-title-inner {
+	height: 26px;
+}
+#sb-title-inner {
+	padding: 5px 0px 0px 10px; color: rgb(136, 136, 136); font-size: 12px; font-weight: bold;
+}
+#sb-info {
+	height: 20px; margin-top: -4px;
+}
+#sb-info {
+	line-height: 8px;
+}
+#sb-info-inner {
+	line-height: 8px;
+}
+#sb-info-inner {
+	color: rgb(102, 102, 102); padding-left: 1em; font-size: 12px; margin-top: 3px; background-color: rgb(255, 255, 255);
+}
+#sb-nav {
+	padding: 2px 0px; width: 45%; margin-right: 6px; float: right;
+}
+#sb-title {
+	background-color: rgb(255, 255, 255);
+}
+#sb-nav-top {
+	padding: 7px 0px 10px; top: 0px; width: 100%; position: absolute; z-index: 9999;
+}
+#sb-nav a {
+	width: 10px; height: 16px; margin-left: 3px; float: right; display: block; cursor: pointer;
+}
+#sb-nav-close {
+	margin-right: 10px; float: right; z-index: 10000; cursor: pointer; background-color: rgb(255, 255, 255);
+}
+#sb-nav-next {
+	background-image: url("link-arrow.gif"); background-repeat: no-repeat;
+}
+#sb-nav-previous {
+	background-image: url("link_arrow_back.gif"); background-repeat: no-repeat;
+}
+#sb-nav-play {
+	background-image: url("shadowbox-play.png"); background-repeat: no-repeat;
+}
+#sb-nav-pause {
+	background-image: url("shadowbox-play.png"); background-repeat: no-repeat;
+}
+#sb-counter {
+	padding: 0px; width: 45%; vertical-align: top; float: left;
+}
+#sb-counter a {
+	padding: 0px 4px 0px 0px; color: rgb(255, 255, 255); text-decoration: none; cursor: pointer;
+}
+#sb-counter a.sb-counter-current {
+	text-decoration: underline;
+}
+div.sb-message {
+	padding: 10px; text-align: center; font-size: 12px;
+}
+div.sb-message a:link {
+	color: rgb(255, 255, 255); text-decoration: underline;
+}
+div.sb-message a:visited {
+	color: rgb(255, 255, 255); text-decoration: underline;
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.bituos.truckAdmin.Beans.BeanTruck" table="truck" >
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       <property name="description" column="description" type="string"  not-null="true"/>
+       <property name="registration" column="registration" type="string"  not-null="false"/>
+       <property name="model" column="model" type="string"  not-null="true"/>
+       <property name="date_reg" column="date_reg" type="timestamp"  not-null="false"/>
+       <many-to-one name="id_truck_configuration" column="id_truck_configuration" not-null="false"/>
+       <property name="active" column="active" type="string"  not-null="true"/>
+       
+   </class>
+</hibernate-mapping>
+
+

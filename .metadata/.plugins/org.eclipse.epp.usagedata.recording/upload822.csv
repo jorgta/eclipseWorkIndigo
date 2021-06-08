@@ -1,0 +1,276 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"Core exception while retrieving the content description",1430872626632
+error,log,,,"Core exception while retrieving the content description",1430872626634
+error,log,,,"Core exception while retrieving the content description",1430872626635
+error,log,,,"Core exception while retrieving the content description",1430872626644
+error,log,,,"Core exception while retrieving the content description",1430872626646
+error,log,,,"Core exception while retrieving the content description",1430872626647
+error,log,,,"Core exception while retrieving the content description",1430872626648
+error,log,,,"Core exception while retrieving the content description",1430872626650
+error,log,,,"Core exception while retrieving the content description",1430872626654
+error,log,,,"Core exception while retrieving the content description",1430872626655
+error,log,,,"Core exception while retrieving the content description",1430872626657
+error,log,,,"Core exception while retrieving the content description",1430872626658
+error,log,,,"Core exception while retrieving the content description",1430872626660
+error,log,,,"Core exception while retrieving the content description",1430872626670
+error,log,,,"Core exception while retrieving the content description",1430872626671
+error,log,,,"Core exception while retrieving the content description",1430872626672
+error,log,,,"Core exception while retrieving the content description",1430872626674
+error,log,,,"Core exception while retrieving the content description",1430872626675
+error,log,,,"Core exception while retrieving the content description",1430872626684
+error,log,,,"Core exception while retrieving the content description",1430872626686
+error,log,,,"Core exception while retrieving the content description",1430872626687
+error,log,,,"Core exception while retrieving the content description",1430872626688
+error,log,,,"Core exception while retrieving the content description",1430872626690
+error,log,,,"Core exception while retrieving the content description",1430872626692
+error,log,,,"Core exception while retrieving the content description",1430872626694
+error,log,,,"Core exception while retrieving the content description",1430872626696
+error,log,,,"Core exception while retrieving the content description",1430872626698
+error,log,,,"Core exception while retrieving the content description",1430872626699
+error,log,,,"Core exception while retrieving the content description",1430872626710
+error,log,,,"Core exception while retrieving the content description",1430872626711
+error,log,,,"Core exception while retrieving the content description",1430872626713
+error,log,,,"Core exception while retrieving the content description",1430872626714
+error,log,,,"Core exception while retrieving the content description",1430872626715
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430872627464
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430872655507
+activated,view,org.eclipse.ui.console,3.5.100.v20110126,"org.eclipse.ui.console.ConsoleView",1430872658154
+activated,view,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.ui.ServersView",1430872658449
+error,log,,,"Core exception while retrieving the content description",1430872659657
+error,log,,,"Core exception while retrieving the content description",1430872659659
+error,log,,,"Core exception while retrieving the content description",1430872659662
+error,log,,,"Core exception while retrieving the content description",1430872659664
+error,log,,,"Core exception while retrieving the content description",1430872659666
+error,log,,,"Core exception while retrieving the content description",1430872659675
+error,log,,,"Core exception while retrieving the content description",1430872659676
+error,log,,,"Core exception while retrieving the content description",1430872659678
+error,log,,,"Core exception while retrieving the content description",1430872659679
+error,log,,,"Core exception while retrieving the content description",1430872659681
+error,log,,,"Core exception while retrieving the content description",1430872659685
+error,log,,,"Core exception while retrieving the content description",1430872659686
+error,log,,,"Core exception while retrieving the content description",1430872659689
+error,log,,,"Core exception while retrieving the content description",1430872659690
+error,log,,,"Core exception while retrieving the content description",1430872659692
+error,log,,,"Core exception while retrieving the content description",1430872659701
+error,log,,,"Core exception while retrieving the content description",1430872659703
+error,log,,,"Core exception while retrieving the content description",1430872659705
+error,log,,,"Core exception while retrieving the content description",1430872659707
+error,log,,,"Core exception while retrieving the content description",1430872659709
+error,log,,,"Core exception while retrieving the content description",1430872659718
+error,log,,,"Core exception while retrieving the content description",1430872659720
+error,log,,,"Core exception while retrieving the content description",1430872659721
+error,log,,,"Core exception while retrieving the content description",1430872659722
+error,log,,,"Core exception while retrieving the content description",1430872659724
+error,log,,,"Core exception while retrieving the content description",1430872659727
+error,log,,,"Core exception while retrieving the content description",1430872659755
+error,log,,,"Core exception while retrieving the content description",1430872659757
+error,log,,,"Core exception while retrieving the content description",1430872659758
+error,log,,,"Core exception while retrieving the content description",1430872659760
+error,log,,,"Core exception while retrieving the content description",1430872659770
+error,log,,,"Core exception while retrieving the content description",1430872659771
+error,log,,,"Core exception while retrieving the content description",1430872659773
+error,log,,,"Core exception while retrieving the content description",1430872659774
+error,log,,,"Core exception while retrieving the content description",1430872659775
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.I20101116-0800,"org.eclipse.ui.navigator.ProjectExplorer",1430872662821
+started,bundle,org.eclipse.wst.common.environment,1.0.400.v200912181832,"org.eclipse.wst.common.environment",1430872668508
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430872669155
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430872689356
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430872693443
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430872711198
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430872715822
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430873442299
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430873443393
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430873449935
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430926196613
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430926297432
+activated,view,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.ui.ServersView",1430926304844
+executed,command,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.debug",1430926307412
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430926310684
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430926320701
+executed,command,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.debug",1430926322209
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430926328359
+error,log,,,"File not found: C:\\eclipseWorkIndigo\\lca\\WebContent\\rpt\\Crystal\\rptOrder.rpt.",1430926329370
+error,log,,,"File not found: C:\\eclipseWorkIndigo\\lca\\WebContent\\rpt\\Crystal\\rptOrder.rpt.",1430926331532
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430926346927
+activated,view,org.eclipse.ui.console,3.5.100.v20110126,"org.eclipse.ui.console.ConsoleView",1430926347263
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430926360169
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430926360619
+activated,view,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.ui.ServersView",1430926360625
+activated,view,org.eclipse.ui.console,3.5.100.v20110126,"org.eclipse.ui.console.ConsoleView",1430926360744
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430926367217
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430926367440
+error,log,,,"Port 81 required by Tomcat v5.5 Server at localhost is already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).",1430926368261
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430926368377
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430926368639
+activated,view,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.ui.ServersView",1430926368780
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430926369539
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430926369746
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430926373369
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430926394765
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430926401993
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430947474627
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430947478398
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430947533754
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430947535253
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430947579773
+executed,command,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.debug",1430947581621
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430947585549
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430947597601
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430947605321
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430947608602
+activated,view,org.eclipse.ui.console,3.5.100.v20110126,"org.eclipse.ui.console.ConsoleView",1430947608608
+activated,view,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.ui.ServersView",1430947614103
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430947616851
+error,log,,,"File not found: C:\\eclipseWorkIndigo\\lca\\WebContent\\rpt\\Crystal\\rptOrder.rpt.",1430947616906
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430947629864
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.I20101116-0800,"org.eclipse.ui.navigator.ProjectExplorer",1430947637207
+activated,view,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.ui.ServersView",1430947638587
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.I20101116-0800,"org.eclipse.ui.navigator.ProjectExplorer",1430947641187
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.file.refresh",1430947644214
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430947644493
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430947645581
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430947646142
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430947660441
+activated,view,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.ui.ServersView",1430947662658
+executed,command,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.stop",1430947662774
+activated,view,org.eclipse.ui.console,3.5.100.v20110126,"org.eclipse.ui.console.ConsoleView",1430947663311
+activated,view,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.ui.ServersView",1430947665212
+activated,view,org.eclipse.ui.console,3.5.100.v20110126,"org.eclipse.ui.console.ConsoleView",1430947665404
+activated,view,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.ui.ServersView",1430947667920
+executed,command,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.debug",1430947669578
+activated,view,org.eclipse.ui.console,3.5.100.v20110126,"org.eclipse.ui.console.ConsoleView",1430947670399
+activated,view,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.ui.ServersView",1430947671943
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430947674857
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430947682809
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430947683805
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430947693858
+executed,command,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.stop",1430947695283
+activated,view,org.eclipse.ui.console,3.5.100.v20110126,"org.eclipse.ui.console.ConsoleView",1430947695727
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430947696438
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430947697052
+activated,view,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.ui.ServersView",1430947697059
+executed,command,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.debug",1430947705479
+activated,view,org.eclipse.ui.console,3.5.100.v20110126,"org.eclipse.ui.console.ConsoleView",1430947706261
+activated,view,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.ui.ServersView",1430947707950
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430947708635
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430947712881
+activated,view,org.eclipse.ui.console,3.5.100.v20110126,"org.eclipse.ui.console.ConsoleView",1430947712888
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430947820573
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430948817035
+activated,view,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.ui.ServersView",1430948818757
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430948819518
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430950067475
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1430950070445
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430950086351
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430950110459
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430950112198
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430950127796
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430950129462
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430951428748
+activated,editor,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.core.jspsource.source",1430951431271
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430951450847
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430951508197
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430951534976
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430951715557
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430951716664
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430952419637
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430952420560
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430952526456
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430952527968
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430952536853
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430952537877
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430954756079
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1430954758928
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430954766210
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430956022206
+activated,view,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.ui.ServersView",1430956025221
+executed,command,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.debug",1430956026486
+activated,view,org.eclipse.ui.console,3.5.100.v20110126,"org.eclipse.ui.console.ConsoleView",1430956027719
+activated,view,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.ui.ServersView",1430956029802
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430956034074
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430956056316
+activated,view,org.eclipse.ui.console,3.5.100.v20110126,"org.eclipse.ui.console.ConsoleView",1430956056323
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430958487124
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430958525479
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430958525483
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430958533044
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430958533065
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430958802029
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1430958804884
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1430958820966
+closed,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1430958820966
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430958856100
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430958886393
+executed,command,,,"AUTOGEN:::org.eclipse.jdt.debug.CompilationUnitEditor.BreakpointRulerActions/org.eclipse.jdt.debug.ui.actions.ManageBreakpointRulerAction",1430958890023
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430958891588
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430958894323
+activated,view,org.eclipse.ui.console,3.5.100.v20110126,"org.eclipse.ui.console.ConsoleView",1430958894340
+activated,perspective,org.eclipse.debug.ui,3.7.0.v20110124a,"org.eclipse.debug.ui.DebugPerspective",1430958894677
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1430958897299
+executed,command,org.eclipse.debug.ui,3.7.0.v20110124a,"org.eclipse.debug.ui.commands.StepOver",1430958905515
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430958908949
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430958909199
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430958914997
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430958922847
+executed,command,org.eclipse.debug.ui,3.7.0.v20110124a,"org.eclipse.debug.ui.commands.StepOver",1430958923343
+executed,command,org.eclipse.debug.ui,3.7.0.v20110124a,"org.eclipse.debug.ui.commands.StepOver",1430958924838
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430958930003
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430958930645
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430958935879
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430958940534
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430958945892
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430958953457
+executed,command,org.eclipse.debug.ui,3.7.0.v20110124a,"org.eclipse.debug.ui.commands.StepOver",1430958954980
+executed,command,org.eclipse.debug.ui,3.7.0.v20110124a,"org.eclipse.debug.ui.commands.StepOver",1430958955413
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430958962611
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430958972243
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430958980417
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430958989008
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430958994973
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430959007121
+executed,command,org.eclipse.debug.ui,3.7.0.v20110124a,"org.eclipse.debug.ui.commands.Resume",1430959013906
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1430959021615
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430959023053
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430959025105
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430959029956
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430959050913
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1430959055580
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1430959056337
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.text.contentAssist.proposals",1430959064310
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430959066900
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430959072272
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430959083109
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430959131394
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430959147870
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430959158723
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.text.contentAssist.proposals",1430959163702
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430959167281
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430959174324
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1430959179153
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1430959180645
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.delete",1430959184410
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.text.contentAssist.proposals",1430959184869
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.text.contentAssist.proposals",1430959193834
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430959195292
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430959195516
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1430959198344
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1430959203779
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1430959205978
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.undo",1430959209699
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1430959214764
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1430959215609
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1430959218650
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.cut",1430959225974
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430959235677
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430959366081
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1430959369754
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1430959371256
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430959376213
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430959376457
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430959387973
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430959414577
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.delete",1430959421647
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.delete",1430959428820
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430959432637
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1430959444128
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1430959455062

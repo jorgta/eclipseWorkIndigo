@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.bituos.lca.Beans.BeanParameterLimits" table="parameter_limits" >
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       <property name="description" column="description" type="string"  not-null="true"/>
+
+       <many-to-one name="id_test_parameter" column="id_test_parameter" not-null="true"/>
+
+       <property name="limit_from_num" column="limit_from_num" type="double"  not-null="false"/>
+       <property name="limit_to_num" column="limit_to_num" type="double"  not-null="false"/>
+
+       <property name="limit_from_str" column="limit_from_str" type="string"  not-null="false"/>
+       <property name="limit_to_str" column="limit_to_str" type="string"  not-null="false"/>
+       
+       <property name="is_numeric" column="is_numeric" type="integer"  not-null="true"/>
+       
+       <property name="measurement_unit" column="measurement_unit" type="string" not-null="true"/>
+
+       <property name="show_in_report" column="show_in_report" type="integer"  not-null="true"/>
+
+
+
+   </class>
+</hibernate-mapping>
+
+

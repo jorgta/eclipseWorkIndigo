@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://bituosMonitor.bituos.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://bituosMonitor.bituos.com" xmlns:intf="http://bituosMonitor.bituos.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://bituosMonitor.bituos.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="getName1">
+    <complexType/>
+   </element>
+   <element name="getName1Response">
+    <complexType>
+     <sequence>
+      <element name="getName1Return" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="getName1Request">
+
+      <wsdl:part element="impl:getName1" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getName1Response">
+
+      <wsdl:part element="impl:getName1Response" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="PushNotification">
+
+      <wsdl:operation name="getName1">
+
+         <wsdl:input message="impl:getName1Request" name="getName1Request">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getName1Response" name="getName1Response">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="PushNotificationSoapBinding" type="impl:PushNotification">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="getName1">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getName1Request">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getName1Response">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="PushNotificationService">
+
+      <wsdl:port binding="impl:PushNotificationSoapBinding" name="PushNotification">
+
+         <wsdlsoap:address location="http://localhost:8080/pushNotificationPOC/services/PushNotification"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

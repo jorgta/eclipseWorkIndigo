@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.bituos.bar.Beans.BeanAgente" table="agentes" >
+       <id name="id" type="integer" column="id" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       <property name="nombre" column="nombre" type="string"  not-null="false"/>
+       <property name="direccion" column="direccion" type="string"  not-null="false"/>
+       <property name="telefono" column="telefono" type="string"  not-null="false"/>
+       <property name="foto" column="foto" type="binary"  not-null="false"/>
+       <property name="comision" column="comision" type="integer"  not-null="false"/>
+       <property name="eliminado" column="eliminado" type="string"  not-null="false"/>
+       <property name="passwd" column="passwd" type="string"  not-null="false"/>
+      
+   </class>
+</hibernate-mapping>
+
+

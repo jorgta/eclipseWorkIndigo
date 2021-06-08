@@ -1,0 +1,303 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Copyright ©2006-2009 Youjoomla.com. All Rights Reserved.           ||
+|| # This file may not be redistributed in whole or significant part. # ||
+|| # ---------------- THIS IS NOT FREE SOFTWARE ---------------- #      ||
+|| # http://www.youjoomla.com | http://www.youjoomla.com/license.html # ||
+|| #################################################################### ||
+\*======================================================================*/
+.YJIS_outer {
+	display:block;
+	position:relative;
+	clear:both;
+	overflow:hidden;
+	margin:0 auto;
+	z-index:1;
+	-webkit-user-select: none;
+}
+.YJSlide_slide.starter.active {
+	display:block!important;
+}
+.YJSlide_slide.starter.inactive {
+	display:none!important;
+}
+.YJIS_inner {
+	display:block;
+	position:relative;
+}
+.YJS_slidesholder {
+	display:none;
+	position:relative;
+	overflow:hidden;
+}
+.YJSlide_slide .YJSlide_description {
+	display:block;
+	position:absolute;
+	top:40px;
+	right:40px;
+	color:#eee;
+	font-size:12px;
+	background:url(../images/desc_bg.png);
+	width:250px;
+	padding:15px;
+	border:1px solid #404040;
+	text-align:center;
+}
+.YJSlide_slide .YJSlide_intro {
+	display:block;
+	position:absolute;
+	z-index:5000;
+	width:100%;
+	left:0px;
+	bottom:0px;
+	height:auto;
+	padding:0;
+	background:url(../images/intro_bg.png);
+	color:#18181A;
+	font-weight:bold;
+}
+.YJSlide_slide .YJSlide_intro_in {
+	display:block;
+	padding:10px;
+	margin:10px;
+	overflow:hidden;
+	word-wrap: break-word;
+}
+.slidearrows {
+	display:none;
+	position:absolute;
+	left:5px;
+	background:url(../images/slideArrows.png) left top;
+	width:31px;
+	height:46px;
+	z-index:1300;
+}
+.slidearrows.slideRight {
+	right:5px;
+	left:auto;
+	background:url(../images/slideArrows.png) left bottom;
+}
+/* bottom navigation */
+.navContainer {
+	display:block;
+	position:relative;
+	clear:both;
+	text-align:left;
+	margin:10px auto 10px auto;
+	text-align:center;
+}
+.navContainer .nav_info {
+	background:#000;
+	color:#FFFFFF;
+	padding:2px 5px 2px;
+	margin:0;
+	display:block;
+	position:absolute;
+	left:0;
+}
+.navContainer .bnav {
+	font-weight:bold;
+	display:inline-block;
+	padding:3px 10px;
+	margin:0;
+	background:#fff;
+	border:1px solid #bbb;
+	-webkit-border-radius:5px;
+	-khtml-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+}
+.navContainer .bnav.active {
+	background:#efefef;
+}
+/* yj tips */
+.YJS_tips, .YJS_slide_tips {
+	background:none;
+	width:auto;
+	height:auto;
+	z-index:8000;
+}
+.YJS_tips .tip, .YJS_slide_tips .tip {
+	background:#000;
+	border:0;
+	padding:0;
+	text-align:center;
+	-webkit-border-radius:5px;
+	-khtml-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	padding:5px 15px;
+	font-size:11px;
+	color:#FFFFFF;
+}
+.YJS_tips .tip-title, .YJS_slide_tips .tip-title {
+	padding: 0;
+	margin: 0;
+	font-size:12px;
+	font-weight: bold;
+	background: none;
+	clear:both;
+}
+.YJS_tips .tip-text, .YJS_slide_tips .tip-text {
+	font-size:11px;
+	margin: 0;
+}
+.YJS_tips .tip-bottom {
+	border-color: #000 transparent transparent;
+	border-style: solid;
+	border-width: 8px 8px 0;
+	height: 0;
+	margin: 0 8px;
+	width: 0;
+	position:absolute;
+	bottom:-8px;
+	left:-2px;
+}
+.YJS_slide_tips .tip-bottom {
+	border-color: transparent #000 transparent transparent;
+	border-style: solid;
+	border-width: 10px 10px 10px 0;
+	height: 0;
+	margin: 10px 0;
+	width: 0;
+	position:absolute;
+	left:-10px;
+	top:-2px;
+}
+.YJS_reldata {
+	display:none!important;
+}
+/* thumb container */
+.thumbContainer {
+	display:block;
+	position:absolute;
+	clear:both;
+	text-align:left;
+	margin:0 auto;
+	padding:0;
+	text-align:center;
+	z-index:1000;
+	/*
+	 must keep border none and border width
+	 fix for opera computeSize() 
+	 if you want border just
+	 define it and include border width
+	*/
+	border:none;
+	border-width:0;
+}
+.thumbContainer_outer {
+	display:inline-block;
+	position:relative;
+	overflow:hidden;
+	margin:0px;
+	padding:8px 0px;
+	opacity:0;
+	filter:alpha(opacity=0);
+	/* 
+	 do not remove bottom 3. Thumb elements
+	 are inline blocks , this makes sure they do
+	 not get the "natural" 4px margin between them
+	 */
+    font-size: 0px;
+	letter-spacing: 0px;
+	word-spacing: 0px;
+}
+.thumbContainer_belt {
+	display:block;
+	position:relative;
+	width:3000px;
+}
+.thumbContainer .clr_c {
+	display:block;
+	clear:both;
+}
+.thumbContainer .thumb {
+	display:inline-block;
+	vertical-align:top;
+	padding:8px;
+	margin:0px;
+	overflow:hidden;
+	/*
+	 must keep border none and border width
+	 fix for opera computeSize() 
+	 if you want border just
+	 define it and include border width
+	*/
+	border:none;
+	border-width:0;
+}
+.thumbContainer .thumb img {
+	margin:0;
+	padding:0;
+	-webkit-box-shadow:0 0 8px #000;
+	-khtml-box-shadow:0 0 8px #000;
+	-moz-box-shadow:0 0 8px #000;
+	box-shadow:0 0 8px #000;
+	-webkit-border-radius:3px;
+	-khtml-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+}
+.thumbContainer .thumb.selected {
+}
+.thumbContainer_left, .thumbContainer_right {
+	/* will be set to block with js */
+	display:none;
+	position:absolute;
+	left:10px;
+	background:url(../images/thumbContainer_arrows.png) no-repeat left bottom;
+	width:12px;
+	height:17px;
+	z-index:1100;
+}
+.thumbContainer_right {
+	right:10px;
+	left:auto;
+	background:url(../images/thumbContainer_arrows.png) no-repeat left top;
+}
+.yjis_slidesinfo {
+	display:none!important;
+}
+.YJSlide_slide a.popbox,
+.YJSlide_slide img{
+	max-width:100%;
+	margin:0;
+	padding:0;
+}
+@media screen and (max-width: 3500px) {
+.YJIS_outer .thumbContainer_belt {
+	visibility:visible!important;
+}
+}
+@media screen and (max-width: 1200px) {
+.yjis_respond, a.popbox.YJS_mboxp {
+	width:100%!important;
+}
+.YJIS_outer.yjis_respond img {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+}
+}
+@media screen and (max-width: 680px) {
+embed,  object {
+	width: 100%!important;
+	height: auto!important;
+}
+ #mbBottom, #mbCaption, {
+ width:90%!important;
+}
+#mbMedia iframe, #mbMedia {
+	width:100%!important;
+}
+.YJIS_outer .thumbContainer_belt, .YJSlide_description {
+	visibility:hidden!important;
+}
+
+}
+@media screen and (max-width: 680px) {
+.nav_info{
+	visibility:hidden!important;
+}
+}

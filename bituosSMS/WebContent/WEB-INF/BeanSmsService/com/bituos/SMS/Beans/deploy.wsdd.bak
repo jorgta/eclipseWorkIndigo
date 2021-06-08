@@ -1,0 +1,61 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from BeanSmsService WSDL service -->
+
+  <service name="BeanSms" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://Beans.SMS.bituos.com"/>
+      <parameter name="wsdlServiceElement" value="BeanSmsService"/>
+      <parameter name="schemaQualified" value="http://Beans.SMS.bituos.com"/>
+      <parameter name="wsdlServicePort" value="BeanSms"/>
+      <parameter name="className" value="com.bituos.SMS.Beans.BeanSmsSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="BeanSms"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="getId" qname="operNS:getId" xmlns:operNS="http://Beans.SMS.bituos.com" returnQName="retNS:getIdReturn" xmlns:retNS="http://Beans.SMS.bituos.com" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getNumber" qname="operNS:getNumber" xmlns:operNS="http://Beans.SMS.bituos.com" returnQName="retNS:getNumberReturn" xmlns:retNS="http://Beans.SMS.bituos.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="setId" qname="operNS:setId" xmlns:operNS="http://Beans.SMS.bituos.com" soapAction="" >
+        <parameter qname="pns:id" xmlns:pns="http://Beans.SMS.bituos.com" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="setNumber" qname="operNS:setNumber" xmlns:operNS="http://Beans.SMS.bituos.com" soapAction="" >
+        <parameter qname="pns:number" xmlns:pns="http://Beans.SMS.bituos.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getMsg" qname="operNS:getMsg" xmlns:operNS="http://Beans.SMS.bituos.com" returnQName="retNS:getMsgReturn" xmlns:retNS="http://Beans.SMS.bituos.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="setMsg" qname="operNS:setMsg" xmlns:operNS="http://Beans.SMS.bituos.com" soapAction="" >
+        <parameter qname="pns:msg" xmlns:pns="http://Beans.SMS.bituos.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="setDate_reg" qname="operNS:setDate_reg" xmlns:operNS="http://Beans.SMS.bituos.com" soapAction="" >
+        <parameter qname="pns:date_reg" xmlns:pns="http://Beans.SMS.bituos.com" type="tns:dateTime" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getDate_register" qname="operNS:getDate_register" xmlns:operNS="http://Beans.SMS.bituos.com" returnQName="retNS:getDate_registerReturn" xmlns:retNS="http://Beans.SMS.bituos.com" returnType="rtns:dateTime" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="setDate_register" qname="operNS:setDate_register" xmlns:operNS="http://Beans.SMS.bituos.com" soapAction="" >
+        <parameter qname="pns:date_reg" xmlns:pns="http://Beans.SMS.bituos.com" type="tns:dateTime" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getDate_send" qname="operNS:getDate_send" xmlns:operNS="http://Beans.SMS.bituos.com" returnQName="retNS:getDate_sendReturn" xmlns:retNS="http://Beans.SMS.bituos.com" returnType="rtns:dateTime" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getDate_reg" qname="operNS:getDate_reg" xmlns:operNS="http://Beans.SMS.bituos.com" returnQName="retNS:getDate_regReturn" xmlns:retNS="http://Beans.SMS.bituos.com" returnType="rtns:dateTime" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="setId_status" qname="operNS:setId_status" xmlns:operNS="http://Beans.SMS.bituos.com" soapAction="" >
+        <parameter qname="pns:id_status" xmlns:pns="http://Beans.SMS.bituos.com" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getId_status" qname="operNS:getId_status" xmlns:operNS="http://Beans.SMS.bituos.com" returnQName="retNS:getId_statusReturn" xmlns:retNS="http://Beans.SMS.bituos.com" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="setDate_send" qname="operNS:setDate_send" xmlns:operNS="http://Beans.SMS.bituos.com" soapAction="" >
+        <parameter qname="pns:date_send" xmlns:pns="http://Beans.SMS.bituos.com" type="tns:dateTime" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <parameter name="allowedMethods" value="setDate_register getMsg getDate_reg getDate_register getId setNumber getNumber setId_status getId_status getDate_send setDate_reg setId setDate_send setMsg"/>
+
+  </service>
+</deployment>

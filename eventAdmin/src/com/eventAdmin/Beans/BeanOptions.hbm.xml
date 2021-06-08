@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.eventAdmin.Beans.BeanOptions" table="options">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+     
+        <property name="defaultView" column="defaultView" type="string"  not-null="true"/>
+        <property name="taskView" column="taskView" type="string"  not-null="true"/>
+        <property name="scheduleView" column="scheduleView" type="string"  not-null="true"/>
+        
+        <property name="theme" column="theme" type="string"  not-null="true"/>
+         
+        
+    	<many-to-one name="template" column="template" not-null="true"/>
+   		 <many-to-one name="week" column="week" not-null="true"/>
+     
+    	<many-to-one name="month" column="month" not-null="true"/>
+       
+        <property name="useCreationPopup" column="useCreationPopup" type="boolean" length="1" not-null="true"/>
+        <property name="useDetailPopup" column="useDetailPopup" type="boolean" length="1" not-null="true"/>
+        <property name="disableDblClick" column="disableDblClick" type="boolean" length="1" not-null="true"/>
+        <property name="disableClick" column="disableClick" type="boolean" length="1" not-null="true"/>
+        <property name="isReadOnly" column="isReadOnly" type="boolean" length="1" not-null="true"/>
+        <property name="usageStatistics" column="usageStatistics" type="boolean" length="1" not-null="true"/>
+  
+ 
+       
+       <list name="calendars" cascade="all" >
+		    <key column="options_id"/>    
+		    <index column="id" />
+		    <one-to-many class="com.eventAdmin.Beans.BeanCalendarProps"/>
+	  </list>
+ 
+       
+       
+       <list name="timezones" cascade="all" >
+		    <key column="options_id"/>    
+		    <index column="id" />
+		    <one-to-many class="com.eventAdmin.Beans.BeanTimeZone"/>
+	  </list>
+ 
+  
+   </class>
+</hibernate-mapping>
+
+

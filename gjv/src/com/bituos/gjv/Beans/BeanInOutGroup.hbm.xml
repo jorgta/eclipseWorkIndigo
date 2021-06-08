@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.bituos.gjv.Beans.BeanInOutGroup" table="in_outgroup" >
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>     
+	   <property name="starting_date" column="starting_date" type="date"  not-null="true"/>	
+       <property name="ending_date" column="ending_date" type="date"  not-null="false"/>
+        <many-to-one name="idContactRHGroup" column="idContactRHGroup" not-null="true"/>
+   </class>
+</hibernate-mapping>
+
+

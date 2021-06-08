@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.6.0"
+	client="site"
+	method="upgrade">
+	<name>Youjoomla Multitabs Modules</name>
+	<creationDate>7-10-2014</creationDate>
+	<author>Youjoomla.com</author>
+	<copyright>Youjoomla.com</copyright>
+	<license>Youjoomla.com</license>
+	<authorEmail>youjoomla@gmail.com</authorEmail>
+	<authorUrl>www.youjoomla.com.com</authorUrl>
+	<version>2.0.4</version>
+	<compatibility>
+		<version>2.5</version>
+		<version>3</version>
+	</compatibility>
+	<description>
+		<![CDATA[<style type="text/css" media="all">#holdthem{font-family: Arial Narrow,sans-serif;text-align:left;}#wrap1 {padding:0px 0px 4px 0px;}h1 {clear:both;font-family: Arial Narrow,sans-serif;font-size:18px;margin:0px 0px 12px 0px;padding:0px 0px 1px 10px;color:#C64934;}.wrap2 {background:#F7F7F7;}</style><div id="holdthem"><h1>Youjoomla Multitabs Modules for Joomla 1.7 and UP</h1><div class="wrap2"><a title="Visit the official website!" href="http://joomlatemplates.youjoomla.info/youscene"> <img style="float:left;border:1px solid #CFCFCF;margin:0px 15px 4px 22px;" src="../modules/mod_yj_multitab/images/yj_extensions.jpg" border="0" alt="Logo" /></a></div></div>]]>
+	</description>
+	<languages>
+		<language tag="en-GB">en-GB.mod_yj_multitab.ini</language>
+		<language tag="en-GB">en-GB.mod_yj_multitab.sys.ini</language>
+	</languages>
+	<files>
+		<filename module="mod_yj_multitab">mod_yj_multitab.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>src</folder>
+		<folder>images</folder>
+		<folder>tmpl</folder>
+		<folder>elements</folder>
+		<folder>css</folder>
+	</files>
+	<config>
+		<fields  name="params" addfieldpath="/modules/mod_yj_multitab/elements/">
+			<fieldset name="basic">
+				<field type="yjspacer" default="&lt;strong&gt;MODULE LAYOUT SETTINGS&lt;/strong&gt;" />
+				<field name="is_copy" type="text" default="" size="20" label="IS THIS A COPY?" description="You can add up to 4 copy's. Use following suffixes: 2 ,3, 4, 5. If this is first copy just add number 2 and hit Apply. Last copy that can be used is number 5"/>
+				<field name="module_template" type="folderlist" default="Default" hide_none="blank" label="Select default module template" directory="modules/mod_yj_multitab/tmpl" description="You can create custom module  templates for Youjoomla Multitabs Modules Simply copy modules/mod_yj_multitab/tmpl/Default folder , rename it to your own template name and edit default.php within your template folder to your liking. Once you have created your module template , your template name will be visible here. You can also copy your template folder to your template/html/mod_yj_multitab/ folder and create custom overides for each module instance. To get you started we have created blank module template name New" />
+				<field name="module_pozi" type="text" default="user1,user2" size="120" label="Mutlitab modules" description="Enter modules you want to display seperated by comma.Note:The modules must be published on All pages. Suggestion:Create addtional module positions like , tab1 , tab2  and use these. For Joomla1.0  go to Site - Template Manager - Module Positions and create new ones, for Joomla  1.5 open templatedetails.xml , find positions tag and add your new module positions"/>
+				<field name="module_title" type="text" default="Title1,Title2" size="120" label="Accordion tabs title " description="Enter titles in same order as modules above seperated by comma"/>
+				<field name="auto_width" type="list" default="1" label="Automated Mutlitab title width " description="To be used if Automated with is off:Define width in pixels or percentage:Divide 100 by number of titles">
+					<option value="1">On</option>
+					<option value="0">Off</option>
+				</field>
+				<field name="ulis_width2" type="text" default="100px" size="20" label="Mutlitab title width if Automated is Off " description="To be used if Automated with is off:Define width in pixels"/>
+				<field name="transtype" type="list" default="1" label="Transition type" description="Slide or Slidefade:Note that Fade transition requires height setting.">
+					<option value="0">SlideFade</option>
+					<option value="1">Fade</option>
+				</field>
+				<field name="tabs_height" type="text" default="" size="20" label="Tabs height" description="Define height in px. Example:300px.This is optional if your transition is SlideFade "/>
+				<field name="moduleclass_sfx" type="text" default="_yjmutlitab" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+				<field name="handler" type="yjhandler" default=""/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

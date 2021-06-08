@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.eventAdmin.Beans.BeanTemplate" table="template">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+     
+       <property name="milestoneTitle" column="milestoneTitle" type="string"  not-null="true"/>
+       <property name="milestone" column="milestone" type="string"  not-null="true"/>
+       <property name="taskTitle" column="taskTitle" type="string"  not-null="true"/>
+       <property name="task" column="task" type="string"  not-null="true"/>
+       <property name="alldayTitle" column="alldayTitle" type="string"  not-null="true"/>
+       <property name="allday" column="allday" type="string"  not-null="true"/>
+       
+       <property name="time" column="time" type="string"  not-null="true"/>
+       <property name="goingDuration" column="goingDuration" type="string"  not-null="true"/>
+       <property name="comingDuration" column="comingDuration" type="string"  not-null="true"/>
+       <property name="monthMoreTitleDate" column="monthMoreTitleDate" type="string"  not-null="true"/>
+       <property name="monthMoreClose" column="monthMoreClose" type="string"  not-null="true"/>
+       
+       
+       
+       <property name="monthGridHeader" column="monthGridHeader" type="string"  not-null="true"/>
+       <property name="monthGridHeaderExceed" column="monthGridHeaderExceed" type="string"  not-null="true"/>
+       <property name="monthGridFooter" column="monthGridFooter" type="string"  not-null="true"/>
+       <property name="monthGridFooterExceed" column="monthGridFooterExceed" type="string"  not-null="true"/>
+       <property name="monthDayname" column="monthDayname" type="string"  not-null="true"/>
+       
+       <property name="weekGridFooterExceed" column="weekGridFooterExceed" type="string"  not-null="true"/>
+       <property name="dayGridTitle" column="dayGridTitle" type="string"  not-null="true"/>
+       <property name="schedule" column="schedule" type="string"  not-null="true"/>
+       <property name="collapseBtnTitle" column="collapseBtnTitle" type="string"  not-null="true"/>
+       <property name="timezoneDisplayLabel" column="timezoneDisplayLabel" type="string"  not-null="true"/>
+       
+       
+       <property name="timegridDisplayPrimaryTime" column="timegridDisplayPrimaryTime" type="string"  not-null="true"/>
+       <property name="popupIsAllDay" column="popupIsAllDay" type="string"  not-null="true"/>
+       <property name="popupStateFree" column="popupStateFree" type="string"  not-null="true"/>
+       <property name="popupStateBusy" column="popupStateBusy" type="string"  not-null="true"/>
+       <property name="titlePlaceholder" column="titlePlaceholder" type="string"  not-null="true"/>
+       <property name="locationPlaceholder" column="locationPlaceholder" type="string"  not-null="true"/>
+       
+       
+       
+       <property name="startDatePlaceholder" column="startDatePlaceholder" type="string"  not-null="true"/>
+       <property name="endDatePlaceholder" column="endDatePlaceholder" type="string"  not-null="true"/>
+       <property name="popupSave" column="popupSave" type="string"  not-null="true"/>
+       <property name="popupUpdate" column="popupUpdate" type="string"  not-null="true"/>
+       <property name="popupDetailDate" column="popupDetailDate" type="string"  not-null="true"/>
+       
+       <property name="popupDetailLocation" column="popupDetailLocation" type="string"  not-null="true"/>
+       <property name="popupDetailUser" column="popupDetailUser" type="string"  not-null="true"/>
+       <property name="popupDetailState" column="popupDetailState" type="string"  not-null="true"/>
+       <property name="popupDetailRepeat" column="popupDetailRepeat" type="string"  not-null="true"/>
+       <property name="popupDetailBody" column="popupDetailBody" type="string"  not-null="true"/>
+       
+       
+       <property name="popupEdit" column="popupEdit" type="string"  not-null="true"/>
+       <property name="popupDelete" column="popupDelete" type="string"  not-null="true"/>
+ 
+	
+
+   </class>
+</hibernate-mapping>
+
+

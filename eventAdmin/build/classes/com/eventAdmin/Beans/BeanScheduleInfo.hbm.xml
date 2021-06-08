@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+ 
+
+<hibernate-mapping>
+   <class name="com.eventAdmin.Beans.BeanScheduleInfo" table="scheduleinfo">
+     
+      
+       <id name="id" type="integer" column="id" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+     
+       <property name="guid" column="guid" type="string"  not-null="true"/>
+       <many-to-one name="calendarId" column="calendarId" not-null="true"/>
+       <property name="title" column="title" type="string"  not-null="true"/>
+       <property name="body" column="body" type="string"  not-null="true"/>
+       <property name="isAllday" column="isAllday"  type="boolean" length="1" not-null="true"/>
+       <property name="start" column="start" type="string"  not-null="true"/>
+       <property name="end" column="end" type="string"  not-null="true"/>
+       <property name="category" column="category" type="string"  not-null="true"/>
+       <property name="dueDateClass" column="dueDateClass" type="string"  not-null="true"/>
+       <property name="color" column="color" type="string"  not-null="true"/>
+       <property name="bgColor" column="bgColor" type="string"  not-null="true"/>
+       <property name="dragBgColor" column="dragBgColor" type="string"  not-null="true"/>
+       <property name="borderColor" column="borderColor" type="string"  not-null="true"/>
+       <property name="customStyle" column="customStyle" type="string"  not-null="true"/>
+       <property name="isFocused" column="isFocused" type="boolean" length="1" not-null="true"/>
+       <property name="isPending" column="isPending" type="boolean" length="1" not-null="true"/>
+       <property name="isVisible" column="isVisible" type="boolean" length="1" not-null="true"/>
+       <property name="isReadOnly" column="isReadOnly" type="boolean" length="1" not-null="true"/>
+       <property name="goingDuration" column="goingDuration" type="float"  not-null="true"/>
+       <property name="comingDuration" column="comingDuration" type="float"  not-null="true"/>
+       <property name="recurrenceRule" column="recurrenceRule" type="string"  not-null="true"/>
+     
+       <property name="isPrivate" column="isPrivate" type="boolean" length="1" not-null="true"/>
+       <property name="location" column="location" type="string"  not-null="true"/>
+
+		      
+      
+	   <many-to-one name="raw" column="raw" not-null="true"/>
+	   
+	     
+       <list name="attendees" cascade="all" >
+		    <key column="scheduleinfo_id"/>    
+		    <index column="id" />
+		    <one-to-many class="com.eventAdmin.Beans.BeanAttendees"/>
+	  </list>
+ 
+ 
+ 
+   </class>
+</hibernate-mapping>
+
+

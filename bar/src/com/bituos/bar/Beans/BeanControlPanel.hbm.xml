@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.smsfreeworld.Beans.BeanControlPanel" table="controlpanel" >
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+      
+       <property name="msgCount" column="msgCount" type="integer"  not-null="true"/>
+		<property name="intervalo" column="intervalo" type="integer"  not-null="true"/>
+
+
+	
+       
+   </class>
+</hibernate-mapping>
+
+

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.emptyProject.Beans.BeanSettings" table="settings">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+
+       
+       <many-to-one name="id_settings" column="id_settings" not-null="true"/>
+       <many-to-one name="id_process" column="id_process" not-null="true"/>
+         <property name="rows_to_show" column="rows_to_show" type="integer"  not-null="true"/>
+  
+
+
+
+   </class>
+</hibernate-mapping>
+
+

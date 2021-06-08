@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.struts2.Beans.BeanCategory" table="categories" >
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       <property name="name" column="name" type="string"  not-null="true"/>
+       <property name="alias" column="alias" type="string"  not-null="true"/>
+       <property name="description" column="description" type="string"  not-null="false"/>
+       <many-to-one name="module_id" column="module_id" not-null="true" />
+       
+       <property name="published" column="published" type="integer"  not-null="true"/>
+       <property name="access" column="access" type="integer"  not-null="true"/>
+       <property name="ordering" column="ordering" type="integer"  not-null="true"/>
+       
+       <property name="image" column="image" type="string"  not-null="false"/>
+       <property name="params" column="params" type="string"  not-null="false"/>
+       <property name="trash" column="trash" type="integer"  not-null="true"/>
+        <property name="url" column="url" type="string"  not-null="false"/>
+ 
+       
+   </class>
+</hibernate-mapping>
+
+

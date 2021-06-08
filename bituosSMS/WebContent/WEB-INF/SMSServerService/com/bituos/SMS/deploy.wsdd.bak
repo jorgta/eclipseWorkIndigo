@@ -1,0 +1,40 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from SMSServerService WSDL service -->
+
+  <service name="SMSServer" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://SMS.bituos.com"/>
+      <parameter name="wsdlServiceElement" value="SMSServerService"/>
+      <parameter name="schemaQualified" value="http://SMS.bituos.com,http://Beans.SMS.bituos.com"/>
+      <parameter name="wsdlServicePort" value="SMSServer"/>
+      <parameter name="className" value="com.bituos.SMS.SMSServerSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="SMSServer"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="getName" qname="operNS:getName" xmlns:operNS="http://SMS.bituos.com" returnQName="retNS:getNameReturn" xmlns:retNS="http://SMS.bituos.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:name" xmlns:pns="http://SMS.bituos.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getSMSList" qname="operNS:getSMSList" xmlns:operNS="http://SMS.bituos.com" returnQName="retNS:getSMSListReturn" xmlns:retNS="http://SMS.bituos.com" returnType="rtns:BeanSms" xmlns:rtns="http://Beans.SMS.bituos.com" soapAction="" >
+        <parameter qname="pns:name" xmlns:pns="http://SMS.bituos.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <parameter name="allowedMethods" value="getSMSList getName"/>
+
+      <typeMapping
+        xmlns:ns="http://Beans.SMS.bituos.com"
+        qname="ns:BeanSms"
+        type="java:com.bituos.SMS.Beans.BeanSms"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+  </service>
+</deployment>

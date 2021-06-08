@@ -1,0 +1,132 @@
+#lead {
+	margin: 0px 0px 13px; clear: both;
+}
+#productTabs .tabs {
+	border-bottom-color: rgb(156, 183, 196); border-bottom-width: 1px; border-bottom-style: solid;
+}
+#productTabs .tabs ul {
+	margin: 0px 0px -3px; overflow: hidden;
+}
+#productTabs .tabs ul li {
+	margin: 0px; float: left; list-style-type: none;
+}
+#productTabs .tabs ul li a {
+	background: rgb(163, 182, 197); margin: 0px 4px 4px 0px; padding: 2px 4px; color: rgb(255, 255, 255); text-decoration: none; display: block;
+}
+#productTabs .tabs ul li.active a {
+	background: rgb(209, 222, 229); color: rgb(164, 34, 88);
+}
+#productTabs .tabs ul li a:hover {
+	background: rgb(209, 222, 229); color: rgb(164, 34, 88);
+}
+#tabContents {
+	margin-top: 12px;
+}
+#tabContents div.application {
+	padding-top: 0px;
+}
+#tabContents ul.featureList {
+	margin: 0px;
+}
+#tabContents ul.featureList li {
+	margin: 0px; list-style-type: none;
+}
+#tabContents ul.featureList li img {
+	margin: 3px 13px 13px 0px; float: left;
+}
+#tabContents .miniTeasers {
+	margin: 7px 0px 0px; overflow: hidden;
+}
+#productTabs .tabContent {
+	overflow: hidden;
+}
+#tabContents .miniTeasers div {
+	width: 229px; overflow: hidden; float: left;
+}
+#tabContents .miniTeasers h2 {
+	padding: 2px 0px;
+}
+#tabContents .miniTeasers h2 span {
+	color: rgb(89, 123, 151); text-transform: none; font-family: Ascom,Arial,Helvetica,Sans-Serif; font-size: 15px; font-weight: normal;
+}
+#tabContents .miniTeasers .bluebg .teaser-content {
+	background: 0px 0px rgb(238, 242, 244); padding: 12px; width: 205px;
+}
+#lead h1 {
+	padding: 5px 0px;
+}
+#lead h1 span {
+	color: rgb(255, 255, 255); text-transform: none !important; font-family: Ascom,Arial,Helvetica,Sans-Serif; font-size: 15px; font-weight: normal; margin-bottom: 5px;
+}
+#tabContents .miniTeasers div.rightTeaser {
+	float: right;
+}
+div#imageSlider {
+	margin: 12px 0px 0px; overflow: hidden; clear: both;
+}
+div#imageSlider h2 {
+	margin-bottom: 10px;
+}
+div#imageSlider #goLeft {
+	float: left;
+}
+div#imageSlider #goRight {
+	float: right;
+}
+div#imageSlider div.slider {
+	margin: 0px 0px 0px 19px; width: 436px; height: 51px; overflow: hidden; float: left; position: relative;
+}
+div#imageSlider ul {
+	margin: 0px; left: 0px; top: 0px; position: absolute;
+}
+div#imageSlider ul li {
+	margin: 0px; padding: 0px 19px 0px 0px; float: left; list-style-type: none;
+}
+div#imageSlider ul li a img {
+	border: currentColor; overflow: hidden; float: left;
+}
+div#imageSlider ul li a {
+	border: currentColor; overflow: hidden; float: left;
+}
+div#imageSlider ul li a:hover {
+	border: 2px solid rgb(84, 141, 212);
+}
+div#imageSlider ul li a:hover img {
+	margin: -2px;
+}
+form#thumbnailForm {
+	text-align: left;
+}
+form#thumbnailForm fieldset.preview img {
+	display: none;
+}
+form#thumbnailForm fieldset.preview img.thumb {
+	display: inline;
+}
+form#thumbnailForm fieldset.preview a img {
+	display: inline;
+}
+form#thumbnailForm label {
+	width: 40%; text-align: left; margin-top: 10px; margin-left: 5px; vertical-align: middle; float: left;
+}
+form#thumbnailForm fieldset {
+	margin: 5px; clear: both;
+}
+#productPictureSlider h2 {
+	padding: 2px 0px;
+}
+#productPictureSlider h2 span {
+	color: rgb(89, 123, 151); text-transform: none; font-family: Ascom,Arial,Helvetica,Sans-Serif; font-size: 15px; font-weight: normal;
+}
+#productTabs {
+	margin: 14px 0px 26px;
+}
+.slider_overlay {
+	position: absolute;
+}
+ul#AdminProductPictureList .slider_overlay {
+	clear: both; margin-top: -55px;
+}
+#sb-overlay-desc {
+	padding: 5px; width: 100%; text-align: center; bottom: 0px; display: block; position: absolute; background-color: rgb(255, 255, 255);
+}

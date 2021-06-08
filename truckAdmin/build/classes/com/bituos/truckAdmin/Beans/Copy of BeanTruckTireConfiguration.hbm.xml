@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.bituos.truckAdmin.Beans.BeanTruckTireConfiguration" table="truck_tire_configuration" >
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       <property name="description" column="description" type="string"  not-null="true"/>
+       <property name="tire_count" column="tire_count" type="integer"  not-null="true"/>
+       <property name="image" column="image" type="string"  not-null="false"/>
+       
+         		<property name="pos1" column="pos1" type="integer"  not-null="true"/>
+       <property name="pos1_name" column="pos1_name" type="string"  not-null="true"/>
+       			<property name="pos2" column="pos2" type="integer"  not-null="true"/>       
+	   <property name="pos2_name" column="pos2_name" type="string"  not-null="true"/>	   
+	   		   <property name="pos3" column="pos3" type="integer"  not-null="true"/>
+		<property name="pos3_name" column="pos3_name" type="string"  not-null="true"/>
+		       <property name="pos4" column="pos4" type="integer"  not-null="true"/>
+		<property name="pos4_name" column="pos4_name" type="string"  not-null="true"/>
+		       <property name="pos5" column="pos5" type="integer"  not-null="true"/>
+		<property name="pos5_name" column="pos5_name" type="string"  not-null="true"/>
+		       <property name="pos6" column="pos6" type="integer"  not-null="true"/>
+		<property name="pos6_name" column="pos6_name" type="string"  not-null="true"/>
+		       <property name="pos7" column="pos7" type="integer"  not-null="true"/>
+		<property name="pos7_name" column="pos7_name" type="string"  not-null="true"/>
+		       <property name="pos8" column="pos8" type="integer"  not-null="true"/>
+		<property name="pos8_name" column="pos8_name" type="string"  not-null="true"/>
+		       <property name="pos9" column="pos9" type="integer"  not-null="true"/>
+		<property name="pos9_name" column="pos9_name" type="string"  not-null="true"/>
+		       <property name="pos10" column="pos10" type="integer"  not-null="true"/>
+		<property name="pos10_name" column="pos10_name" type="string"  not-null="true"/>
+		       <property name="pos11" column="pos11" type="integer"  not-null="true"/>
+		<property name="pos11_name" column="pos11_name" type="string"  not-null="true"/>
+		       <property name="pos12" column="pos12" type="integer"  not-null="true"/>
+		<property name="pos12_name" column="pos12_name" type="string"  not-null="true"/>
+		       <property name="pos13" column="pos13" type="integer"  not-null="true"/>
+		<property name="pos13_name" column="pos13_name" type="string"  not-null="true"/>
+		       <property name="pos14" column="pos14" type="integer"  not-null="true"/>
+		<property name="pos14_name" column="pos14_name" type="string"  not-null="true"/>
+		       <property name="pos15" column="pos15" type="integer"  not-null="true"/>
+		<property name="pos15_name" column="pos15_name" type="string"  not-null="true"/>
+		       <property name="pos16" column="pos16" type="integer"  not-null="true"/>
+		<property name="pos16_name" column="pos16_name" type="string"  not-null="true"/>
+		       <property name="pos17" column="pos17" type="integer"  not-null="true"/>
+		<property name="pos17_name" column="pos17_name" type="string"  not-null="true"/>
+		       <property name="pos18" column="pos18" type="integer"  not-null="true"/>
+		<property name="pos18_name" column="pos18_name" type="string"  not-null="true"/>
+		       <property name="pos19" column="pos19" type="integer"  not-null="true"/>
+		<property name="pos19_name" column="pos19_name" type="string"  not-null="true"/>
+		       <property name="pos20" column="pos20" type="integer"  not-null="true"/>
+		<property name="pos20_name" column="pos20_name" type="string"  not-null="true"/>
+		       <property name="pos21" column="pos21" type="integer"  not-null="true"/>
+		<property name="pos21_name" column="pos21_name" type="string"  not-null="true"/>
+		       <property name="pos22" column="pos22" type="integer"  not-null="true"/>
+		<property name="pos22_name" column="pos22_name" type="string"  not-null="true"/>
+		       <property name="pos23" column="pos23" type="integer"  not-null="true"/>
+		<property name="pos23_name" column="pos23_name" type="string"  not-null="true"/>
+		       <property name="pos24" column="pos24" type="integer"  not-null="true"/>
+		<property name="pos24_name" column="pos24_name" type="string"  not-null="true"/>
+		       <property name="pos25" column="pos25" type="integer"  not-null="true"/>
+		<property name="pos25_name" column="pos25_name" type="string"  not-null="true"/>
+		       <property name="pos26" column="pos26" type="integer"  not-null="true"/>
+		<property name="pos26_name" column="pos26_name" type="string"  not-null="true"/>
+		       <property name="pos27" column="pos27" type="integer"  not-null="true"/>
+		<property name="pos27_name" column="pos27_name" type="string"  not-null="true"/>
+		       <property name="pos28" column="pos28" type="integer"  not-null="true"/>
+		<property name="pos28_name" column="pos28_name" type="string"  not-null="true"/>
+		       <property name="pos29" column="pos29" type="integer"  not-null="true"/>
+		<property name="pos29_name" column="pos29_name" type="string"  not-null="true"/>
+		       <property name="pos30" column="pos30" type="integer"  not-null="true"/>
+		<property name="pos30_name" column="pos30_name" type="string"  not-null="true"/>
+      
+     
+
+       
+   </class>
+</hibernate-mapping>
+
+

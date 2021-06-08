@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.tecunsa.Beans.BeanFiles" table="files">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+  	   <property name="description" column="description" type="string"  not-null="true"/>
+       <property name="fileName" column="fileName" type="string"  not-null="true"/>
+       <property name="fullFileName" column="fullFileName" type="string"  not-null="true"/>
+       <property name="date_reg" column="date_reg" type="date"  not-null="true"/>
+	   <many-to-one name="id_user" column="id_user" not-null="true"/>
+	   <many-to-one name="id_case" column="id_case" not-null="true"/>
+       <property name="realFileName" column="realFileName" type="string"  not-null="false"/>
+   </class>
+</hibernate-mapping>
+
+

@@ -1,0 +1,786 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<%@ taglib uri="/WEB-INF/struts-html.tld" prefix="html" %>
+<%@ taglib uri="/WEB-INF/struts-bean.tld" prefix="bean" %>
+<%@ taglib uri="/WEB-INF/struts-logic.tld" prefix="logic"%>
+<%@ page session="true" import="java.util.*, com.eventAdmin.Beans.*, java.io.*, javax.servlet.http.HttpSession.*,com.bituos.*, com.google.gson.Gson"
+contentType="text/html; charset=ISO-8859-1"
+pageEncoding="ISO-8859-1"
+
+%>
+
+
+
+
+<html:html>
+<HEAD>
+
+	<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<META name="GENERATOR" content="Eclipse">
+	<META http-equiv="Content-Style-Type" content="text/css">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="/eventAdmin/GridViewCSSThemes/WhiteChromeGridView.css" rel="stylesheet" type="text/css" />	
+	<SCRIPT type="text/javascript" src="/eventAdmin/GridViewCSSThemes/js/ajaxfile.js"></SCRIPT>	 
+	<link rel="stylesheet" href="/eventAdmin/GridViewCSSThemes/bootstrap.min.css">
+	<SCRIPT type="text/javascript" src="/eventAdmin/GridViewCSSThemes/js/jquery.min.js"></SCRIPT>
+	<SCRIPT type="text/javascript" src="/eventAdmin/GridViewCSSThemes/js/bootstrap.min.js"></SCRIPT>	
+	<script src="/eventAdmin/js/utilajax.js"></script>
+	<script src="/eventAdmin/tui.calendar-master/examples/js/data/connection.js"></script>
+
+ 		<!-- 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>         
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>          
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+        -->    
+	
+	
+ 
+    <TITLE>
+    </TITLE>
+</HEAD>
+<SCRIPT language="JavaScript" src="/eventAdmin/getSystemDate.js"></SCRIPT>
+<SCRIPT language="Javascript" src="/eventAdmin/Calendar/calendar.js"></SCRIPT>
+<SCRIPT language="Javascript" src="/eventAdmin/Calendar/mycalendar.js"></SCRIPT>
+<BODY>
+
+	<CENTER><H1> <bean:message key="label.quote.new" />  </H1></CENTER>
+	
+	<logic:present name="beanUser" scope="session">
+	
+		  <logic:present name="processList" scope="session">
+			  <%
+			    HttpSession ses = request.getSession();
+			    BeanUser beanUser = (BeanUser) ses.getAttribute( "beanUser" );
+			    
+			    int TAG = 31;
+			    
+			    List list = (List) ses.getAttribute("processList");
+			    Iterator iter = list.iterator();
+			    BeanProcessUsers beanProcessUser;
+			    int found = 0;
+			    
+			    while( iter.hasNext() )
+			      {
+			        beanProcessUser = (BeanProcessUsers) iter.next(); 
+			        
+			        if ( beanProcessUser.getId_process().getId() == TAG )
+			          {
+			            found = 1;
+			            break;
+			          }
+			      } 
+		        if ( found == 0 )
+		          response.sendRedirect( "../login.jsp");
+		        else
+		          found = 0;
+		         
+		         String visibleUserData = (String)ses.getAttribute("visibleUserData");   
+		         String clientNumber = (String)ses.getAttribute("clientNumber"); 
+		         String clientName = (String)ses.getAttribute("clientName"); 
+		         String total = (String)ses.getAttribute("total"); 
+
+		         BeanList listEdit_currentList = (BeanList) ses.getAttribute( "listEdit_currentList" );							    
+		         BeanListOptions listEdit_currentOption = (BeanListOptions) ses.getAttribute( "listEdit_currentOption" );							    
+		         BeanListOptionMenu listEdit_currentMenu = (BeanListOptionMenu) ses.getAttribute( "listEdit_currentMenu" );							    
+		         BeanSaloon quoteNew_currentSaloon = (BeanSaloon) ses.getAttribute( "quoteNew_currentSaloon" );							    
+		         BeanFlower quoteNew_currentFlower = (BeanFlower) ses.getAttribute( "quoteNew_currentFlower" );							    
+		         BeanMusic quoteNew_currentMusic = (BeanMusic) ses.getAttribute( "quoteNew_currentMusic" );							    
+				 String clString;
+				 String coString;
+				 String cmString;
+				 String csString;
+				 String cfString;
+				 String cmuString;
+		         
+		         if ( clientName == null )
+			           clientName = new String("");
+			         
+		         if ( total == null )
+		        	 total = new String("");
+			         
+				 if ( listEdit_currentList != null ) 
+				   clString = new Integer( listEdit_currentList.getId() ).toString(); 
+				 else
+				   clString = "-1";
+					 
+				 if ( listEdit_currentOption != null ) 
+				   coString = new Integer( listEdit_currentOption.getId() ).toString(); 
+				 else
+				   coString = "-1";
+					 
+				 if ( listEdit_currentMenu != null ) 
+				   cmString = new Integer( listEdit_currentMenu.getId() ).toString(); 
+				 else
+				   cmString = "-1";
+		         
+				 if ( quoteNew_currentSaloon != null ) 
+				   csString = new Integer( quoteNew_currentSaloon.getId() ).toString(); 
+				 else
+				   csString = "-1";
+			         
+				 if ( quoteNew_currentFlower != null ) 
+				   cfString = new Integer( quoteNew_currentFlower.getId() ).toString(); 
+				 else
+				   cfString = "-1";
+			         
+				 if ( quoteNew_currentMusic != null ) 
+					   cmuString = new Integer( quoteNew_currentMusic.getId() ).toString(); 
+				 else
+					 cmuString = "-1";
+			         
+			    
+				 
+				List  filterList = (List) ses.getAttribute("filterList" );
+				List t = filterList;
+				  
+				 
+				int counter =0;
+		        String clase ="";
+ 
+		    	//lista de columnas
+		    	ArrayList<String> cols = new ArrayList<String> ();
+		    	cols.add("id");
+		    	cols.add("id_intern");
+		    	cols.add("Nombre del Cliente");
+		    	cols.add("RFC");
+		    	cols.add("Direccion");
+		    	cols.add("Telefono");
+		    	ses.setAttribute("cols", cols );
+		    	
+		    	//lista de campos a imprimir
+		    	ArrayList<String> fields = new ArrayList<String>();
+		    	fields.add("id");
+		    	fields.add("id_intern");
+		    	fields.add("name");
+		    	fields.add("rfc");
+		    	fields.add("address");
+		    	fields.add("phone");
+		    	ses.setAttribute("fields", fields );
+		    	
+		    	
+		    	//campo que se usara para la etiqueta de accion
+		    	String fieldNameToAction = "id_intern";
+		    	
+ 
+		    	//lista de acciones de la primera columna  
+		        String[] process = new String[20];
+		        process[0]="validateClient";		 
+		        
+		        
+		        //campo que senvia a la forma
+		        String[] fieldname = new String[20];
+		        fieldname[0]="id_client";	
+		        		        
+		        //etiqueta de accion
+		        String[] processTag = new String[20];
+		        processTag[0]="Seleccionar";
+		        
+		      //campos para ignorar en el gridview
+		    	String[]  field= new String[20];
+		    	field[0] = "id";
+		    	field[1] = "id_intern";
+		    	
+		    	
+		    	
+		    	List<String> ignore = Arrays.asList(field);
+
+		         //lista de parametros 
+		 
+				MappingDynamicJSON mappingDynamicJSON = new MappingDynamicJSON();
+				
+				mappingDynamicJSON.setFields("processTag", processTag[0]);
+				mappingDynamicJSON.setFields("process",process[0]);
+				mappingDynamicJSON.setFields("bean","BeanClient");
+				mappingDynamicJSON.setFields("list","listBean");
+				mappingDynamicJSON.setFields("fields","fields");
+				mappingDynamicJSON.setFields("active","Y");
+				mappingDynamicJSON.setFields("searchValue",""); 
+				mappingDynamicJSON.setFields("searchParam","");
+				mappingDynamicJSON.setFields("fieldNameToAction",fieldNameToAction);
+				mappingDynamicJSON.setFields("ignore",ignore);
+				
+				
+				
+				
+				mappingDynamicJSON.setFields("nestedField1","id");
+				mappingDynamicJSON.setFields("nestedField2","id_client");
+				mappingDynamicJSON.setFields("nestedFieldOrder","date_reg");
+				mappingDynamicJSON.setFields("nestedBean","BeanQuote");
+				//mappingDynamicJSON.setFields("beanUser",beanUser);
+				
+				 //end configure
+
+				 
+				 
+				
+				String resltJsonString = new Gson().toJson(mappingDynamicJSON);
+				PrintWriter pw=response.getWriter();
+				//pw.println(resltJsonString);
+
+				//nombre de la forma
+				String formName="quoteNewForm";
+					
+		         
+			  %>
+			  
+			  <div class="container">
+				
+				<div class="card  mb-3"  >
+				
+				  <div class="card-header">
+				    <H1> Cambios </H1>
+				  </div>
+				  <div class="card-body">
+				     
+				    <h5 class="card-title"><bean:message key="label.client.select" /> </h5>
+				    <p class="card-text">
+				    
+				    
+				     </p>
+				    <!-- 
+				    <a href="#" class="btn btn-primary">Go somewhere</a>
+				     -->
+				    
+							 <html:form action="/quoteNew"  >
+							 <html:hidden property="process" value=""/>
+							 <html:hidden property="id" value=""/>
+							 <html:hidden property="id_client" value=""/>							 
+							 <html:hidden property="concept" value="quote"/>
+							 <html:hidden property="forward" value="new"/>
+							 <html:hidden property="aditional1" value=""/>
+							 <input type="hidden" name="checkUserData" value="NO" />
+							 <ul class="list-group">
+							 <li class="list-group-item ">
+							 <table  class="HeaderStyle cellspacing="0" border="1" id="GridView1" style="border-collapse:collapse; ">
+							 		<tr class="HeaderStyle">	
+									   <td scope="col">&nbsp;</td>
+				
+									  <logic:iterate id="idfields" indexId="indexfieldsId" name="fields"  scope="session" >
+											   
+											 <bean:define id="fld" name="idfields" > </bean:define>
+											  
+											 <% if(!ignore.contains(((String) fld)) )
+											 { 
+											 %>								
+												  
+												<td> <input title="Teclee aqui para buscar" type="text" id="search" value=""  onkeyup='FAjax("dataTemplateGrid.jsp","POST",<%=resltJsonString%>,this.value,"<%=((String) fld)%>");'/></td>
+											 
+											 <%
+											}
+									     	%>
+									     	
+									     	
+									     	
+										</logic:iterate>
+									 </tr>
+									 										
+									  <tr id="HeaderStyle" class="HeaderStyle">			
+									  <td scope="col">&nbsp;</td>
+									  <logic:iterate id="idfields" indexId="indexId" name="cols"  scope="session" >
+									  	<bean:define id="fld" name="idfields" > </bean:define>
+									  	<% if(!ignore.contains(((String) fld)) )
+										 { 
+										 %>
+											<td>	
+											<a href="javascript:__doPostBack('GridView1','Sort$CompanyName')"><bean:write name="idfields"/></a>
+											</td>
+										<%
+										}
+								     	%>
+										
+									  </logic:iterate>   
+						
+									  </tr>
+									  
+										 <logic:iterate id="id" indexId="indexId" name="listBean" scope="session" >
+										 	
+									    	<logic:notEqual name="id" property="id" value="">
+									    		 <%												  
+									    		  if ((counter % 2)==1)						
+								          	          clase="AltRowStyle";				
+												  else
+													  clase="RowStyle";	
+												 %>			
+						
+									    			   <tr class="<%=clase%>"> 
+													    <th scope="row">
+														  <a href='#button' class='btn btn-outline-secondary btn-sm' role='button'   onclick='javascript:__doPost("<%=process[0]%>","<bean:write name="id" property="<%=fieldNameToAction%>" />")' ><%=processTag[0]%></a>
+														</th>
+														<logic:iterate id="idfields" indexId="indexId" name="fields"  scope="session" >
+															<bean:define id="fld" name="idfields" > </bean:define>
+															<% if(!ignore.contains(((String) fld)) )
+															{ 
+													   
+													        %>
+																<td>    
+													     	       <bean:write name="id" property="<%=((String) fld)%>" /> 
+													     	    </td>
+													     	<%
+															}
+													     	%>
+														</logic:iterate>
+													  </tr>
+													
+											</logic:notEqual> 
+				
+									    		<%counter++;%>	
+								    		</logic:iterate>	
+				 					
+									</table>
+									</li>
+									 
+					  
+									 <li class="list-group-item">
+								  
+								  
+								  <TABLE border="1" class="table" >
+									<TBODY>
+					 
+										
+									<%if(visibleUserData == "yes")
+										{
+										%>
+										<TR>
+									    <td> 
+											<div class="form-group">
+										      <label class="control-label col-sm-3" for="name"><bean:message key="label.persons.count" />:</label>
+										      <div class="col-sm-4">								     
+										        <html:text property="personsCount" size="60" styleClass="form-control"  ></html:text>
+										        <div class="col-sm-4">
+											        <small id="nameHelp" class="text-danger">
+											          <html:errors property="personsCount"/>
+											        </small>      
+											      </div>
+										      </div>
+										    </div>
+										</td>
+										<td>
+										</td>
+										
+										<td>    
+										    <div class="form-group">
+										      <label class="control-label col-sm-3" for="name"><bean:message key="label.list.prices" />:</label>
+										      <div class="col-sm-5">							     
+										        <html:select property="id_list" onchange="process.value='selectList'; submit();" styleClass="form-control" >						
+													<logic:iterate id="id" indexId="indexId" name="listList" scope="session" >
+													    <OPTION value= <%="'"%><bean:write name="id" property="id" /><%="'"%>    
+														    <logic:equal name="id" property="id" value="<%=clString%>"> 
+														    		SELECTED
+														    </logic:equal>>
+													    	<bean:write name="id" property="description" />
+													    </OPTION>
+											    	</logic:iterate>						
+												</html:select>
+										        <div class="col-sm-6">
+											        <small id="nameHelp" class="text-danger">
+											          <html:errors property="id_list"/>
+											        </small>      
+											      </div>
+										      </div>
+										    </div>
+										    
+										  </td>
+										  <td>
+										  </td>
+										    <html:submit onclick="process.value='selectList';"> <bean:message key="label.select" /> </html:submit>
+										  <td>  
+										     <div class="form-group">
+										      <label class="control-label col-sm-3" for="name"><bean:message key="label.list.options" />:</label>
+										      <div class="col-sm-5">							     
+														<html:select property="id_option" onchange="process.value='selectOption'; submit();">						
+															<logic:iterate id="id" indexId="indexId" name="listOptionsList" scope="session" >
+															    <OPTION value= <%="'"%><bean:write name="id" property="id" /><%="'"%>    
+																    <logic:equal name="id" property="id" value="<%=coString%>"> 
+																    		SELECTED
+																    </logic:equal>>
+															    	<bean:message key="label.between" /> <bean:write name="id" property="min" /> <bean:message key="label.and" /> <bean:write name="id" property="max" />
+															    </OPTION>
+													    	</logic:iterate>						
+														</html:select>	
+										          <div class="col-sm-6">
+											        <small id="nameHelp" class="text-danger">
+											          <html:errors property="id_option"/>
+											        </small>      
+											      </div>
+										      </div>
+										    </div>
+										</td>
+										<td>
+										<html:submit onclick="process.value='selectOption';"> <bean:message key="label.select" /> </html:submit>
+										</td>
+										
+									
+									
+									</TR>
+								     <%
+							        }
+									%>
+								    </TBODY>
+								    </TABLE>
+								    
+								    	 
+								    						
+						            
+									
+									<TABLE border="0" ALIGN="CENTER">
+									<TBODY>
+					 
+										
+									<%if(visibleUserData == "yes")
+										{
+										%>
+							
+									 
+										
+										
+										<TR>
+											<TD class="column_field">
+												  <bean:message key="label.event.date" />
+											</TD>	
+											<TD>
+												  <html:text property="date_event" readonly="true" onclick="javascript:showCal('calendar1');"> </html:text>
+												  <A href="javascript:showCal('calendar1')"><IMG src="/eventAdmin/Calendar/calendar.png" border="0" /></A>
+												  <SPAN id=date1 style="POSITION: relative"> </SPAN>
+											      <FONT COLOR="RED"> <html:errors property="date_event"/></FONT>
+											</TD>	
+											<TD>
+												<html:submit onclick="process.value='calendar';"> <bean:message key="label.view.availabilty" /> </html:submit>
+											</TD>
+										</TR>
+										 
+										<TR>
+										    <TD class="column_field">
+										    	<bean:message key="label.hour.begin" />
+										    </TD>
+											<TD>
+												<html:select property="id_hour">						
+													<logic:iterate id="id" indexId="indexId" name="listHours" scope="session" >
+													    <OPTION value= <%="'"%><bean:write name="id" property="id" /><%="'"%>>
+													    	<bean:write name="id" property="hour" />
+													    </OPTION>
+											    	</logic:iterate>						
+												</html:select>							
+											</TD>
+										</TR>
+										<TR>
+										    <TD class="column_field">
+										    	<bean:message key="label.hour.quantity" />
+										    </TD>
+											<TD>						   
+											   <html:text property="hourQuantity"></html:text>
+											   <FONT COLOR="RED"> <html:errors property="hourQuantity"/></FONT>
+											</TD>
+										</TR>
+										
+										<TR>
+										    <TD class="column_field">
+										    	<bean:message key="label.persons.count" />
+										    </TD>
+											<TD>						   
+											   <html:text property="personsCount"></html:text>
+											   <FONT COLOR="RED"> <html:errors property="personsCount"/></FONT>
+											</TD>
+										</TR>
+										
+										<TR>
+										    <TD class="column_field"><bean:message key="label.list.prices" /></TD>
+											<TD>
+												<html:select property="id_list" onchange="process.value='selectList'; submit();">						
+													<logic:iterate id="id" indexId="indexId" name="listList" scope="session" >
+													    <OPTION value= <%="'"%><bean:write name="id" property="id" /><%="'"%>    
+														    <logic:equal name="id" property="id" value="<%=clString%>"> 
+														    		SELECTED
+														    </logic:equal>>
+													    	<bean:write name="id" property="description" />
+													    </OPTION>
+											    	</logic:iterate>						
+												</html:select>							
+											</TD>
+											<TD>
+												<html:submit onclick="process.value='selectList';"> <bean:message key="label.select" /> </html:submit>
+											</TD>
+										</TR>
+										 
+										<TR>
+										    <TD class="column_field">
+										    	<bean:message key="label.list.options" />
+										    </TD>
+											<TD>
+												<html:select property="id_option" onchange="process.value='selectOption'; submit();">						
+													<logic:iterate id="id" indexId="indexId" name="listOptionsList" scope="session" >
+													    <OPTION value= <%="'"%><bean:write name="id" property="id" /><%="'"%>    
+														    <logic:equal name="id" property="id" value="<%=coString%>"> 
+														    		SELECTED
+														    </logic:equal>>
+													    	<bean:message key="label.between" /> <bean:write name="id" property="min" /> <bean:message key="label.and" /> <bean:write name="id" property="max" />
+													    </OPTION>
+											    	</logic:iterate>						
+												</html:select>							
+											</TD>
+											<TD>
+												<html:submit onclick="process.value='selectOption';"> <bean:message key="label.select" /> </html:submit>
+											</TD>
+										</TR>
+										<TR>
+										    <TD class="column_field">
+										    	<bean:message key="label.list.menu" />
+										    </TD>
+											<TD>
+												<html:select property="id_menu">						
+													<logic:iterate id="id" indexId="indexId" name="listOptionMenuList" scope="session" >
+													    <OPTION value= <%="'"%><bean:write name="id" property="id" /><%="'"%>  
+														    <logic:equal name="id" property="id" value="<%=cmString%>"> 
+														    		SELECTED
+														    </logic:equal>>
+													    	<bean:write name="id" property="name" />
+													    </OPTION>
+											    	</logic:iterate>						
+												</html:select>							
+											    <FONT COLOR="RED"> <html:errors property="id_menu"/></FONT>
+											</TD>
+											<TD>
+											</TD>
+										</TR>
+										<TR>
+										    <TD class="column_field"><bean:message key="label.saloon" /></TD>
+											<TD>
+												<html:select property="id_saloon">						
+													<logic:iterate id="id" indexId="indexId" name="quoteNew_listSaloon" scope="session" >
+													    <OPTION value= <%="'"%><bean:write name="id" property="id" /><%="'"%>  
+														    <logic:equal name="id" property="id" value="<%=csString%>"> 
+														    		SELECTED
+														    </logic:equal>>
+													    	<bean:write name="id" property="description" />:-<bean:write name="id" property="min_occupancy" />-<bean:write name="id" property="max_occupancy" />  
+													    </OPTION>
+											    	</logic:iterate>						
+												</html:select>							
+											    <FONT COLOR="RED"> <html:errors property="id_saloon"/></FONT>
+											</TD>
+											<TD>
+											</TD>
+										</TR>
+										<TR>
+										    <TD class="column_field">
+										    	<bean:message key="label.flowers" />
+										    </TD>
+											<TD>
+												<html:select property="id_flower">						
+													<logic:iterate id="id" indexId="indexId" name="listFlowers" scope="session" >
+													    <OPTION value= <%="'"%><bean:write name="id" property="id" /><%="'"%>  
+														    <logic:equal name="id" property="id" value="<%=cfString%>"> 
+														    		SELECTED
+														    </logic:equal>>
+													    	<bean:write name="id" property="description" />:-<bean:write name="id" property="price" />
+													    </OPTION>
+											    	</logic:iterate>						
+												</html:select>							
+											    <FONT COLOR="RED"> <html:errors property="id_flower"/></FONT>
+											</TD>
+											<TD>
+											</TD>
+										</TR>
+										<TR>
+										    <TD class="column_field"><bean:message key="label.music" /></TD>
+											<TD>
+												<html:select property="id_music">						
+													<logic:iterate id="id" indexId="indexId" name="listMusic" scope="session" >
+													    <OPTION value= <%="'"%><bean:write name="id" property="id" /><%="'"%>  
+														    <logic:equal name="id" property="id" value="<%=cmuString%>"> 
+														    		SELECTED
+														    </logic:equal>>
+													    	<bean:write name="id" property="description" />:-<bean:write name="id" property="price" />
+													    </OPTION>
+											    	</logic:iterate>						
+												</html:select>							
+											    <FONT COLOR="RED"> <html:errors property="id_music"/></FONT>
+											</TD>
+											<TD>
+											</TD>
+										</TR>
+										<TR>
+										    <TD class="column_field">
+										        <bean:message key="label.products" />
+										    </TD>
+										    <TD class="column_field">
+										    	<bean:message key="label.quantity" />
+										    </TD>
+										</TR>
+										<TR>
+											<TD>
+												<html:select property="id_product">						
+													<logic:iterate id="id" indexId="indexId" name="listProduct" scope="session" >
+													    <OPTION value= <%="'"%><bean:write name="id" property="id" /><%="'"%>  
+														    >
+													    	<bean:write name="id" property="description" />:- <bean:write name="id" property="price" />
+													    </OPTION>
+											    	</logic:iterate>						
+												</html:select>							
+											</TD>
+											<TD>						   
+											   <html:text property="productQuantity"></html:text>
+											   <FONT COLOR="RED"> <html:errors property="productQuantity"/></FONT>
+											</TD>
+											<TD>
+												<html:submit onclick="process.value='addProduct';"> <bean:message key="label.add" /> </html:submit>
+											</TD>
+										</TR>
+										<TR>
+											<TD colspan="3">
+											.
+											</TD>
+										</TR>
+										<TR> 
+										    <logic:present name="qnCarListProduct" scope="session">
+												<TD>
+													<TABLE border="1">
+														<TR class="column_field"> 
+															<TD>
+															   <bean:message key="label.quantity" />
+															</TD>
+															<TD>
+															   <bean:message key="label.description" />
+															</TD>
+															<TD>
+															   <bean:message key="label.price" />
+															</TD>
+														</TR> 
+														<logic:iterate id="id" indexId="indexId" name="qnCarListProduct" scope="session" >
+															<TR> 
+																<TD>
+															    	<bean:write name="id" property="qty" />
+																</TD>
+																<TD>
+															    	<bean:write name="id" property="description" />
+																</TD>
+																<TD>
+															    	<bean:write name="id" property="price" />
+																</TD>
+															<TR> 
+													    </logic:iterate>			
+													</TABLE>
+												</TD>
+											</logic:present>		
+										</TR>
+										<TR>
+											<TD colspan="3">
+											.
+											</TD>
+										</TR>
+										<TR> 
+										    <TD class="column_field">
+										    	<bean:message key="label.total" />
+										    </TD>
+											<TD>
+												<html:text property="total" value='<%=total%>' size="15" disabled="true"></html:text>
+											</TD>
+											<TD>
+												<html:submit onclick="process.value='updateTotal';"> <bean:message key="label.update.total" /> </html:submit>
+											</TD>
+										</TR>
+										<TR>
+										    <TD class="column_field">
+										    	<bean:message key="label.email.optional" />
+										    </TD>
+											<TD>						   
+											   <html:text property="anotherEmail"></html:text>
+											   <FONT COLOR="RED"> <html:errors property="anotherEmail"/></FONT>
+											</TD>
+										</TR>
+										<TR>
+										    <TD class="column_field">
+										    	<bean:message key="label.notes" />
+										    </TD>
+											<TD>						   
+											   <html:textarea property="notes" cols="50" rows="20"></html:textarea>
+											   <FONT COLOR="RED"> <html:errors property="notes"/></FONT>
+											</TD>
+										</TR>
+										<TR> 
+											<TD>
+												<html:submit onclick="process.value='register';"><bean:message key="label.quote.register" /></html:submit>						
+											</TD>
+										</TR>
+									    <%
+								        }
+										%>
+										
+									</TBODY>
+								</TABLE>
+			
+				</li>
+					
+									
+						
+				
+							</html:form>
+							</div>
+						
+						<footer class="page-footer font-small blue">
+				
+						  <!-- Copyright -->
+						  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+						    <a href="https://www.bituos.com"> bituos.com</a>
+						  </div>
+						  <!-- Copyright -->
+						
+						</footer>
+				   	 
+				  </div>
+				</div>
+
+
+ 
+			   <script type="text/javascript">
+			   $('#bologna-list a').on('click', function (e) {
+				   e.preventDefault()
+				   $(this).tab('show')
+				 })
+
+				var theForm = document.forms["<%=formName%>"];
+				
+				function __doPost( eventArgument,value) {
+				        
+			       theForm.process.value = eventArgument;	        
+			
+			      
+			       if(eventArgument == '<%=process[0]%>')
+			       {	            
+			           theForm.<%=fieldname[0]%>.value= value; 	
+			       
+			          
+			                 	           
+			       }          
+			      
+			       theForm.submit();
+				}
+				
+			 
+				 
+				 
+				 
+				</script>
+			
+			
+			
+
+			
+			
+
+		  </logic:present>
+		  
+		  <logic:notPresent name="processList" scope="session">
+		     <logic:redirect href="../login.jsp"> </logic:redirect>
+		  </logic:notPresent>
+	  
+	</logic:present>
+	
+	<logic:notPresent name="beanUser" scope="session">
+	   <logic:redirect href="../login.jsp">  </logic:redirect>
+	</logic:notPresent>
+
+</BODY>
+
+
+
+ 
+</html:html>

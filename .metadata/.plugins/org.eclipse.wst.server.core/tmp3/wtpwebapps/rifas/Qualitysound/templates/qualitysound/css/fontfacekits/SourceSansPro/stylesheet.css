@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'SourceSansProSemibold';
+    src: url('SourceSansPro-Semibold-webfont.eot');
+    src: url('SourceSansPro-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('SourceSansPro-Semibold-webfont.svg#SourceSansProSemibold') format('svg'),
+         url('SourceSansPro-Semibold-webfont.woff') format('woff'),
+         url('SourceSansPro-Semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1,h2,h3,h4,h5,h6,.article_title,.module_title,.pagetitle,.button,a.is_button,
+a.item_title,a.item_readmore,ul#tabs li,a.template_readmore,a.template_readmore2,
+.horiznav a,.yj_tagcloud a,div.itemHeader h2.itemTitle,div.itemAuthorLatest h3, 
+div.itemRelated h3 ,div.itemCommentsForm h3,.catItemReadMore a,.readon,div.k2TagCloudBlock a,
+ul.catItemTags li a,ul.itemTags li a,.itemReadMore a,span#yjmm_selectid {
+	font-weight:normal!important;
+    font-family:'SourceSansProSemibold', Arial, sans-serif!important;
+	text-transform:capitalize;
+}

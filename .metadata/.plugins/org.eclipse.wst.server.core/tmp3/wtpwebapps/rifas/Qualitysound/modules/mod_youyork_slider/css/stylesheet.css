@@ -1,0 +1,125 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Copyright (C) 2006-2011 Youjoomla.com. All Rights Reserved.        ||
+|| # This file may not be redistributed in whole or significant part. # ||
+|| # ---------------- THIS IS NOT FREE SOFTWARE ---------------- #      ||
+|| # http://www.youjoomla.com | http://www.youjoomla.com/license.html # ||
+|| #################################################################### ||
+\*======================================================================*/
+/* main container*/
+.yy_container_out {
+	display:block;
+	position:relative;
+}
+.yy_container {
+	display:block;
+	position:relative;
+	margin:0px auto;
+	background:#fff;
+	padding:0;
+}
+/* slides contaner*/
+.yy_slider {
+	display:block;
+	position:relative;
+	clear:both;
+	overflow:hidden;
+	margin:0 auto;
+}
+/* sliding items*/
+.yy_slider .yy_slideitems {
+	display:block;
+	position:relative;
+	padding:25px 0;
+	margin:0;
+	float:left;
+}
+/* sliding content holder*/
+.yy_slider .yy_slideitems_in {
+	background: url(../images/slide_sep.gif) repeat-y right top;
+	margin:0 -2px 0 0;
+	padding:0 50px;
+	overflow:hidden;
+}
+/*title*/
+.yy_module_title {
+	display:block;
+	overflow:hidden;
+	clear:both;
+}
+/* navigation */
+.yy_container .linkForward, .yy_container .linkBackward {
+	display:block;
+	position:absolute;
+	right:20px;
+	top:48%;
+	width:14px;
+	height:14px;
+	background-image:url(../images/right.gif);
+	background-position: center top;
+	background-repeat:no-repeat;
+	cursor:pointer;
+	z-index:1000;
+}
+.yy_container .linkBackward {
+	left:20px;
+	right:auto;
+	background-image:url(../images/left.gif);
+}
+.yy_container .linkForward:hover, .yy_container .linkBackward:hover {
+	background-position:center bottom;
+}
+/* bottom navigation */
+.yy_bottom_nav_holder {
+	display:block;
+	overflow:hidden;
+	text-align:center;
+	margin:10px 0 0 0;
+}
+div.yy_ul_left {
+	display:inline-block;
+	overflow: hidden;
+	margin:0;
+	padding:0;
+	height:18px;
+	text-align: center;
+	background:url(../images/nav_bg_left.png) no-repeat left center;
+}
+ul.yy_bottom_navigation {
+	display:inline-block;
+	overflow: hidden;
+	margin:0!important;
+	padding:0 28px!important;
+	height:18px;
+	text-align: center;
+	background:url(../images/nav_bg_right.png) no-repeat right center;
+}
+ul.yy_bottom_navigation li {
+	display:inline-block;
+	width:23px;
+	height:18px;
+	float:left;
+	text-align:center;
+	background-image:none;
+	padding:0!important;
+	margin:0!important;
+	text-indent:0!important;
+}
+ul.yy_bottom_navigation li a {
+	display:inline-block;
+	overflow:hidden;
+	padding:0;
+	margin:0;
+	width:23px;
+	height:17px;
+	background: url(../images/bottom_york_nav.png) no-repeat left top;
+}
+ul.yy_bottom_navigation li a:hover {
+	background: url(../images/bottom_york_nav.png) no-repeat -23px top;
+}
+ul.yy_bottom_navigation li a.active {
+	background: url(../images/bottom_york_nav.png) no-repeat -46px top;
+}
+ul.yy_bottom_navigation li a span{
+	display:none;
+}

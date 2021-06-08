@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.bituos.truckAdmin.Beans.BeanTireMovements" table="tire_movement" >
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       <property name="deep" column="deep" type="double"  not-null="true"/>
+       <property name="measurentment" column="measurentment" type="double"  not-null="true"/>
+        <property name="price" column="price" type="double"  not-null="true"/>
+        
+        <property name="buy_of_reference" column="buy_of_reference" type="string"  not-null="true"/>        
+        <property name="design" column="design" type="string"  not-null="true"/>        
+        <property name="km_truck" column="km_truck" type="integer"  not-null="true"/>
+        <property name="km_int" column="km_int" type="integer"  not-null="true"/>
+
+       <property name="date_reg" column="date_reg" type="date"  not-null="true"/>
+       <many-to-one name="id_tire" column="id_tire" not-null="true"/>
+       <many-to-one name="id_type_place" column="id_type_place" not-null="true"/>
+       <many-to-one name="id_type_measure" column="id_type_measure" not-null="true"/>
+       
+
+       
+       
+       
+       
+   </class>
+</hibernate-mapping>
+
+

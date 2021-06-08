@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.bituos.gjv.Beans.BeanContactRH" table="contacts" >
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>       
+       <property name="first_name" column="first_name" type="string"  not-null="true"/>
+       <property name="last_name" column="last_name" type="string"  not-null="true"/>
+       <property name="address" column="address" type="string"  not-null="true"/>
+  	   <property name="colony" column="colony" type="string"  not-null="true"/>
+  	   <property name="phone" column="phone" type="string"  not-null="true"/>
+  	   <property name="cel_phone" column="cel_phone" type="string"  not-null="true"/>
+  	   <property name="active" column="active" type="char"  not-null="true"/>
+  	   <property name="married" column="married" type="char"  not-null="true"/>
+	   <property name="NSS" column="NSS" type="string"  not-null="false"/>
+	   <property name="wife_name" column="wife_name" type="string"  not-null="false"/>
+	   <property name="date_of_birth" column="date_of_birth" type="date"  not-null="true"/>	
+   </class>
+</hibernate-mapping>
+
+

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.tecunsa.Beans.BeanCaseNotes" table="case_notes">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+	   <many-to-one name="id_user" column="id_user" not-null="true"/>
+       <many-to-one name="id_case" column="id_case" not-null="true"/>
+       <property name="date_reg" column="date_reg" type="date"  not-null="false"/>
+       <property name="is_private" column="is_private" type="string"  not-null="false"/>
+       <property name="note" column="note" type="string"  not-null="false"/>
+       <property name="forwarded" column="forwarded" type="string"  not-null="true"/>
+       <property name="days" column="days" type="integer"  not-null="true"/>
+      
+   </class>
+</hibernate-mapping>
+
+

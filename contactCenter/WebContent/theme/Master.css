@@ -1,0 +1,103 @@
+BODY
+{
+    BACKGROUND-COLOR: #FFFFFF;
+    COLOR: #333366;
+    FONT-FAMILY: 'Times New Roman'
+}
+H1
+{
+    COLOR: #6666CC;
+    FONT-FAMILY: 'Times New Roman';
+    TEXT-TRANSFORM: capitalize
+}
+H2
+{
+    COLOR: #6666CC;
+    FONT-FAMILY: 'Times New Roman';
+    TEXT-TRANSFORM: capitalize
+}
+H3
+{
+    COLOR: #6666CC;
+    FONT-FAMILY: 'Times New Roman';
+    TEXT-TRANSFORM: capitalize
+}
+
+H4
+{
+    COLOR: #6666CC;
+    FONT-FAMILY: 'Times New Roman';
+    TEXT-TRANSFORM: capitalize
+}
+
+H5
+{
+    COLOR: #6666CC;
+    FONT-FAMILY: 'Times New Roman';
+    TEXT-TRANSFORM: capitalize
+}
+H6
+{
+    COLOR: #6666CC;
+    FONT-FAMILY: 'Times New Roman';
+    TEXT-TRANSFORM: capitalize
+}
+TH {
+ color: #6060cc
+}
+
+.table_encabezado
+  {
+	color: black;
+	text-align: center;	       
+	background-color: #3a5d84;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.table_campo
+  {
+	  color: black;
+	  font-size: 10px;
+	  background-color: #d3d3d3;
+}
+
+.table_capture_header
+  {
+	color: white;
+	text-align: center;	       
+	background-color: #3a5d84;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.table_capture_field
+  {
+	  color: red;
+	  font-size: 10px;
+	  background-color: #d3d3d3;
+}
+.column_field
+{
+	color: white;
+	text-align: center;	       
+	background-color: #3a5d84;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+
+.NotSelected
+  {
+	  color: blue;
+	  font-size: 12px;
+	  background-color: white;
+}
+
+.Selected
+  {
+	  color: red;
+	  font-size: 12px;
+	  background-color: white;
+}

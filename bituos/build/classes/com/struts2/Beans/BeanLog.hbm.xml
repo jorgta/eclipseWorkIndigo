@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.struts2.Beans.BeanLog" table="log">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       <many-to-one name="id_log_type" column="ID_LOG_TYPE" not-null="true"/>
+       <property name="ip" column="IP" type="string"  not-null="true"/>
+       <many-to-one name="id_user" column="ID_USER" not-null="true"/>
+       <property name="event" column="EVENT" type="string"  not-null="true"/>
+       <property name="date_reg" column="date_reg" type="date"  not-null="true"/>
+      
+   </class>
+</hibernate-mapping>
+
+

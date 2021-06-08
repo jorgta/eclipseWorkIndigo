@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://bituosMonitor.bituos.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://bituosMonitor.bituos.com" xmlns:intf="http://bituosMonitor.bituos.com" xmlns:tns1="http://Beans.bituosMonitor.bituos.com" xmlns:tns2="http://Beans.struts2.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://bituosMonitor.bituos.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://Beans.struts2.com"/>
+   <import namespace="http://Beans.bituosMonitor.bituos.com"/>
+   <element name="getName">
+    <complexType/>
+   </element>
+   <element name="getNameResponse">
+    <complexType>
+     <sequence>
+      <element name="getNameReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getConfiguration">
+    <complexType>
+     <sequence>
+      <element name="companyEncrypted" type="xsd:string"/>
+      <element name="locationEncrypted" type="xsd:string"/>
+      <element name="passwordEncrypted" type="xsd:string"/>
+      <element name="device" type="tns1:Device"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="ArrayOf_tns1_DeviceNetwork">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:DeviceNetwork"/>
+    </sequence>
+   </complexType>
+   <element name="getConfigurationResponse">
+    <complexType>
+     <sequence>
+      <element name="getConfigurationReturn" type="impl:ServiceConfiguration"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="ArrayOf_tns1_Counter">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:Counter"/>
+    </sequence>
+   </complexType>
+   <complexType name="ArrayOf_xsd_string">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="ArrayOf_tns2_BeanCommand">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns2:BeanCommand"/>
+    </sequence>
+   </complexType>
+   <complexType name="ServiceConfiguration">
+    <sequence>
+     <element name="commandCount" type="xsd:int"/>
+     <element name="counterCount" type="xsd:int"/>
+     <element name="error" type="xsd:int"/>
+     <element name="errorStr" nillable="true" type="xsd:string"/>
+     <element name="timeToReport" type="xsd:int"/>
+     <element name="counterList" nillable="true" type="impl:ArrayOf_tns1_Counter"/>
+     <element name="counterListStr" nillable="true" type="impl:ArrayOf_xsd_string"/>
+     <element name="commandList" nillable="true" type="impl:ArrayOf_tns2_BeanCommand"/>
+    </sequence>
+   </complexType>
+   <element name="registerCounter">
+    <complexType>
+     <sequence>
+      <element name="device" type="tns1:Device"/>
+      <element name="companyEncrypted" type="xsd:string"/>
+      <element name="locationEncrypted" type="xsd:string"/>
+      <element name="passwordEncrypted" type="xsd:string"/>
+      <element name="countersData" type="tns1:CountersData"/>
+      <element name="is_str" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="registerCounterResponse">
+    <complexType>
+     <sequence>
+      <element name="registerCounterReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="pingToEmail">
+    <complexType>
+     <sequence>
+      <element name="email" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="pingToEmailResponse">
+    <complexType/>
+   </element>
+   <element name="getCountersTest">
+    <complexType/>
+   </element>
+   <element name="getCountersTestResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="getCountersTestReturn" type="tns1:Counter"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+  <schema elementFormDefault="qualified" targetNamespace="http://Beans.bituosMonitor.bituos.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://bituosMonitor.bituos.com"/>
+   <import namespace="http://Beans.struts2.com"/>
+   <complexType name="DeviceNetwork">
+    <sequence>
+     <element name="adapterDesc" nillable="true" type="xsd:string"/>
+     <element name="adapterName" nillable="true" type="xsd:string"/>
+     <element name="adapterType" nillable="true" type="xsd:string"/>
+     <element name="bytesReceived" type="xsd:long"/>
+     <element name="bytesSent" type="xsd:long"/>
+     <element name="dhcpEnabled" nillable="true" type="xsd:string"/>
+     <element name="dhcpServer" nillable="true" type="xsd:string"/>
+     <element name="gateway" nillable="true" type="xsd:string"/>
+     <element name="iPAddress" nillable="true" type="xsd:string"/>
+     <element name="iPMask" nillable="true" type="xsd:string"/>
+     <element name="macAddress" nillable="true" type="xsd:string"/>
+     <element name="speed" type="xsd:long"/>
+    </sequence>
+   </complexType>
+   <complexType name="Device">
+    <sequence>
+     <element name="cpuDescription" nillable="true" type="xsd:string"/>
+     <element name="cpuID" nillable="true" type="xsd:string"/>
+     <element name="hostname" nillable="true" type="xsd:string"/>
+     <element name="local_ip_address" nillable="true" type="xsd:string"/>
+     <element name="macID1" nillable="true" type="xsd:string"/>
+     <element name="macID2" nillable="true" type="xsd:string"/>
+     <element name="mbDescription" nillable="true" type="xsd:string"/>
+     <element name="mbID" nillable="true" type="xsd:string"/>
+     <element name="mediaDescription1" nillable="true" type="xsd:string"/>
+     <element name="mediaDescription2" nillable="true" type="xsd:string"/>
+     <element name="mediaDescription3" nillable="true" type="xsd:string"/>
+     <element name="mediaID1" nillable="true" type="xsd:string"/>
+     <element name="mediaID2" nillable="true" type="xsd:string"/>
+     <element name="mediaID3" nillable="true" type="xsd:string"/>
+     <element name="mediaID4" nillable="true" type="xsd:string"/>
+     <element name="mediaID5" nillable="true" type="xsd:string"/>
+     <element name="mediaID6" nillable="true" type="xsd:string"/>
+     <element name="networkList" nillable="true" type="impl:ArrayOf_tns1_DeviceNetwork"/>
+    </sequence>
+   </complexType>
+   <complexType name="Counter">
+    <sequence>
+     <element name="className" nillable="true" type="xsd:string"/>
+     <element name="id_counter" type="xsd:int"/>
+     <element name="propertyName" nillable="true" type="xsd:string"/>
+     <element name="timeToRepot" type="xsd:int"/>
+    </sequence>
+   </complexType>
+   <complexType name="CountersData">
+    <sequence>
+     <element name="className" nillable="true" type="xsd:string"/>
+     <element name="data" nillable="true" type="impl:ArrayOf_xsd_string"/>
+     <element name="dataCount" type="xsd:int"/>
+     <element name="id_counter" type="xsd:int"/>
+     <element name="propertyName" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+  </schema>
+  <schema elementFormDefault="qualified" targetNamespace="http://Beans.struts2.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://bituosMonitor.bituos.com"/>
+   <import namespace="http://Beans.bituosMonitor.bituos.com"/>
+   <complexType name="BeanCompany">
+    <sequence>
+     <element name="active" nillable="true" type="xsd:string"/>
+     <element name="address" nillable="true" type="xsd:string"/>
+     <element name="id" type="xsd:int"/>
+     <element name="location" nillable="true" type="xsd:string"/>
+     <element name="logo_file_name" nillable="true" type="xsd:string"/>
+     <element name="name" nillable="true" type="xsd:string"/>
+     <element name="password" nillable="true" type="xsd:string"/>
+     <element name="phone1" nillable="true" type="xsd:string"/>
+     <element name="phone2" nillable="true" type="xsd:string"/>
+     <element name="timeToReport" type="xsd:int"/>
+    </sequence>
+   </complexType>
+   <complexType name="BeanTypeCommand">
+    <sequence>
+     <element name="description" nillable="true" type="xsd:string"/>
+     <element name="id" type="xsd:int"/>
+    </sequence>
+   </complexType>
+   <complexType name="BeanCommand">
+    <sequence>
+     <element name="done" nillable="true" type="xsd:string"/>
+     <element name="id" type="xsd:int"/>
+     <element name="id_company" nillable="true" type="tns2:BeanCompany"/>
+     <element name="id_type_command" nillable="true" type="tns2:BeanTypeCommand"/>
+    </sequence>
+   </complexType>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="registerCounterRequest">
+
+      <wsdl:part element="impl:registerCounter" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getCountersTestResponse">
+
+      <wsdl:part element="impl:getCountersTestResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getConfigurationRequest">
+
+      <wsdl:part element="impl:getConfiguration" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getCountersTestRequest">
+
+      <wsdl:part element="impl:getCountersTest" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getNameRequest">
+
+      <wsdl:part element="impl:getName" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getConfigurationResponse">
+
+      <wsdl:part element="impl:getConfigurationResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="registerCounterResponse">
+
+      <wsdl:part element="impl:registerCounterResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="pingToEmailResponse">
+
+      <wsdl:part element="impl:pingToEmailResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getNameResponse">
+
+      <wsdl:part element="impl:getNameResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="pingToEmailRequest">
+
+      <wsdl:part element="impl:pingToEmail" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="CounterServer">
+
+      <wsdl:operation name="getName">
+
+         <wsdl:input message="impl:getNameRequest" name="getNameRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getNameResponse" name="getNameResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getConfiguration">
+
+         <wsdl:input message="impl:getConfigurationRequest" name="getConfigurationRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getConfigurationResponse" name="getConfigurationResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="registerCounter">
+
+         <wsdl:input message="impl:registerCounterRequest" name="registerCounterRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:registerCounterResponse" name="registerCounterResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="pingToEmail">
+
+         <wsdl:input message="impl:pingToEmailRequest" name="pingToEmailRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:pingToEmailResponse" name="pingToEmailResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getCountersTest">
+
+         <wsdl:input message="impl:getCountersTestRequest" name="getCountersTestRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getCountersTestResponse" name="getCountersTestResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="CounterServerSoapBinding" type="impl:CounterServer">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="getName">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getNameRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getNameResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getConfiguration">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getConfigurationRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getConfigurationResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="registerCounter">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="registerCounterRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="registerCounterResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="pingToEmail">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="pingToEmailRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="pingToEmailResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getCountersTest">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getCountersTestRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getCountersTestResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="CounterServerService">
+
+      <wsdl:port binding="impl:CounterServerSoapBinding" name="CounterServer">
+
+         <wsdlsoap:address location="http://localhost:8080/bituosMonitor/services/CounterServer"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

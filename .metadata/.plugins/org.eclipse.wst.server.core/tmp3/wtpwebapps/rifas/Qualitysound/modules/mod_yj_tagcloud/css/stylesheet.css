@@ -1,0 +1,58 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Package - YJ Tag Cloud										        ||
+|| # Copyright (C) 2010  Youjoomla.com. All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla.com                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+div.yj_tagcloud { 
+	width:100%; 
+	height:auto;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+div.yj_tagcloud p { 
+	padding: 2px 5px; 
+	line-height:26px;
+}
+.yjtagsize12{
+	font-size:12px;
+}
+.yjtagsize13{
+	font-size:13px;
+}
+.yjtagsize14{
+	font-size:14px;
+}
+.yjtagsize15{
+	font-size:15px;
+}
+.yjtagsize16{
+	font-size:16px;
+}
+.yjtagsize17{
+	font-size:17px;
+}
+.yjtagsize18{
+	font-size:18px;
+}
+.yjtagsize19{
+	font-size:19px;
+}
+.yjtagsize20{
+	font-size:20px;
+}
+.yjtagsize21{
+	font-size:21px;
+}
+.yjtagsize22{
+	font-size:22px;
+}
+

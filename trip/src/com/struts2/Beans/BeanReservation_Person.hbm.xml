@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+   <class name="com.struts2.Beans.BeanReservation_Person" table="reservation_person" lazy="false">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       <many-to-one name="id_reservation_room" column="id_reservation_room" not-null="true"/>
+       <property name="name" column="name" type="string"  not-null="true"/>
+       <property name="age" column="age" type="integer"  not-null="true"/>
+        <property name="price" column="price" type="double"  not-null="true"/>
+                     
+   </class>
+</hibernate-mapping>
+
+

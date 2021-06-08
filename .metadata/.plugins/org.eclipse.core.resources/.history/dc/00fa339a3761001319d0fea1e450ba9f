@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Addenda">
+		<xs:annotation>
+			<xs:documentation>Complemento concepto para la emisión de Comprobantes Fiscales Digitales por Orden y cuenta de terceros</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Observaciones">
+					<xs:annotation>
+						<xs:documentation>Nodo requerido para expresar las observaciones</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+					     <xs:attribute name="descripcion" use="required"> 
+           						<xs:annotation> 
+						      <xs:documentation>Atributo requerido para uso de David.
+						      </xs:documentation> 
+						</xs:annotation> 
+						<xs:simpleType> 
+						            	<xs:restriction base="xs:string">
+ 								<xs:whiteSpace value="collapse"/>
+ 								<xs:minLength value="1"/>
+ 							</xs:restriction> 
+						</xs:simpleType>
+ 					      </xs:attribute> 
+
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:element name="Addenda0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Nodo requerido para expresar las observaciones</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:attribute name="serie" use="optional"> 
+							<xs:annotation> 
+							    <xs:documentation>Atributo opcional para precisar la serie a la que corresponde el comprobante. Este atributo acepta una cadena de caracteres alfabéticos de 1 a 10 caracteres sin incluir caracteres acentuados.</xs:documentation> 
+							</xs:annotation> 
+							<xs:simpleType> 
+							    <xs:restriction base="xs:string"> 
+							        <xs:minLength value="1"/> 
+							        <xs:maxLength value="12"/> 
+							        <xs:whiteSpace value="collapse"/>
+							    </xs:restriction> 
+							</xs:simpleType> 
+						</xs:attribute>
+						
+					    <xs:attribute name="codigo_producto" use="optional"> 
+							<xs:annotation> 
+							    <xs:documentation>Atributo opcional para precisar el codigo a el que corresponde el producto. Este atributo acepta una cadena de caracteres alfabéticos de 1 a 10 caracteres sin incluir caracteres acentuados.</xs:documentation> 
+							</xs:annotation> 
+							<xs:simpleType> 
+							    <xs:restriction base="xs:string"> 
+							        <xs:minLength value="1"/> 
+							        <xs:maxLength value="12"/> 
+							        <xs:whiteSpace value="collapse"/>
+							    </xs:restriction> 
+							</xs:simpleType> 
+						</xs:attribute>
+
+					</xs:complexType>
+				</xs:element>
+				
+			</xs:sequence>
+
+			
+		</xs:complexType>
+	</xs:element>
+	
+</xs:schema>

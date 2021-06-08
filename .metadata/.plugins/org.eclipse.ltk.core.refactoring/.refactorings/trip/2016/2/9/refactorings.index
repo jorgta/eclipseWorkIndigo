@@ -1,0 +1,42 @@
+1456164357976	Move 1 resources to 'WebContent'
+1456165127941	Copy compilation unit
+1456165142269	Rename type 'PreAction'
+1456165152115	Rename type 'PrAction'
+1456166225633	Copy file
+1456166249745	Rename resource 'main.jsp'
+1456172130599	Copy file
+1456257330179	Rename resource 'login.htm'
+1456265180325	Rename resource 'login.jsp'
+1456265290955	Move 1 resources to 'WebContent'
+1456265307454	Rename resource 'loginn.jsp'
+1456265454001	Delete element
+1456265552522	Rename resource 'loginOLD.jsp'
+1456265798578	Copy file
+1456265809609	Rename resource 'logout.jsp'
+1456265820605	Rename resource 'Copy of login.jsp'
+1456265906002	Rename resource 'login.jsp'
+1456265915776	Rename resource 'logout.jsp'
+1456266583037	Delete element
+1456266596007	Copy file
+1456269262663	Rename type 'UserNewAction'
+1456269277506	Copy compilation unit
+1456332800568	Copy compilation unit
+1456332817151	Rename type 'CopyOfUserDeleteAction'
+1456332832261	Delete element
+1456332840084	Rename type 'UserDeleteAction'
+1456333108272	Copy file
+1456333654593	Copy compilation unit
+1456337022974	Delete element
+1456337027264	Delete element
+1456337250438	Copy file
+1456337480832	Rename type 'UserActivateAction'
+1456337493940	Copy compilation unit
+1456380162149	Copy file
+1456380292331	Rename type 'UserChangeAction'
+1456380313159	Copy compilation unit
+1456430158169	Delete element
+1456430163884	Delete element
+1456439702425	Rename type 'CompanyNewAction'
+1456439713464	Copy compilation unit
+1456440163078	Copy files
+1456440185080	Rename resource 'userNew.jsp'

@@ -1,0 +1,326 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458176749508
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1458176749757
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458176751959
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458176846394
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458176846663
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458176886121
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458176901779
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458176901931
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458176905649
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177328133
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458177345148
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1458177346985
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177383675
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177389145
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177390518
+opened,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458177410227
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177410311
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458177410364
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1458177424309
+closed,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458177424309
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177429157
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177469813
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458177470138
+closed,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1458177470139
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177471311
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177471544
+opened,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1458177472884
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1458177473060
+error,log,,,"  does not exist",1458177473211
+error,log,,,"  does not exist",1458177473213
+error,log,,,"  does not exist",1458177473215
+error,log,,,"  does not exist",1458177473216
+error,log,,,"  does not exist",1458177473217
+error,log,,,"  does not exist",1458177473218
+error,log,,,"  does not exist",1458177473220
+error,log,,,"  does not exist",1458177473221
+error,log,,,"  does not exist",1458177473223
+error,log,,,"  does not exist",1458177473224
+error,log,,,"  does not exist",1458177473225
+error,log,,,"  does not exist",1458177473226
+error,log,,,"  does not exist",1458177473230
+error,log,,,"  does not exist",1458177473231
+error,log,,,"  does not exist",1458177473232
+error,log,,,"  does not exist",1458177473233
+error,log,,,"  does not exist",1458177473234
+error,log,,,"  does not exist",1458177473235
+error,log,,,"  does not exist",1458177473236
+error,log,,,"  does not exist",1458177473238
+error,log,,,"  does not exist",1458177473239
+error,log,,,"  does not exist",1458177473240
+error,log,,,"  does not exist",1458177473242
+error,log,,,"  does not exist",1458177473243
+error,log,,,"  does not exist",1458177473244
+error,log,,,"  does not exist",1458177473245
+error,log,,,"  does not exist",1458177473246
+error,log,,,"  does not exist",1458177473247
+error,log,,,"  does not exist",1458177473248
+error,log,,,"  does not exist",1458177473249
+error,log,,,"  does not exist",1458177473251
+error,log,,,"  does not exist",1458177473253
+error,log,,,"  does not exist",1458177473254
+error,log,,,"  does not exist",1458177473255
+error,log,,,"  does not exist",1458177473256
+error,log,,,"  does not exist",1458177473257
+error,log,,,"  does not exist",1458177473258
+error,log,,,"  does not exist",1458177473260
+error,log,,,"  does not exist",1458177473262
+error,log,,,"  does not exist",1458177473263
+error,log,,,"  does not exist",1458177473264
+error,log,,,"  does not exist",1458177473265
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177481717
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.findReplace",1458177481746
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177486975
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177488159
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177489538
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1458177496495
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177497543
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.findReplace",1458177497574
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1458177501884
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177515613
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177564059
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.findReplace",1458177564090
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177573814
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1458177583403
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177583713
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.findReplace",1458177583741
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177598247
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177603461
+opened,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1458177612604
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177612698
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1458177612706
+error,log,,,"  does not exist",1458177612914
+error,log,,,"  does not exist",1458177612917
+error,log,,,"  does not exist",1458177612920
+error,log,,,"  does not exist",1458177612923
+error,log,,,"  does not exist",1458177612925
+error,log,,,"  does not exist",1458177612927
+error,log,,,"  does not exist",1458177612928
+error,log,,,"  does not exist",1458177612929
+error,log,,,"  does not exist",1458177612930
+error,log,,,"  does not exist",1458177612931
+error,log,,,"  does not exist",1458177612933
+error,log,,,"  does not exist",1458177612934
+error,log,,,"  does not exist",1458177612938
+error,log,,,"  does not exist",1458177612939
+error,log,,,"  does not exist",1458177612941
+error,log,,,"  does not exist",1458177612942
+error,log,,,"  does not exist",1458177612943
+error,log,,,"  does not exist",1458177612945
+error,log,,,"  does not exist",1458177612947
+error,log,,,"  does not exist",1458177612948
+error,log,,,"  does not exist",1458177612949
+error,log,,,"  does not exist",1458177612950
+error,log,,,"  does not exist",1458177612952
+error,log,,,"  does not exist",1458177612953
+error,log,,,"  does not exist",1458177612954
+error,log,,,"  does not exist",1458177612955
+error,log,,,"  does not exist",1458177612956
+error,log,,,"  does not exist",1458177612958
+error,log,,,"  does not exist",1458177612959
+error,log,,,"  does not exist",1458177612960
+opened,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458177687995
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458177688147
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1458177696014
+closed,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458177696014
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177699744
+opened,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458177708011
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177708084
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458177708136
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1458177777710
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177785649
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.findReplace",1458177785682
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177791761
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1458177803814
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177809947
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177810065
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177821808
+opened,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458177852499
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177852596
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458177852649
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177868414
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177879068
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1458177879344
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1458177883666
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177884039
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177973013
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1458177973198
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1458177977874
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458177978730
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178010125
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458178010388
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458178011412
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178046118
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178046240
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178050720
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178050962
+opened,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458178052259
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458178052313
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178054541
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178054842
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458178056515
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178064259
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178193227
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178200408
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178214105
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178217931
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178376020
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458178379040
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178384774
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.findReplace",1458178384804
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178389838
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458178409275
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178426586
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178473340
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458178481154
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458178482327
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178489184
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178530678
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178538868
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178539003
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178542625
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178686396
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178704517
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178704661
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178707253
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178758151
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1458178758406
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178787490
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178906582
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458178906826
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1458178916776
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458178917535
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179095506
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458179095702
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458179114861
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179125271
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.findReplace",1458179125300
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179130443
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179141679
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179144318
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179166240
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179202024
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1458179202321
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179204031
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.findReplace",1458179204061
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179213072
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179215306
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179228494
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179230825
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1458179231342
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179238657
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179263030
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179295223
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458179295511
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1458179309418
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179310045
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179348414
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1458179372877
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179374182
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179385585
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1458179426480
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179429448
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179492745
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179502314
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179557592
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1458179559685
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179560639
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179588531
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1458179599906
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179601163
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179681522
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179683058
+opened,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458179704606
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179704729
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458179704738
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179716444
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179737855
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179739070
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.findReplace",1458179739103
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1458179739489
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179743418
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1458179752135
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1458179758956
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179760436
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179913447
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458179913599
+closed,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458179913599
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179915063
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179919313
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1458179925882
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458179927407
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458180013424
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1458180016063
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458180017013
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458180040696
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1458180043193
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458180044208
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458180142527
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1458180142863
+closed,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458180142863
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458180144006
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458180164133
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458180164251
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458180165700
+opened,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1458180185553
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458180185694
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1458180185775
+error,log,,,"  does not exist",1458180185982
+error,log,,,"  does not exist",1458180185984
+error,log,,,"  does not exist",1458180185986
+error,log,,,"  does not exist",1458180185990
+error,log,,,"  does not exist",1458180185992
+error,log,,,"  does not exist",1458180185993
+error,log,,,"  does not exist",1458180185995
+error,log,,,"  does not exist",1458180185998
+error,log,,,"  does not exist",1458180186005
+error,log,,,"  does not exist",1458180186009
+error,log,,,"  does not exist",1458180186011
+error,log,,,"  does not exist",1458180186013
+error,log,,,"  does not exist",1458180186015
+error,log,,,"  does not exist",1458180186020
+error,log,,,"  does not exist",1458180186026
+error,log,,,"  does not exist",1458180186030
+error,log,,,"  does not exist",1458180186032
+error,log,,,"  does not exist",1458180186035
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458180202451
+closed,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1458180202451
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458180205298
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458180208996
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458180300215
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1458180300468
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1458180319844
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458180322344
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458180490384
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1458180495444
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458180495727
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458180511817
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1458180514189
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458180514594
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458180569159
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458180572052
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458253464093
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458253466924
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458253477744
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.file.exit",1458253477756
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458253481792
+closed,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1458253481792
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458253482849
+closed,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458253482849
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1458253484851
+closed,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458253484851
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458253486452
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458253487433
+closed,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458253487462
+activated,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458253488636
+closed,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1458253488636
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458253489838
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458253490759
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1458253490986
+closed,editor,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1458253490986
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458253492574
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458253494159
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1458253494168
+closed,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1458253494169
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1458253495217

@@ -1,0 +1,139 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from CounterServerService WSDL service -->
+
+  <service name="CounterServer" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://bituosMonitor.bituos.com"/>
+      <parameter name="wsdlServiceElement" value="CounterServerService"/>
+      <parameter name="schemaQualified" value="http://Beans.bituosMonitor.bituos.com,http://Beans.struts2.com,http://bituosMonitor.bituos.com"/>
+      <parameter name="wsdlServicePort" value="CounterServer"/>
+      <parameter name="className" value="com.bituos.bituosMonitor.CounterServerSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="CounterServer"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="getName" qname="operNS:getName" xmlns:operNS="http://bituosMonitor.bituos.com" returnQName="retNS:getNameReturn" xmlns:retNS="http://bituosMonitor.bituos.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getConfiguration" qname="operNS:getConfiguration" xmlns:operNS="http://bituosMonitor.bituos.com" returnQName="retNS:getConfigurationReturn" xmlns:retNS="http://bituosMonitor.bituos.com" returnType="rtns:ServiceConfiguration" xmlns:rtns="http://bituosMonitor.bituos.com" soapAction="" >
+        <parameter qname="pns:companyEncrypted" xmlns:pns="http://bituosMonitor.bituos.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:locationEncrypted" xmlns:pns="http://bituosMonitor.bituos.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:passwordEncrypted" xmlns:pns="http://bituosMonitor.bituos.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:device" xmlns:pns="http://bituosMonitor.bituos.com" type="tns:Device" xmlns:tns="http://Beans.bituosMonitor.bituos.com"/>
+      </operation>
+      <operation name="registerCounter" qname="operNS:registerCounter" xmlns:operNS="http://bituosMonitor.bituos.com" returnQName="retNS:registerCounterReturn" xmlns:retNS="http://bituosMonitor.bituos.com" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:device" xmlns:pns="http://bituosMonitor.bituos.com" type="tns:Device" xmlns:tns="http://Beans.bituosMonitor.bituos.com"/>
+        <parameter qname="pns:companyEncrypted" xmlns:pns="http://bituosMonitor.bituos.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:locationEncrypted" xmlns:pns="http://bituosMonitor.bituos.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:passwordEncrypted" xmlns:pns="http://bituosMonitor.bituos.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:countersData" xmlns:pns="http://bituosMonitor.bituos.com" type="tns:CountersData" xmlns:tns="http://Beans.bituosMonitor.bituos.com"/>
+        <parameter qname="pns:is_str" xmlns:pns="http://bituosMonitor.bituos.com" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="pingToEmail" qname="operNS:pingToEmail" xmlns:operNS="http://bituosMonitor.bituos.com" soapAction="" >
+        <parameter qname="pns:email" xmlns:pns="http://bituosMonitor.bituos.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getCountersTest" qname="operNS:getCountersTest" xmlns:operNS="http://bituosMonitor.bituos.com" returnQName="retNS:getCountersTestReturn" xmlns:retNS="http://bituosMonitor.bituos.com" returnType="rtns:Counter" xmlns:rtns="http://Beans.bituosMonitor.bituos.com" soapAction="" >
+      </operation>
+      <parameter name="allowedMethods" value="getName getConfiguration getCountersTest registerCounter pingToEmail"/>
+
+      <arrayMapping
+        xmlns:ns="http://bituosMonitor.bituos.com"
+        qname="ns:ArrayOf_tns1_Counter"
+        type="java:com.bituos.bituosMonitor.Beans.Counter[]"
+        innerType="cmp-ns:Counter" xmlns:cmp-ns="http://Beans.bituosMonitor.bituos.com"
+        encodingStyle=""
+      />
+      <arrayMapping
+        xmlns:ns="http://bituosMonitor.bituos.com"
+        qname="ns:ArrayOf_tns2_BeanCommand"
+        type="java:com.struts2.Beans.BeanCommand[]"
+        innerType="cmp-ns:BeanCommand" xmlns:cmp-ns="http://Beans.struts2.com"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://Beans.bituosMonitor.bituos.com"
+        qname="ns:Device"
+        type="java:com.bituos.bituosMonitor.Beans.Device"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://bituosMonitor.bituos.com"
+        qname="ns:ServiceConfiguration"
+        type="java:com.bituos.bituosMonitor.ServiceConfiguration"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://Beans.struts2.com"
+        qname="ns:BeanTypeCommand"
+        type="java:com.struts2.Beans.BeanTypeCommand"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://Beans.struts2.com"
+        qname="ns:BeanCompany"
+        type="java:com.struts2.Beans.BeanCompany"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://Beans.bituosMonitor.bituos.com"
+        qname="ns:Counter"
+        type="java:com.bituos.bituosMonitor.Beans.Counter"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <arrayMapping
+        xmlns:ns="http://bituosMonitor.bituos.com"
+        qname="ns:ArrayOf_tns1_DeviceNetwork"
+        type="java:com.bituos.bituosMonitor.Beans.DeviceNetwork[]"
+        innerType="cmp-ns:DeviceNetwork" xmlns:cmp-ns="http://Beans.bituosMonitor.bituos.com"
+        encodingStyle=""
+      />
+      <arrayMapping
+        xmlns:ns="http://bituosMonitor.bituos.com"
+        qname="ns:ArrayOf_xsd_string"
+        type="java:java.lang.String[]"
+        innerType="cmp-ns:string" xmlns:cmp-ns="http://www.w3.org/2001/XMLSchema"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://Beans.bituosMonitor.bituos.com"
+        qname="ns:CountersData"
+        type="java:com.bituos.bituosMonitor.Beans.CountersData"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://Beans.struts2.com"
+        qname="ns:BeanCommand"
+        type="java:com.struts2.Beans.BeanCommand"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://Beans.bituosMonitor.bituos.com"
+        qname="ns:DeviceNetwork"
+        type="java:com.bituos.bituosMonitor.Beans.DeviceNetwork"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+  </service>
+</deployment>

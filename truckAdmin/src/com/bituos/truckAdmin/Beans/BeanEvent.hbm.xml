@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.bituos.truckAdmin.Beans.BeanEvent" table="event" >
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       <many-to-one name="id_tire" column="id_tire" not-null="true"/>
+       <property name="odometer" column="odometer" type="string"  not-null="true"/>
+       <many-to-one name="id_type_place" column="id_type_place" not-null="true"/>
+       <property name="date_reg" column="date_reg" type="timestamp"  not-null="false"/>
+       <property name="comments" column="comments" type="string"  not-null="true"/>
+       
+       <property name="design" column="design" type="string"  not-null="false"/>
+       <property name="deep" column="deep" type="integer"  not-null="false"/>
+       <many-to-one name="id_type_event" column="id_type_event" not-null="true"/>
+
+ 
+   </class>
+</hibernate-mapping>
+
+
+
+

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" 	value="false" />
+	<constant name="struts.devMode" value="false" />
+    <constant name="struts.custom.i18n.resources" value="ApplicationResources" />
+
+	
+	<package name="default" extends="struts-default,json-default"  namespace="/">
+		
+		<global-results>
+		    <result name="printGlobal">/rpt/CallCrystal.jsp</result>
+		    <result name="logout">loginnew.jsp</result>
+		     <result name="successGlobal" type="redirectAction">
+		        <param name="actionName">rpt.action</param>
+		        <param name="p1">${p1}</param>
+		        <param name="p2">${p2}</param>
+		        <param name="p3">${p3}</param>
+		        <param name="p4">${p4}</param>
+		        <param name="p5">${p5}</param>
+		        <param name="p6">${p6}</param>
+		        <param name="p7">${p7}</param>
+		        <param name="p8">${p8}</param>
+		        <param name="p9">${p9}</param>
+		        <param name="p10">${p10}</param>
+		        <param name="process">${process}</param>
+		     </result>
+		 </global-results>
+  
+		<action name="initial" class="com.struts2.actions.LoginAction" method="forward">
+			<result name="error">index.jsp</result>
+		</action>
+		
+	    <action name="login" class="com.struts2.actions.LoginAction">
+			<result name="success">links.jsp</result>
+			<result name="error">loginnew.jsp</result>
+			<result name="input">loginnew.jsp</result>
+		</action>
+		
+		<action name="rpt" class="com.struts2.actions.RptAction">	
+		    <result name="input">rpt/rptLog.jsp</result>	
+		     <result name="input">rpt/rptReservation.jsp</result>	
+		     <result name="input">rpt/rptQuote.jsp</result>		    			
+			<result name="error">main.jsp</result>
+			<result name="rptLogerror">rpt/rptLog.jsp</result>	
+			<result name="rptReservationerror">rpt/rptReservation.jsp</result>	
+					
+		</action>
+		
+
+		
+		<action name="pre" class="com.struts2.actions.PreAction">
+		    <result name="input">pre.jsp</result>
+		    <result name="error">main.jsp</result>
+	 
+			<result name="userNew">users/userNew.jsp</result>
+			<result name="userNewError">users/userNew.jsp</result>
+			
+			<result name="userDelete">users/userDelete.jsp</result>
+			<result name="userDeleteError">users/userDelete.jsp</result>
+			
+			<result name="userActivate">users/userActivate.jsp</result>
+			<result name="userActivateError">users/userActivate.jsp</result>
+			
+			
+			<result name="userChange">users/userChange.jsp</result>
+			<result name="userChangeError">users/userChange.jsp</result>		
+					
+						
+			<result name="companyNew">company/companyNew.jsp</result>
+			<result name="companyNewError">company/companyNew.jsp</result>
+			
+			<result name="companyDelete">company/companyDelete.jsp</result>
+			<result name="companyDeleteError">company/companyDelete.jsp</result>
+			
+			<result name="companyActivate">company/companyActivate.jsp</result>
+			<result name="companyActivateError">company/companyActivate.jsp</result>
+			
+			<result name="companyChange">company/companyChange.jsp</result>
+			<result name="companyChangeError">company/companyChange.jsp</result>
+			
+			
+			<result name="processAdminNew">admin/processAdminNew.jsp</result>
+			<result name="processAdminNewError">admin/processAdminNew.jsp</result>
+			
+			<result name="processAdminDelete">admin/processAdminDelete.jsp</result>
+			<result name="processAdminDeleteError">admin/processAdminDelete.jsp</result>
+			
+			<result name="processAdminActivate">admin/processAdminActivate.jsp</result>
+			<result name="processAdminActivateError">admin/processAdminActivate.jsp</result>
+			
+			<result name="processAdminChange">admin/processAdminChange.jsp</result>
+			<result name="processAdminChangeError">admin/processAdminChange.jsp</result>
+			
+			<result name="processAdmin">admin/processAdmin.jsp</result>
+			<result name="processAdminError">admin/processAdmin.jsp</result>
+
+			
+			<result name="rptLog">rpt/rptLog.jsp</result>
+			<result name="rptLogError">rpt/rptLog.jsp</result>
+			
+
+			
+		</action>
+		
+		<action name="index" class="com.struts2.actions.IndexAction">
+			<result name="success">index.jsp</result>
+			<result name="error">notOK.jsp</result>			
+		</action>
+		
+		<action name="userNew" class="com.struts2.actions.UserNewAction">
+		    <result name="input">users/userNew.jsp</result>
+			<result name="success">users/userNew.jsp</result>
+			<result name="error">users/userNew.jsp</result>
+		</action>
+
+
+		
+		<action name="userDelete" class="com.struts2.actions.UserDeleteAction">
+		    <result name="input">users/userDelete.jsp</result>
+			<result name="success">users/userDelete.jsp</result>
+			<result name="error">users/userDelete.jsp</result>
+		</action>
+		
+		<action name="userActivate" class="com.struts2.actions.UserActivateAction">
+		    <result name="input">users/userActivate.jsp</result>
+			<result name="success">users/userActivate.jsp</result>
+			<result name="error">users/userActivate.jsp</result>
+		</action>
+		
+		<action name="userChange" class="com.struts2.actions.UserChangeAction">
+		    <result name="input">users/userChange.jsp</result>
+			<result name="success">users/userChange.jsp</result>
+			<result name="error">users/userChange.jsp</result>
+		</action>
+		
+		
+		<action name="companyNew" class="com.struts2.actions.CompanyNewAction">
+		    <result name="input">company/companyNew.jsp</result>
+			<result name="success">company/companyNew.jsp</result>
+			<result name="error">company/companyNew.jsp</result>
+		</action>
+		
+		<action name="companyDelete" class="com.struts2.actions.CompanyDeleteAction">
+		    <result name="input">company/companyDelete.jsp</result>
+			<result name="success">company/companyDelete.jsp</result>
+			<result name="error">company/companyDelete.jsp</result>
+		</action>
+
+		<action name="companyActivate" class="com.struts2.actions.CompanyActivateAction">
+		    <result name="input">company/companyActivate.jsp</result>
+			<result name="success">company/companyActivate.jsp</result>
+			<result name="error">company/companyActivate.jsp</result>
+		</action>
+		
+		
+		<action name="companyChange" class="com.struts2.actions.CompanyChangeAction">
+		    <result name="input">company/companyChange.jsp</result>
+			<result name="success">company/companyChange.jsp</result>
+			<result name="error">company/companyChange.jsp</result>
+		</action>
+		
+		
+		
+		<action name="processAdminNew" class="com.struts2.actions.ProcessAdminNewAction">
+		    <result name="input">admin/processAdminNew.jsp</result>
+			<result name="success">admin/processAdminNew.jsp</result>
+			<result name="error">admin/processAdminNew.jsp</result>
+		</action>
+		
+		<action name="processAdminDelete" class="com.struts2.actions.ProcessAdminDeleteAction">
+		    <result name="input">admin/processAdminDelete.jsp</result>
+			<result name="success">admin/processAdminDelete.jsp</result>
+			<result name="error">admin/processAdminDelete.jsp</result>
+		</action>
+
+		<action name="processAdminActivate" class="com.struts2.actions.ProcessAdminActivateAction">
+		    <result name="input">admin/processAdminActivate.jsp</result>
+			<result name="success">admin/processAdminActivate.jsp</result>
+			<result name="error">admin/processAdminActivate.jsp</result>
+		</action>
+		
+		
+		<action name="processAdminChange" class="com.struts2.actions.ProcessAdminChangeAction">
+		    <result name="input">admin/processAdminChange.jsp</result>
+			<result name="success">admin/processAdminChange.jsp</result>
+			<result name="error">admin/processAdminChange.jsp</result>
+		</action>
+		
+		<action name="processAdmin" class="com.struts2.actions.ProcessAdminAction">
+		    <result name="input">admin/processAdmin.jsp</result>
+			<result name="success">admin/processAdmin.jsp</result>
+			<result name="error">admin/processAdmin.jsp</result>
+		</action>
+		
+
+
+		
+		
+		<action name="userGrid" class="com.struts2.actions.TestGridAction">
+			<result name="success" type="json" ></result>					
+		</action>
+		
+		
+	   <action name="getJSONResult" class="com.struts2.actions.JSONDataAction">       	   
+       	   <result name="success" type="json" ></result>	
+      </action>
+	</package>
+</struts>

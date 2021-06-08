@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+   <class name="com.struts2.Beans.BeanUser" table="user" >
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       <property name="name" column="NAME" type="string"  not-null="true"/>
+       <property name="password" column="PASSWORD" type="string"  not-null="false"/>
+       <property name="active" column="ACTIVE" type="integer"  not-null="true"/>
+       <many-to-one name="id_company" column="ID_COMPANY" not-null="true" />
+       <property name="address" column="ADDRESS" type="string"  not-null="false"/>
+       <property name="email" column="email" type="string"  not-null="true"/>
+       
+   </class>
+</hibernate-mapping>
+
+

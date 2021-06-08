@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="series">
+        <xs:complexType>
+            <xs:group  minOccurs="0" maxOccurs="unbounded">
+			  <xs:sequence>
+                <xs:element name="id_producto">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:minLength value="1"/>
+                            <xs:maxLength value="50"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                <xs:element name="serie">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:minLength value="1"/>
+                            <xs:maxLength value="50"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                </xs:sequence>
+            </xs:group>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="observaciones" type="xs:string" default="ninguna">
+    </xs:element>
+    
+</xs:schema>
+
+
+
+	
+

@@ -1,0 +1,10 @@
+127.0.0.1 - - [31/Jan/2020:15:16:32 -0700] "GET / HTTP/1.1" 404 956
+0:0:0:0:0:0:0:1 - - [31/Jan/2020:15:16:33 -0700] "GET /wsTest/ HTTP/1.1" 404 963
+192.168.0.104 - - [31/Jan/2020:15:18:11 -0700] "GET /webServicesTest/services/Test?wsdl HTTP/1.1" 404 985
+192.168.0.104 - - [31/Jan/2020:15:18:11 -0700] "GET /favicon.ico HTTP/1.1" 404 967
+0:0:0:0:0:0:0:1 - - [31/Jan/2020:15:18:39 -0700] "GET /wsTest/wsdl/HelloWorld.wsdl HTTP/1.1" 200 8347
+0:0:0:0:0:0:0:1 - - [31/Jan/2020:15:18:58 -0700] "GET /wsTest/wsdl/HelloWorld?wsdl HTTP/1.1" 404 978
+0:0:0:0:0:0:0:1 - - [31/Jan/2020:15:18:58 -0700] "GET /favicon.ico HTTP/1.1" 404 967
+0:0:0:0:0:0:0:1 - - [31/Jan/2020:15:19:07 -0700] "GET /wsTest/wsdl/HelloWorld.wsdl HTTP/1.1" 200 8347
+0:0:0:0:0:0:0:1 - - [31/Jan/2020:15:19:44 -0700] "GET /wsTest/services/HelloWorld?wsdl HTTP/1.1" 200 8366
+0:0:0:0:0:0:0:1 - - [31/Jan/2020:15:20:11 -0700] "GET /wsTest/services/HelloWorld?wsdl HTTP/1.1" 200 8366

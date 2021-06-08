@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.6.0"
+	client="site"
+	method="upgrade">
+	<name>YJ Image Slider V4</name>
+	<author>Youjoomla.com</author>
+	<creationDate>7-15-2014</creationDate>
+	<license>GNU/GPL</license>
+	<authorEmail>youjoomla@gmail.com</authorEmail>
+	<authorUrl>www.youjoomla.com</authorUrl>
+	<version>4.0.9</version>
+	<compatibility>
+		<version>2.5</version>
+		<version>3</version>
+	</compatibility>
+	<description>
+		<![CDATA[<div class='wrap2' style='display:block;overflow:hidden;clear:both;'><h1>YJ Image Slider v4</h1><br /><a title='Visit the official website!' href='http://www.youjoomla.com' target='_blank'> <img style='float:left;border:0px;margin:0px 15px 4px 22px;'src='../modules/mod_yjis4/images/yj_extensions.png' border='0' alt='Logo' /></a><br /> <h3> Images can be in any ROOT/images folder but to keep them all in one place<br />we created ROOT/images/upload_slides folder for you.<br />Once you click on 'select' button you will be taken to images/upload_slides folder.</h3><br /> YJIS support can be found <a href='http://www.youjoomla.com/joomla_support/yj-image-slider-4-0/' target='_blank'>here</a><br /><br /><a href='http://extensions.youjoomla.info/yj-image-slider.html' target='_blank'>Different Options examples are here</a><br /><br />  List of available MediaboxAdvanced video types  can be found <a href='http://iaian7.com/webcode/mediaboxAdvanced#twitter' target='_blank'>here</a><br /> <br /> For all info on MediaboxAdvanced please visit <a href='http://iaian7.com/webcode/mediaboxAdvanced' target='_blank'>official website</a></div>]]>
+	</description>
+	<languages>
+		<language tag="en-GB">en-GB.mod_yjis4.ini</language>
+		<language tag="en-GB">en-GB.mod_yjis4.sys.ini</language>
+	</languages>
+	<files>
+		<filename module="mod_yjis4">mod_yjis4.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+		<folder>images</folder>
+		<folder>src</folder>
+		<folder>elements</folder>
+		<folder>css</folder>
+	</files>
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_yjis4/elements/">
+			<fieldset name="basic">
+				<field name="yjhandler" type="yjhandler" />
+				<field type="yjspacer" default="GLOBAL SLIDE SETTINGS" />
+				<field name="moduleclass_sfx" type="text" default="_yjis" label="Module suffix" description="Suffix which will be used in description of class of style (CSS) of the module. It allows to use individual style of the module." />
+				<field name="module_template" type="yjfolderlist" default="Default" hide_none="blank" label="Select default module template" directory="modules/mod_yjis4/tmpl" description="You can create custom layout templates for this module. Simply click the create new template button below and module engine will copy Default template and name it by the name you have selected in creation process.&lt;br /&gt;You could also copy modules/mod_yjis4/tmpl/default folder , rename it to your own template name and edit default.php within your template folder to your liking. &lt;br /&gt;Once you have created your module template , your template name will be visible here.&lt;br /&gt; For template overrides please copy your module template folder to your template/html/mod_yjis4/ folder and create custom overides for each module instance. Edit Template option can be used to customize the module template files from here." />
+				<field name="swidth" type="text" default="600" label="Slide width (px):" description="Slide width (px)" />
+				<field name="sheight" type="text" default="250" label="Slide height (px):" description="Slide height (px)" />
+				<field name="sorient" type="list" default="0" label="Slide orientation" description="Slide animation orientation. ">
+					<option value="0">vertical</option>
+					<option value="1">horizontal</option>
+				</field>
+				<field name="type_slider" type="list" default="0" label="Slide Type" description="You can choose from 3 animation effects. Fade , scroll or scrollfade">
+					<option value="0">fade</option>
+					<option value="1">scroll</option>
+					<option value="2">scrollfade</option>
+				</field>
+				<field name="start_slide" type="list" default="0" label="Start slide on page load" description="If set to yes slider will start animating on page load, otherwise use will have to click on navigations to get to next slide">
+					<option value="0">Yes</option>
+					<option value="1">No</option>
+				</field>
+				<field name="stime" type="text" default="6000" label="Slide time:" description="Pause between the slides in milliseconds" />
+				<field name="sduration" type="text" default="600" label="Slide duration:" description="Slide transition durration" />
+				<field name="smenu" type="list" default="1" label="Show navigation arrows" description="Show slide navigation arrows.( left ,right )">
+					<option value="0">Yes</option>
+					<option value="1">No</option>
+				</field>
+				<field name="tooltips" type="list" default="0" label="Show slide tool tips" description="Show slide tool tip on mousenter on slide image">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="order" type="list" default="0" label="Slides ordering" description="Slide ordering">
+					<option value="0">By slide ordering</option>
+					<option value="1">Random</option>
+				</field>
+				<field type="yjspacer" default="THUMBNAIL NAVIGATION  SETTINGS" />
+				<field name="thumb_pagination" type="list" default="1" label="Show Thumbnail navigation" description="Conveyor belt with thumbnails and link to each slide ">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="beltOrientation" type="list" default="0" label="Thumbnail belt orientation" description="Conveyor belt thumbs direction , vertical or horizontal">
+					<option value="1">Vertical</option>
+					<option value="0">Horizontal</option>
+				</field>
+				<field name="thumb_width" type="text" default="80" label="Thumbnail width (px):" description="Thumbnail width (px). Please note if Thumbnail image is not avaliable , original image will be resized to this width. Image disortion might occur  if no thumbnail is used." />
+				<field name="thumb_height" type="text" default="80" label="Thumbnail height (px):" description="Thumbnail height (px).  Please note if Thumbnail image is not avaliable , original image will be resized to this height. Image disortion might occur  if no thumbnail is used." />
+				<field name="visibleItems" type="text" default="3" label="Visible thumbs on belt" description="This is number of visible Thumbnails on conveyor belt. To acheive nice effect follow this example: Use 5 slides , set this param to 3. Only 3 Thumbnails will be visible but you can slide to 5 with nice scroll animation to each Thumbnail. &lt;br /&gt;Note:&lt;br /&gt; Min 2 visble items." />
+				<field name="thumbsOpacity" type="text" default="0.5" label="Inactive Thumbnail opacity" description="Max 1= completely visible. Min 0.1" />
+				<field name="beltPosition" type="textarea" rows="8" cols="30" default="bottom:20px;" label="Thumbnail belt position" description="Standard CSS rules for position property apply. Use left and right only if belt orientation is vertical, otherwise use top and bottom. Note that belt has 8px top and bottom padding so that Thumbnail top and bottom shadow stays visible. If the belt orientation is vertical , setup the thumbs height and visible first , than nudge the left /right / top position untill the thumbnails fit the belt." />
+				<field name="thumbs_tooltips" type="list" default="0" label="Show Thumbnails tool tips" description="Hide or show Thumbnails elements tooltips">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="thumb_arrows" type="list" default="1" label="Show Thumbnail navigation arrows" description="Show Thumbnail navigation arrows.( left ,right )">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field type="yjspacer" default="NUMBERS NAVIGATION  SETTINGS" />
+				<field name="pagination" type="list" default="1" label="Show bottom navigation" description="Link to each slide under the slider with slide number">
+					<option value="0">Yes</option>
+					<option value="1">No</option>
+				</field>
+				<field name="pagination_counter" type="list" default="1" label="Show pagination counter" description="Counter on the left side under the slider. (Link 1 of 2)">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="navs_tooltips" type="list" default="0" label="Show navigation tool tips" description="Hide or show navigation elements tooltips">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field type="yjspacer" default="MEDIABOXADVANCED SETTINGS" />
+				<field name="mbox_theme" type="list" default="Dark" label="MediaboxAdvanced Template" description="MediaboxAdvanced comes with 4 templates" >
+					<option value="Dark">Dark</option>
+					<option value="Light">Light</option>
+					<option value="Minimal">Minimal</option>
+					<option value="Smooth">Smooth</option>
+				</field>
+				<field name="over_opacity" type="text" default="0.7" label="Overlay opacity" description="1 is opaque, 0 is completely transparent" />
+				<field name="loop_image" type="list" default="false" label="Allow media looping" description="Allows to navigate between first and last media file. VIdeos and images." >
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</field>
+				<field name="use_NB" type="list" default="true" label="Use NonverBlaster for media" description="Use NonverBlaster (Yes) or JW Media Player (No) for .flv and .mp4 files." >
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</field>
+				<field type="yjspacer" default="GLOBAL INTRO TEXT AND DESCRIPTION SETTINGS" />
+				<field name="hide_all_intros" type="list" default="0" label="Hide all intro texts" description="This setting will hide all slide intro texts displayed on top of the slide image. This setting is useful if you want to display only slide image and Thumbnail navigation.">
+					<option value="0">Do not hide</option>
+					<option value="1">Hide</option>
+				</field>
+				<field name="hide_all_descriptions" type="list" default="0" label="Hide all descriptions" description="This setting will hide all slide descriptions displayed on top of the slide image. This setting is useful if you want to display only slide image and Thumbnail navigation. Note: It will be visible in slide tooltips.">
+					<option value="0">Do not hide</option>
+					<option value="1">Hide</option>
+				</field>
+			</fieldset>
+			
+			<!-- slide options -->
+			<fieldset name="SLIDE_1_SETTINGS">
+				<field name="slide_image_1" type="yjmedia"  directory="upload_slides" label="Select slide 1 image" description="Select slide 1 image or upload new one. Directory upload_slides is already created. just hit the select button.If left empty it will not be displayed" />
+				<field name="slide_genthumb_1" type="yjthumbs"  label="Generate Thumbnail" description="You can create or upload slide Thumbnail . Note that created Thumbnail  has precedence over uploaded one. If you wish to clear this Thumbnail click on clear button in Select slide param . Click on Create Thumbnail  button to generate small image for  slide 1" />
+				<field name="slide_thumb_1" type="media"  directory="upload_slides/thumbnails" label="Or upload slide 1 Thumbnail" description="Select slide 1 thumbnail image. If none is selected the original image will be used." />
+				<field name="slide_title_1" type="text" size="50" default="" label="Slide 1 title" description="Slide 1 title. If left empty it will not be displayed" />
+				<field name="slide_description_1" type="text" size="50" default="" label="Slide 1 Description" description="Slide 1 description. If left empty it will not be displayed" />
+				<field name="slide_intro_1" type="textarea" filter="safehtml" cols="40" rows="5" default="" label="Slide 1 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+				<field type="yjspacer" default="Mbox Link Options for slide 1" />
+				<field name="mboxlink_1" type="text" size="50" default="" label="Mbox link for slide 1" description="This needs to be image or video link. To see what types of videos you can use please look to your left under the YJIS Logo for&lt;br /&gt;&lt;br /&gt; List of available MediaboxAdvanced video types link.&lt;br /&gt;&lt;br /&gt;Or visit http://iaian7.com/webcode/&lt;br /&gt;&lt;br /&gt; for all info on MediaboxAdvanced.&lt;br /&gt;&lt;br /&gt;The image/video Title and description use slide title and description param.&lt;br /&gt;&lt;br /&gt;NOTE: If left blank it will not be used.&lt;br /&gt;&lt;br /&gt;If you have Mbox AND Normal link set for this slide&lt;br /&gt;&lt;br /&gt; Normal link will take over." />
+				<field name="mboxtype_1" type="list" default="0" label="Mbox link type for slide 1" description="Video or image link ?" >
+					<option value="0">Image</option>
+					<option value="1">Video</option>
+				</field>
+				<field name="video_width_1" type="text"  default="640" label="Mbox video width" description="Define video width. Effective only if media type is video" />
+				<field name="video_height_1" type="text"  default="360" label="Mbox video height" description="Define video height. Effective only if media type is video" />
+				<field type="yjspacer" default="Mbox Image Links Options" />
+				<field name="image_group_1" type="list" default="0" label="Activate media group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="image_group_name_1" type="text"  default="yjgallery" label="Media group name" description="NOTE: This group name must be set same for all media types that you would like to show in same group" />
+				<field type="yjspacer" default="Normal link  for slide 1 options" />
+				<field name="slide_link_1" type="text" size="50" default="" label="Slide 1 link" description="If left empty it will not be displayed.If you have Mbox AND Normal link set.&lt;br /&gt;&lt;br /&gt; Normal link will take over.&lt;br /&gt;&lt;br /&gt; Just make sure you have one or the other set, NOT both." />
+				<field name="slide_open_1" type="list" default="0" label="Open slide 1 link in" description="Open link in new window or same page">
+					<option value="0">in new window</option>
+					<option value="1">in same page</option>
+				</field>
+			</fieldset>
+			
+			<!-- slide options -->
+			<fieldset name="SLIDE_2_SETTINGS">
+				<field name="slide_image_2" type="yjmedia"  directory="upload_slides" label="Select slide 2 image" description="Select slide 2 image or upload new one. Directory upload_slides is already created. just hit the select button.If left empty it will not be displayed" />
+				<field name="slide_genthumb_2" type="yjthumbs"  label="Generate Thumbnail" description="You can create or upload slide Thumbnail . Note that created Thumbnail  has precedence over uploaded one. If you wish to clear this Thumbnail click on clear button in Select slide param . Click on Create Thumbnail  button to generate small image for  slide 2" />
+				<field name="slide_thumb_2" type="media"  directory="upload_slides/thumbnails" label="Or upload slide 2 Thumbnail" description="Select slide 2 thumbnail image. If none is selected the original image will be used." />
+				<field name="slide_title_2" type="text" size="50" default="" label="Slide 2 title" description="Slide 2 title. If left empty it will not be displayed" />
+				<field name="slide_description_2" type="text" size="50" default="" label="Slide 2 Description" description="Slide 2 description. If left empty it will not be displayed" />
+				<field name="slide_intro_2" type="textarea" filter="safehtml" cols="40" rows="5" default="" label="Slide 2 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+				<field type="yjspacer" default="Mbox Link Options for slide 2" />
+				<field name="mboxlink_2" type="text" size="50" default="" label="Mbox link for slide 2" description="This needs to be image or video link. To see what types of videos you can use please look to your left under the YJIS Logo for&lt;br /&gt;&lt;br /&gt; List of available MediaboxAdvanced video types link.&lt;br /&gt;&lt;br /&gt;Or visit http://iaian7.com/webcode/&lt;br /&gt;&lt;br /&gt; for all info on MediaboxAdvanced.&lt;br /&gt;&lt;br /&gt;The image/video Title and description use slide title and description param.&lt;br /&gt;&lt;br /&gt;NOTE: If left blank it will not be used.&lt;br /&gt;&lt;br /&gt;If you have Mbox AND Normal link set for this slide&lt;br /&gt;&lt;br /&gt; Normal link will take over." />
+				<field name="mboxtype_2" type="list" default="0" label="Mbox link type for slide 2" description="Video or image link ?" >
+					<option value="0">Image</option>
+					<option value="1">Video</option>
+				</field>
+				<field name="video_width_2" type="text"  default="640" label="Mbox video width" description="Define video width. Effective only if media type is video" />
+				<field name="video_height_2" type="text"  default="360" label="Mbox video height" description="Define video height. Effective only if media type is video" />
+				<field type="yjspacer" default="Mbox Image Links Options" />
+				<field name="image_group_2" type="list" default="0" label="Activate media group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="image_group_name_2" type="text"  default="yjgallery" label="Media group name" description="NOTE: This group name must be set same for all media types that you would like to show in same group" />
+				<field type="yjspacer" default="Normal link  for slide 2 options" />
+				<field name="slide_link_2" type="text" size="50" default="" label="Slide 2 link" description="If left empty it will not be displayed. If you have Mbox AND Normal link set.&lt;br /&gt;&lt;br /&gt; Normal link will take over.&lt;br /&gt;&lt;br /&gt; Just make sure you have one or the other set, NOT both." />
+				<field name="slide_open_2" type="list" default="0" label="Open slide 2 link in" description="Open link in new window or same page">
+					<option value="0">in new window</option>
+					<option value="1">in same page</option>
+				</field>
+			</fieldset>
+			
+			<!-- slide options -->
+			<fieldset name="SLIDE_3_SETTINGS">
+				<field name="slide_image_3" type="yjmedia"  directory="upload_slides" label="Select slide 3 image" description="Select slide 3 image or upload new one. Directory upload_slides is already created. just hit the select button.If left empty it will not be displayed" />
+				<field name="slide_genthumb_3" type="yjthumbs"  label="Generate Thumbnail" description="You can create or upload slide Thumbnail . Note that created Thumbnail  has precedence over uploaded one. If you wish to clear this Thumbnail click on clear button in Select slide param . Click on Create Thumbnail  button to generate small image for  slide 3" />
+				<field name="slide_thumb_3" type="media"  directory="upload_slides/thumbnails" label="Or upload slide 3 Thumbnail" description="Select slide 3 thumbnail image. If none is selected the original image will be used." />
+				<field name="slide_title_3" type="text" size="50" default="" label="Slide 3 title" description="Slide 3 title. If left empty it will not be displayed" />
+				<field name="slide_description_3" type="text" size="50" default="" label="Slide 3 Description" description="Slide 3 description. If left empty it will not be displayed" />
+				<field name="slide_intro_3" type="textarea" filter="safehtml" cols="40" rows="5" default="" label="Slide 3 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+				<field type="yjspacer" default="Mbox Link Options for slide 3" />
+				<field name="mboxlink_3" type="text" size="50" default="" label="Mbox link for slide 3" description="This needs to be image or video link. To see what types of videos you can use please look to your left under the YJIS Logo for&lt;br /&gt;&lt;br /&gt; List of available MediaboxAdvanced video types link.&lt;br /&gt;&lt;br /&gt;Or visit http://iaian7.com/webcode/&lt;br /&gt;&lt;br /&gt; for all info on MediaboxAdvanced.&lt;br /&gt;&lt;br /&gt;The image/video Title and description use slide title and description param.&lt;br /&gt;&lt;br /&gt;NOTE: If left blank it will not be used.&lt;br /&gt;&lt;br /&gt;If you have Mbox AND Normal link set for this slide&lt;br /&gt;&lt;br /&gt; Normal link will take over." />
+				<field name="mboxtype_3" type="list" default="0" label="Mbox link type for slide 3" description="Video or image link ?" >
+					<option value="0">Image</option>
+					<option value="1">Video</option>
+				</field>
+				<field name="video_width_3" type="text"  default="640" label="Mbox video width" description="Define video width. Effective only if media type is video" />
+				<field name="video_height_3" type="text"  default="360" label="Mbox video height" description="Define video height. Effective only if media type is video" />
+				<field type="yjspacer" default="Mbox Image Links Options" />
+				<field name="image_group_3" type="list" default="0" label="Activate media group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="image_group_name_3" type="text"  default="yjgallery" label="Media group name" description="NOTE: This group name must be set same for all media types that you would like to show in same group" />
+				<field type="yjspacer" default="Normal link  for slide 3 options"  />
+				<field name="slide_link_3" type="text" size="50" default="" label="Slide 3 link" description="If left empty it will not be displayed. If you have Mbox AND Normal link set.&lt;br /&gt;&lt;br /&gt; Normal link will take over.&lt;br /&gt;&lt;br /&gt; Just make sure you have one or the other set, NOT both." />
+				<field name="slide_open_3" type="list" default="0" label="Open slide 3 link in" description="Open link in new window or same page">
+					<option value="0">in new window</option>
+					<option value="1">in same page</option>
+				</field>
+			</fieldset>
+			<!-- slide options -->
+			<fieldset name="SLIDE_4_SETTINGS">
+				<field name="slide_image_4" type="yjmedia"  directory="upload_slides" label="Select slide 4 image" description="Select slide 4 image or upload new one. Directory upload_slides is already created. just hit the select button.If left empty it will not be displayed" />
+				<field name="slide_genthumb_4" type="yjthumbs"  label="Generate Thumbnail" description="You can create or upload slide Thumbnail . Note that created Thumbnail  has precedence over uploaded one. If you wish to clear this Thumbnail click on clear button in Select slide param . Click on Create Thumbnail  button to generate small image for  slide 4" />
+				<field name="slide_thumb_4" type="media"  directory="upload_slides/thumbnails" label="Or upload slide 4 Thumbnail" description="Select slide 4 thumbnail image. If none is selected the original image will be used. These will be displayed only if Show Thumbnail navigation is set to yes" />
+				<field name="slide_title_4" type="text" size="50" default="" label="Slide 4 title" description="Slide 4 title. If left empty it will not be displayed" />
+				<field name="slide_description_4" type="text" size="50" default="" label="Slide 4 Description" description="Slide 4 description. If left empty it will not be displayed" />
+				<field name="slide_intro_4" type="textarea" filter="safehtml" cols="40" rows="5" default="" label="Slide 4 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+				<field type="yjspacer" default="Mbox Link Options for slide 4" />
+				<field name="mboxlink_4" type="text" size="50" default="" label="Mbox link for slide 4" description="This needs to be image or video link. To see what types of videos you can use please look to your left under the YJIS Logo for&lt;br /&gt;&lt;br /&gt; List of available MediaboxAdvanced video types link.&lt;br /&gt;&lt;br /&gt;Or visit http://iaian7.com/webcode/&lt;br /&gt;&lt;br /&gt; for all info on MediaboxAdvanced.&lt;br /&gt;&lt;br /&gt;The image/video Title and description use slide title and description param.&lt;br /&gt;&lt;br /&gt;NOTE: If left blank it will not be used.&lt;br /&gt;&lt;br /&gt;If you have Mbox AND Normal link set for this slide&lt;br /&gt;&lt;br /&gt; Normal link will take over." />
+				<field name="mboxtype_4" type="list" default="0" label="Mbox link type for slide 4" description="Video or image link ?" >
+					<option value="0">Image</option>
+					<option value="1">Video</option>
+				</field>
+				<field name="video_width_4" type="text"  default="640" label="Mbox video width" description="Define video width. Effective only if media type is video" />
+				<field name="video_height_4" type="text"  default="360" label="Mbox video height" description="Define video height. Effective only if media type is video" />
+				<field type="yjspacer" default="Mbox Image Links Options" />
+				<field name="image_group_4" type="list" default="0" label="Activate media group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="image_group_name_4" type="text"  default="yjgallery" label="Media group name" description="NOTE: This group name must be set same for all media types that you would like to show in same group" />
+				<field type="yjspacer" default="Normal link  for slide 4 options" />
+				<field name="slide_link_4" type="text" size="50" default="" label="Slide 4 link" description="If left empty it will not be displayed. If you have Mbox AND Normal link set.&lt;br /&gt;&lt;br /&gt; Normal link will take over.&lt;br /&gt;&lt;br /&gt; Just make sure you have one or the other set, NOT both." />
+				<field name="slide_open_4" type="list" default="0" label="Open slide 4 link in" description="Open link in new window or same page">
+					<option value="0">in new window</option>
+					<option value="1">in same page</option>
+				</field>
+			</fieldset>
+			<!-- slide options -->
+			<fieldset name="SLIDE_5_SETTINGS">
+				<field name="slide_image_5" type="yjmedia"  directory="upload_slides" label="Select slide 5 image" description="Select slide 5 image or upload new one. Directory upload_slides is already created. just hit the select button.If left empty it will not be displayed" />
+				<field name="slide_genthumb_5" type="yjthumbs"  label="Generate Thumbnail" description="You can create or upload slide Thumbnail . Note that created Thumbnail  has precedence over uploaded one. If you wish to clear this Thumbnail click on clear button in Select slide param . Click on Create Thumbnail  button to generate small image for  slide 5" />
+				<field name="slide_thumb_5" type="media"  directory="upload_slides/thumbnails" label="Or upload slide 54 Thumbnail" description="Select slide 5 thumbnail image. If none is selected the original image will be used. These will be displayed only if Show Thumbnail navigation is set to yes" />
+				<field name="slide_title_5" type="text" size="50" default="" label="Slide 5 title" description="Slide 5 title. If left empty it will not be displayed" />
+				<field name="slide_description_5" type="text" size="50" default="" label="Slide 5 Description" description="Slide 5 description. If left empty it will not be displayed" />
+				<field name="slide_intro_5" type="textarea" filter="safehtml" cols="40" rows="5" default="" label="Slide 5 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+				<field type="yjspacer" default="Mbox Link Options for slide 5" />
+				<field name="mboxlink_5" type="text" size="50" default="" label="Mbox link for slide 5" description="This needs to be image or video link. To see what types of videos you can use please look to your left under the YJIS Logo for&lt;br /&gt;&lt;br /&gt; List of available MediaboxAdvanced video types link.&lt;br /&gt;&lt;br /&gt;Or visit http://iaian7.com/webcode/&lt;br /&gt;&lt;br /&gt; for all info on MediaboxAdvanced.&lt;br /&gt;&lt;br /&gt;The image/video Title and description use slide title and description param.&lt;br /&gt;&lt;br /&gt;NOTE: If left blank it will not be used.&lt;br /&gt;&lt;br /&gt;If you have Mbox AND Normal link set for this slide&lt;br /&gt;&lt;br /&gt; Normal link will take over." />
+				<field name="mboxtype_5" type="list" default="0" label="Mbox link type for slide 5" description="Video or image link ?" >
+					<option value="0">Image</option>
+					<option value="1">Video</option>
+				</field>
+				<field name="video_width_5" type="text"  default="640" label="Mbox video width" description="Define video width. Effective only if media type is video" />
+				<field name="video_height_5" type="text"  default="360" label="Mbox video height" description="Define video height. Effective only if media type is video" />
+				<field type="yjspacer" default="Mbox Image Links Options" />
+				<field name="image_group_5" type="list" default="0" label="Activate media group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="image_group_name_5" type="text"  default="yjgallery" label="Media group name" description="NOTE: This group name must be set same for all media types that you would like to show in same group" />
+				<field type="yjspacer" default="Normal link  for slide 5 options"  />
+				<field name="slide_link_5" type="text" size="50" default="" label="Slide 5 link" description="If left empty it will not be displayed. If you have Mbox AND Normal link set.&lt;br /&gt;&lt;br /&gt; Normal link will take over.&lt;br /&gt;&lt;br /&gt; Just make sure you have one or the other set, NOT both." />
+				<field name="slide_open_5" type="list" default="0" label="Open slide 5 link in" description="Open link in new window or same page">
+					<option value="0">in new window</option>
+					<option value="1">in same page</option>
+				</field>
+			</fieldset>
+			<!-- slide options -->
+			<fieldset name="SLIDE_6_SETTINGS">
+				<field name="slide_image_6" type="yjmedia"  directory="upload_slides" label="Select slide 6 image" description="Select slide 6 image or upload new one. Directory upload_slides is already created. just hit the select button.If left empty it will not be displayed" />
+				<field name="slide_genthumb_6" type="yjthumbs"  label="Generate Thumbnail" description="You can create or upload slide Thumbnail . Note that created Thumbnail  has precedence over uploaded one. If you wish to clear this Thumbnail click on clear button in Select slide param . Click on Create Thumbnail  button to generate small image for  slide 6" />
+				<field name="slide_thumb_6" type="media"  directory="upload_slides/thumbnails" label="Or upload slide 6 Thumbnail" description="Select slide 6 thumbnail image. If none is selected the original image will be used. These will be displayed only if Show Thumbnail navigation is set to yes" />
+				<field name="slide_title_6" type="text" size="50" default="" label="Slide 6 title" description="Slide 6 title. If left empty it will not be displayed" />
+				<field name="slide_description_6" type="text" size="50" default="" label="Slide 6 Description" description="Slide 6 description. If left empty it will not be displayed" />
+				<field name="slide_intro_6" type="textarea" filter="safehtml" cols="40" rows="5" default="" label="Slide 6 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+				<field type="yjspacer" default="Mbox Link Options for slide 6"  />
+				<field name="mboxlink_6" type="text" size="50" default="" label="Mbox link for slide 6" description="This needs to be image or video link. To see what types of videos you can use please look to your left under the YJIS Logo for&lt;br /&gt;&lt;br /&gt; List of available MediaboxAdvanced video types link.&lt;br /&gt;&lt;br /&gt;Or visit http://iaian7.com/webcode/&lt;br /&gt;&lt;br /&gt; for all info on MediaboxAdvanced.&lt;br /&gt;&lt;br /&gt;The image/video Title and description use slide title and description param.&lt;br /&gt;&lt;br /&gt;NOTE: If left blank it will not be used.&lt;br /&gt;&lt;br /&gt;If you have Mbox AND Normal link set for this slide&lt;br /&gt;&lt;br /&gt; Normal link will take over." />
+				<field name="mboxtype_6" type="list" default="0" label="Mbox link type for slide 6" description="Video or image link ?" >
+					<option value="0">Image</option>
+					<option value="1">Video</option>
+				</field>
+				<field name="video_width_6" type="text"  default="640" label="Mbox video width" description="Define video width. Effective only if media type is video" />
+				<field name="video_height_6" type="text"  default="360" label="Mbox video height" description="Define video height. Effective only if media type is video" />
+				<field type="yjspacer" default="Mbox Image Links Options"  />
+				<field name="image_group_6" type="list" default="0" label="Activate media group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="image_group_name_6" type="text"  default="yjgallery" label="Media group name" description="NOTE: This group name must be set same for all media types that you would like to show in same group" />
+				<field type="yjspacer" default="Normal link  for slide 6 options" />
+				<field name="slide_link_6" type="text" size="50" default="" label="Slide 6 link" description="If left empty it will not be displayed. If you have Mbox AND Normal link set.&lt;br /&gt;&lt;br /&gt; Normal link will take over.&lt;br /&gt;&lt;br /&gt; Just make sure you have one or the other set, NOT both." />
+				<field name="slide_open_6" type="list" default="0" label="Open slide 6 link in" description="Open link in new window or same page">
+					<option value="0">in new window</option>
+					<option value="1">in same page</option>
+				</field>
+			</fieldset>
+			<!-- slide options -->
+			<fieldset name="SLIDE_7_SETTINGS">
+				<field name="slide_image_7" type="yjmedia"  directory="upload_slides" label="Select slide 7 image" description="Select slide 7 image or upload new one. Directory upload_slides is already created. just hit the select button.If left empty it will not be displayed" />
+				<field name="slide_genthumb_7" type="yjthumbs"  label="Generate Thumbnail" description="You can create or upload slide Thumbnail . Note that created Thumbnail  has precedence over uploaded one. If you wish to clear this Thumbnail click on clear button in Select slide param . Click on Create Thumbnail  button to generate small image for  slide 7" />
+				<field name="slide_thumb_7" type="media"  directory="upload_slides/thumbnails" label="Or upload slide 7 Thumbnail" description="Select slide 7 thumbnail image. If none is selected the original image will be used. These will be displayed only if Show Thumbnail navigation is set to yes" />
+				<field name="slide_title_7" type="text" size="50" default="" label="Slide 7 title" description="Slide 7 title. If left empty it will not be displayed" />
+				<field name="slide_description_7" type="text" size="50" default="" label="Slide 7 Description" description="Slide 7 description. If left empty it will not be displayed" />
+				<field name="slide_intro_7" type="textarea" filter="safehtml" cols="40" rows="5" default="" label="Slide 7 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+				<field type="yjspacer" default="Mbox Link Options for slide 7"  />
+				<field name="mboxlink_7" type="text" size="50" default="" label="Mbox link for slide 7" description="This needs to be image or video link. To see what types of videos you can use please look to your left under the YJIS Logo for&lt;br /&gt;&lt;br /&gt; List of available MediaboxAdvanced video types link.&lt;br /&gt;&lt;br /&gt;Or visit http://iaian7.com/webcode/&lt;br /&gt;&lt;br /&gt; for all info on MediaboxAdvanced.&lt;br /&gt;&lt;br /&gt;The image/video Title and description use slide title and description param.&lt;br /&gt;&lt;br /&gt;NOTE: If left blank it will not be used.&lt;br /&gt;&lt;br /&gt;If you have Mbox AND Normal link set for this slide&lt;br /&gt;&lt;br /&gt; Normal link will take over." />
+				<field name="mboxtype_7" type="list" default="0" label="Mbox link type for slide 7" description="Video or image link ?" >
+					<option value="0">Image</option>
+					<option value="1">Video</option>
+				</field>
+				<field name="video_width_7" type="text"  default="640" label="Mbox video width" description="Define video width. Effective only if media type is video" />
+				<field name="video_height_7" type="text"  default="360" label="Mbox video height" description="Define video height. Effective only if media type is video" />
+				<field type="yjspacer" default="Mbox Image Links Options" />
+				<field name="image_group_7" type="list" default="0" label="Activate media group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="image_group_name_7" type="text"  default="yjgallery" label="Media group name" description="NOTE: This group name must be set same for all media types that you would like to show in same group" />
+				<field type="yjspacer" default="Normal link  for slide 7 options"  />
+				<field name="slide_link_7" type="text" size="50" default="" label="Slide 7 link" description="If left empty it will not be displayed. If you have Mbox AND Normal link set.&lt;br /&gt;&lt;br /&gt; Normal link will take over.&lt;br /&gt;&lt;br /&gt; Just make sure you have one or the other set, NOT both." />
+				<field name="slide_open_7" type="list" default="0" label="Open slide 7 link in" description="Open link in new window or same page">
+					<option value="0">in new window</option>
+					<option value="1">in same page</option>
+				</field>
+			</fieldset>
+			<!-- slide options -->
+			<fieldset name="SLIDE_8_SETTINGS">
+				<field name="slide_image_8" type="yjmedia"  directory="upload_slides" label="Select slide 8 image" description="Select slide 8 image or upload new one. Directory upload_slides is already created. just hit the select button.If left empty it will not be displayed" />
+				<field name="slide_genthumb_8" type="yjthumbs"  label="Generate Thumbnail" description="You can create or upload slide Thumbnail . Note that created Thumbnail  has precedence over uploaded one. If you wish to clear this Thumbnail click on clear button in Select slide param . Click on Create Thumbnail  button to generate small image for  slide 8" />
+				<field name="slide_thumb_8" type="media"  directory="upload_slides/thumbnails" label="Or upload slide 8 Thumbnail" description="Select slide 8 thumbnail image. If none is selected the original image will be used. These will be displayed only if Show Thumbnail navigation is set to yes" />
+				<field name="slide_title_8" type="text" size="50" default="" label="Slide 8 title" description="Slide 8 title. If left empty it will not be displayed" />
+				<field name="slide_description_8" type="text" size="50" default="" label="Slide 8 Description" description="Slide 8 description. If left empty it will not be displayed" />
+				<field name="slide_intro_8" type="textarea" filter="safehtml" cols="40" rows="5" default="" label="Slide 8 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+				<field type="yjspacer" default="Mbox Link Options for slide 8" />
+				<field name="mboxlink_8" type="text" size="50" default="" label="Mbox link for slide 8" description="This needs to be image or video link. To see what types of videos you can use please look to your left under the YJIS Logo for&lt;br /&gt;&lt;br /&gt; List of available MediaboxAdvanced video types link.&lt;br /&gt;&lt;br /&gt;Or visit http://iaian7.com/webcode/&lt;br /&gt;&lt;br /&gt; for all info on MediaboxAdvanced.&lt;br /&gt;&lt;br /&gt;The image/video Title and description use slide title and description param.&lt;br /&gt;&lt;br /&gt;NOTE: If left blank it will not be used.&lt;br /&gt;&lt;br /&gt;If you have Mbox AND Normal link set for this slide&lt;br /&gt;&lt;br /&gt; Normal link will take over." />
+				<field name="mboxtype_8" type="list" default="0" label="Mbox link type for slide 8" description="Video or image link ?" >
+					<option value="0">Image</option>
+					<option value="1">Video</option>
+				</field>
+				<field name="video_width_8" type="text"  default="640" label="Mbox video width" description="Define video width. Effective only if media type is video" />
+				<field name="video_height_8" type="text"  default="360" label="Mbox video height" description="Define video height. Effective only if media type is video" />
+				<field type="yjspacer" default="Mbox Image Links Options" />
+				<field name="image_group_8" type="list" default="0" label="Activate media group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="image_group_name_8" type="text"  default="yjgallery" label="Media group name" description="NOTE: This group name must be set same for all media types that you would like to show in same group" />
+				<field type="yjspacer" default="Normal link  for slide 8 options"  />
+				<field name="slide_link_8" type="text" size="50" default="" label="Slide 8 link" description="If left empty it will not be displayed. If you have Mbox AND Normal link set.&lt;br /&gt;&lt;br /&gt; Normal link will take over.&lt;br /&gt;&lt;br /&gt; Just make sure you have one or the other set, NOT both." />
+				<field name="slide_open_8" type="list" default="0" label="Open slide 8 link in" description="Open link in new window or same page">
+					<option value="0">in new window</option>
+					<option value="1">in same page</option>
+				</field>
+			</fieldset>
+			<!-- slide options -->
+			<fieldset name="SLIDE_9_SETTINGS">
+				<field name="slide_image_9" type="yjmedia"  directory="upload_slides" label="Select slide 9 image" description="Select slide 9 image or upload new one. Directory upload_slides is already created. just hit the select button.If left empty it will not be displayed" />
+				<field name="slide_genthumb_9" type="yjthumbs"  label="Generate Thumbnail" description="You can create or upload slide Thumbnail . Note that created Thumbnail  has precedence over uploaded one. If you wish to clear this Thumbnail click on clear button in Select slide param . Click on Create Thumbnail  button to generate small image for  slide 9" />
+				<field name="slide_thumb_9" type="media"  directory="upload_slides/thumbnails" label="Or upload slide 9 Thumbnail" description="Select slide 9 thumbnail image. If none is selected the original image will be used. These will be displayed only if Show Thumbnail navigation is set to yes" />
+				<field name="slide_title_9" type="text" size="50" default="" label="Slide 9 title" description="Slide 9 title. If left empty it will not be displayed" />
+				<field name="slide_description_9" type="text" size="50" default="" label="Slide 9 Description" description="Slide 9 description. If left empty it will not be displayed" />
+				<field name="slide_intro_9" type="textarea" filter="safehtml" cols="40" rows="5" default="" label="Slide 9 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+				<field type="yjspacer" default="Mbox Link Options for slide 9"  />
+				<field name="mboxlink_9" type="text" size="50" default="" label="Mbox link for slide 9" description="This needs to be image or video link. To see what types of videos you can use please look to your left under the YJIS Logo for&lt;br /&gt;&lt;br /&gt; List of available MediaboxAdvanced video types link.&lt;br /&gt;&lt;br /&gt;Or visit http://iaian7.com/webcode/&lt;br /&gt;&lt;br /&gt; for all info on MediaboxAdvanced.&lt;br /&gt;&lt;br /&gt;The image/video Title and description use slide title and description param.&lt;br /&gt;&lt;br /&gt;NOTE: If left blank it will not be used.&lt;br /&gt;&lt;br /&gt;If you have Mbox AND Normal link set for this slide&lt;br /&gt;&lt;br /&gt; Normal link will take over." />
+				<field name="mboxtype_9" type="list" default="0" label="Mbox link type for slide 9" description="Video or image link ?" >
+					<option value="0">Image</option>
+					<option value="1">Video</option>
+				</field>
+				<field name="video_width_9" type="text"  default="640" label="Mbox video width" description="Define video width. Effective only if media type is video" />
+				<field name="video_height_9" type="text"  default="360" label="Mbox video height" description="Define video height. Effective only if media type is video" />
+				<field type="yjspacer" default="Mbox Image Links Options"  />
+				<field name="image_group_9" type="list" default="0" label="Activate media group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="image_group_name_9" type="text"  default="yjgallery" label="Media group name" description="NOTE: This group name must be set same for all media types that you would like to show in same group" />
+				<field type="yjspacer" default="Normal link  for slide 9 options"  />
+				<field name="slide_link_9" type="text" size="50" default="" label="Slide 9 link" description="If left empty it will not be displayed. If you have Mbox AND Normal link set.&lt;br /&gt;&lt;br /&gt; Normal link will take over.&lt;br /&gt;&lt;br /&gt; Just make sure you have one or the other set, NOT both." />
+				<field name="slide_open_9" type="list" default="0" label="Open slide 9 link in" description="Open link in new window or same page">
+					<option value="0">in new window</option>
+					<option value="1">in same page</option>
+				</field>
+			</fieldset>
+			<!-- slide options -->
+			<fieldset name="SLIDE_10_SETTINGS">
+				<field name="slide_image_10" type="yjmedia"  directory="upload_slides" label="Select slide 10 image" description="Select slide 10 image or upload new one. Directory upload_slides is already created. just hit the select button.If left empty it will not be displayed" />
+				<field name="slide_genthumb_10" type="yjthumbs"  label="Generate Thumbnail" description="You can create or upload slide Thumbnail . Note that created Thumbnail  has precedence over uploaded one. If you wish to clear this Thumbnail click on clear button in Select slide param . Click on Create Thumbnail  button to generate small image for  slide 10" />
+				<field name="slide_thumb_10" type="media"  directory="upload_slides/thumbnails" label="Or upload slide 10 Thumbnail" description="Select slide 10 thumbnail image. If none is selected the original image will be used. These will be displayed only if Show Thumbnail navigation is set to yes" />
+				<field name="slide_title_10" type="text" size="50" default="" label="Slide 10 title" description="Slide 10 title. If left empty it will not be displayed" />
+				<field name="slide_description_10" type="text" size="50" default="" label="Slide 10 Description" description="Slide 10 description. If left empty it will not be displayed" />
+				<field name="slide_intro_10" type="textarea" filter="safehtml" cols="40" rows="5" default="" label="Slide 10 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+				<field type="yjspacer" default="Mbox Link Options for slide 10"  />
+				<field name="mboxlink_10" type="text" size="50" default="" label="Mbox link for slide 10" description="This needs to be image or video link. To see what types of videos you can use please look to your left under the YJIS Logo for&lt;br /&gt;&lt;br /&gt; List of available MediaboxAdvanced video types link.&lt;br /&gt;&lt;br /&gt;Or visit http://iaian7.com/webcode/&lt;br /&gt;&lt;br /&gt; for all info on MediaboxAdvanced.&lt;br /&gt;&lt;br /&gt;The image/video Title and description use slide title and description param.&lt;br /&gt;&lt;br /&gt;NOTE: If left blank it will not be used.&lt;br /&gt;&lt;br /&gt;If you have Mbox AND Normal link set for this slide&lt;br /&gt;&lt;br /&gt; Normal link will take over." />
+				<field name="mboxtype_10" type="list" default="0" label="Mbox link type for slide 10" description="Video or image link ?" >
+					<option value="0">Image</option>
+					<option value="1">Video</option>
+				</field>
+				<field name="video_width_10" type="text"  default="640" label="Mbox video width" description="Define video width. Effective only if media type is video" />
+				<field name="video_height_10" type="text"  default="360" label="Mbox video height" description="Define video height. Effective only if media type is video" />
+				<field type="yjspacer" default="Mbox Image Links Options" />
+				<field name="image_group_10" type="list" default="0" label="Activate media group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="image_group_name_10" type="text"  default="yjgallery" label="Media group name" description="NOTE: This group name must be set same for all media types that you would like to show in same group" />
+				<field type="yjspacer" default="Normal link  for slide 10 options" />
+				<field name="slide_link_10" type="text" size="50" default="" label="Slide 10 link" description="If left empty it will not be displayed. If you have Mbox AND Normal link set.&lt;br /&gt;&lt;br /&gt; Normal link will take over.&lt;br /&gt;&lt;br /&gt; Just make sure you have one or the other set, NOT both." />
+				<field name="slide_open_10" type="list" default="0" label="Open slide 10 link in" description="Open link in new window or same page">
+					<option value="0">in new window</option>
+					<option value="1">in same page</option>
+				</field>
+			</fieldset>
+			<!-- slide options -->
+			<fieldset name="SLIDE_11_SETTINGS">
+				<field type="yjspacer" default="SLIDE 11 OPTIONS" />
+				<field name="slide_image_11" type="yjmedia"  directory="upload_slides" label="Select slide 11 image" description="Select slide 11 image or upload new one. Directory upload_slides is already created. just hit the select button.If left empty it will not be displayed" />
+				<field name="slide_genthumb_11" type="yjthumbs"  label="Generate Thumbnail" description="You can create or upload slide Thumbnail . Note that created Thumbnail  has precedence over uploaded one. If you wish to clear this Thumbnail click on clear button in Select slide param . Click on Create Thumbnail  button to generate small image for  slide 11" />
+				<field name="slide_thumb_11" type="media"  directory="upload_slides/thumbnails" label="Or upload slide 11 Thumbnail" description="Select slide 11 thumbnail image. If none is selected the original image will be used. These will be displayed only if Show Thumbnail navigation is set to yes" />
+				<field name="slide_title_11" type="text" size="50" default="" label="Slide 11 title" description="Slide 11 title. If left empty it will not be displayed" />
+				<field name="slide_description_11" type="text" size="50" default="" label="Slide 11 Description" description="Slide 11 description. If left empty it will not be displayed" />
+				<field name="slide_intro_11" type="textarea" filter="safehtml" cols="40" rows="5" default="" label="Slide 11 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+				<field type="yjspacer" default="Mbox Link Options for slide 11" />
+				<field name="mboxlink_11" type="text" size="50" default="" label="Mbox link for slide 11" description="This needs to be image or video link. To see what types of videos you can use please look to your left under the YJIS Logo for&lt;br /&gt;&lt;br /&gt; List of available MediaboxAdvanced video types link.&lt;br /&gt;&lt;br /&gt;Or visit http://iaian7.com/webcode/&lt;br /&gt;&lt;br /&gt; for all info on MediaboxAdvanced.&lt;br /&gt;&lt;br /&gt;The image/video Title and description use slide title and description param.&lt;br /&gt;&lt;br /&gt;NOTE: If left blank it will not be used.&lt;br /&gt;&lt;br /&gt;If you have Mbox AND Normal link set for this slide&lt;br /&gt;&lt;br /&gt; Normal link will take over." />
+				<field name="mboxtype_11" type="list" default="0" label="Mbox link type for slide 11" description="Video or image link ?" >
+					<option value="0">Image</option>
+					<option value="1">Video</option>
+				</field>
+				<field name="video_width_11" type="text"  default="640" label="Mbox video width" description="Define video width. Effective only if media type is video" />
+				<field name="video_height_11" type="text"  default="360" label="Mbox video height" description="Define video height. Effective only if media type is video" />
+				<field type="yjspacer" default="Mbox Image Links Options" />
+				<field name="image_group_11" type="list" default="0" label="Activate media group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="image_group_name_11" type="text"  default="yjgallery" label="Media group name" description="NOTE: This group name must be set same for all media types that you would like to show in same group" />
+				<field type="yjspacer" default="Normal link  for slide 11 options" />
+				<field name="slide_link_11" type="text" size="50" default="" label="Slide 11 link" description="If left empty it will not be displayed. If you have Mbox AND Normal link set.&lt;br /&gt;&lt;br /&gt; Normal link will take over.&lt;br /&gt;&lt;br /&gt; Just make sure you have one or the other set, NOT both." />
+				<field name="slide_open_11" type="list" default="0" label="Open slide 11 link in" description="Open link in new window or same page">
+					<option value="0">in new window</option>
+					<option value="1">in same page</option>
+				</field>
+			</fieldset>
+			<!-- slide options -->
+			<fieldset name="SLIDE_12_SETTINGS">
+				<field name="slide_image_12" type="yjmedia"  directory="upload_slides" label="Select slide 12 image" description="Select slide 12 image or upload new one. Directory upload_slides is already created. just hit the select button.If left empty it will not be displayed" />
+				<field name="slide_genthumb_12" type="yjthumbs"  label="Generate Thumbnail" description="You can create or upload slide Thumbnail . Note that created Thumbnail  has precedence over uploaded one. If you wish to clear this Thumbnail click on clear button in Select slide param . Click on Create Thumbnail  button to generate small image for  slide 12" />
+				<field name="slide_thumb_12" type="media"  directory="upload_slides/thumbnails" label="Or upload slide 12 Thumbnail" description="Select slide 12 thumbnail image. If none is selected the original image will be used. These will be displayed only if Show Thumbnail navigation is set to yes" />
+				<field name="slide_title_12" type="text" size="50" default="" label="Slide 12 title" description="Slide 12 title. If left empty it will not be displayed" />
+				<field name="slide_description_12" type="text" size="50" default="" label="Slide 12 Description" description="Slide 12 description. If left empty it will not be displayed" />
+				<field name="slide_intro_12" type="textarea" filter="safehtml" cols="40" rows="5" default="" label="Slide 12 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+				<field type="yjspacer" default="Mbox Link Options for slide 12" />
+				<field name="mboxlink_12" type="text" size="50" default="" label="Mbox link for slide 12" description="This needs to be image or video link. To see what types of videos you can use please look to your left under the YJIS Logo for&lt;br /&gt;&lt;br /&gt; List of available MediaboxAdvanced video types link.&lt;br /&gt;&lt;br /&gt;Or visit http://iaian7.com/webcode/&lt;br /&gt;&lt;br /&gt; for all info on MediaboxAdvanced.&lt;br /&gt;&lt;br /&gt;The image/video Title and description use slide title and description param.&lt;br /&gt;&lt;br /&gt;NOTE: If left blank it will not be used.&lt;br /&gt;&lt;br /&gt;If you have Mbox AND Normal link set for this slide&lt;br /&gt;&lt;br /&gt; Normal link will take over." />
+				<field name="mboxtype_12" type="list" default="0" label="Mbox link type for slide 12" description="Video or image link ?" >
+					<option value="0">Image</option>
+					<option value="1">Video</option>
+				</field>
+				<field name="video_width_12" type="text"  default="640" label="Mbox video width" description="Define video width. Effective only if media type is video" />
+				<field name="video_height_12" type="text"  default="360" label="Mbox video height" description="Define video height. Effective only if media type is video" />
+				<field type="yjspacer" default="Mbox Image Links Options" />
+				<field name="image_group_12" type="list" default="0" label="Activate media group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="image_group_name_12" type="text"  default="yjgallery" label="Media group name" description="NOTE: This group name must be set same for all media types that you would like to show in same group" />
+				<field type="yjspacer" default="Normal link  for slide 12 options" />
+				<field name="slide_link_12" type="text" size="50" default="" label="Slide 12 link" description="If left empty it will not be displayed. If you have Mbox AND Normal link set.&lt;br /&gt;&lt;br /&gt; Normal link will take over.&lt;br /&gt;&lt;br /&gt; Just make sure you have one or the other set, NOT both." />
+				<field name="slide_open_12" type="list" default="0" label="Open slide 12 link in" description="Open link in new window or same page">
+					<option value="0">in new window</option>
+					<option value="1">in same page</option>
+				</field>
+			</fieldset>
+			<!-- slide options -->
+			<fieldset name="SLIDE_13_SETTINGS">
+				<field name="slide_image_13" type="yjmedia"  directory="upload_slides" label="Select slide 13 image" description="Select slide 13 image or upload new one. Directory upload_slides is already created. just hit the select button.If left empty it will not be displayed" />
+				<field name="slide_genthumb_13" type="yjthumbs"  label="Generate Thumbnail" description="You can create or upload slide Thumbnail . Note that created Thumbnail  has precedence over uploaded one. If you wish to clear this Thumbnail click on clear button in Select slide param . Click on Create Thumbnail  button to generate small image for  slide 13" />
+				<field name="slide_thumb_13" type="media"  directory="upload_slides/thumbnails" label="Or upload slide 13 Thumbnail" description="Select slide 13 thumbnail image. If none is selected the original image will be used. These will be displayed only if Show Thumbnail navigation is set to yes" />
+				<field name="slide_title_13" type="text" size="50" default="" label="Slide 13 title" description="Slide 13 title. If left empty it will not be displayed" />
+				<field name="slide_description_13" type="text" size="50" default="" label="Slide 13 Description" description="Slide 13 description. If left empty it will not be displayed" />
+				<field name="slide_intro_13" type="textarea" filter="safehtml" cols="40" rows="5" default="" label="Slide 13 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+				<field type="yjspacer" default="Mbox Link Options for slide 13" />
+				<field name="mboxlink_13" type="text" size="50" default="" label="Mbox link for slide 13" description="This needs to be image or video link. To see what types of videos you can use please look to your left under the YJIS Logo for&lt;br /&gt;&lt;br /&gt; List of available MediaboxAdvanced video types link.&lt;br /&gt;&lt;br /&gt;Or visit http://iaian7.com/webcode/&lt;br /&gt;&lt;br /&gt; for all info on MediaboxAdvanced.&lt;br /&gt;&lt;br /&gt;The image/video Title and description use slide title and description param.&lt;br /&gt;&lt;br /&gt;NOTE: If left blank it will not be used.&lt;br /&gt;&lt;br /&gt;If you have Mbox AND Normal link set for this slide&lt;br /&gt;&lt;br /&gt; Normal link will take over." />
+				<field name="mboxtype_13" type="list" default="0" label="Mbox link type for slide 13" description="Video or image link ?" >
+					<option value="0">Image</option>
+					<option value="1">Video</option>
+				</field>
+				<field name="video_width_13" type="text"  default="640" label="Mbox video width" description="Define video width. Effective only if media type is video" />
+				<field name="video_height_13" type="text"  default="360" label="Mbox video height" description="Define video height. Effective only if media type is video" />
+				<field type="yjspacer" default="Mbox Image Links Options" />
+				<field name="image_group_13" type="list" default="0" label="Activate media group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="image_group_name_13" type="text"  default="yjgallery" label="Media group name" description="NOTE: This group name must be set same for all media types that you would like to show in same group" />
+				<field type="yjspacer" default="Normal link  for slide 13 options"  />
+				<field name="slide_link_13" type="text" size="50" default="" label="Slide 13 link" description="If left empty it will not be displayed. If you have Mbox AND Normal link set.&lt;br /&gt;&lt;br /&gt; Normal link will take over.&lt;br /&gt;&lt;br /&gt; Just make sure you have one or the other set, NOT both." />
+				<field name="slide_open_13" type="list" default="0" label="Open slide 13 link in" description="Open link in new window or same page">
+					<option value="0">in new window</option>
+					<option value="1">in same page</option>
+				</field>
+			</fieldset>
+			<!-- slide options -->
+			<fieldset name="SLIDE_14_SETTINGS">
+				<field type="yjspacer" default="SLIDE 14 OPTIONS" />
+				<field name="slide_image_14" type="yjmedia"  directory="upload_slides" label="Select slide 14 image" description="Select slide 14 image or upload new one. Directory upload_slides is already created. just hit the select button.If left empty it will not be displayed" />
+				<field name="slide_genthumb_14" type="yjthumbs"  label="Generate Thumbnail" description="You can create or upload slide Thumbnail . Note that created Thumbnail  has precedence over uploaded one. If you wish to clear this Thumbnail click on clear button in Select slide param . Click on Create Thumbnail  button to generate small image for  slide 14" />
+				<field name="slide_thumb_14" type="media"  directory="upload_slides/thumbnails" label="Or upload slide 14 Thumbnail" description="Select slide 14 thumbnail image. If none is selected the original image will be used. These will be displayed only if Show Thumbnail navigation is set to yes" />
+				<field name="slide_title_14" type="text" size="50" default="" label="Slide 14 title" description="Slide 14 title. If left empty it will not be displayed" />
+				<field name="slide_description_14" type="text" size="50" default="" label="Slide 14 Description" description="Slide 14 description. If left empty it will not be displayed" />
+				<field name="slide_intro_14" type="textarea" filter="safehtml" cols="40" rows="5" default="" label="Slide 14 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+				<field type="yjspacer" default="Mbox Link Options for slide 14" />
+				<field name="mboxlink_14" type="text" size="50" default="" label="Mbox link for slide 14" description="This needs to be image or video link. To see what types of videos you can use please look to your left under the YJIS Logo for&lt;br /&gt;&lt;br /&gt; List of available MediaboxAdvanced video types link.&lt;br /&gt;&lt;br /&gt;Or visit http://iaian7.com/webcode/&lt;br /&gt;&lt;br /&gt; for all info on MediaboxAdvanced.&lt;br /&gt;&lt;br /&gt;The image/video Title and description use slide title and description param.&lt;br /&gt;&lt;br /&gt;NOTE: If left blank it will not be used.&lt;br /&gt;&lt;br /&gt;If you have Mbox AND Normal link set for this slide&lt;br /&gt;&lt;br /&gt; Normal link will take over." />
+				<field name="mboxtype_14" type="list" default="0" label="Mbox link type for slide 14" description="Video or image link ?" >
+					<option value="0">Image</option>
+					<option value="1">Video</option>
+				</field>
+				<field name="video_width_14" type="text"  default="640" label="Mbox video width" description="Define video width. Effective only if media type is video" />
+				<field name="video_height_14" type="text"  default="360" label="Mbox video height" description="Define video height. Effective only if media type is video" />
+				<field type="yjspacer" default="Mbox Image Links Options" />
+				<field name="image_group_14" type="list" default="0" label="Activate media group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="image_group_name_14" type="text"  default="yjgallery" label="Media group name" description="NOTE: This group name must be set same for all media types that you would like to show in same group" />
+				<field type="yjspacer" default="Normal link  for slide 14 options" />
+				<field name="slide_link_14" type="text" size="50" default="" label="Slide 14 link" description="If left empty it will not be displayed. If you have Mbox AND Normal link set.&lt;br /&gt;&lt;br /&gt; Normal link will take over.&lt;br /&gt;&lt;br /&gt; Just make sure you have one or the other set, NOT both." />
+				<field name="slide_open_14" type="list" default="0" label="Open slide 14 link in" description="Open link in new window or same page">
+					<option value="0">in new window</option>
+					<option value="1">in same page</option>
+				</field>
+			</fieldset>
+			<!-- slide options -->
+			<fieldset name="SLIDE_15_SETTINGS">
+				<field name="slide_image_15" type="yjmedia"  directory="upload_slides" label="Select slide 15 image" description="Select slide 15 image or upload new one. Directory upload_slides is already created. just hit the select button.If left empty it will not be displayed" />
+				<field name="slide_genthumb_15" type="yjthumbs"  label="Generate Thumbnail" description="You can create or upload slide Thumbnail . Note that created Thumbnail  has precedence over uploaded one. If you wish to clear this Thumbnail click on clear button in Select slide param . Click on Create Thumbnail  button to generate small image for  slide 15" />
+				<field name="slide_thumb_15" type="media"  directory="upload_slides/thumbnails" label="Or upload slide 15 Thumbnail" description="Select slide 15 thumbnail image. If none is selected the original image will be used. These will be displayed only if Show Thumbnail navigation is set to yes" />
+				<field name="slide_title_15" type="text" size="50" default="" label="Slide 15 title" description="Slide 15 title. If left empty it will not be displayed" />
+				<field name="slide_description_15" type="text" size="50" default="" label="Slide 15 Description" description="Slide 15 description. If left empty it will not be displayed" />
+				<field name="slide_intro_15" type="textarea" filter="safehtml" cols="40" rows="5" default="" label="Slide 15 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+				<field type="yjspacer" default="Mbox Link Options for slide 15" />
+				<field name="mboxlink_15" type="text" size="50" default="" label="Mbox link for slide 15" description="This needs to be image or video link. To see what types of videos you can use please look to your left under the YJIS Logo for&lt;br /&gt;&lt;br /&gt; List of available MediaboxAdvanced video types link.&lt;br /&gt;&lt;br /&gt;Or visit http://iaian7.com/webcode/&lt;br /&gt;&lt;br /&gt; for all info on MediaboxAdvanced.&lt;br /&gt;&lt;br /&gt;The image/video Title and description use slide title and description param.&lt;br /&gt;&lt;br /&gt;NOTE: If left blank it will not be used.&lt;br /&gt;&lt;br /&gt;If you have Mbox AND Normal link set for this slide&lt;br /&gt;&lt;br /&gt; Normal link will take over." />
+				<field name="mboxtype_15" type="list" default="0" label="Mbox link type for slide 15" description="Video or image link ?" >
+					<option value="0">Image</option>
+					<option value="1">Video</option>
+				</field>
+				<field name="video_width_15" type="text"  default="640" label="Mbox video width" description="Define video width. Effective only if media type is video" />
+				<field name="video_height_15" type="text"  default="360" label="Mbox video height" description="Define video height. Effective only if media type is video" />
+				<field type="yjspacer" default="Mbox Image Links Options" />
+				<field name="image_group_15" type="list" default="0" label="Activate media group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="image_group_name_15" type="text"  default="yjgallery" label="Media group name" description="NOTE: This group name must be set same for all media types that you would like to show in same group" />
+				<field type="yjspacer" default="Normal link  for slide 15 options" />
+				<field name="slide_link_15" type="text" size="50" default="" label="Slide 15 link" description="If left empty it will not be displayed. If you have Mbox AND Normal link set.&lt;br /&gt;&lt;br /&gt; Normal link will take over.&lt;br /&gt;&lt;br /&gt; Just make sure you have one or the other set, NOT both." />
+				<field name="slide_open_15" type="list" default="0" label="Open slide 15 link in" description="Open link in new window or same page">
+					<option value="0">in new window</option>
+					<option value="1">in same page</option>
+				</field>
+			</fieldset>
+			<!-- slide options -->
+			<fieldset name="SLIDE_16_SETTINGS">
+				<field name="slide_image_16" type="yjmedia"  directory="upload_slides" label="Select slide 16 image" description="Select slide 16 image or upload new one. Directory upload_slides is already created. just hit the select button.If left empty it will not be displayed" />
+				<field name="slide_genthumb_16" type="yjthumbs"  label="Generate Thumbnail" description="You can create or upload slide Thumbnail . Note that created Thumbnail  has precedence over uploaded one. If you wish to clear this Thumbnail click on clear button in Select slide param . Click on Create Thumbnail  button to generate small image for  slide 16" />
+				<field name="slide_thumb_16" type="media"  directory="upload_slides/thumbnails" label="Or upload slide 16 Thumbnail" description="Select slide 16 thumbnail image. If none is selected the original image will be used. These will be displayed only if Show Thumbnail navigation is set to yes" />
+				<field name="slide_title_16" type="text" size="50" default="" label="Slide 16 title" description="Slide 16 title. If left empty it will not be displayed" />
+				<field name="slide_description_16" type="text" size="50" default="" label="Slide 16 Description" description="Slide 16 description. If left empty it will not be displayed" />
+				<field name="slide_intro_16" type="textarea" filter="safehtml" cols="40" rows="5" default="" label="Slide 16 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+				<field type="yjspacer" default="Mbox Link Options for slide 16" />
+				<field name="mboxlink_16" type="text" size="50" default="" label="Mbox link for slide 16" description="This needs to be image or video link. To see what types of videos you can use please look to your left under the YJIS Logo for&lt;br /&gt;&lt;br /&gt; List of available MediaboxAdvanced video types link.&lt;br /&gt;&lt;br /&gt;Or visit http://iaian7.com/webcode/&lt;br /&gt;&lt;br /&gt; for all info on MediaboxAdvanced.&lt;br /&gt;&lt;br /&gt;The image/video Title and description use slide title and description param.&lt;br /&gt;&lt;br /&gt;NOTE: If left blank it will not be used.&lt;br /&gt;&lt;br /&gt;If you have Mbox AND Normal link set for this slide&lt;br /&gt;&lt;br /&gt; Normal link will take over." />
+				<field name="mboxtype_16" type="list" default="0" label="Mbox link type for slide 16" description="Video or image link ?" >
+					<option value="0">Image</option>
+					<option value="1">Video</option>
+				</field>
+				<field name="video_width_16" type="text"  default="640" label="Mbox video width" description="Define video width. Effective only if media type is video" />
+				<field name="video_height_16" type="text"  default="360" label="Mbox video height" description="Define video height. Effective only if media type is video" />
+				<field type="yjspacer" default="Mbox Image Links Options" />
+				<field name="image_group_16" type="list" default="0" label="Activate media group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="image_group_name_16" type="text"  default="yjgallery" label="Media group name" description="NOTE: This group name must be set same for all media types that you would like to show in same group" />
+				<field type="yjspacer" default="Normal link  for slide 16 options"  />
+				<field name="slide_link_16" type="text" size="50" default="" label="Slide 16 link" description="If left empty it will not be displayed. If you have Mbox AND Normal link set.&lt;br /&gt;&lt;br /&gt; Normal link will take over.&lt;br /&gt;&lt;br /&gt; Just make sure you have one or the other set, NOT both." />
+				<field name="slide_open_16" type="list" default="0" label="Open slide 16 link in" description="Open link in new window or same page">
+					<option value="0">in new window</option>
+					<option value="1">in same page</option>
+				</field>
+			</fieldset>
+			<!-- slide options -->
+			<fieldset name="SLIDE_17_SETTINGS">
+				<field name="slide_image_17" type="yjmedia"  directory="upload_slides" label="Select slide 17 image" description="Select slide 17 image or upload new one. Directory upload_slides is already created. just hit the select button.If left empty it will not be displayed" />
+				<field name="slide_genthumb_17" type="yjthumbs"  label="Generate Thumbnail" description="You can create or upload slide Thumbnail . Note that created Thumbnail  has precedence over uploaded one. If you wish to clear this Thumbnail click on clear button in Select slide param . Click on Create Thumbnail  button to generate small image for  slide 17" />
+				<field name="slide_thumb_17" type="media"  directory="upload_slides/thumbnails" label="Or upload slide 17 Thumbnail" description="Select slide 17 thumbnail image. If none is selected the original image will be used. These will be displayed only if Show Thumbnail navigation is set to yes" />
+				<field name="slide_title_17" type="text" size="50" default="" label="Slide 17 title" description="Slide 17 title. If left empty it will not be displayed" />
+				<field name="slide_description_17" type="text" size="50" default="" label="Slide 17 Description" description="Slide 17 description. If left empty it will not be displayed" />
+				<field name="slide_intro_17" type="textarea" filter="safehtml" cols="40" rows="5" default="" label="Slide 17 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+				<field type="yjspacer" default="Mbox Link Options for slide 17" />
+				<field name="mboxlink_17" type="text" size="50" default="" label="Mbox link for slide 17" description="This needs to be image or video link. To see what types of videos you can use please look to your left under the YJIS Logo for&lt;br /&gt;&lt;br /&gt; List of available MediaboxAdvanced video types link.&lt;br /&gt;&lt;br /&gt;Or visit http://iaian7.com/webcode/&lt;br /&gt;&lt;br /&gt; for all info on MediaboxAdvanced.&lt;br /&gt;&lt;br /&gt;The image/video Title and description use slide title and description param.&lt;br /&gt;&lt;br /&gt;NOTE: If left blank it will not be used.&lt;br /&gt;&lt;br /&gt;If you have Mbox AND Normal link set for this slide&lt;br /&gt;&lt;br /&gt; Normal link will take over." />
+				<field name="mboxtype_17" type="list" default="0" label="Mbox link type for slide 17" description="Video or image link ?" >
+					<option value="0">Image</option>
+					<option value="1">Video</option>
+				</field>
+				<field name="video_width_17" type="text"  default="640" label="Mbox video width" description="Define video width. Effective only if media type is video" />
+				<field name="video_height_17" type="text"  default="360" label="Mbox video height" description="Define video height. Effective only if media type is video" />
+				<field type="yjspacer" default="Mbox Image Links Options" />
+				<field name="image_group_17" type="list" default="0" label="Activate media group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="image_group_name_17" type="text"  default="yjgallery" label="Media group name" description="NOTE: This group name must be set same for all media types that you would like to show in same group" />
+				<field type="yjspacer" default="Normal link  for slide 17 options" />
+				<field name="slide_link_17" type="text" size="50" default="" label="Slide 17 link" description="If left empty it will not be displayed. If you have Mbox AND Normal link set.&lt;br /&gt;&lt;br /&gt; Normal link will take over.&lt;br /&gt;&lt;br /&gt; Just make sure you have one or the other set, NOT both." />
+				<field name="slide_open_17" type="list" default="0" label="Open slide 17 link in" description="Open link in new window or same page">
+					<option value="0">in new window</option>
+					<option value="1">in same page</option>
+				</field>
+			</fieldset>
+			<!-- slide options -->
+			<fieldset name="SLIDE_18_SETTINGS">
+				<field name="slide_image_18" type="yjmedia"  directory="upload_slides" label="Select slide 18 image" description="Select slide 18 image or upload new one. Directory upload_slides is already created. just hit the select button.If left empty it will not be displayed" />
+				<field name="slide_genthumb_18" type="yjthumbs"  label="Generate Thumbnail" description="You can create or upload slide Thumbnail . Note that created Thumbnail  has precedence over uploaded one. If you wish to clear this Thumbnail click on clear button in Select slide param . Click on Create Thumbnail  button to generate small image for  slide 18" />
+				<field name="slide_thumb_18" type="media"  directory="upload_slides/thumbnails" label="Or upload slide 18 Thumbnail" description="Select slide 18 thumbnail image. If none is selected the original image will be used. These will be displayed only if Show Thumbnail navigation is set to yes" />
+				<field name="slide_title_18" type="text" size="50" default="" label="Slide 18 title" description="Slide 18 title. If left empty it will not be displayed" />
+				<field name="slide_description_18" type="text" size="50" default="" label="Slide 18 Description" description="Slide 18 description. If left empty it will not be displayed" />
+				<field name="slide_intro_18" type="textarea" filter="safehtml" cols="40" rows="5" default="" label="Slide 18 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+				<field type="yjspacer" default="Mbox Link Options for slide 18"  />
+				<field name="mboxlink_18" type="text" size="50" default="" label="Mbox link for slide 18" description="This needs to be image or video link. To see what types of videos you can use please look to your left under the YJIS Logo for&lt;br /&gt;&lt;br /&gt; List of available MediaboxAdvanced video types link.&lt;br /&gt;&lt;br /&gt;Or visit http://iaian7.com/webcode/&lt;br /&gt;&lt;br /&gt; for all info on MediaboxAdvanced.&lt;br /&gt;&lt;br /&gt;The image/video Title and description use slide title and description param.&lt;br /&gt;&lt;br /&gt;NOTE: If left blank it will not be used.&lt;br /&gt;&lt;br /&gt;If you have Mbox AND Normal link set for this slide&lt;br /&gt;&lt;br /&gt; Normal link will take over." />
+				<field name="mboxtype_18" type="list" default="0" label="Mbox link type for slide 18" description="Video or image link ?" >
+					<option value="0">Image</option>
+					<option value="1">Video</option>
+				</field>
+				<field name="video_width_18" type="text"  default="640" label="Mbox video width" description="Define video width. Effective only if media type is video" />
+				<field name="video_height_18" type="text"  default="360" label="Mbox video height" description="Define video height. Effective only if media type is video" />
+				<field type="yjspacer" default="Mbox Image Links Options" />
+				<field name="image_group_18" type="list" default="0" label="Activate media group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="image_group_name_18" type="text"  default="yjgallery" label="Media group name" description="NOTE: This group name must be set same for all media types that you would like to show in same group" />
+				<field type="yjspacer" default="Normal link  for slide 18 options"   />
+				<field name="slide_link_18" type="text" size="50" default="" label="Slide 18 link" description="If left empty it will not be displayed. If you have Mbox AND Normal link set.&lt;br /&gt;&lt;br /&gt; Normal link will take over.&lt;br /&gt;&lt;br /&gt; Just make sure you have one or the other set, NOT both." />
+				<field name="slide_open_18" type="list" default="0" label="Open slide 18 link in" description="Open link in new window or same page">
+					<option value="0">in new window</option>
+					<option value="1">in same page</option>
+				</field>
+			</fieldset>
+			<!-- slide options -->
+			<fieldset name="SLIDE_19_SETTINGS">
+				<field name="slide_image_19" type="yjmedia"  directory="upload_slides" label="Select slide 19 image" description="Select slide 19 image or upload new one. Directory upload_slides is already created. just hit the select button.If left empty it will not be displayed" />
+				<field name="slide_genthumb_19" type="yjthumbs"  label="Generate Thumbnail" description="You can create or upload slide Thumbnail . Note that created Thumbnail  has precedence over uploaded one. If you wish to clear this Thumbnail click on clear button in Select slide param . Click on Create Thumbnail  button to generate small image for  slide 19" />
+				<field name="slide_thumb_19" type="media"  directory="upload_slides/thumbnails" label="Or upload slide 19 Thumbnail" description="Select slide 19 thumbnail image. If none is selected the original image will be used. These will be displayed only if Show Thumbnail navigation is set to yes" />
+				<field name="slide_title_19" type="text" size="50" default="" label="Slide 19 title" description="Slide 19 title. If left empty it will not be displayed" />
+				<field name="slide_description_19" type="text" size="50" default="" label="Slide 19 Description" description="Slide 19 description. If left empty it will not be displayed" />
+				<field name="slide_intro_19" type="textarea" filter="safehtml" cols="40" rows="5" default="" label="Slide 19 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+				<field type="yjspacer" default="Mbox Link Options for slide 19" />
+				<field name="mboxlink_19" type="text" size="50" default="" label="Mbox link for slide 19" description="This needs to be image or video link. To see what types of videos you can use please look to your left under the YJIS Logo for&lt;br /&gt;&lt;br /&gt; List of available MediaboxAdvanced video types link.&lt;br /&gt;&lt;br /&gt;Or visit http://iaian7.com/webcode/&lt;br /&gt;&lt;br /&gt; for all info on MediaboxAdvanced.&lt;br /&gt;&lt;br /&gt;The image/video Title and description use slide title and description param.&lt;br /&gt;&lt;br /&gt;NOTE: If left blank it will not be used.&lt;br /&gt;&lt;br /&gt;If you have Mbox AND Normal link set for this slide&lt;br /&gt;&lt;br /&gt; Normal link will take over." />
+				<field name="mboxtype_19" type="list" default="0" label="Mbox link type for slide 19" description="Video or image link ?" >
+					<option value="0">Image</option>
+					<option value="1">Video</option>
+				</field>
+				<field name="video_width_19" type="text"  default="640" label="Mbox video width" description="Define video width. Effective only if media type is video" />
+				<field name="video_height_19" type="text"  default="360" label="Mbox video height" description="Define video height. Effective only if media type is video" />
+				<field type="yjspacer" default="Mbox Image Links Options" />
+				<field name="image_group_19" type="list" default="0" label="Activate media group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="image_group_name_19" type="text"  default="yjgallery" label="Media group name" description="NOTE: This group name must be set same for all media types that you would like to show in same group" />
+				<field type="yjspacer" default="Normal link  for slide 19 options" />
+				<field name="slide_link_19" type="text" size="50" default="" label="Slide 19 link" description="If left empty it will not be displayed. If you have Mbox AND Normal link set.&lt;br /&gt;&lt;br /&gt; Normal link will take over.&lt;br /&gt;&lt;br /&gt; Just make sure you have one or the other set, NOT both." />
+				<field name="slide_open_19" type="list" default="0" label="Open slide 19 link in" description="Open link in new window or same page">
+					<option value="0">in new window</option>
+					<option value="1">in same page</option>
+				</field>
+			</fieldset>
+			<!-- slide options -->
+			<fieldset name="SLIDE_20_SETTINGS">
+				<field name="slide_image_20" type="yjmedia"  directory="upload_slides" label="Select slide 20 image" description="Select slide 20 image or upload new one. Directory upload_slides is already created. just hit the select button.If left empty it will not be displayed" />
+				<field name="slide_genthumb_20" type="yjthumbs"  label="Generate Thumbnail" description="You can create or upload slide Thumbnail . Note that created Thumbnail  has precedence over uploaded one. If you wish to clear this Thumbnail click on clear button in Select slide param . Click on Create Thumbnail  button to generate small image for  slide 20" />
+				<field name="slide_thumb_20" type="media"  directory="upload_slides/thumbnails" label="Or upload slide 20 Thumbnail" description="Select slide 20 thumbnail image. If none is selected the original image will be used. These will be displayed only if Show Thumbnail navigation is set to yes" />
+				<field name="slide_title_20" type="text" size="50" default="" label="Slide 20 title" description="Slide 20 title. If left empty it will not be displayed" />
+				<field name="slide_description_20" type="text" size="50" default="" label="Slide 20 Description" description="Slide 20 description. If left empty it will not be displayed" />
+				<field name="slide_intro_20" type="textarea" filter="safehtml" cols="40" rows="5" default="" label="Slide 20 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+				<field type="yjspacer" default="Mbox Link Options for slide 20" />
+				<field name="mboxlink_20" type="text" size="50" default="" label="Mbox link for slide 20" description="This needs to be image or video link. To see what types of videos you can use please look to your left under the YJIS Logo for&lt;br /&gt;&lt;br /&gt; List of available MediaboxAdvanced video types link.&lt;br /&gt;&lt;br /&gt;Or visit http://iaian7.com/webcode/&lt;br /&gt;&lt;br /&gt; for all info on MediaboxAdvanced.&lt;br /&gt;&lt;br /&gt;The image/video Title and description use slide title and description param.&lt;br /&gt;&lt;br /&gt;NOTE: If left blank it will not be used.&lt;br /&gt;&lt;br /&gt;If you have Mbox AND Normal link set for this slide&lt;br /&gt;&lt;br /&gt; Normal link will take over." />
+				<field name="mboxtype_20" type="list" default="0" label="Mbox link type for slide 20" description="Video or image link ?" >
+					<option value="0">Image</option>
+					<option value="1">Video</option>
+				</field>
+				<field name="video_width_20" type="text"  default="640" label="Mbox video width" description="Define video width. Effective only if media type is video" />
+				<field name="video_height_20" type="text"  default="360" label="Mbox video height" description="Define video height. Effective only if media type is video" />
+				<field type="yjspacer" default="Mbox Image Links Options" />
+				<field name="image_group_20" type="list" default="0" label="Activate media group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="image_group_name_20" type="text"  default="yjgallery" label="Media group name" description="NOTE: This group name must be set same for all media types that you would like to show in same group" />
+				<field type="yjspacer" default="Normal link  for slide 20 options" />
+				<field name="slide_link_20" type="text" size="50" default="" label="Slide 20 link" description="If left empty it will not be displayed. If you have Mbox AND Normal link set.&lt;br /&gt;&lt;br /&gt; Normal link will take over.&lt;br /&gt;&lt;br /&gt; Just make sure you have one or the other set, NOT both." />
+				<field name="slide_open_20" type="list" default="0" label="Open slide 20 link in" description="Open link in new window or same page">
+					<option value="0">in new window</option>
+					<option value="1">in same page</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

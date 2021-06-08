@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+   <class name="com.struts2.Beans.BeanReservation" table="reservation" lazy="false">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+        
+        <property name="date_begin" column="date_begin" type="timestamp"  not-null="true"/>
+        <property name="date_end" column="date_end" type="timestamp"  not-null="true"/>
+        <property name="date_to_pay" column="date_to_pay" type="date"  not-null="true"/>
+        <property name="date_blocked" column="date_blocked" type="timestamp"  not-null="true"/>
+        <property name="client_name" column="client_name" type="string"  not-null="true"/>
+        <property name="notes" column="notes" type="string"  not-null="false"/>
+        <property name="price" column="price" type="double"  not-null="false"/>
+        <many-to-one name="id_type_status_reservation" column="id_type_status_reservation" not-null="true"/>
+        <many-to-one name="id_transport" column="id_transport" not-null="true"/>
+        <property name="transport_description" column="transport_description" type="string"  not-null="false"/>
+        <property name="transport_price_per_person" column="transport_price_per_person" type="double"  not-null="false"/>
+                    
+   </class>
+</hibernate-mapping>
+
+

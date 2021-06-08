@@ -1,0 +1,226 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile3581377939426134323.jar",1416940017702
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile7363314977043093014.jar",1416940018602
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile5445202742291662134.jar",1416940020842
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile725800357835775749.jar",1416940023502
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile4004482850881662707.jar",1416940024522
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile981430786376434175.jar",1416940024572
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile7627893213843134900.jar",1416940025312
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile8216766401792531946.jar",1416940029939
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile8406789160387661453.jar",1416940030438
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile21504739023131372.jar",1416940031679
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile5120555824977990475.jar",1416940037158
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile976489013223877537.jar",1416940040031
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile3337269424930764029.jar",1416940040460
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile5329244729814002264.jar",1416940040498
+error,log,,,"An error occurred while collecting items to be installed",1416940044965
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.copy",1416940112876
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1416940246021
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1416940251921
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1416940253191
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.help.aboutAction",1416940253191
+error,log,,,"Provisioning exception",1416940255101
+error,log,,,"No repository found at http://download.eclipse.org/tools/mylyn/update/indigo.",1416940255101
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1416940255221
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1416940261531
+executed,command,org.eclipse.equinox.p2.ui.sdk,1.0.200.v20110104-0005,"org.eclipse.equinox.p2.ui.sdk.install",1416940261541
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1416940262901
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1416940461860
+error,log,,,"Provisioning exception",1416940467135
+error,log,,,"No repository found at http://download.eclipse.org/tools/mylyn/update/indigo.",1416940467135
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1416940467255
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1416940813847
+executed,command,org.eclipse.equinox.p2.ui.sdk,1.0.200.v20110104-0005,"org.eclipse.equinox.p2.ui.sdk.install",1416940813864
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1416940814157
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile611573825491106267.jar",1416940818625
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile1613354207225423251.jar",1416940819173
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile8985119278722227582.jar",1416940822329
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile2163219492495097489.jar",1416940824681
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile8964904692025429564.jar",1416940827364
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile3174682956665127227.jar",1416940832487
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile6693686579960492596.jar",1416940832497
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile7966049507245212535.jar",1416940832624
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile4918999425558714984.jar",1416940834036
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile3273002636847657916.jar",1416940834566
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile8756071028279054273.jar",1416940834597
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile5009515868649633150.jar",1416940836723
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile2372208763084994777.jar",1416940836916
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile8163852374676722120.jar",1416940845006
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile2056660921571626834.jar",1416940852664
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile4937262115388041449.jar",1416940854452
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile6029650944215989602.jar",1416940856256
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile504069299353425739.jar",1416940860555
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile4992929262146987271.jar",1416940861916
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile4763001053459845922.jar",1416940866820
+error,log,,,"An error occurred while collecting items to be installed",1416940869959
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1416940872475
+started,bundle,org.eclipse.wst.xsl.debug.ui,1.0.100.v201004290328,"org.eclipse.wst.xsl.debug.ui",1416940874717
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1416940877657
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1416940885497
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.newWizard",1416940885497
+error,log,,,"Provisioning exception",1416940890587
+error,log,,,"No repository found at http://download.eclipse.org/tools/mylyn/update/indigo.",1416940890587
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1416940890707
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1416940894157
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1416940919118
+executed,command,org.eclipse.equinox.p2.ui.sdk,1.0.200.v20110104-0005,"org.eclipse.equinox.p2.ui.sdk.install",1416940919128
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1416940919398
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile8313406254157604873.jar",1416941003599
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile529631839960670001.jar",1416941004599
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile7303755795120513315.jar",1416941005309
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile6402289822254256513.jar",1416941006609
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile7793721420276826915.jar",1416941008699
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile7808554964766523850.jar",1416941010009
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile6968095119290427452.jar",1416941012949
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile3225687083019848211.jar",1416941013539
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile795141445265950167.jar",1416941015619
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile805851026715974823.jar",1416941017399
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile7643152302570097621.jar",1416941018939
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile5752746759757225207.jar",1416941020109
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile2937611636313861061.jar",1416941020489
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile2189354690814520070.jar",1416941022029
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile343433781758716441.jar",1416941022629
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile2463016683943501505.jar",1416941023039
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile840623025504301730.jar",1416941026369
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile5088764132985895783.jar",1416941028309
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile1573718024224837498.jar",1416941030459
+error,log,,,"Either the manifest file or the signature file has been tampered in this jar: C:\\Users\\jtorres\\AppData\\Local\\Temp\\signatureFile4517106637643796716.jar",1416941044120
+error,log,,,"An error occurred while collecting items to be installed",1416941047320
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1416941073700
+activated,editor,org.eclipse.jst.jsp.ui,1.1.600.v201101262225,"org.eclipse.jst.jsp.core.jspsource.source",1416941075060
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1416941077690
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1416954828381
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1416954837081
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1416963459136
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1416963459496
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417019902416
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417019919806
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417020748627
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417020759397
+started,bundle,org.eclipse.wst.common.project.facet.ui,1.4.200.v201101240054,"org.eclipse.wst.common.project.facet.ui",1417020771027
+started,bundle,org.eclipse.wst.web.ui,1.1.400.v201004141630,"org.eclipse.wst.web.ui",1417020771537
+started,bundle,org.eclipse.jst.servlet.ui,1.1.500.v201011171700,"org.eclipse.jst.servlet.ui",1417020771647
+started,bundle,org.eclipse.jst.common.project.facet.ui,1.4.200.v201008182133,"org.eclipse.jst.common.project.facet.ui",1417020777027
+started,bundle,org.eclipse.jpt.core,2.4.0.v201101250000,"org.eclipse.jpt.core",1417020784877
+started,bundle,org.eclipse.wst.xsl.exslt.core,1.0.0.v201005240426,"org.eclipse.wst.xsl.exslt.core",1417020788277
+started,bundle,org.eclipse.wst.internet.cache,1.0.400.v201004280700,"org.eclipse.wst.internet.cache",1417020789417
+started,bundle,org.eclipse.xsd,2.7.0.v20110128-1446,"org.eclipse.xsd",1417020790117
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417020795637
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.newWizard",1417020795787
+started,bundle,org.eclipse.pde.core,3.7.0.v20110124-1800,"org.eclipse.pde.core",1417020799317
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.I20101116-0800,"org.eclipse.ui.navigator.ProjectExplorer",1417020802017
+started,bundle,org.eclipse.jst.ws.jaxws.dom.integration,1.0.100.v201101252155,"org.eclipse.jst.ws.jaxws.dom.integration",1417020805267
+started,bundle,org.eclipse.jst.ws.jaxws.dom.ui,1.0.0.v201004171919,"org.eclipse.jst.ws.jaxws.dom.ui",1417020805397
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417020812758
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417020823458
+started,bundle,org.eclipse.ltk.core.refactoring,3.5.200.v20101130-0800,"org.eclipse.ltk.core.refactoring",1417020823698
+started,bundle,org.eclipse.compare,3.5.200.I20101206-1300,"org.eclipse.compare",1417020825108
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1417020828278
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417020842758
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021322072
+started,bundle,org.eclipse.ltk.ui.refactoring,3.5.100.v20110111-0800,"org.eclipse.ltk.ui.refactoring",1417021340342
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021343882
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1417021379440
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021380408
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021381853
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021385035
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021389038
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1417021406216
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021411099
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.newWizard",1417021411110
+opened,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1417021413123
+started,bundle,org.eclipse.jdt.debug.ui,3.6.0.v20110126,"org.eclipse.jdt.debug.ui",1417021414122
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1417021414227
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021415349
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021416638
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021417458
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021420544
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1417021422891
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.file.save",1417021424022
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021425572
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021431226
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021437607
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021448241
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.I20101116-0800,"org.eclipse.ui.navigator.ProjectExplorer",1417021450230
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021454010
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1417021455140
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021456080
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021459990
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021461770
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021464420
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021465690
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.delete",1417021465700
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021470141
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1417021471541
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021472591
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021483241
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1417021488501
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021490981
+opened,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1417021491431
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1417021491541
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.I20101116-0800,"org.eclipse.ui.navigator.ProjectExplorer",1417021494171
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021496551
+closed,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1417021498081
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021498161
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.delete",1417021498171
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021505331
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1417021511581
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021526571
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1417021536702
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.I20101116-0800,"org.eclipse.ui.navigator.ProjectExplorer",1417021538042
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021541262
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1417021542522
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021544542
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021557072
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021559002
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.delete",1417021559012
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1417021565272
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.I20101116-0800,"org.eclipse.ui.navigator.ProjectExplorer",1417021566142
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021574112
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1417021576252
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021590282
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021595303
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021601713
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021607613
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1417021611233
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021612433
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021621443
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1417021625623
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021628363
+opened,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1417021628743
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1417021628823
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021629493
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021632733
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021634113
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021638453
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1417021640513
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.file.save",1417021641853
+started,bundle,org.eclipse.jdt.junit,3.7.0.v20110126-1300,"org.eclipse.jdt.junit",1417021641963
+started,bundle,org.eclipse.pde.launching,3.6.0.v20110124-1400,"org.eclipse.pde.launching",1417021649123
+started,bundle,org.eclipse.ui.views.log,1.0.200.v20110119,"org.eclipse.ui.views.log",1417021649193
+started,bundle,org.eclipse.pde.ui,3.6.100.v20110124-1500,"org.eclipse.pde.ui",1417021649213
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.I20101116-0800,"org.eclipse.ui.navigator.ProjectExplorer",1417021668774
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021671254
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021672524
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.delete",1417021672534
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021673764
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021729185
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1417021731546
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021746862
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021755962
+activated,editor,org.eclipse.jdt.ui,3.7.0.v20110126-1300,"org.eclipse.jdt.ui.CompilationUnitEditor",1417021757172
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021758712
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021768262
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021769882
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021777922
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021779152
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021791429
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.edit.paste",1417021793119
+executed,command,org.eclipse.ui,3.7.0.I20110127-0800,"org.eclipse.ui.file.save",1417021796549
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021818159
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021824399
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021832039
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021835889
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.I20101116-0800,"org.eclipse.ui.navigator.ProjectExplorer",1417021841399
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021880020
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110127-0800,"",1417021893000

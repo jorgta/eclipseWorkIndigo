@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.eventAdmin.Beans.BeanMonthOptions" table="monthoptions">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+     
+       <property name="startDayOfWeek" column="startDayOfWeek" type="integer"  not-null="true"/>
+       <property name="narrowWeekend" column="narrowWeekend" type="boolean" length="1" not-null="true"/>
+       <property name="visibleWeeksCount" column="visibleWeeksCount" type="integer"  not-null="true"/>
+       <property name="visibleScheduleCount" column="visibleScheduleCount" type="integer"  not-null="true"/>
+       <property name="moreLayerSize" column="moreLayerSize" type="string"  not-null="true"/>
+       <property name="grid" column="grid" type="string"  not-null="true"/>
+       <property name="scheduleFilter" column="scheduleFilter" type="string"  not-null="true"/>
+       <property name="isAlways6Week" column="isAlways6Week" type="boolean"  not-null="true"/>
+       <property name="workweek" column="workweek" type="boolean"  not-null="true"/>
+ 
+       
+       <list name="daynames" cascade="all" >
+		    <key column="monthoptions_id"/>    
+		    <index column="id" />
+		    <one-to-many class="com.eventAdmin.Beans.BeanDayNames"/>
+	  </list>
+
+   </class>
+</hibernate-mapping>
+
+

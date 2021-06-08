@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.tecunsa.Beans.BeanCase" table="cases">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+	   <many-to-one name="id_user_capture" column="id_user_capture" not-null="true"/>
+       <many-to-one name="id_supervisor" column="id_supervisor" not-null="true"/>
+       <many-to-one name="id_type_case" column="id_type_case" not-null="true"/>
+       <many-to-one name="id_client" column="id_client" not-null="true"/>       
+       <property name="short_description" column="short_description" type="string"  not-null="true"/>
+  	   <property name="description" column="description" type="string"  not-null="true"/>
+       <many-to-one name="id_type_case_status" column="id_type_case_status" not-null="true"/>       
+       <property name="date_reg" column="date_reg" type="date"  not-null="true"/>
+       <property name="date_last_change" column="date_last_change" type="date"  not-null="false"/>
+       <property name="date_close" column="date_close" type="date"  not-null="false"/>
+	   <many-to-one name="id_user" column="id_user" not-null="true"/>
+  	   <property name="successful" column="successful" type="string"  not-null="true"/>
+  	   <property name="lazy" column="lazy" type="string"  not-null="true"/>
+       <property name="date_delivery" column="date_delivery" type="date"  not-null="true"/>
+       
+   </class>
+</hibernate-mapping>
+
+

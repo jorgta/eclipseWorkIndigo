@@ -1,0 +1,57 @@
+HR {
+	BACKGROUND: none transparent scroll repeat 0% 0%; HEIGHT: 1px
+}
+#contact #contact_details FORM UL LI {
+	POSITION: relative; BOTTOM: 20px
+}
+#contact #contact_details FORM UL LI.right_side {
+	POSITION: relative; BOTTOM: 0px; TOP: 0px
+}
+#contact #contact_details FORM UL LI #submit_message {
+	POSITION: relative; BOTTOM: 40px
+}
+#contact #contact_details FORM {
+	MARGIN: 0px
+}
+* HTML #info {
+	POSITION: relative
+}
+* HTML #info LI#select_lang {
+	POSITION: absolute; LEFT: 750px
+}
+* HTML #about #hotel_history {
+	BACKGROUND: url(/images/book.gif) no-repeat center bottom
+}
+* HTML #about #photos {
+	BACKGROUND: url(/images/photos.gif) no-repeat center top
+}
+* HTML #about #rest {
+	BACKGROUND: url(/images/food.gif) no-repeat center bottom
+}
+* HTML #other_info H2 {
+	TEXT-ALIGN: right
+}
+* HTML #gallery #sidebar {
+	BACKGROUND: url(/images/camera.gif) no-repeat center bottom; HEIGHT: 320px
+}
+* HTML #gallery #sidebar {
+	BACKGROUND: url(/images/camera.gif) no-repeat center bottom; HEIGHT: 320px
+}
+* HTML #gallery #sidebar HR {
+	DISPLAY: none
+}
+* HTML #contact #sidebar #phone {
+	BACKGROUND: url(/images/phone.gif) no-repeat center bottom
+}
+* HTML #current_language {
+	POSITION: absolute; RIGHT: 150px
+}
+* HTML #oferta {
+	Z-INDEX: 1000; BACKGROUND: url(/images/oferta.gif) no-repeat left top
+}
+* HTML #offers {
+	Z-INDEX: -1000; BACKGROUND: url(/images/.gif) no-repeat right top
+}
+* HTML #box_offers {
+	BACKGROUND: url(/images/box_offers.gif) no-repeat left top
+}

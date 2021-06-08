@@ -1,0 +1,23 @@
+
+
+
+
+tamaño en registros de la pagina de la tabla
+id,id_process_users
+
+
+hacer la parte de remover los usuarios de la lista -> listo
+hacer la validacion para agregar en la lista de usuarios a guardar ->listo
+
+hacer que se seleccione la cantidad de rows para mostrar en las tablas->listo
+
+hacer que la seleccion de  la cantidad de rows para mostrar en las tabla sea configurable desde el modulo configuraciones
+hacer que el default tab por modulo sea configurable desde  configuraciones
+crear beans para setting, setting_row, setting_tab
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.eventAdmin.Beans.BeanPayment" table="payment">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       
+       <many-to-one name="id_sale" column="id_sale" not-null="true"/>          
+       <property name="date_reg" column="date_reg" type="date"  not-null="true"/>            
+       <property name="total" column="total" type="double"  not-null="true"/>  
+	
+
+       
+   </class>
+</hibernate-mapping>
+

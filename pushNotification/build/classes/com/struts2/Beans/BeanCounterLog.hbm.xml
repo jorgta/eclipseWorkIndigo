@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+   <class name="com.struts2.Beans.BeanCounterLog" table="counterlog" lazy="false">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       
+       <many-to-one name="id_counter" column="id_counter" not-null="true"/>   
+       <property name="date_reg" column="date_reg" type="date"  not-null="false"/>
+       <property name="is_str" column="is_str" type="integer"  not-null="true"/>
+
+
+   </class>
+</hibernate-mapping>
+
+

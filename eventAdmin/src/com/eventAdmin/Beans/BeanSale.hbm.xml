@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.eventAdmin.Beans.BeanSale" table="sale">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       
+       <property name="date_reg" column="date_reg" type="date"  not-null="true"/>
+       <many-to-one name="id_saloon" column="id_saloon" not-null="true"/>        
+       <property name="saloon_description" column="saloon_description" type="string"  not-null="true"/>            
+       <many-to-one name="id_client" column="id_client" not-null="true"/>  
+       <property name="client_name" column="client_name" type="string"  not-null="true"/>
+       <property name="client_address" column="client_address" type="string"  not-null="true"/>  
+       <property name="people_count" column="people_count" type="integer"  not-null="true"/>  
+       <many-to-one name="id_list" column="id_list" not-null="true"/> 
+       <property name="list_description" column="list_description" type="string"  not-null="true"/> 
+       <property name="list_min" column="list_min" type="integer"  not-null="true"/>  
+       <property name="list_max" column="list_max" type="integer"  not-null="true"/>  
+       <many-to-one name="id_list_option" column="id_list_option" not-null="true"/> 
+       <property name="total" column="total" type="double"  not-null="true"/>  
+	   <property name="contract_date_reg" column="contract_date_reg" type="date"  not-null="false"/>
+	   <many-to-one name="id_company" column="id_company" not-null="true"/> 
+       <many-to-one name="id_user" column="id_user" not-null="true"/> 
+       <many-to-one name="id_list_option_menu" column="id_list_option_menu" not-null="true"/> 
+       <property name="option_description" column="option_description" type="string"  not-null="true"/> 
+       <property name="menu_description" column="menu_description" type="string"  not-null="true"/> 
+       <many-to-one name="id_hour" column="id_hour" not-null="true"/>
+       <property name="hourQuantity" column="hourQuantity" type="integer"  not-null="true"/>  
+       <property name="date_event" column="date_event" type="date"  not-null="true"/>
+       
+       <property name="anotherEmail" column="anotherEmail" type="string"  not-null="false"/> 
+       <property name="menu_price" column="menu_price" type="double"  not-null="true"/>  
+       <property name="client_phone" column="client_phone" type="string"  not-null="false"/> 
+       <property name="client_company" column="client_company" type="string"  not-null="false"/> 
+       <property name="client_email" column="client_email" type="string"  not-null="false"/> 
+       <property name="id_intern" column="id_intern" type="integer"  not-null="true"/>  
+       <property name="anotherEmail1" column="anotherEmail1" type="string"  not-null="false"/> 
+       
+       <property name="companyName" column="companyName" type="string"  not-null="false"/> 
+       <property name="contractSigner" column="contractSigner" type="string"  not-null="false"/> 
+       <property name="streetContract" column="streetContract" type="string"  not-null="false"/> 
+       <property name="colonyContract" column="colonyContract" type="string"  not-null="false"/> 
+       <property name="cityContract" column="cityContract" type="string"  not-null="false"/> 
+       <property name="stateContract" column="stateContract" type="string"  not-null="false"/> 
+       <property name="companyPhones" column="companyPhones" type="string"  not-null="false"/> 
+       
+
+       
+	
+       
+   </class>
+</hibernate-mapping>
+
+

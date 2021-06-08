@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.bituos.lca.Beans.BeanDoctorRepresentative" table="doctor_representative" >
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+
+       <many-to-one name="id_doctor" column="id_doctor" not-null="true"/>
+       <many-to-one name="id_representative" column="id_representative" not-null="true"/>
+       
+   </class>
+</hibernate-mapping>
+
+

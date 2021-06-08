@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+   <class name="com.struts2.Beans.BeanRoom" table="room" lazy="false">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       
+       <property name="description" column="description" type="string"  not-null="true"/>
+       <property name="date_reg" column="date_reg" type="date"  not-null="true"/>
+       <property name="active" column="active" type="int"  not-null="true"/>
+       <property name="image1" column="image1" type="string"  not-null="false"/>
+       <many-to-one name="id_hotel" column="id_hotel" not-null="true"/>
+       <many-to-one name="id_type_status_room" column="id_type_status_room" not-null="true"/>
+       <property name="price1" column="price1" type="double"  not-null="true"/>
+       <property name="price2" column="price2" type="double"  not-null="true"/>
+       <property name="price3" column="price3" type="double"  not-null="true"/>
+       <property name="price4" column="price4" type="double"  not-null="true"/>
+       <property name="priceBaby" column="priceBaby" type="double"  not-null="true"/>
+       <property name="priceBasic" column="priceBasic" type="double"  not-null="true"/>
+       <property name="priceChild" column="priceChild" type="double"  not-null="true"/>
+       <property name="priceJr" column="priceJr" type="double"  not-null="true"/>
+        <property name="date_begin" column="date_begin" type="timestamp"  not-null="true"/>
+        <property name="date_end" column="date_end" type="timestamp"  not-null="true"/>
+              
+   </class>
+</hibernate-mapping>
+
+

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.eventAdmin.Beans.BeanCreatorUser" table="creator_user">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+    
+       <many-to-one name="userid" column="userid" not-null="true"/>
+       <many-to-one name="creatorid" column="creatorid" not-null="true"/>
+       
+	</class>
+ 
+</hibernate-mapping>
+
+

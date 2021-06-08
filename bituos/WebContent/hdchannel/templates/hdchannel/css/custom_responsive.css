@@ -1,0 +1,402 @@
+ /*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimpleGrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla LLC. All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla.com                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+@media only screen and (min-width: 1040px) and (max-width: 1199px) {
+#header, #header_in, #centertop, #centerbottom, #centerfooter, #smallmenu_holder {
+	width: 1000px!important;
+}
+#yjsg1,  #yjsg2,  #yjsg3,  #yjsg4,  #yjsg5,  #yjsg6,  #yjsg7,  #footer,  #joomlacredit,  .yjsgsitew {
+	width: auto!important;
+}
+}
+@media only screen and (min-width: 981px) and (max-width: 1039px) {
+#header, #header_in, #centertop, #centerbottom, #centerfooter, #smallmenu_holder {
+	width: 980px!important;
+}
+.top_menu, .top_menu_poz_navbar, .top_menu_poz.navpills {
+	width: auto!important;
+}
+}
+@media screen and (max-width: 980px) {
+div#mmenu_holder {
+	text-align: left;
+	text-indent: 15px;
+}
+#default_video {
+	width: 100%!important;
+}
+.yjsquare.forceright275 {
+	margin: 0px auto 0 auto!important;
+	float: none!important;
+}
+}
+@media screen and (max-width: 980px) {
+div#midblock {
+	background: none!important;
+}
+#smallmenu_holder {
+	width: 100%!important;
+}
+#smallmenu {
+	float: none!important;
+}
+#header {
+	margin-bottom: 0!important;
+}
+#header:after {
+	display: none;
+}
+.hdclm {
+	float: left!important;
+	position: absolute;
+	top: -4px;
+	left: -10px;
+}
+.hdclm .poping_links {
+	-moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+	-webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+	-o-transform: matrix(-1, 0, 0, 1, 0, 0);
+	position: relative;
+}
+.hdclm #login_pop {
+	width: 96%!important;
+	left: 0!important;
+}
+.hdcls {
+	float: none!important;
+}
+.hdcls form {
+	margin: 0 auto;
+}
+.hdcls .yj_inputbox, .LiveSearchContainer.defaultfeed, .LiveSearchResults.defaultfeed {
+	width: 98%!important;
+}
+.hdcym, .hdcym2 {
+	float: left!important;
+	clear: none!important;
+	width: 50%!important;
+	margin: 0!important;
+}
+.hdcym2.yj1 {
+	margin: 0!important;
+}
+#user16, #user17 {
+	width: 100%!important;
+}
+.hdcsm .yjsquare_in {
+	margin: 0 auto!important;
+	width: 600px!important;
+}
+.hdcsim .yjsquare_in {
+	border-top: 1px solid #3D3D3D;
+}
+.socials {
+	float: none!important;
+	margin: 0 auto!important;
+	width: 450px;
+}
+}
+@media only screen and (min-width: 220px) and (max-width: 980px) {
+.hdcym, .hdcym2 {
+	width: 100%!important;
+}
+}
+@media screen and (max-width:  840px) {
+.hdclm #login_pop {
+	top: 5%!important;
+	width: 40%!important;
+	height: 670px!important;
+	left: 25%!important;
+}
+.hdclm #form-login {
+	padding: 0!important;
+	width: 100%!important;
+}
+.hdclm #josForm {
+	width: 100%!important;
+	;
+	padding: 20px 0 0 0!important;
+	border-top: 1px solid #313131!important;
+	border-left: none!important;
+}
+.hdclm .popyjreg .leftpart, .hdclm .popyjreg .rightpart {
+	width: 100%!important;
+}
+}
+@media screen and (max-width:  585px) {
+.hdcsm .yjsquare_in {
+	width: 300px!important;
+}
+.hdcsm .yjsquare_in {
+	margin: 0 auto!important;
+	width: 100%!important;
+}
+.hdcsm .subscribe_button {
+	float: left;
+	margin: 5px 0!important;
+}
+.hdcsm form {
+	float: none!important;
+	margin: 5px 0!important;
+}
+.socials {
+	width: 100%;
+}
+}
+@media screen and (max-width:  495px) {
+.hdclm #login_pop {
+	top: 10%!important;
+	width: 92%!important;
+	height: 680px!important;
+	left: 0!important;
+}
+.hdclm #form-login {
+	width: 92%!important;
+}
+.hdclm #login_pop .inputbox {
+	height: 25px!important;
+}
+}
+@media screen and (max-width:  475px) {
+.hdcsim .yjsquare_in {
+	border-top: none;
+}
+.socials a {
+	border: 1px solid #3D3D3D;
+	margin: 5px;
+}
+.hdclm #login_pop #yjpop_remember {
+	left: 22%!important;
+}
+}
+@media screen and (max-width:  715px) {
+.hdcym, .hdcym2 {
+	width: 100%!important;
+}
+#insetblock, #rightblock, #leftblock, .hdcym .yjsquare_in {
+	box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff!important;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #dbdbdb, inset 0px 2px 0px 0px #fff!important;
+}
+}
+@media screen and (max-width:  340px) {
+.hdcls .button {
+	top: -26px!important;
+	right: -42%!important;
+}
+}
+/*Image slider*/
+@media screen and (max-width: 980px) {
+.hdcis .YJSlide_intro {
+	left: 0!important;
+	right: auto!important;
+	top: 0!important;
+	width: 50%!important;
+	height: 100%!important;
+}
+}
+@media screen and (max-width:925px) {
+.hdcis .YJIS_outer {
+	height: 300px!important;
+}
+}
+@media screen and (max-width:800px) {
+.hdcis .YJIS_outer {
+	height: 250px!important;
+}
+}
+@media screen and (max-width:675px) {
+.hdcis .YJIS_outer {
+	height: 200px!important;
+}
+}
+@media screen and (max-width:545px) {
+.hdcis .YJSlide_intro {
+	width: 100%!important;
+	height: 150px!important;
+}
+.hdcis .YJIS_outer {
+	height: 150px!important;
+}
+.hdcis h4 {
+	width: 100%;
+	opacity: 0.8;
+}
+}
+@media screen and (max-width:400px) {
+.hdcis, .hdcis .yjsquare_in, .hdcis .YJIS_outer {
+	height: 250px!important;
+}
+.hdcis img {
+	width: 500px!important;
+	height: 250px!important;
+}
+}
+/*York module*/
+@media only screen and (min-width: 980px) and (max-width: 1200px) {
+#yy_container, #yy_container_intheaters, #yy_container_comingsoon, #yy_container_bestof2012, #yy_container_bottom, .yy_container_out, .yy_slider .yy_slideitems, .yy_slider .yy_slideitems_in, #yy_slider_bottom, .yy_slider {
+	width: 100%!important;
+}
+}
+@media only screen and (min-width: 220px) and (max-width: 980px) {
+#yy_container, #yy_container_intheaters, #yy_container_comingsoon, #yy_container_bestof2012, #yy_container_bottom, .yy_container_out, .yy_slider .yy_slideitems, .yy_slider .yy_slideitems_in, #yy_slider_bottom {
+	width: 100%!important;
+}
+}
+ @media screen and (max-width: 980px) {
+#yy_container_bottom, #yy_slider_bottom {
+	height: 250px!important;
+}
+#yy_container_right, #yy_slider_right {
+	height: 350px!important;
+}
+}
+@media screen and (max-width: 940px) {
+#yy_container_bottom, #yy_slider_bottom {
+	height: 500px!important;
+}
+}
+@media screen and (max-width:  715px) {
+#yy_container_right, #yy_slider_right {
+	height: 250px!important;
+}
+}
+@media screen and (max-width: 690px) {
+#yy_container_bottom, #yy_slider_bottom, #yy_container_bottom .yy_slider .yy_slideitems_in {
+	height: 1400px!important;
+}
+}
+@media screen and (max-width: 435px) {
+#yy_container_bottom, #yy_slider_bottom, #yy_container_bottom .yy_slider .yy_slideitems_in {
+	height: 2500px!important;
+}
+}
+@media screen and (max-width: 685px) {
+#yy_container_intheaters, #yy_container_comingsoon, #yy_container_bestof2012, .yy_slider .yy_slideitems, .yy_slider .yy_slideitems_in {
+	height: 800px!important;
+}
+#yy_slider_intheaters, #yy_slider_comingsoon, #yy_slider_bestof2012 {
+	height: 800px!important;
+	width: 100%!important;
+}
+}
+@media screen and (max-width: 475px) {
+#yy_container_intheaters, #yy_container_comingsoon, #yy_container_bestof2012, .yy_slider .yy_slideitems, .yy_slider .yy_slideitems_in {
+	height: 1600px!important;
+}
+#yy_slider_intheaters, #yy_slider_comingsoon, #yy_slider_bestof2012 {
+	height: 1600px!important;
+}
+.hdcmt .yy_container .linkBackward {
+	right: 7%!important;
+}
+}
+@media screen and (max-width: 320px) {
+.hdcmt .yy_container .linkBackward {
+	right: 10%!important;
+}
+}
+/*Engine1 in york*/
+@media screen and (max-width: 685px) {
+.hdcmt .yjme_item {
+	width: 50%!important;
+}
+.hdcmt .yjme_item a.item_title {
+	text-align: center;
+}
+.hdcmt .item_details {
+	width: 100%!important;
+}
+.hdcmt .item_details .item_category, .hdcmt .item_details .item_cdate, .hdcmt .item_details .item_author {
+	display: table!important;
+	float: none!important;
+	margin: 0 auto!important;
+}
+}
+@media screen and (max-width: 475px) {
+.hdcmt .yjme_item {
+	width: 100%!important;
+}
+}
+@media screen and (max-width: 375px) {
+.centerbottom_in {
+	padding: 0 5px!important;
+}
+.hdcym2.yj1 {
+	margin-left: 0!important;
+}
+.hdcym2 .yjme_item p.item_intro, .hdcym .yjme_item p.item_intro {
+	padding: 0 10px 0 0!important;
+}
+}
+/*Engine2 */
+@media screen and (max-width: 940px) {
+.hdcym3 .yjme_item {
+	margin: 15px 0;
+	width: 33%!important;
+}
+.hdcym3 .yjme_item a.item_title, .hdcym3 .yjme_item p.item_intro {
+	text-align: center;
+}
+.hdcym3 .item_details {
+	width: 100%!important;
+}
+.hdcym3 .yjme_item div.imageholder {
+	margin: 0 auto!important;
+}
+}
+@media screen and (max-width: 690px) {
+.hdcym3 .yjme_item {
+	margin: 15px 0;
+	width: 50%!important;
+}
+}
+@media screen and (max-width: 435px) {
+.hdcym3 .yjme_item {
+	width: 100%!important;
+}
+}
+@media screen and (max-width: 980px) {
+#user21, #user22 {
+	width: 50%!important;
+}
+#user23, #user24 {
+	width: 100%!important;
+}
+.hdccm h4, .hdccm p, .hdcam h4, .hdcam p {
+	text-align: center;
+}
+.hdccm a.template_readmore {
+	display: table!important;
+	margin: 20px auto!important;
+}
+.hdccm .yjsquare_in {
+	margin: 0!important;
+}
+}
+@media screen and (max-width: 480px) {
+#user21, #user22 {
+	width: 100%!important;
+}
+.hdcpm h4, .hdctm h4 {
+	text-align: center!important;
+}
+.hdcpm ul {
+	width: 135px!important;
+	margin: 0 auto!important;
+}
+}
+@media screen and (max-width: 1500px) {
+body,  html {
+	overflow-x: hidden;
+}
+}

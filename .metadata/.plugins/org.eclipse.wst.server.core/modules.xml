@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.j2ee.server:trip" serverId="Tomcat v5.5 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:creditoCobranza" serverId="Tomcat v6.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:eventAdmin" serverId="Tomcat v5.5 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:bar" serverId="Tomcat v7.0 Server at localhost"/>
+</modules>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN"
+                               "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+
+	<!-- Data Sources -->
+	<data-sources>
+	</data-sources>
+
+	<!-- Form Beans -->
+
+	<!-- Global Exceptions -->
+	<form-beans>
+		<form-bean name="loginForm" type="contactcenter.forms.LoginForm">
+		</form-bean>
+		<form-bean name="clientActivateForm" type="contactcenter.forms.ClientActivateForm">
+		</form-bean>
+		<form-bean name="clientChangeForm" type="contactcenter.forms.ClientChangeForm">
+		</form-bean>
+		<form-bean name="clientDeleteForm" type="contactcenter.forms.ClientDeleteForm">
+		</form-bean>
+		<form-bean name="clientNewForm" type="contactcenter.forms.ClientNewForm">
+		</form-bean>
+		<form-bean name="clientSelectForm" type="contactcenter.forms.ClientSelectForm">
+		</form-bean>
+		<form-bean name="userActivateForm" type="contactcenter.forms.UserActivateForm">
+		</form-bean>
+		<form-bean name="userChangeForm" type="contactcenter.forms.UserChangeForm">
+		</form-bean>
+		<form-bean name="userDeleteForm" type="contactcenter.forms.UserDeleteForm">
+		</form-bean>
+		<form-bean name="userNewForm" type="contactcenter.forms.UserNewForm">
+		</form-bean>
+		<form-bean name="userSelectForm" type="contactcenter.forms.UserSelectForm">
+		</form-bean>
+		<form-bean name="preForm" type="contactcenter.forms.PreForm">
+		</form-bean>
+		<form-bean name="preWVForm" type="contactcenter.forms.PreWVForm">
+		</form-bean>
+		<form-bean name="processAdminForm" type="contactcenter.forms.ProcessAdminForm">
+		</form-bean>
+		<form-bean name="caseNewForm" type="contactcenter.forms.CaseNewForm">
+		</form-bean>
+		<form-bean name="searchForm" type="contactcenter.forms.SearchForm">
+		</form-bean>
+		<form-bean name="caseChangeStatusForm" type="contactcenter.forms.CaseChangeStatusForm">
+		</form-bean>
+		<form-bean name="caseSelectForm" type="contactcenter.forms.CaseSelectForm">
+		</form-bean>
+		<form-bean name="asignSupervisorForm" type="contactcenter.forms.AsignSupervisorForm">
+		</form-bean>
+		<form-bean name="asignSalesAgentForm" type="contactcenter.forms.AsignSalesAgentForm">
+		</form-bean>
+		<form-bean name="caseResolveForm" type="contactcenter.forms.CaseResolveForm">
+		</form-bean>
+		<form-bean name="caseCloseForm" type="contactcenter.forms.CaseCloseForm">
+		</form-bean>
+		<form-bean name="typeCaseNewForm" type="contactcenter.forms.TypeCaseNewForm">
+		</form-bean>
+		<form-bean name="rptForm" type="contactcenter.forms.RptForm">
+		</form-bean>
+		<form-bean name="rptCasesForm" type="contactcenter.forms.RptCasesForm">
+		</form-bean>
+		<form-bean name="rptCaseForm" type="contactcenter.forms.RptCaseForm">
+		</form-bean>
+	</form-beans>
+	<global-exceptions>
+	</global-exceptions>
+
+	<!-- Global Forwards -->
+	<global-forwards>
+		<forward name="okGlobal" path="/ok.jsp">
+		</forward>
+		<forward name="print" path="/rpt/CallCrystal.jsp">  
+		</forward>
+		<forward name="error" path="/notOK.jsp">
+		</forward>
+		<forward name="login" path="/login.jsp">
+		</forward>
+		<forward name="viewFile" path="/viewFile.jsp">
+		</forward>
+	</global-forwards>
+
+	<!-- Action Mappings -->
+	<action-mappings>
+		<action path="/login" input="/logout.jsp" type="contactcenter.actions.LoginAction" name="loginForm" scope="request">
+			<forward name="ok" path="/links.jsp">
+			</forward>
+		</action>
+		<action name="userActivateForm" path="/userActivate" scope="request" type="contactcenter.actions.UserActivateAction" input="/user/userActivate.jsp">
+			<forward name="ok" path="/ok.jsp">
+			</forward>
+		</action>
+		<action name="userChangeForm" path="/userChange" scope="session" type="contactcenter.actions.UserChangeAction" input="/user/userChange.jsp">
+			<forward name="ok" path="/ok.jsp">
+			</forward>
+		</action>
+		<action name="userDeleteForm" path="/userDelete" scope="request" type="contactcenter.actions.UserDeleteAction" input="/user/userDelete.jsp">
+			<forward name="ok" path="/ok.jsp">
+			</forward>
+		</action>
+		<action name="userNewForm" path="/userNew" scope="request" type="contactcenter.actions.UserNewAction" input="/user/userNew.jsp">
+			<forward name="ok" path="/ok.jsp">
+			</forward>
+		</action>
+		<action name="userSelectForm" path="/userSelect" scope="request" type="contactcenter.actions.UserSelectAction" input="/user/userSelect.jsp">
+			<forward name="ok" path="/user/userChange.jsp">
+			</forward>
+		</action>  
+		<action path="/pre" type="contactcenter.actions.PreAction" input="/pre.jsp" name="preForm" scope="request">
+			<forward name="userNew" path="/user/userNew.jsp">
+			</forward>
+			<forward name="userActivate" path="/user/userActivate.jsp">
+			</forward>
+			<forward name="userDelete" path="/user/userDelete.jsp">
+			</forward>
+			<forward name="userSelect" path="/user/userSelect.jsp">
+			</forward>
+			<forward name="clientActivate" path="/client/clientActivate.jsp">
+			</forward>
+			<forward name="clientChange" path="/client/clientChange.jsp">
+			</forward>
+			<forward name="clientDelete" path="/client/clientDelete.jsp">
+			</forward>
+			<forward name="clientNew" path="/client/clientNew.jsp">
+			</forward>
+			<forward name="clientSelect" path="/client/clientSelect.jsp">
+			</forward>
+			<forward name="processAdmin" path="/admin/processAdmin.jsp">
+			</forward>
+			<forward name="caseNew" path="/cases/caseNew.jsp">
+			</forward>
+			<forward name="asignSupervisor" path="/admin/asignSupervisor.jsp">
+			</forward>
+			<forward name="asignSalesAgent" path="/admin/asignSalesAgent.jsp">
+			</forward>
+			<forward name="caseResolve" path="/cases/caseResolve.jsp">
+			</forward>
+			<forward name="caseClose" path="/cases/caseClose.jsp">
+			</forward>
+			<forward name="typeCaseNew" path="/admin/typeCaseNew.jsp">
+			</forward>
+		</action>
+		<action path="/preWV" type="contactcenter.actions.PreWVAction" input="/cases/caseResolve.jsp" name="preWVForm" scope="request">
+		</action>
+		<action path="/rpt" name="rptForm" scope="request" type="contactcenter.actions.RptAction">
+			<forward name="rptCases" path="/rpt/rptCases.jsp">
+			</forward>
+			<forward name="rptCase" path="/rpt/rptCase.jsp">
+			</forward>
+		</action>
+		<action path="/rptCases" type="contactcenter.actions.RptCasesAction" name="rptCasesForm"  scope="request" input="/rpt/rptCases.jsp">
+		</action>
+		<action path="/rptCase" type="contactcenter.actions.RptCaseAction" name="rptCaseForm"  scope="request" input="/rpt/rptCase.jsp">
+		</action>
+
+		<action path="/processAdmin" input="/admin/processAdmin.jsp" name="processAdminForm" scope="request" type="contactcenter.actions.ProcessAdminAction">
+			<forward name="loop" path="/admin/processAdmin.jsp">
+			</forward>
+		</action>	
+
+		<action path="/search" name="searchForm" scope="request" input="/cases/caseNew.jsp" type="contactcenter.actions.SearchAction">
+			<forward name="userDelete" path="/user/userDelete.jsp">
+			</forward>
+			<forward name="userActivate" path="/user/userActivate.jsp">
+			</forward>
+			<forward name="userSelect" path="/user/userSelect.jsp">
+			</forward>			
+			<forward name="caseNew" path="/cases/caseNew.jsp">
+			</forward>
+			<forward name="clientSelect" path="/client/clientSelect.jsp">
+			</forward>			
+			<forward name="clientDelete" path="/client/clientDelete.jsp">
+			</forward>			
+			<forward name="clientActivate" path="/client/clientActivate.jsp">
+			</forward>			
+			<forward name="userAsignSupervisor" path="/admin/asignSupervisor.jsp">
+			</forward>
+			<forward name="clientAsignSalesAgent" path="/admin/asignSalesAgent.jsp">
+			</forward>
+			<forward name="caseResolve" path="/cases/caseResolve.jsp">
+			</forward>
+		</action>
+
+
+
+		<action path="/caseNew" type="contactcenter.actions.CaseNewAction" input="/cases/caseNew.jsp" name="caseNewForm" scope="request">
+			<forward name="loop" path="/cases/caseNew.jsp">
+			</forward>
+		</action>
+		<action path="/asignSupervisor" type="contactcenter.actions.AsignSupervisorAction" name="asignSupervisorForm" scope="request" input="/admin/asignSupervisor.jsp">
+		</action>
+		<action path="/asignSalesAgent" type="contactcenter.actions.AsignSalesAgentAction" name="asignSalesAgentForm" scope="request" input="/admin/asignSalesAgent.jsp">
+		</action>
+		<action path="/caseResolve" type="contactcenter.actions.CaseResolveAction" name="caseResolveForm" scope="request" input="/cases/caseResolve.jsp">
+			<forward name="loop" path="/cases/caseResolve.jsp">
+			</forward>
+		</action>
+		<action path="/caseClose" type="contactcenter.actions.CaseCloseAction" input="/cases/caseClose.jsp" name="caseCloseForm" scope="request">
+			<forward name="caseClose" path="/cases/caseClose.jsp">
+			</forward>
+			<forward name="loop" path="/cases/caseClose.jsp">
+			</forward>
+		</action>
+		<action path="/typeCaseNew" type="contactcenter.actions.TypeCaseNewAction" input="/admin/typeCaseNew.jsp" name="typeCaseNewForm" scope="request">
+			<forward name="loop" path="/admin/typeCaseNew.jsp">
+			</forward>
+		</action>
+			 
+		<action name="clientActivateForm" path="/clientActivate" scope="request" type="contactcenter.actions.ClientActivateAction" input="/client/clientActivate.jsp">
+			<forward name="ok" path="/ok.jsp">
+			</forward>
+		</action>
+		<action name="clientChangeForm" path="/clientChange" scope="session" type="contactcenter.actions.ClientChangeAction" input="/client/clientChange.jsp">
+			<forward name="ok" path="/ok.jsp">
+			</forward>
+		</action>   
+		<action name="clientDeleteForm" path="/clientDelete" scope="request" type="contactcenter.actions.ClientDeleteAction" input="/client/clientDelete.jsp">
+			<forward name="ok" path="/ok.jsp">
+			</forward>
+		</action>
+		<action name="clientNewForm" path="/clientNew" scope="request" type="contactcenter.actions.ClientNewAction" input="/client/clientNew.jsp">
+			<forward name="ok" path="/ok.jsp">
+			</forward>
+		</action>
+		<action name="clientSelectForm" path="/clientSelect" scope="request" type="contactcenter.actions.ClientSelectAction" input="/client/clientSelect.jsp">
+			<forward name="ok" path="/client/clientChange.jsp">
+			</forward>
+		</action>
+			
+
+	</action-mappings>
+
+	<!-- Message Resources -->
+	<message-resources parameter="contactcenter.resources.ApplicationResources"/>
+
+</struts-config>
+ 

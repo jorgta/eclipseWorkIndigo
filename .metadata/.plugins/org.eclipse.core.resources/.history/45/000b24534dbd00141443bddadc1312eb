@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" 	value="false" />
+	<constant name="struts.devMode" value="false" />
+
+
+	
+	<package name="default" extends="struts-default,json-default"  namespace="/">
+		
+
+    
+		<global-results>
+		    <result name="printGlobal">/rpt/CallCrystal.jsp</result>
+		    <result name="logout">login.jsp</result>
+		 </global-results>
+  
+		<action name="initial" class="com.struts2.actions.LoginAction" method="forward">
+			<result name="error">login.jsp</result>
+		</action>
+		
+		<action name="login" class="com.struts2.actions.LoginAction">
+			<result name="success">links.jsp</result>
+			<result name="error">notOK.jsp</result>
+			<result name="input">login.jsp</result>
+		</action>
+		
+		<action name="index" class="com.struts2.actions.IndexAction">
+			<result name="success">index.jsp</result>
+			<result name="error">notOK.jsp</result>
+			
+		</action>
+		
+		<action name="tagAction" class="com.struts2.actions.TagAction" >
+		<result name="success">index.jsp</result>
+		</action>
+		
+		
+		<action name="rptLog" class="com.struts2.actions.RptAction">
+			<result name="login">login.jsp</result>
+			<result name="error">notOK.jsp</result>			
+		</action>
+		
+		
+		<action name="userGrid" class="com.struts2.actions.TestGridAction">
+			<result name="success" type="json" ></result>					
+		</action>
+		
+		
+	   <action name="getJSONResult" class="com.struts2.actions.JSONDataAction">       	   
+       	   <result name="success" type="json" ></result>	
+      </action>
+	</package>
+</struts>

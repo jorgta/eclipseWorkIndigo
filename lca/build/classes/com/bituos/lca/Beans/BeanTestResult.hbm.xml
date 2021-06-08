@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.bituos.lca.Beans.BeanTestResult" table="test_result" >
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       <many-to-one name="id_order" column="id_order" not-null="true"/>
+       <many-to-one name="id_test_parameter" column="id_test_parameter" not-null="true"/>
+       <property name="test_name" column="test_name" type="string"  not-null="true"/>
+       <property name="test_parameter_name" column="test_parameter_name" type="string"  not-null="true"/>
+       <property name="value" column="value" type="double"  not-null="false"/>
+       <property name="value_str" column="value_str" type="string"  not-null="false"/>
+ 	   <property name="date_reg" column="date_reg" type="date"  not-null="false"/>
+       <property name="min_value" column="min_value" type="double"  not-null="false"/>
+       <property name="max_value" column="max_value" type="double"  not-null="false"/>       
+       <property name="min_value_str" column="min_value_str" type="string"  not-null="false"/>
+       <property name="max_value_str" column="max_value_str" type="string"  not-null="false"/>       
+ 	   <property name="is_numeric" column="is_numeric" type="int"  not-null="true"/>
+ 	   <property name="must_compare" column="must_compare" type="int"  not-null="true"/>
+ 	   <property name="is_free_text" column="is_free_text" type="int"  not-null="true"/>
+       <property name="value_free_text" column="value_free_text" type="string"  not-null="false"/>       
+
+   </class>
+</hibernate-mapping>
+
+

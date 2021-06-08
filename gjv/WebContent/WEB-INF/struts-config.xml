@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+
+
+	<!-- Data Sources -->
+	<data-sources>
+	</data-sources>
+
+	<!-- Form Beans -->
+   	<form-beans>
+    	<form-bean name="loginForm" type="com.bituos.gjv.forms.LoginForm">
+		</form-bean>
+		<form-bean name="preForm" type="com.bituos.gjv.forms.PreForm">
+		</form-bean>
+		<form-bean name="searchForm" type="com.bituos.gjv.forms.SearchForm">
+		</form-bean>
+		<form-bean name="processAdminForm" type="com.bituos.gjv.forms.ProcessAdminForm">
+		</form-bean>
+		
+		
+		<form-bean name="userNewForm" type="com.bituos.gjv.forms.UserNewForm">
+		</form-bean>
+		<form-bean name="userDeleteForm" type="com.bituos.gjv.forms.UserDeleteForm">
+		</form-bean>
+		<form-bean name="userActivateForm" type="com.bituos.gjv.forms.UserActivateForm">
+		</form-bean>
+		<form-bean name="userChangeForm" type="com.bituos.gjv.forms.UserChangeForm">
+		</form-bean>
+		<form-bean name="userSelectForm" type="com.bituos.gjv.forms.UserSelectForm">
+		</form-bean>
+		
+		<form-bean name="contactNewForm" type="com.bituos.gjv.forms.ContactNewForm">
+		</form-bean>		
+		<form-bean name="contactChangeForm" type="com.bituos.gjv.forms.ContactChangeForm">
+		</form-bean>
+		<form-bean name="contactDeleteForm" type="com.bituos.gjv.forms.ContactDeleteForm">
+		</form-bean>
+		<form-bean name="contactActivateForm" type="com.bituos.gjv.forms.ContactActivateForm">
+		</form-bean>
+		<form-bean name="contactNoteNewForm" type="com.bituos.gjv.forms.ContactNoteNewForm">
+		</form-bean>		
+		<form-bean name="contactNoteChangeForm" type="com.bituos.gjv.forms.ContactNoteChangeForm">
+		</form-bean>
+		
+		<form-bean name="contactGroupNewForm" type="com.bituos.gjv.forms.ContactGroupNewForm">
+		</form-bean>		
+		<form-bean name="contactGroupChangeForm" type="com.bituos.gjv.forms.ContactGroupChangeForm">
+		</form-bean>
+		<form-bean name="contactGroupDeleteForm" type="com.bituos.gjv.forms.ContactGroupDeleteForm">
+		</form-bean>
+		<form-bean name="contactGroupActivateForm" type="com.bituos.gjv.forms.ContactGroupActivateForm">
+		</form-bean>
+		<form-bean name="contactGroupNoteNewForm" type="com.bituos.gjv.forms.ContactGroupNoteNewForm">
+		</form-bean>		
+		<form-bean name="contactGroupNoteChangeForm" type="com.bituos.gjv.forms.ContactGroupNoteChangeForm">
+		</form-bean>
+		
+	
+		<form-bean name="providerNewForm" type="com.bituos.gjv.forms.ProviderNewForm">
+		</form-bean>		
+		<form-bean name="providerChangeForm" type="com.bituos.gjv.forms.ProviderChangeForm">
+		</form-bean>
+		<form-bean name="providerDeleteForm" type="com.bituos.gjv.forms.ProviderDeleteForm">
+		</form-bean>
+		<form-bean name="providerActivateForm" type="com.bituos.gjv.forms.ProviderActivateForm">
+		</form-bean>
+		
+		
+    	
+  	</form-beans>
+  	
+	<!-- Global Exceptions -->
+	<global-exceptions>
+	</global-exceptions>
+
+   <global-forwards>
+    <forward name="okGlobal" path="/mainMenu.do">
+	 </forward>
+	 <forward name="error" path="/notOK.jsp">
+	 </forward>
+	 <forward name="login" path="/login.jsp">
+	 </forward>	 
+	 <forward name="ok" path="/ok.jsp">
+	</forward>
+  </global-forwards>
+
+   
+   <action-mappings>
+     <action path="/login" type="com.bituos.gjv.actions.LoginAction" name="loginForm" scope="request" input="/login.jsp">
+        <forward name="ok" path="/links.jsp">
+		 </forward>
+     </action>
+     <action path="/pre" type="com.bituos.gjv.actions.PreAction" name="preForm" scope="request" input="/pre.jsp">
+         
+         <forward name="userNew" path="/user/userNew.jsp"/>
+         <forward name="userDelete" path="/user/userDelete.jsp"/>
+         <forward name="userActivate" path="/user/userActivate.jsp"/>
+         <forward name="userChange" path="/user/userChange.jsp"/> 
+                 
+         <forward name="contactNewRH" path="/contactsRH/contactNew.jsp"/>  
+         <forward name="contactChangeRH" path="/contactsRH/contactChange.jsp"/>   
+         <forward name="contactDeleteRH" path="/contactsRH/contactDelete.jsp"/> 
+         <forward name="contactActivateRH" path="/contactsRH/contactActivate.jsp"/> 
+         <forward name="contactNoteNewRH" path="/contactsRH/contactNote.jsp"/> 
+         <forward name="contactNoteChangeRH" path="/contactsRH/contactChangeNote.jsp"/> 
+         
+         
+         <forward name="contactGroupNewRH" path="/contactsRHGroup/contactNew.jsp"/>  
+         <forward name="contactGroupChangeRH" path="/contactsRHGroup/contactChange.jsp"/>   
+         <forward name="contactGroupDeleteRH" path="/contactsRHGroup/contactDelete.jsp"/> 
+         <forward name="contactGroupActivateRH" path="/contactsRHGroup/contactActivate.jsp"/> 
+         <forward name="contactGroupNoteNewRH" path="/contactsRHGroup/contactNote.jsp"/> 
+         <forward name="contactGroupNoteChangeRH" path="/contactsRHGroup/contactChangeNote.jsp"/> 
+         
+         
+         
+         <forward name="providerNewPPS" path="/contactsPPS/contactNew.jsp"/>  
+         <forward name="providerChangePPS" path="/contactsPPS/contactChange.jsp"/>   
+         <forward name="providerDeletePPS" path="/contactsPPS/contactDelete.jsp"/> 
+         <forward name="providerActivatePPS" path="/contactsPPS/contactActivate.jsp"/> 
+                
+         <forward name="processAdmin" path="/admin/processAdmin.jsp"/>
+		 	 
+     </action>
+     
+     
+     <action path="/processAdmin" type="com.bituos.gjv.actions.ProcessAdminAction" name="processAdminForm" scope="request" input="/admin/processAdmin.jsp">
+       <forward name="error" path="/notOK.jsp">
+	   </forward>
+	   <forward name="loop" path="/admin/processAdmin.jsp">
+	   </forward>	 
+     </action>
+     
+     <action path="/userNewAction" type="com.bituos.gjv.actions.UserNewAction" name="userNewForm" scope="request" input="/user/userNew.jsp">
+     </action>
+     <action path="/userDeleteAction" type="com.bituos.gjv.actions.UserDeleteAction" name="userDeleteForm" scope="request" input="/user/userDelete.jsp">
+     </action>
+     <action path="/userActivateAction" type="com.bituos.gjv.actions.UserActivateAction" name="userActivateForm" scope="request" input="/user/userActivate.jsp">
+     </action>
+     <action path="/userChangeAction" type="com.bituos.gjv.actions.UserChangeAction" name="userChangeForm" scope="session" input="/user/userChange.jsp">
+         	<forward name="userChange" path="/user/userChange.jsp"/>
+     </action>
+     <action path="/userSelectAction" type="com.bituos.gjv.actions.UserSelectAction" name="UserSelectActionForm" scope="request" input="/user/userSelect.jsp">
+     </action>
+      <action path="/search" type="com.bituos.gjv.actions.SearchAction" name="searchForm" scope="request">     
+            <forward name="userDelete" path="/user/userDelete.jsp">
+	        </forward>
+	  		<forward name="userActivate" path="/user/userActivate.jsp">
+	  		</forward>
+	  		<forward name="userChange" path="/user/userChange.jsp">
+	  		</forward>      
+	  		
+	  		
+	  		<forward name="contactChange" path="/contactsRH/contactChange.jsp">
+	  		</forward> 	  		
+	  		<forward name="contactDelete" path="/contactsRH/contactDelete.jsp">
+	  		</forward> 	  		
+	  		<forward name="contactActivate" path="/contactsRH/contactActivate.jsp">
+	  		</forward> 
+	  		<forward name="contactNoteNew" path="/contactsRH/contactNote.jsp">
+	  		</forward> 
+	  		<forward name="contactNoteChange" path="/contactsRH/contactChangeNote.jsp">
+	  		</forward>
+	  		
+	  	    <forward name="contactGroupChange" path="/contactsRHGroup/contactChange.jsp">
+	  		</forward> 	  		
+	  		<forward name="contactGroupDelete" path="/contactsRHGroup/contactDelete.jsp">
+	  		</forward> 	  		
+	  		<forward name="contactGroupActivate" path="/contactsRHGroup/contactActivate.jsp">
+	  		</forward> 
+	  		<forward name="contactGroupNoteNew" path="/contactsRHGroup/contactNote.jsp">
+	  		</forward> 
+	  		<forward name="contactGroupNoteChange" path="/contactsRHGroup/contactChangeNote.jsp">
+	  		</forward>
+	  		
+	  		<forward name="providerChange" path="/contactsPPS/contactChange.jsp">
+	  		</forward> 	  		
+	  		<forward name="providerDelete" path="/contactsPPS/contactDelete.jsp">
+	  		</forward> 	  		
+	  		<forward name="providerActivate" path="/contactsPPS/contactActivate.jsp">
+	  		</forward> 	  
+	  		
+     </action>
+     <action path="/contactNewAction" type="com.bituos.gjv.actions.ContactNewAction" name="contactNewForm" scope="request" input="/contactsRH/contactNew.jsp">
+     </action>
+      <action path="/contactChangeAction" type="com.bituos.gjv.actions.ContactChangeAction" name="contactChangeForm" scope="session" input="/contactsRH/contactChange.jsp">
+         	<forward name="contactChangeRH" path="/contactsRH/contactChange.jsp"/>  
+     </action>
+     <action path="/contactDeleteAction" type="com.bituos.gjv.actions.ContactDeleteAction" name="contactDeleteForm" scope="request" input="/contactsRH/contactDelete.jsp">
+         	<forward name="contactDeleteRH" path="/contactsRH/contactDelete.jsp"/>  
+     </action>
+       <action path="/contactActivateAction" type="com.bituos.gjv.actions.ContactActivateAction" name="contactActivateForm" scope="request" input="/contactsRH/contactActivate.jsp">
+         	<forward name="contactActivateRH" path="/contactsRH/contactActivate.jsp"/>  
+     </action>
+     <action path="/contactNoteNewAction" type="com.bituos.gjv.actions.ContactNoteNewAction" name="contactNoteNewForm" scope="request" input="/contactsRH/contactNote.jsp">
+         	<forward name="contactNoteNewRH" path="/contactsRH/contactNote.jsp"/>  
+     </action>
+     <action path="/contactNoteChangeAction" type="com.bituos.gjv.actions.ContactNoteChangeAction" name="contactNoteChangeForm" scope="session" input="/contactsRH/contactChangeNote.jsp">
+         	<forward name="contactNoteChangeRH" path="/contactsRH/contactChangeNote.jsp"/>
+     </action>
+     
+     
+     <action path="/contactGroupNewAction" type="com.bituos.gjv.actions.ContactGroupNewAction" name="contactGroupNewForm" scope="request" input="/contactsRHGroup/contactNew.jsp">
+     </action>
+      <action path="/contactGroupChangeAction" type="com.bituos.gjv.actions.ContactGroupChangeAction" name="contactGroupChangeForm" scope="session" input="/contactsRHGroup/contactChange.jsp">
+         	<forward name="contactGroupChangeRH" path="/contactsRHGroup/contactChange.jsp"/>  
+     </action>
+     <action path="/contactGroupDeleteAction" type="com.bituos.gjv.actions.ContactGroupDeleteAction" name="contactGroupDeleteForm" scope="request" input="/contactsRHGroup/contactDelete.jsp">
+         	<forward name="contactGroupDeleteRH" path="/contactsRHGroup/contactDelete.jsp"/>  
+     </action>
+       <action path="/contactGroupActivateAction" type="com.bituos.gjv.actions.ContactGroupActivateAction" name="contactGroupActivateForm" scope="request" input="/contactsRHGroup/contactActivate.jsp">
+         	<forward name="contactGroupActivateRH" path="/contactsRHGroup/contactActivate.jsp"/>  
+     </action>
+     <action path="/contactGroupNoteNewAction" type="com.bituos.gjv.actions.ContactGroupNoteNewAction" name="contactGroupNoteNewForm" scope="request" input="/contactsRHGroup/contactNote.jsp">
+         	<forward name="contactGroupNoteNewRH" path="/contactsRHGroup/contactNote.jsp"/>  
+     </action>
+     <action path="/contactGroupNoteChangeAction" type="com.bituos.gjv.actions.ContactGroupNoteChangeAction" name="contactGroupNoteChangeForm" scope="session" input="/contactsRHGroup/contactChangeNote.jsp">
+         	<forward name="contactGroupNoteChangeRH" path="/contactsRHGroup/contactChangeNote.jsp"/>  
+     </action>
+     
+     <action path="/providerNewAction" type="com.bituos.gjv.actions.ProviderNewAction" name="providerNewForm" scope="request" input="/contactsPPS/contactNew.jsp">
+     </action>
+      <action path="/providerChangeAction" type="com.bituos.gjv.actions.ProviderChangeAction" name="providerChangeForm" scope="session" input="/contactsPPS/contactChange.jsp">
+         	<forward name="providerChangePPS" path="/contactsPPS/contactChange.jsp"/>  
+     </action>
+     <action path="/providerDeleteAction" type="com.bituos.gjv.actions.ProviderDeleteAction" name="providerDeleteForm" scope="request" input="/contactsPPS/contactDelete.jsp">
+         	<forward name="providerDeletePPS" path="/contactsPPS/contactDelete.jsp"/>  
+     </action>
+       <action path="/providerActivateAction" type="com.bituos.gjv.actions.ProviderActivateAction" name="providerActivateForm" scope="request" input="/contactsPPS/contactActivate.jsp">
+         	<forward name="providerActivatePPS" path="/contactsPPS/contactActivate.jsp"/>  
+     </action>
+     
+     
+     
+    
+   </action-mappings>
+  								 
+	<!-- Message Resources -->
+   <!--<message-resources parameter="com.bituos.captura.ApplicationResources" /> -->
+   <message-resources parameter="com.eclipse.struts.ApplicationResources" />
+
+</struts-config>
+

@@ -1,0 +1,54 @@
+.sliderwrapper{
+position: relative; /*leave as is*/
+overflow: hidden; /*leave as is*/
+width: 952px;
+height:262px;/*width of featured content slider*/
+z-index:0;
+}
+
+
+
+.sliderwrapper .contentdiv{
+visibility: hidden; /*leave as is*/
+position: absolute; /*leave as is*/
+left: 0;  /*leave as is*/
+top: 0;  /*leave as is*/
+padding: 0px;
+background:none;
+width: 952px;
+height:262px;
+/*filter:progid:DXImageTransform.Microsoft.alpha(opacity=100);
+-moz-opacity: 1;
+opacity: 1;*/
+z-index:2px;
+}
+
+.pagination{
+	width: 100px; /*Width of pagination DIV. Total width should equal slider's outer width (400+10+10=420)*/
+	text-align: right;
+	padding: 5px 10px;
+	position:absolute;
+	z-index:100;
+	top:240px;
+	left:0px;
+	font-size:0px;
+	
+}
+
+.pagination a{
+padding: 0px 2px;
+text-decoration: none; 
+background:url(images/nromalimg.png) no-repeat;
+width:10px; 
+height:10px;
+float:left;
+font-size:0px;
+}
+
+.pagination a:hover, .pagination a.selected{
+	float:left;
+	background:url(images/activeimg.png) no-repeat;
+	width:10px;
+	height:10px;
+	font-size:0px;
+}

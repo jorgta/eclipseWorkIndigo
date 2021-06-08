@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.bituos.lca.Beans.BeanTestPkgDetail" table="test_pkg_detail" >
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+
+       <many-to-one name="id_test_pkg" column="id_test_pkg" not-null="true"/>
+       <many-to-one name="id_test" column="id_test" not-null="true"/>
+       <property name="test_name" column="test_name" type="string"  not-null="true"/> 
+       <property name="price" column="price" type="double"  not-null="false"/>
+ 
+	
+       
+   </class>
+</hibernate-mapping>
+
+

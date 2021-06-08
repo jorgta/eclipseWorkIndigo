@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.bituos.bar.Beans.BeanCategoria" table="categorias" >
+       <id name="id_categoria" type="integer" column="id_categoria" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       <property name="descripcion" column="descripcion" type="string"  not-null="false"/>
+       <property name="foto" column="foto" type="binary"  not-null="false"/>
+
+
+      
+   </class>
+</hibernate-mapping>
+
+

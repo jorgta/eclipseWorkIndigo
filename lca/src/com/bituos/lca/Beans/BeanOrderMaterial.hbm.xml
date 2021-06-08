@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.bituos.lca.Beans.BeanOrderMaterial" table="order_material" >
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+
+
+
+       <many-to-one name="id_order" column="id_order" not-null="true"/>
+       <many-to-one name="id_material" column="id_material" not-null="true"/>
+       <property name="qty" column="qty" type="int"  not-null="true"/>
+       <property name="material_description" column="material_description" type="string"  not-null="true"/>
+       <property name="material_has_label" column="material_has_label" type="int"  not-null="true"/>
+       <property name="is_patient" column="is_patient" type="int"  not-null="true"/>
+       
+
+
+       
+   </class>
+</hibernate-mapping>
+
+

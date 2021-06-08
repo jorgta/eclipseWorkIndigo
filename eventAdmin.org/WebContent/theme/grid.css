@@ -1,0 +1,230 @@
+@CHARSET "ISO-8859-1";
+#paginglinks{
+
+margin: 5px auto 5px auto;
+
+clear: both;
+
+}
+       
+
+.pagelink,
+
+.pagelinklast,
+ 
+.pagecurrent{
+
+          background: transparent;
+
+          border: 1px solid #212121;
+
+          padding: 1px 3px 1px 3px;
+
+}
+
+       
+
+.pagelinklast{
+
+          background: #999;
+
+}
+
+       
+
+.pagecurrent{
+
+          background: #999;
+ 
+}
+
+       
+
+div.grid-header-button {
+
+background-color: transparent;
+ 
+text-align: right;
+
+padding: 0;
+
+margin: 0;
+
+}
+
+       
+
+      div.grid-header-button input{
+
+          margin: 5px;
+  
+      }
+  
+       
+  
+      table.grid{
+  
+          border-top: 1px solid #DFDFDF;
+ 
+          border-right: 1px solid #DFDFDF;
+ 
+          width: 98%;
+  
+      }
+  
+         
+ 
+      tr.rowHead {
+  
+          background-color: #eee;
+  
+      }
+ 
+       
+    tr.rowHead th.first-cell{
+ 
+          border-left: 1px solid #DFDFDF;
+ 
+      }
+ 
+       
+ 
+      tr.rowHead th{
+ 
+          padding: 5px;
+ 
+          color: #0B610B;
+ 
+          font-size: 13px;
+
+          font-weight : bold;   
+ 
+          border-top: 3px solid #F7F5EE;
+          border-bottom: 3px solid #FEBE47;
+  
+          border-left: 1px solid #fff;
+ 
+          background-color: #ECE9D8;
+ 
+      }
+
+       
+
+      tr.rowHead th:hover{
+ 
+          background-color: #FAF9F4;
+ 
+          color: #ccc;
+
+      }
+
+       
+
+      tr.rowHead th a{
+
+          display: block;
+ 
+      }
+ 
+       
+
+      tr.rowFoot {
+
+          background-color: #eee;
+
+      }
+
+       
+
+      tr.rowFoot td{
+
+          padding: 2px;
+
+          color: #000;
+
+          font-size: 1px;
+
+          font-weight : bold;   
+
+          /*border-top: 3px solid #F7F5EE;*/
+
+          border-bottom: 2px solid #FEBE47;
+
+          border-left: 1px solid #fff;
+
+          background-color: #ECE9D8;
+
+      }
+
+       
+
+      tr.rowFoot td.first-cell{
+
+          border-left: 1px solid #DFDFDF;
+
+      }
+
+       
+
+      tr.rowEven {
+
+          background-color: #eee;
+          font-size: 10px;
+ 
+      }
+ 
+       
+ 
+      tr.rowEven:hover {
+
+          background-color: #FFFFDD;
+
+          color: #000000;
+
+      }
+
+       
+
+      tr.rowEven td{
+
+          border-bottom: 1px solid #99BAF3;
+
+          border-left: 1px solid #DFDFDF;
+
+          padding: 5px;   
+          
+          
+
+      }
+
+       
+
+      tr.rowOdd {
+
+          background-color: #fff;
+          font-size: 10px;
+
+      }
+
+       
+
+      tr.rowOdd:hover {
+
+          background-color: #D9E8F9;
+
+          color: #000000;
+
+      }
+
+       
+
+      tr.rowOdd td{
+
+          border-bottom: 1px solid #99BAF3;
+
+          border-left: 1px solid #DFDFDF;
+
+          padding: 5px;   
+
+      }
+

@@ -1,0 +1,24 @@
+
+<%@ taglib prefix="s" uri="/struts-tags"%>
+<%@ taglib prefix="sj" uri="/struts-jquery-tags"%>
+<%@ taglib prefix="sjg" uri="/struts-jquery-grid-tags"%>
+
+<s:action name="index" namespace="/" executeResult="true" />
+
+<%@ include file="header.jsp" %> 
+
+	<div id="centerbottom" class="yjsgsitew">
+		<div class="centerbottom_in">
+			<%@ include file="slide.jsp" %> 
+			
+			<%@ include file="body.jsp" %>  
+	    </div>
+	</div>
+	<!-- end centerbottom-->
+
+
+
+<%@ include file="footer.jsp" %> 
+
+	
+

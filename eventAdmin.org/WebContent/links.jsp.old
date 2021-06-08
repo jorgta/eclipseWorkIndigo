@@ -1,0 +1,123 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<%@ taglib uri="/WEB-INF/struts-html.tld" prefix="html" %>
+<%@ taglib uri="/WEB-INF/struts-bean.tld" prefix="bean" %>
+
+<%@taglib uri="/WEB-INF/struts-logic.tld" prefix="logic"%>
+<html:html>
+<HEAD>
+
+<%@ page session="true" import="java.util.*, com.tecunsa.Beans.*, java.io.*, javax.servlet.http.HttpSession.*"%>
+
+<%@ page 
+language="java"
+
+contentType="text/html; charset=ISO-8859-1"
+
+pageEncoding="ISO-8859-1"
+
+%>
+
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<META name="GENERATOR" content="IBM WebSphere Studio">
+
+<META http-equiv="Content-Style-Type" content="text/css">
+<LINK href="theme/Master.css" rel="stylesheet" type="text/css">
+<TITLE>Pantalla principal</TITLE>
+</HEAD>
+
+
+
+<BODY>
+<logic:present name="beanUser" scope="session" >
+
+
+	<% int i = 0;
+    %>
+
+
+	<logic:present name="processList" scope="session">
+	
+        <A href = "logout.jsp" > <img src="img/button_logout.gif" border="0" alt='<bean:message key="label.system.exit" />'> </A> 
+		<BR>
+		
+        <TABLE border="1" class="table_campo">
+          <TR>
+            <TD class="table_encabezado">   
+	          jjjj
+            </TD>   
+            <TD>   
+	          <bean:write name="beanUser" property="id_company.name" />
+            </TD>   
+          </TR>
+          <TR>
+            <TD class="table_encabezado">   
+	          <bean:message key="label.user" />
+            </TD>   
+            <TD>   
+	          <bean:write name="beanUser" property="name" />
+            </TD>   
+          </TR>
+        </TABLE>
+		
+		
+		<logic:iterate id="processType" indexId="indexprocessType" name="processTypeList" scope="session" >
+		    <BR> 
+		    <BR> 
+	        <TABLE border="1" class="table_campo">
+			    <TR class="table_encabezado">
+				  <TD> 
+					 <bean:write name="processType" property="description" />
+				  </TD> 
+			    </TR>
+			    <TR>
+			        <bean:define id="pt" name="processType" > </bean:define>
+			        
+					<logic:iterate id="process" indexId="indexprocess" name="processList" scope="session" >
+			        
+			        <bean:define id="p" name="process" property="id_process"> </bean:define>
+			        
+						        <%
+						          //BeanProcess_Type pt1 = (BeanProcess_Type) request.getSession().getAttribute("pt");
+						          //BeanProcess p1 = (BeanProcess) request.getSession().getAttribute("p");
+						          
+						          if ( ((BeanType_Process) pt).getId() == ((BeanProcess) p).getId_type_process().getId() )
+						            {
+						              String s = ((BeanProcess) p).getUrl();
+						        %>
+									  <TD> 
+								        <html:form action="/pre" >
+											<html:hidden property="process" value="" />
+					
+											<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+											document.forms(<%=i%>).process.value = '<bean:write name="process" property="id_process.action" />';
+											document.forms(<%=i%>).action = '<bean:write name="process" property="id_process.url" />';
+											<%i++;%>
+											//-->
+											</script>
+					
+											<html:submit>  <bean:write name="process" property="id_process.description" /> </html:submit>
+										</html:form>
+									  </TD> 
+
+						        <%
+						            }
+						        %>
+					</logic:iterate>
+			    </TR>
+			</TABLE>
+		</logic:iterate>
+ 	   <BR>
+	   <BR>
+       <A href = "logout.jsp" > <img src="img/button_logout.gif" border="0" alt='<bean:message key="label.system.exit" />'> </A> 
+	</logic:present>
+</logic:present>
+
+<logic:notPresent name="beanUser" scope="session" >
+	<logic:redirect href="login.jsp"></logic:redirect>
+</logic:notPresent>
+
+
+</BODY>
+</html:html>

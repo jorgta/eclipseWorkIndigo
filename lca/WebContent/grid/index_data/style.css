@@ -1,0 +1,94 @@
+/* --- BODY SETTINGS ---------------------- */
+BODY 					{ background: #ffffff; font: 12px Tahoma, Verdana; color: #000000; }
+BODY.header				{ margin: 4px; }
+BODY.content			{ margin: 0px; }
+BODY.left_menu 			{ background-color: #ffffff; margin: 4px; margin-left: 3px; }
+BODY a:link 			{ text-decoration: none; color: #333333;}
+BODY a:visited 			{ text-decoration: none; color: #333333;}
+BODY a:hover 			{ text-decoration: underline; color: #be0a2f;}
+BODY a:active 			{ text-decoration: underline; color: #333333;}
+
+BODY a.l:link 			{ text-decoration: none; color: #333333;}
+BODY a.l:visited 		{ text-decoration: none; color: #333333;}
+BODY a.l:hover 			{ text-decoration: none; color: #be0a2f;}
+BODY a.l:active 		{ text-decoration: none; color: #333333;}
+BODY a.l IMG            { margin-top:-2px; }
+
+a.x-blue_dg_a_header:link,
+a.x-blue_dg_a_header:visited { font-weight: bold; color: #333333; text-decoration: none; }
+a.x-blue_dg_a_header:hover, a.x-blue_dg_a_header:visited:hover { font-weight: bold; color: #4c5a6d; text-decoration: none;	}
+
+SELECT 					{ z-index: -100; }
+SELECT OPTION.bold	    { font-weight:bold; }
+IMG 					{ vertical-align: middle; border: 0px; }
+IMG.external_link       { margin-top:-3px; border:0px; }
+IMG.icon 			    { border:0px; margin-top:-3px; }
+IMG.help 			    { border:0px; margin-top:-4px; cursor:help; }
+FORM 					{ display: inline; }
+FIELDSET                { padding:5px; border:#7a7a7a 1px solid; }
+
+/* --- MESSAGES ---------------------- */
+.msg_error				{ color: #cd0000; }
+.welcome                { font-size: 14px; font-weight: bold;}
+
+/* --- MESSAGE BOXES ---------------------- */
+.message_sign           { height:32px; width:20px; padding-left:3px;}
+.message_text           { height:32px; }
+.success_message_box    { font-family: Tahoma, Verdana; height:auto; color: #000000; background-color:#f1fff1; border:1px solid #3ac13a; }
+.important_message_box  { font-family: Tahoma, Verdana; height:auto; color: #000000; background-color:#fff1f1; border:1px solid #c13a3a; }
+.message_box            { font-family: Tahoma, Verdana; height:auto; color: #000000; background-color:#fffff1; border:1px solid #c1c13a; }
+.req                    { color: #a60000; }
+
+.field_comment          { color: #444444; white-space:normal; }
+
+/* --- FORM ELEMENTS ---------------------- */
+INPUT[type=button]      { border:1px solid #4667a3; background-color: #4b6ca6; color:#ffffff; padding-right:5px; }
+INPUT[type=text],INPUT[type=password]
+                        { background-color:#fffff2; border:1px solid #b9b9b9; padding:2px 2px 2px 2px; }
+INPUT[type=text]:focus,INPUT[type=password]:focus
+	                    { border:1px solid #ababab; background-color:#ffff88; }
+INPUT[type=text]:hover,INPUT[type=password]:hover
+					    { border:1px solid #9b9b9b; }
+SELECT                  { border:1px solid #bababa; background-color:#fffff2; padding:1px 1px 1px 1px; }
+SELECT:hover            { border:1px solid #9b9b9b; }
+SELECT:disabled         { background-color:#dedede; }
+SELECT:disabled:hover   { border:1px solid #bababa; background-color:#dedede; }
+SELECT:focus            { border:1px solid #ababab; background-color:#f8f881; }
+TEXTAREA                { border:1px solid #bababa; background-color:#fffff2; padding:1px 1px 1px 1px; }
+TEXTAREA:hover          { border:1px solid #9b9b9b; }
+TEXTAREA:focus          { border:1px solid #ababab; background-color:#f8f881; }
+
+
+/* --- WIZARD ---------------------- */
+.yes			  	    { color:darkgreen; }
+.no               	    { color:darkred; }
+
+SPAN.l   { color:#002070; border-bottom:1px dotted #bababa; }
+SPAN.l_e { color:#002070; border:none; }
+LEGEND   { margin-bottom:3px; cursor:pointer; }
+		
+#tblFilterMode TH      { background-color:#e1e2e3; border:1px solid #ababab; }
+#tblViewMode TH        { background-color:#e1e2e3; border:1px solid #ababab; padding-left:2px; padding-right:2px; }
+#tblViewMode TR.sub TH { background-color:#f1f2f3; border:1px solid #dedede; padding:0px; }
+#tblEditMode TH        { background-color:#e1e2e3; border:1px solid #ababab; }
+#tblEditMode TR.sub TH { background-color:#f1f2f3; border:1px solid #dedede; padding:0px; }
+#tblForeignKeys TH     { background-color:#e1e2e3; border:1px solid #ababab; }
+#tblDetailsKeys TH { background-color:#e1e2e3; border:1px solid #ababab; }
+
+#mainWrapper        { margin:0px auto; width:1180px; border:0px solid #ff0000; }
+
+#menuWrapper        { float:left; width:200px; border:0px solid #ff0000; margin:5px 15px 10px 0px;  }
+#menuWrapper UL     { margin-left:0px; padding-left:15px; }
+#menuWrapper UL LI  { margin-bottom:5px; }
+#menuWrapper UL LI.title   { list-style:none; margin-left:-13px;  }
+#menuWrapper UL LI.divider { list-style:none; margin-left:-14px; border-bottom:1px dotted #bababa; width:130px; }
+
+#dgWrapper          { float:right; padding-bottom:20px; margin:5px 0px 10px 0px; width:965px; border:0px solid #ff0000;}
+
+/* --- ROUNDED CORNERS ---------------------- */
+FIELDSET, INPUT[type=button],
+.message_box, .important_message_box, .success_message_box{
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}

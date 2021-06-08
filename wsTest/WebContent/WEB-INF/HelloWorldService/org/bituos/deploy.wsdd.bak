@@ -1,0 +1,31 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from HelloWorldService WSDL service -->
+
+  <service name="HelloWorld" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://bituos.org"/>
+      <parameter name="wsdlServiceElement" value="HelloWorldService"/>
+      <parameter name="schemaQualified" value="http://bituos.org"/>
+      <parameter name="wsdlServicePort" value="HelloWorld"/>
+      <parameter name="className" value="org.bituos.HelloWorldSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="HelloWorld"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="saveFile" qname="operNS:saveFile" xmlns:operNS="http://bituos.org" returnQName="retNS:saveFileReturn" xmlns:retNS="http://bituos.org" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:ruta" xmlns:pns="http://bituos.org" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:filename" xmlns:pns="http://bituos.org" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:infoBytes" xmlns:pns="http://bituos.org" type="tns:base64Binary" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <parameter name="allowedMethods" value="saveFile"/>
+
+  </service>
+</deployment>

@@ -1,0 +1,16 @@
+@font-face {
+	font-family: Ascom;
+	src: url(zwowebpro.eot?iefix) format("eot"), url(zwowebpro.woff) format("woff");
+}
+@font-face {
+	font-family: Ascom-Semibold;
+	src: url(zwowebpro-semibold.eot?iefix) format("eot"), url(zwowebpro-semibold.woff) format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: Ascom-Light;
+	src: url(zwowebpro-light.eot?iefix) format("eot"), url(zwowebpro-light.woff) format("woff");
+	font-weight: normal;
+	font-style: normal;
+}

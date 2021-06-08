@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.bituos.lca.Beans.BeanRepresentative" table="representative">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       
+       <property name="name" column="name" type="string"  not-null="true"/>
+        <property name="address" column="address" type="string"  not-null="true"/>
+       <property name="notes" column="notes" type="string"  not-null="true"/>
+       <property name="email" column="email" type="string"  not-null="true"/>
+       <property name="phone" column="phone" type="string"  not-null="false"/>
+       
+   </class>
+</hibernate-mapping>
+
+

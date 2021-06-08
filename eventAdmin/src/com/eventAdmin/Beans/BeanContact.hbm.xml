@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.eventAdmin.Beans.BeanContact" table="contact">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       <property name="ip" column="ip" type="string"  not-null="true"/>
+       <property name="company" column="company" type="string"  not-null="true"/>
+       <property name="name" column="name" type="string"  not-null="true"/>
+       <property name="email" column="email" type="string"  not-null="true"/>
+       <property name="phone" column="phone" type="string"  not-null="true"/>
+       <property name="date_reg" column="date_reg" type="date"  not-null="true"/>
+       <property name="comments" column="comments" type="string"  not-null="false"/>
+      
+   </class>
+</hibernate-mapping>
+
+

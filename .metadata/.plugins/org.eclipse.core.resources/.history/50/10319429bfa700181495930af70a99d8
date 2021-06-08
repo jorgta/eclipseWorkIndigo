@@ -1,0 +1,11 @@
+package com.bituos.bituosMonitor;
+
+public class PushNotification {
+	
+	
+	public String getName()
+	  {
+		return "counterServer";
+	  }
+
+}

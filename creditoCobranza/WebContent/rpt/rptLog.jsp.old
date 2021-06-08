@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ taglib prefix="s" uri="/struts-tags"%>
+<html>
+<HEAD>
+<%@ page 
+language="java"
+contentType="text/html; charset=ISO-8859-1"
+pageEncoding="ISO-8859-1"
+%>
+
+
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<META name="GENERATOR" content="IBM WebSphere Studio">
+
+<META http-equiv="Content-Style-Type" content="text/css">
+<LINK href="../theme/Master.css" rel="stylesheet" type="text/css">
+<TITLE></TITLE>
+
+</HEAD>
+
+<BODY>
+
+	<H1> log </H1>
+
+ 
+
+<html:link href="javascript:history.back();"> Regresar </html:link>
+
+</BODY>
+</html>

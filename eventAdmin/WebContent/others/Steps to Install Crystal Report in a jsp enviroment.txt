@@ -1,0 +1,43 @@
+-copy the folder crystalreportviewers10 to "WebContent" folder
+-copy the following, to web.xml:
+	<context-param>
+		<param-name>crystal_image_uri</param-name>
+		<param-value>/giftCard/crystalreportviewers10</param-value>
+		<description>crystal_image_uri</description>
+	</context-param>
+
+
+   specififying the rigth path
+
+-copy the following to web.xml:
+
+	<taglib>
+		<taglib-uri>/crystal-tags-reportviewer.tld</taglib-uri>
+		<taglib-location>/WEB-INF/crystal-tags-reportviewer.tld</taglib-location>
+	</taglib>
+
+
+- define your db connection in web.xml:
+  <env-entry> 
+     <env-entry-name>
+	   jdbc/giftCard
+	 </env-entry-name>
+	 <env-entry-value> 
+        !com.mysql.jdbc.Driver!jdbc:jdbc:mysql://tokio.no-ip.org/giftCard?user=dsanchez;password=d
+	 </env-entry-value>
+	 <env-entry-type>
+	   java.lang.String
+	 </env-entry-type>
+  </env-entry>
+
+
+
+-modify the file "WebContent/crystalreportviewers10/crystalimagehandler.jsp" with the apropiate path
+
+
+
+-copy "CrystalReportEngine-config.xml" to "JavaSource" folder
+
+
+-copy "ServletImageHandler.java" to your serverlet folder
+

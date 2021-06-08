@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.bituos.lca.Beans.BeanPatient" table="patient" >
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       <property name="name" column="NAME" type="string"  not-null="true"/>
+       <property name="street" column="street" type="string"  not-null="false"/>
+       <property name="external_number" column="external_number" type="string"  not-null="true"/>
+       <property name="city" column="city" type="string"  not-null="false"/>
+       <property name="notes" column="notes" type="string"  not-null="true"/>
+       <property name="ship_street" column="ship_street" type="string"  not-null="false"/>
+       <property name="ship_external_number" column="ship_external_number" type="string"  not-null="true"/>
+       <property name="ship_city" column="ship_city" type="string"  not-null="false"/>
+       <property name="email" column="email" type="string"  not-null="true"/>
+       <property name="discount" column="discount" type="double"  not-null="false"/>
+       <property name="age" column="age" type="string"  not-null="false"/>
+       <property name="phone" column="phone" type="string"  not-null="false"/>
+       <property name="is_male" column="is_male" type="integer"  not-null="true"/>
+     
+   </class>
+</hibernate-mapping>
+
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;/bituos/WebContent/index.html&apos; to &apos;index.jsp&apos;&#x0D;&#x0A;- Original project: &apos;bituos&apos;&#x0D;&#x0A;- Original element: &apos;index.html&apos;" description="Rename resource &apos;index.html&apos;" flags="7" id="org.eclipse.wst.jsdt.ui.rename.resource" input="WebContent/index.html" name="index.jsp" stamp="1410387209541" version="1.0"/>
+</session>

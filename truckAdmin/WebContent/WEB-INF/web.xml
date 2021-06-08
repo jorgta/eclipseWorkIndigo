@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>
+	   truckAdmin
+	</display-name>
+	<welcome-file-list>
+	    <welcome-file>login.jsp</welcome-file>
+	    <welcome-file>index.jsp</welcome-file>	    
+		<welcome-file>index.htm</welcome-file>		
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<context-param>
+		<param-name>crystal_image_uri</param-name>
+		<param-value>/truckAdmin/crystalreportviewers10</param-value>
+	</context-param>
+   <servlet>
+      <servlet-name>action</servlet-name>
+      <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+      <init-param>
+      <param-name>application</param-name>
+      <param-value>eclipse.resources.ApplicationResources</param-value>
+      </init-param>
+      
+      <init-param>
+         <param-name>config</param-name>
+         <param-value>/WEB-INF/struts-config.xml</param-value>
+      </init-param>
+      <init-param>
+         <param-name>debug</param-name>
+         <param-value>3</param-value>
+      </init-param>
+      <init-param>
+         <param-name>detail</param-name>
+         <param-value>3</param-value>
+      </init-param>
+      <load-on-startup>0</load-on-startup>
+   </servlet>
+   <servlet>
+   	<description>
+   	</description>
+   	<display-name>
+   	ServletImageHandler</display-name>
+   	<servlet-name>ServletImageHandler</servlet-name>
+   	<servlet-class>
+   	com.bituos.ServletImageHandler</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>action</servlet-name>
+      <url-pattern>*.do</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+   	<servlet-name>ServletImageHandler</servlet-name>
+   	<url-pattern>/ServletImageHandler</url-pattern>
+   </servlet-mapping>
+
+   <env-entry> 
+	     <env-entry-name>
+		   jdbc/truckAdmin
+		 </env-entry-name>
+		 <env-entry-value> 
+<!--        	!com.mysql.jdbc.Driver!jdbc:mysql://192.168.0.150/truckAdmin?user=userr&amp;password=passwordread --> 
+<!--        	!com.mysql.jdbc.Driver!jdbc:mysql://tokio.no-ip.org/truckAdmin?user=userr&amp;password=passwordread -->
+<!--        	!com.mysql.jdbc.Driver!jdbc:mysql://192.168.0.153/truckAdmin?user=userr&amp;password=passwordread -->
+<!--        	!com.mysql.jdbc.Driver!jdbc:mysql://bituos.hostjava.net/bituosho_truckAdmin?user=bituosho_userr&amp;password=passwordread -->
+<!--	        !com.mysql.jdbc.Driver!jdbc:mysql://50.62.41.172/truckAdmin?user=userr&amp;password=passwordread -->
+	        !com.mysql.jdbc.Driver!jdbc:mysql://192.168.0.153/truckAdmin?user=userr&amp;password=passwordread
+	
+		 </env-entry-value>
+		 <env-entry-type>
+		   java.lang.String
+		 </env-entry-type>
+	</env-entry>
+</web-app>
+

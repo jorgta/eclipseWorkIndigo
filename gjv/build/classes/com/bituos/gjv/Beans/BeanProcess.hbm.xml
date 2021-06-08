@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.bituos.gjv.Beans.BeanProcess" table="process">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       <property name="description" column="description" type="string"  not-null="true"/>
+       <property name="url" column="url" type="string"  not-null="true"/>
+       <property name="img_name" column="img_name" type="string"  not-null="false"/>
+       <property name="name" column="name" type="string"  not-null="false"/>
+       <property name="action" column="action" type="string"  not-null="true"/>
+       <many-to-one name="id_type_process" column="id_type_process" not-null="true"/>
+       <property name="target" column="target" type="string"  not-null="true"/>
+
+   </class>
+</hibernate-mapping>
+
+

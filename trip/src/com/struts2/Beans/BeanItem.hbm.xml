@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.struts2.Beans.BeanCategory" table="categories" >
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       <property name="title" column="title" type="string"  not-null="false"/>
+       <property name="alias" column="alias" type="string"  not-null="false"/>      
+       <many-to-one name="category_id" column="category_id" not-null="false" />
+       <property name="published" column="published" type="integer"  not-null="false"/>  
+       <property name="introtext" column="introtext" type="string"  not-null="false"/>  
+       <property name="fulltext" column="fulltext" type="string"  not-null="false"/>  
+       <property name="video" column="video" type="string"  not-null="false"/>  
+       <property name="gallery" column="gallery" type="string"  not-null="false"/>  
+       <property name="created" column="created" type="date"  not-null="false"/> 
+       <property name="created_by" column="created_by" type="integer"  not-null="false"/> 
+       <property name="checked_out" column="checked_out" type="integer"  not-null="false"/> 
+       <property name="checked_out_time" column="checked_out_time" type="date"  not-null="false"/> 
+       <property name="modified" column="modified" type="date"  not-null="false"/> 
+	   <property name="modified_by" column="modified_by" type="integer"  not-null="false"/> 
+	   <property name="publish_up" column="publish_up" type="date"  not-null="false"/> 
+	   <property name="publish_down" column="publish_down" type="date"  not-null="false"/> 
+	   <property name="trash" column="trash" type="integer"  not-null="false"/> 
+	   <property name="access" column="access" type="integer"  not-null="false"/> 
+	   <property name="ordering" column="ordering" type="integer"  not-null="false"/> 
+	   <property name="image" column="image" type="string"  not-null="false"/> 	 
+	   <property name="params" column="params" type="string"  not-null="false"/> 
+
+
+
+ 
+       
+   </class>
+</hibernate-mapping>
+
+

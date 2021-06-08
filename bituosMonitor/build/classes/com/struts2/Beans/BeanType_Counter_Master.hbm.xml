@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+   <class name="com.struts2.Beans.BeanType_Counter_Master" table="type_counter_master">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       <property name="name_type_counter_master" column="name_type_counter_master" type="string"  not-null="true"/>
+       <property name="description" column="description" type="string"  not-null="false"/>
+       <many-to-one name="id_type_os" column="id_type_os" not-null="true" />
+       <property name="active" column="active" type="integer"  not-null="true"/>
+
+   </class>
+</hibernate-mapping>
+
+

@@ -1,0 +1,17 @@
+<%@ include file="header.jsp" %> 
+
+	<div id="centerbottom" class="yjsgsitew">
+		<div class="centerbottom_in">
+			<%@ include file="slide.jsp" %> 
+			
+			<%@ include file="body.jsp" %>  
+	    </div>
+	</div>
+	<!-- end centerbottom-->
+
+
+
+<%@ include file="footer.jsp" %> 
+
+	
+

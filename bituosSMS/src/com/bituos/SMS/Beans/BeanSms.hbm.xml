@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.bituos.SMSServer.Beans.BeanSms" table="sms">
+       <id name="id" type="integer" column="ID" unsaved-value="-1" >
+          <generator class="increment"/>
+       </id>
+       <property name="number" column="number" type="string"  not-null="true"/>
+       <property name="date_reg" column="date_reg" type="date"  not-null="true"/>
+       <property name="date_send" column="date_send" type="date"  not-null="true"/>
+       <property name="id_status" column="id_status" type="integer"  not-null="true"/>
+      
+   </class>
+</hibernate-mapping>

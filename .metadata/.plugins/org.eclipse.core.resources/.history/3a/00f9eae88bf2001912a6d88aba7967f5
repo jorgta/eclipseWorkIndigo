@@ -1,0 +1,181 @@
+package com.bituos;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import java.util.*;
+import com.eventAdmin.Beans.*;
+import java.io.*;
+import javax.servlet.http.HttpSession.*;
+
+import net.sf.hibernate.HibernateException;
+
+import com.eventAdmin.Beans.*;
+import com.eventAdmin.forms.*;
+import com.google.gson.Gson;
+
+ 
+
+/**
+ * Servlet implementation class Calendar
+ */
+public class Calendar extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public Calendar() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		String s ="";
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		
+		 
+		String id = request.getParameter("id");
+		String dir = request.getParameter("dir");
+		String orderField = request.getParameter("orderField");
+		String bean = request.getParameter("bean");
+		String listName = request.getParameter("listName");
+		String fields = request.getParameter("fields");
+		String searchValue  = request.getParameter("searchValue");
+		String searchParam = request.getParameter("searchParam");
+		String searchExtraParam = request.getParameter("searchExtraParam");
+		String searchExtraValue  = request.getParameter("searchExtraValue");
+		String searchLIKEParam = request.getParameter("searchLIKEParam");
+		String searchLIKEValue  = request.getParameter("searchLIKEValue");
+		
+		String active = request.getParameter("active");
+		String query =  "";		
+		String queryFilter = "" ;
+ 
+		
+		
+		HttpSession ses = request.getSession();
+		net.sf.hibernate.Session sessionHibernate= null;
+		com.bituos.Config configuration = new com.bituos.Config( request );
+		net.sf.hibernate.SessionFactory sessionFactory;
+		try {
+			sessionFactory = configuration.getConfiguration( request ).buildSessionFactory();
+			sessionHibernate = sessionFactory.openSession();
+			//BeanUser beanUser = (BeanUser) ses.getAttribute( "beanUser" );
+			 
+
+			if((List)ses.getAttribute(listName ) == null)
+			{
+				ses.removeAttribute(listName );
+				List listObjects = null;
+				
+				if(searchParam != null)
+				{
+				  queryFilter = " WHERE u." + searchParam + "=" + searchValue + "' " ;
+				  //sort = searchParam;
+				  
+				}
+				
+				
+				if(searchExtraParam != null)
+				{
+				  queryFilter += " AND u." + searchExtraParam + " LIKE '%" + searchExtraValue + "'" ;
+				  //sort = searchParam;
+				  
+				}
+				
+				if(searchLIKEValue != null)
+				{
+					queryFilter += " LIKE '%" + searchLIKEValue + "'" ;
+				  //sort = searchParam;
+				  
+				}
+				
+				
+
+				if(dir != null)
+				{
+					queryFilter += " " + dir ;
+				  //sort = searchParam;
+				}
+				else
+				{
+					dir = "asc";
+				}
+				
+				
+				if(active != null)
+				{
+					if (searchParam != null)
+					{
+						queryFilter += " AND u.active = '"+ active +"'";
+					}
+					else
+					{
+						queryFilter += " WHERE u.active = '"+ active +"'";
+					}
+				  //sort = searchParam;
+				}
+				
+				if(orderField != null)
+				{
+					queryFilter += " ORDER BY u." + orderField;
+				  //sort = searchParam;
+				}
+				
+				
+				query =  " FROM " + bean + " u" +
+						 queryFilter;
+						 
+						   
+
+				
+				listObjects = sessionHibernate.createQuery( query ).list();
+				ses.setAttribute(listName, listObjects );
+				
+				
+				 
+			
+				sessionHibernate.close();
+				sessionFactory.close();
+				
+				
+				String resltJsonString = new Gson().toJson(listObjects);
+				
+				PrintWriter out = response.getWriter();
+				response.setContentType("application/json");
+				response.setCharacterEncoding("UTF-8");
+				out.print(resltJsonString);
+				out.flush();
+				out.close();
+					
+			}
+			
+			
+			
+		} catch (HibernateException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+
+		
+		
+	}
+
+}
