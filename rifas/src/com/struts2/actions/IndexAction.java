@@ -93,7 +93,7 @@ public class IndexAction extends ActionSupport  {
 					
 					listModule = list;
 					httpSession.setAttribute("listModule", listModule);
-					
+					/*
 					query =   " FROM BeanCategory u" +
 							  " WHERE u.module_id.id in ( SELECT a.id " +
 							  "						      FROM BeanModule a" +
@@ -103,19 +103,10 @@ public class IndexAction extends ActionSupport  {
 					
 					list = session.createQuery(query).list();
 						
-					if (!list.isEmpty()){   
-					
+					if (!list.isEmpty()){  					
 						httpSession.setAttribute("listCategory", list);
-
-/*
-						query =   "  FROM bituos.items i " +
-									WHERE i.category_id in (SELECT c.id FROM bituos.categories c
-															where c.module_id in (SELECT m.id FROM bituos.modules m)
-															order by ordering ASC)
-									order by i.category_id  ASC";*/
-						
-						
 					}
+					*/
 	
 				}
 				else

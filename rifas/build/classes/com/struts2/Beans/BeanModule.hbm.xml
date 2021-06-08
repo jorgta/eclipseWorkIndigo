@@ -15,7 +15,7 @@
        <property name="ordering" column="ordering" type="integer"  not-null="false"/>
        <property name="position" column="position" type="string"  not-null="true"/>
        <property name="module" column="module" type="string"  not-null="true"/>
-       <property name="active" column="active" type="integer"  not-null="false"/>
+       
        <property name="showtitle" column="showtitle" type="integer"  not-null="false"/>
 
 

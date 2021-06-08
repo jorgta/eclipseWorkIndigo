@@ -2744,3 +2744,16 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.e
 
 !ENTRY org.eclipse.wst.jsdt.core 2 2 2021-06-08 12:07:22.246
 !MESSAGE There should only ever be one match for a constructor search but found 2 when looking for Element. Using the first match.
+!SESSION 2021-06-08 15:43:21.004 -----------------------------------------------
+eclipse.buildId=I20110127-2034
+java.version=1.7.0_80
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_MX
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2021-06-08 15:54:50.352
+!MESSAGE starting IvyDE plugin
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2021-06-08 15:54:50.369
+!MESSAGE IvyDE plugin started

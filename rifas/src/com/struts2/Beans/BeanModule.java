@@ -35,7 +35,7 @@ public class BeanModule {
 	private int ordering;
 	private String position;
 	private String module;
-	private int active;
+	//private int active;
 	private int showtitle;
 	public int getId() {
 		return id;
@@ -67,12 +67,7 @@ public class BeanModule {
 	public void setModule(String module) {
 		this.module = module;
 	}
-	public int getActive() {
-		return active;
-	}
-	public void setActive(int active) {
-		this.active = active;
-	}
+	 
 	public int getShowtitle() {
 		return showtitle;
 	}
