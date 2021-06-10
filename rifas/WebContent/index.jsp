@@ -27,6 +27,11 @@
  <%@ include file="centertopinopen.jsp" %>
   <%@ include file="grid1.jsp" %> 
   <%@ include file="grid2.jsp" %>
+  <%--  
+  <%@ include file="grid3.jsp" %>  
+  --%>
+  
+  
   <%@ include file="grid4.jsp" %>
   <%@ include file="grid5.jsp" %>
   <%@ include file="centertopinclose.jsp" %>  

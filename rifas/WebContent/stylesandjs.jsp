@@ -32,6 +32,11 @@ body{font-size:14px;}#logo{width:21.25%;height:95px;}#logo a{height:95px;}.yjsgs
 a{color:#000000;}[class*='yjsg-button-color']{background:#000000;}[class*='yjsg-button-color']:hover{background:#000000;}#typosticky.yjsg-sticky.fixed{max-width:1200px;margin:0 auto;padding:15px;}.yjsg-sub-heading,.yjsg-sticky-menu a.active-scroll,[data-sticky-block] a.active-scroll:before{border-color:#000000;}[class*='facolor'].fa:before{color:#000000;}#logo {	float:none;	margin:0 auto;}.yjsgheadergw{width:100%!important;}.yjgrayscale {opacity:0;}
 #top1.yjsgxhtml{width:100.00%;}
 #adv1.yjsgxhtml{width:100.00%;}
+#user1.yjsgxhtml{width:20%;}
+#user2.yjsgxhtml{width:20%;}
+#user3.yjsgxhtml{width:20%;}
+#user4.yjsgxhtml{width:20%;}
+#user5.yjsgxhtml{width:20%;}
 #user6.yjsgxhtml{width:35%;}
 #user7.yjsgxhtml{width:65%;}
 #user11.yjsgxhtml{width:100.00%;}
