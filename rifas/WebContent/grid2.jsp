@@ -3,7 +3,7 @@
 <div class="yjCounter yjCounterid116">
 		<div class="yjCounterPretext"><h1>Rifa <span>TV</span> 50 pulgadas <span>con </span> compra de boletos</h1></div>
 		<div class="yjcountdown_holder yjcid116"></div>
-		<div class="yjCounterPosttext"><p><a class="btn btn-large btn-inverse" href="#"><span class="icon-tags"></span> Obtenga su numero ahora!</a></p><br /><br /></div>
+		<div class="yjCounterPosttext"><p><a class="btn btn-large btn-inverse" href="gettickets.html"><span class="icon-tags"></span> Obtenga su numero ahora!</a></p><br /><br /></div>
 	</div>
 </div></div><div class="yjsquare bigheadline modid119"><div class="yjsquare_in"><h2>Top Stories from <span>music</span> industry. Celebrity scoops, <span>events</span> schedules, world <span>tours</span> and more...</h2>
 <p><small><span class="icon-bullhorn">&nbsp;</span> Get the latest scoops on your favorite artists, events and celebrities.</small> <br /><br /></p></div></div><div class="yjsquare  qsym modid97"><div class="yjsquare_in"><!-- http://www.Youjoomla.com  Youyork Module Slider for Joomla 1.6 and UP starts here -->
