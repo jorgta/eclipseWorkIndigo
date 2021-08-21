@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Use this file to deploy some handlers/chains and services      --><!-- Two ways to do this:                                           --><!--   java org.apache.axis.client.AdminClient deploy.wsdd          --><!--      after the axis server is running                          --><!-- or                                                             --><!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   --><!--      from the same directory that the Axis engine runs         --><deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from UploadMediaService WSDL service -->
+
+  <service name="UploadMedia" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://bituos.com"/>
+      <parameter name="wsdlServiceElement" value="UploadMediaService"/>
+      <parameter name="schemaQualified" value="http://bituos.com"/>
+      <parameter name="wsdlServicePort" value="UploadMedia"/>
+      <parameter name="className" value="com.bituos.UploadMedia"/>
+      <parameter name="wsdlPortType" value="UploadMedia"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation xmlns:operNS="http://bituos.com" xmlns:retNS="http://bituos.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="saveFile" qname="operNS:saveFile" returnQName="retNS:saveFileReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://bituos.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:ruta" type="tns:string"/>
+        <parameter xmlns:pns="http://bituos.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:filename" type="tns:string"/>
+        <parameter xmlns:pns="http://bituos.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:infoBytes" type="tns:base64Binary"/>
+      </operation>
+      <operation xmlns:operNS="http://bituos.com" xmlns:retNS="http://bituos.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="sayHelloWorld" qname="operNS:sayHelloWorld" returnQName="retNS:sayHelloWorldReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://bituos.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:name" type="tns:string"/>
+      </operation>
+      <parameter name="allowedMethods" value="saveFile sayHelloWorld"/>
+
+  </service>
+</deployment>
