@@ -42,7 +42,7 @@ import org.hibernate.classic.Session;
 
 public class HelloWorld {
 
-    public String sayHelloWorld(String name)
+    /*public String sayHelloWorld(String name)
     {
         return "Hello world from 1: "+ name;
     }
@@ -83,7 +83,7 @@ public class HelloWorld {
     	bs[1] = o2;
 		 
 		return bs;
-	}
+	}*/
     
     
     public String saveFile(String ruta, String filename, byte[] infoBytes) throws Exception

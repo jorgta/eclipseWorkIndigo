@@ -23,17 +23,17 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
   </schema>
  </wsdl:types>
 
-   <wsdl:message name="saveFileResponse">
+   <wsdl:message name="saveFileRequest">
 
-      <wsdl:part element="impl:saveFileResponse" name="parameters">
+      <wsdl:part element="impl:saveFile" name="parameters">
 
       </wsdl:part>
 
    </wsdl:message>
 
-   <wsdl:message name="saveFileRequest">
+   <wsdl:message name="saveFileResponse">
 
-      <wsdl:part element="impl:saveFile" name="parameters">
+      <wsdl:part element="impl:saveFileResponse" name="parameters">
 
       </wsdl:part>
 

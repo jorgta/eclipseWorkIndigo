@@ -7,9 +7,8 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
    <element name="saveFile">
     <complexType>
      <sequence>
-      <element name="ruta" type="xsd:string"/>
-      <element name="filename" type="xsd:string"/>
       <element name="infoBytes" type="xsd:base64Binary"/>
+      <element name="authorizationCode" type="xsd:string"/>
      </sequence>
     </complexType>
    </element>
@@ -20,17 +19,13 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
      </sequence>
     </complexType>
    </element>
-   <element name="sayHelloWorld">
-    <complexType>
-     <sequence>
-      <element name="name" type="xsd:string"/>
-     </sequence>
-    </complexType>
+   <element name="authorizeUrl">
+    <complexType/>
    </element>
-   <element name="sayHelloWorldResponse">
+   <element name="authorizeUrlResponse">
     <complexType>
      <sequence>
-      <element name="sayHelloWorldReturn" type="xsd:string"/>
+      <element name="authorizeUrlReturn" type="xsd:string"/>
      </sequence>
     </complexType>
    </element>
@@ -45,9 +40,17 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
    </wsdl:message>
 
-   <wsdl:message name="sayHelloWorldRequest">
+   <wsdl:message name="authorizeUrlResponse">
 
-      <wsdl:part element="impl:sayHelloWorld" name="parameters">
+      <wsdl:part element="impl:authorizeUrlResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="authorizeUrlRequest">
+
+      <wsdl:part element="impl:authorizeUrl" name="parameters">
 
       </wsdl:part>
 
@@ -56,14 +59,6 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
    <wsdl:message name="saveFileResponse">
 
       <wsdl:part element="impl:saveFileResponse" name="parameters">
-
-      </wsdl:part>
-
-   </wsdl:message>
-
-   <wsdl:message name="sayHelloWorldResponse">
-
-      <wsdl:part element="impl:sayHelloWorldResponse" name="parameters">
 
       </wsdl:part>
 
@@ -83,13 +78,13 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
       </wsdl:operation>
 
-      <wsdl:operation name="sayHelloWorld">
+      <wsdl:operation name="authorizeUrl">
 
-         <wsdl:input message="impl:sayHelloWorldRequest" name="sayHelloWorldRequest">
+         <wsdl:input message="impl:authorizeUrlRequest" name="authorizeUrlRequest">
 
        </wsdl:input>
 
-         <wsdl:output message="impl:sayHelloWorldResponse" name="sayHelloWorldResponse">
+         <wsdl:output message="impl:authorizeUrlResponse" name="authorizeUrlResponse">
 
        </wsdl:output>
 
@@ -119,17 +114,17 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
       </wsdl:operation>
 
-      <wsdl:operation name="sayHelloWorld">
+      <wsdl:operation name="authorizeUrl">
 
          <wsdlsoap:operation soapAction=""/>
 
-         <wsdl:input name="sayHelloWorldRequest">
+         <wsdl:input name="authorizeUrlRequest">
 
             <wsdlsoap:body use="literal"/>
 
          </wsdl:input>
 
-         <wsdl:output name="sayHelloWorldResponse">
+         <wsdl:output name="authorizeUrlResponse">
 
             <wsdlsoap:body use="literal"/>
 
