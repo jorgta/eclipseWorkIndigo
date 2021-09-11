@@ -9,6 +9,7 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
      <sequence>
       <element name="infoBytes" type="xsd:base64Binary"/>
       <element name="authorizationCode" type="xsd:string"/>
+      <element name="androidid" type="xsd:string"/>
      </sequence>
     </complexType>
    </element>
@@ -20,7 +21,11 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
     </complexType>
    </element>
    <element name="authorizeUrl">
-    <complexType/>
+    <complexType>
+     <sequence>
+      <element name="androidid" type="xsd:string"/>
+     </sequence>
+    </complexType>
    </element>
    <element name="authorizeUrlResponse">
     <complexType>

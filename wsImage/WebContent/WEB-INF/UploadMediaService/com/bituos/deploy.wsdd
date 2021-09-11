@@ -13,8 +13,10 @@
       <operation xmlns:operNS="http://bituos.com" xmlns:retNS="http://bituos.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="saveFile" qname="operNS:saveFile" returnQName="retNS:saveFileReturn" returnType="rtns:string" soapAction="">
         <parameter xmlns:pns="http://bituos.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:infoBytes" type="tns:base64Binary"/>
         <parameter xmlns:pns="http://bituos.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:authorizationCode" type="tns:string"/>
+        <parameter xmlns:pns="http://bituos.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:androidid" type="tns:string"/>
       </operation>
       <operation xmlns:operNS="http://bituos.com" xmlns:retNS="http://bituos.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="authorizeUrl" qname="operNS:authorizeUrl" returnQName="retNS:authorizeUrlReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://bituos.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:androidid" type="tns:string"/>
       </operation>
       <parameter name="allowedMethods" value="authorizeUrl saveFile"/>
 

@@ -61,7 +61,7 @@ public class DriveQuickstart {
 	private static final String APPLICATION_NAME = "Drive API Quickstart Desktop";
     private static final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
     private static final int LOCAL_RECEIVER_PORT = 61984;
-    private static final java.io.File CREDENTIALS_FOLDER  = new java.io.File(System.getProperty("user.home"), "credentials");
+    //private static final java.io.File CREDENTIALS_FOLDER  = new java.io.File(System.getProperty("user.home"), "credentials");
     private static final String CLIENT_SECRET_FILE_NAME = "client_secret.json";
     private static final List<String> SCOPES = Collections.singletonList(DriveScopes.DRIVE);
  
@@ -86,8 +86,9 @@ public class DriveQuickstart {
    }
    
     
-   public static GoogleAuthorizationCodeFlow Initialize(NetHttpTransport HTTP_TRANSPORT, Details details) throws Exception {
- 
+   public static GoogleAuthorizationCodeFlow Initialize(NetHttpTransport HTTP_TRANSPORT, Details details, String androidid) throws Exception {
+       String subfolder = androidid;
+       java.io.File CREDENTIALS_FOLDER  = new java.io.File(System.getProperty("user.home"), "credentials/" + subfolder );
        GoogleClientSecrets clientSecrets  = new GoogleClientSecrets().setInstalled(details);
        clientSecrets.setFactory(JSON_FACTORY);
        
@@ -102,7 +103,7 @@ public class DriveQuickstart {
 	   return flow;
    }
    
-   public static GoogleAuthorizationCodeFlow init(String calback_url)
+   public static GoogleAuthorizationCodeFlow init(String calback_url,String androidid)
    {
 			GoogleAuthorizationCodeFlow flow = null;
 			GoogleTokenResponse tokenResponse;
@@ -137,7 +138,7 @@ public class DriveQuickstart {
 		   
 		   try {
 		   		HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
-				flow= DriveQuickstart.Initialize(HTTP_TRANSPORT,details);
+				flow= DriveQuickstart.Initialize(HTTP_TRANSPORT,details, androidid);
 				 
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
@@ -287,7 +288,7 @@ public class DriveQuickstart {
 
 	public static void main(String[] args) throws Exception {
 
-		init(null);
+		init(null,"");
 	}
 
 }

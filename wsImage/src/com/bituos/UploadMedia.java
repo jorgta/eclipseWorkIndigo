@@ -28,14 +28,14 @@ public class UploadMedia {
 	    GoogleTokenResponse tokenResponse;
 	    NetHttpTransport HTTP_TRANSPORT = null;
 	    
-		public String authorizeUrl() 
+		public String authorizeUrl(String androidid) 
 	    {
 			  
 			   //init("");
 			   CALLBACK_URL="urn:ietf:wg:oauth:2.0:oob";
 		        String authorizeUrl = "";
 		        try {
-		        	GoogleAuthorizationCodeFlow flow = DriveQuickstart.init(CALLBACK_URL);
+		        	GoogleAuthorizationCodeFlow flow = DriveQuickstart.init(CALLBACK_URL, androidid);
 					authorizeUrl = DriveQuickstart.getAuthorizeUrl(flow, CALLBACK_URL);
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
@@ -47,12 +47,12 @@ public class UploadMedia {
 			return authorizeUrl;
 	    }
 		
-		private Credential authorizationCode(String authorizationCode) 
+		private Credential authorizationCode(String authorizationCode,String androidid) 
 	    {
 			CALLBACK_URL="urn:ietf:wg:oauth:2.0:oob";
 			Credential credential = null;
 			 try {
-				 	flow=DriveQuickstart.init(CALLBACK_URL); 
+				 	flow=DriveQuickstart.init(CALLBACK_URL,androidid); 
 				    if(!authorizationCode.isEmpty())
 				    {
 				    	
@@ -79,11 +79,11 @@ public class UploadMedia {
 	    }
 
 
-        public String saveFile(byte[] infoBytes,String authorizationCode) 
+        public String saveFile(byte[] infoBytes,String authorizationCode, String androidid) 
 	    {
 
         	try {
-	        		Credential credential =authorizationCode(authorizationCode);
+	        		Credential credential =authorizationCode(authorizationCode, androidid);
 	        		HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
 					DriveQuickstart.save(infoBytes,HTTP_TRANSPORT, credential );
 			     
